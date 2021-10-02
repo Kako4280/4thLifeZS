@@ -98,7 +98,7 @@ function PANEL:Init()
 				if IsValid(node) then
 					node:SetNoDraw(true)
 					if branches then
-						if #branches > 2 then
+						if #branches >= 2 then
 							node:SetPos(Vector(3, -50 + i * 30, i > 0 and branches and 11 or 0))
 						else
 							node:SetPos(Vector(0, -48 + i * 30, i > 0 and branches and 0 or -9))
@@ -120,7 +120,7 @@ function PANEL:Init()
 						if IsValid(node) then
 							node:SetNoDraw(true)
 							if branches then
-								if #branches > 2 then
+								if #branches >= 2 then
 									node:SetPos(Vector(3, -50 + i * 30, 11 - (30/#branches)*no))
 								else
 									node:SetPos(Vector(0, -48 + i * 30, 0 - (16/#branches)*no))
@@ -141,6 +141,8 @@ function PANEL:Init()
 			end
 		end
 	end
+	
+	
 
 	self:SetCamPos( Vector( 20000, 0, 0 ) )
 	self:SetLookAt( Vector( 0, 0, 0 ) )
@@ -579,6 +581,13 @@ function GM:OpenRemantlerMenu(remantler)
 
 	local topspace = vgui.Create("DPanel", frame)
 	topspace:SetWide(wid - 16)
+
+	local qbuy = vgui.Create("DCheckBoxLabel", frame)
+	qbuy:AlignTop(8)
+	qbuy:AlignLeft(8)
+	qbuy:SetText("Enable/Disable Quick Buy")
+	qbuy:SizeToContents()
+	qbuy:SetConVar("zs_alwaysquickbuy")
 
 	local title = EasyLabel(topspace, "Weapon Remantler", "ZSHUDFontSmall", COLOR_WHITE)
 	title:CenterHorizontal()

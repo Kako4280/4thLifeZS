@@ -156,17 +156,17 @@ local function ItemPanelDoClick(self)
 		crab.Item = item
 		crab.WeaponCraft = k
 		crab.DoClick = TryCraftWithComponent
-		crab:SetPos(viewer:GetWide() / 2 - crab:GetWide() / 2, (viewer:GetTall() - 33 * screenscale) - (count - 1) * 33 * screenscale)
+		crab:SetPos(viewer:GetWide() / 1.5 - crab:GetWide() / 1.5, (viewer:GetTall() - 20 * screenscale) - (count - 1) * 20 * screenscale)
 		crab:SetVisible(true)
 
 		cral:SetText((iitype and GAMEMODE.ZSInventoryItemData[k] or weapons.Get(k)).PrintName)
-		cral:SetPos(crab:GetWide() / 2 - cral:GetWide() / 2, (crab:GetTall() * 0.5 - cral:GetTall() * 0.5))
+		cral:SetPos(crab:GetWide() / 1.5 - cral:GetWide() / 1.5, (crab:GetTall() * 0.3 - cral:GetTall() * 0.3))
 		cral:SetContentAlignment(5)
 		cral:SetVisible(true)
 	end
 
 	if count > 0 then
-		viewer.m_CraftWith:SetPos(viewer:GetWide() / 2 - viewer.m_CraftWith:GetWide() / 2, (viewer:GetTall() - 33 * screenscale) - 33 * count * screenscale)
+		viewer.m_CraftWith:SetPos(viewer:GetWide() / 1.5 - viewer.m_CraftWith:GetWide() / 1.5, (viewer:GetTall() - 20 * screenscale) - 20 * count * screenscale)
 		viewer.m_CraftWith:SetContentAlignment(5)
 		viewer.m_CraftWith:SetVisible(true)
 	else
@@ -245,9 +245,10 @@ function GM:InventoryAddGridItem(item, category)
 	local screenscale = BetterScreenScale()
 	local grid = self.InventoryMenu.Grid
 
+	--draw the box around the trinkets
 	local itempan = vgui.Create("DButton")
 	itempan:SetText("")
-	itempan:SetSize(64 * screenscale, 64 * screenscale)
+	itempan:SetSize(175 * screenscale, 70 * screenscale)
 	itempan.Paint = ItemPanelPaint
 	itempan.DoClick = ItemPanelDoClick
 	itempan.Item = item
@@ -256,24 +257,43 @@ function GM:InventoryAddGridItem(item, category)
 	grid:AddItem(itempan)
 	grid:SortByMember("Category")
 
+	--draw the trinket icon
 	local mdlframe = vgui.Create("DPanel", itempan)
-	mdlframe:SetSize(60 * screenscale, 30 * screenscale)
+	mdlframe:SetSize(70 * screenscale, 35 * screenscale)
 	mdlframe:Center()
 	mdlframe:SetMouseInputEnabled(false)
 	mdlframe.Paint = function() end
 
-	local trintier = EasyLabel(itempan, "", "ZSHUDFontSmaller", COLOR_WHITE)
-	trintier:CenterHorizontal(0.8)
-	trintier:CenterVertical(0.8)
+	--trinket name label on the bottom
+	local trinketname = EasyLabel(itempan, "", "ZSHUDFontSmaller", COLOR_WHITE)
+	trinketname:CenterHorizontal(0.8)
+	trinketname:CenterVertical(0.8)
 
+	--trinket tier label on the top
+	local trinkettier = EasyLabel(itempan, "", "ZSHUDFontSmaller", COLOR_WHITE)
+	trinkettier:CenterHorizontal(0.35)
+	trinkettier:CenterVertical(0.25)
+
+	--grab trinket name, position the text
+	if category == INVCAT_TRINKETS or INVCAT_COMPONENTS then
+		local name = GAMEMODE.ZSInventoryItemData[item].PrintName
+		trinketname:SetText(name)
+		trinketname:SetFont("DefaultFont")
+		trinketname:SizeToContents()
+		trinketname:CenterHorizontal(0.5)
+		trinketname:CenterVertical(0.8)
+	end
+	
+	--grab trinket tier, position the text
 	if category == INVCAT_TRINKETS then
 		local tier = GAMEMODE.ZSInventoryItemData[item].Tier or 1
-		trintier:SetText(NumToRomanNumeral[tier])
-		trintier:SizeToContents()
-		trintier:CenterHorizontal(0.8)
-		trintier:CenterVertical(0.8)
+		trinkettier:SetText(NumToRomanNumeral[tier])
+		trinkettier:SizeToContents()
+		trinkettier:CenterHorizontal(0.92)
+		trinkettier:CenterVertical(0.25)
 	end
 
+	--grab killicon for trinket
 	local kitbl = killicon.Get(category == INVCAT_TRINKETS and "weapon_zs_trinket" or "weapon_zs_craftables")
 	if kitbl then
 		self:AttachKillicon(kitbl, itempan, mdlframe)
@@ -325,12 +345,13 @@ function GM:OpenInventory()
 	end
 
 	local screenscale = BetterScreenScale()
-	local wid, hei = math.max(400, math.min(ScrW(), 400) * screenscale), math.min(ScrH(), 370) * screenscale
+	local offset = 64 * screenscale
+	local wid, hei = math.max(400, math.min(ScrW(), 400) * screenscale), math.min(ScrH(), 400) * screenscale
 
 	local frame = vgui.Create("DFrame")
 	frame:SetSize(wid, hei)
-	frame:CenterHorizontal(0.385)
-	frame:CenterVertical(0.25)
+	frame:CenterHorizontal(0.42)
+	frame:CenterVertical(0.45)
 	frame:SetDeleteOnClose(false)
 	frame:SetTitle(" ")
 	frame:SetDraggable(false)
@@ -343,7 +364,7 @@ function GM:OpenInventory()
 
 	local topspace = vgui.Create("DPanel", frame)
 	topspace:SetWide(wid - 16)
-
+		
 	local title = EasyLabel(topspace, "Inventory", "ZSHUDFontSmall", COLOR_WHITE)
 	title:CenterHorizontal()
 
@@ -352,13 +373,19 @@ function GM:OpenInventory()
 	topspace:AlignTop(8)
 	topspace:CenterHorizontal()
 
-	local invgrid = vgui.Create("DGrid", frame)
-	invgrid:SetSize(wid - 16 * screenscale, frame:GetTall() - 8 - topspace:GetTall())
+	local scroll = vgui.Create("DScrollPanel", frame)
+	scroll:SetSize(frame:GetWide(), frame:GetTall() - offset - 32)
+	scroll:SetPos(0, offset)
+	
+	--setpos might be useless for positioning, could have done it with centerhorizontal/centervertical but im lazy lol
+	local invgrid = vgui.Create("DGrid", scroll)
+	invgrid:SetSize(wid - 24 * screenscale, frame:GetTall() - 16 - topspace:GetTall())
 	invgrid:MoveBelow(topspace, 16)
-	invgrid:SetCols(5)
-	invgrid:SetColWide((70 + (invgrid:GetWide() - 70*5) / 4) * screenscale)
-	invgrid:SetRowHeight(70 * screenscale)
-	invgrid:CenterHorizontal()
+	invgrid:SetCols(2)
+	invgrid:SetColWide((50 + (invgrid:GetWide() - 50*-2.75) / 4) * screenscale)
+	invgrid:SetRowHeight(75 * screenscale)
+	invgrid:Center()
+	invgrid:SetPos(0, 0)
 	frame.Grid = invgrid
 
 	for item, count in pairs(self.ZSInventory) do
@@ -369,6 +396,5 @@ function GM:OpenInventory()
 		end
 	end
 	invgrid:SortByMember("Category")
-
 	frame:MakePopup()
 end

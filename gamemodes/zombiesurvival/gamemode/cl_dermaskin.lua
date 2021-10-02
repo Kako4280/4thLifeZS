@@ -167,10 +167,10 @@ SKIN.Colours.Label.Dark					= GWEN.TextureColor( 4 + 8 * 8, 500 );
 SKIN.Colours.Label.Highlight			= GWEN.TextureColor( 4 + 8 * 9, 500 );
 
 SKIN.Colours.Tree = {}
-SKIN.Colours.Tree.Lines					= GWEN.TextureColor( 4 + 8 * 10, 508 );		---- !!!
-SKIN.Colours.Tree.Normal				= GWEN.TextureColor( 4 + 8 * 11, 508 );
-SKIN.Colours.Tree.Hover					= GWEN.TextureColor( 4 + 8 * 10, 500 );
-SKIN.Colours.Tree.Selected				= GWEN.TextureColor( 4 + 8 * 11, 500 );
+SKIN.Colours.Tree.Lines					= GWEN.TextureColor( 4 + 8 * 11, 508 );	---- !!!
+SKIN.Colours.Tree.Normal				= GWEN.TextureColor( 4 + 8 * 11, 500 );
+SKIN.Colours.Tree.Hover					= GWEN.TextureColor( 4 + 8 * 1, 508 );
+SKIN.Colours.Tree.Selected				= GWEN.TextureColor( 4 + 8 * 12, 508 );
 
 SKIN.Colours.Properties = {}
 SKIN.Colours.Properties.Line_Normal			= GWEN.TextureColor( 4 + 8 * 12, 508 );
@@ -225,6 +225,38 @@ function SKIN:PaintButton(panel, w, h)
 	surface.DrawRect(edgesize, 0, w - edgesize * 2, h)
 	surface.SetTexture(texRightEdge)
 	surface.DrawTexturedRect(w - edgesize, 0, edgesize, h)
+	surface.DrawTexturedRectRotated(math.ceil(edgesize * 0.5), math.ceil(h * 0.5), edgesize, h, 180)
+end
+
+function SKIN:PaintMenu(panel, w, h)
+	if not panel.m_bBackground then return end
+	local col
+
+	col = Color(0, 0, 0, 255)
+	local edgesize = math.min(math.ceil(w * 0.2), 8)
+	surface.SetDrawColor(col)
+	surface.DrawRect(edgesize, 0, w - edgesize * 2, h)
+	surface.SetTexture(texRightEdge)
+	surface.DrawTexturedRect(w - edgesize, 0, w - edgesize, h)
+	surface.DrawTexturedRectRotated(math.ceil(edgesize * 0.5), math.ceil(h * 0.5), edgesize, h, 180)
+end
+
+function SKIN:PaintComboBox(panel, w, h)
+	if not panel.m_bBackground then return end
+
+	local col2 = Color(255, 255, 255, 220)
+
+	panel:SetTextColor(col2)
+
+	local col
+
+	
+	col = Color(0, 0, 0, 255)
+	local edgesize = math.min(math.ceil(w * 0.2), 8)
+	surface.SetDrawColor(col)
+	surface.DrawRect(edgesize, 0, w - edgesize * 2, h)
+	surface.SetTexture(texRightEdge)
+	surface.DrawTexturedRect(w - edgesize, 0, w - edgesize, h)
 	surface.DrawTexturedRectRotated(math.ceil(edgesize * 0.5), math.ceil(h * 0.5), edgesize, h, 180)
 end
 

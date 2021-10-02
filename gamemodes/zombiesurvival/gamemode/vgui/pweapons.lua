@@ -154,17 +154,35 @@ function MakepWeapons(silent)
 
 	local tree = vgui.Create("DTree", propertysheet)
 	tree:SetWide(propertysheet:GetWide() - 16)
-	local sheet = propertysheet:AddSheet("Weapons", tree, nil, false, false)
+	tree:SetBackgroundColor(COLOR_DARK)
+	local sheet = propertysheet:AddSheet("Guns", tree, nil, false, false)
 	sheet.Panel:SetPos(0, tabhei + 2)
 	tree:SetIndentSize(4)
-	frame.WeaponsTree = tree
+	frame.TierTree = tree
+
+	local tree = vgui.Create("DTree", propertysheet)
+	tree:SetWide(propertysheet:GetWide() - 16)
+	tree:SetBackgroundColor(COLOR_DARK)
+	local sheet = propertysheet:AddSheet("Melee", tree, nil, false, false)
+	sheet.Panel:SetPos(0, tabhei + 2)
+	tree:SetIndentSize(4)
+	frame.MeleeTierTree = tree
+
+	local tree = vgui.Create("DTree", propertysheet)
+	tree:SetWide(propertysheet:GetWide() - 16)
+	tree:SetBackgroundColor(COLOR_DARK)
+	local sheet = propertysheet:AddSheet("Tools/Other", tree, nil, false, false)
+	sheet.Panel:SetPos(0, tabhei + 2)
+	tree:SetIndentSize(4)
+	frame.ToolTierTree = tree
 
 	tree = vgui.Create("DTree", propertysheet)
 	tree:SetWide(propertysheet:GetWide() - 16)
+	tree:SetBackgroundColor(COLOR_DARK)
 	sheet = propertysheet:AddSheet("Crafts", tree, nil, false, false)
 	sheet.Panel:SetPos(0, tabhei + 2)
 	tree:SetIndentSize(4)
-	frame.CraftsTree = tree
+	frame.CraftsTierTree = tree
 
 	local scroller = propertysheet:GetChildren()[1]
 	local dragbase = scroller:GetChildren()[1]
@@ -174,27 +192,86 @@ function MakepWeapons(silent)
 
 	frame.ViewerY = y
 
+	tiersorting  = frame.TierTree:AddNode("Tier 1")
+	tiersorting2 = frame.TierTree:AddNode("Tier 2")
+	tiersorting3 = frame.TierTree:AddNode("Tier 3")
+	tiersorting4 = frame.TierTree:AddNode("Tier 4")
+	tiersorting5 = frame.TierTree:AddNode("Tier 5")
+	Meleetiersorting  = frame.MeleeTierTree:AddNode("Tier 1")
+	Meleetiersorting2 = frame.MeleeTierTree:AddNode("Tier 2")
+	Meleetiersorting3 = frame.MeleeTierTree:AddNode("Tier 3")
+	Meleetiersorting4 = frame.MeleeTierTree:AddNode("Tier 4")
+	Meleetiersorting5 = frame.MeleeTierTree:AddNode("Tier 5")
+	Tooltiersorting   = frame.ToolTierTree:AddNode("Tools")
+	deployablesorting = frame.ToolTierTree:AddNode("Deployables")
+	throwablesorting = frame.ToolTierTree:AddNode("Throwables")
+
+	craftstiersorting  = frame.CraftsTierTree:AddNode("Tier 1")
+	craftstiersorting2 = frame.CraftsTierTree:AddNode("Tier 2")
+	craftstiersorting3 = frame.CraftsTierTree:AddNode("Tier 3")
+	craftstiersorting4 = frame.CraftsTierTree:AddNode("Tier 4")
+	craftstiersorting5 = frame.CraftsTierTree:AddNode("Tier 5")
+
 	for _, wep in pairs(weps) do
 		local enttab = weapons.Get(wep)
 		local wepnode
+
 		if enttab then
-			wepnode = frame.WeaponsTree:AddNode(enttab.PrintName or wep)
+			if enttab.Tier == 1 and enttab.ConeMax then
+			wepnode = tiersorting:AddNode(enttab.PrintName or wep)
+			elseif enttab.Tier == 2 and enttab.ConeMax then
+			wepnode = tiersorting2:AddNode(enttab.PrintName or wep)
+		elseif enttab.Tier == 3 and enttab.ConeMax then
+			wepnode = tiersorting3:AddNode(enttab.PrintName or wep)
+		elseif enttab.Tier == 4 and enttab.ConeMax then
+			wepnode = tiersorting4:AddNode(enttab.PrintName or wep)
+		elseif enttab.Tier == 5 and enttab.ConeMax then
+			wepnode = tiersorting5:AddNode(enttab.PrintName or wep)
+		elseif enttab.Tier == 1 and enttab.IsMelee then
+			wepnode = Meleetiersorting:AddNode(enttab.PrintName or wep)
+		elseif enttab.Tier == 2 and enttab.IsMelee then
+			wepnode = Meleetiersorting2:AddNode(enttab.PrintName or wep)
+		elseif enttab.Tier == 3 and enttab.IsMelee then
+			wepnode = Meleetiersorting3:AddNode(enttab.PrintName or wep)
+		elseif enttab.Tier == 4  and enttab.IsMelee then
+			wepnode = Meleetiersorting4:AddNode(enttab.PrintName or wep)
+		elseif enttab.Tier == 5 and enttab.IsMelee then
+			wepnode = Meleetiersorting5:AddNode(enttab.PrintName or wep)
+		elseif enttab.GhostStatus or enttab.DeployClass or enttab.NoDeploySpeedChange or enttab.Primary.Ammo == "remantler" then
+			wepnode = deployablesorting:AddNode(enttab.PrintName or wep)
+		elseif enttab.AmmoIfHas and enttab.Base == "weapon_zs_basethrown" then
+			wepnode = throwablesorting:AddNode(enttab.PrintName or wep)
+		elseif enttab.Heal or enttab.HealRange or enttab.Primary.Ammo == "Battery" or enttab.HealStrength or enttab.TeleportStatus or enttab.Primary.Ammo == "SniperRound" then
+			wepnode = Tooltiersorting:AddNode(enttab.PrintName or wep)
 		else
-			wepnode = frame.WeaponsTree:AddNode(wep)
+			wepnode = tiersorting:AddNode(enttab.PrintName or wep)
 		end
+	end
 		wepnode.SWEP = wep
 		wepnode.DoClick = WeaponButtonDoClick
 		wepnode.Category = addedcat[wep] or ITEMCAT_GUNS
 	end
 
+
 	for _, wep in pairs(crafts) do
 		local enttab = weapons.Get(wep)
 		local wepnode
 		if enttab then
-			wepnode = frame.CraftsTree:AddNode(enttab.PrintName or wep)
-		else
-			wepnode = frame.CraftsTree:AddNode(wep)
+			if enttab.Tier == 1 then
+				wepnode = craftstiersorting:AddNode(enttab.PrintName or wep)
+				elseif enttab.Tier == 2 then
+				wepnode = craftstiersorting2:AddNode(enttab.PrintName or wep)
+			elseif enttab.Tier == 3 then
+				wepnode = craftstiersorting3:AddNode(enttab.PrintName or wep)
+			elseif enttab.Tier == 4 then
+				wepnode = craftstiersorting4:AddNode(enttab.PrintName or wep)
+			elseif enttab.Tier == 5 then
+				wepnode = craftstiersorting5:AddNode(enttab.PrintName or wep)
+			else
+				wepnode = craftstiersorting:AddNode(enttab.PrintName or wep)
+			end
 		end
+
 		wepnode.SWEP = wep
 		wepnode.DoClick = WeaponButtonDoClick
 		wepnode.Category = enttab.RequiredClip and ITEMCAT_GUNS or (enttab.Primary.Ammo == "none" and enttab.MeleeRange) and ITEMCAT_MELEE or ITEMCAT_TOOLS

@@ -660,6 +660,13 @@ function GM:OpenArsenalMenu()
 	local topspace = vgui.Create("DPanel", frame)
 	topspace:SetWide(wid - 16)
 
+	local qbuy = vgui.Create("DCheckBoxLabel", frame)
+	    qbuy:AlignTop(8)
+		qbuy:AlignLeft(8)
+	    qbuy:SetText("Enable/Disable Quick Buy")
+	    qbuy:SizeToContents()
+	    qbuy:SetConVar("zs_alwaysquickbuy")
+
 	local title = EasyLabel(topspace, "The Points Shop", "ZSHUDFontSmall", COLOR_WHITE)
 	title:CenterHorizontal()
 	local subtitle = EasyLabel(topspace, "For all of your zombie apocalypse needs!", "ZSHUDFontTiny", COLOR_WHITE)
