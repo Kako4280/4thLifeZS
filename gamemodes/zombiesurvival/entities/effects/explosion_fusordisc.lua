@@ -65,8 +65,8 @@ function EFFECT:Init(effectdata)
 		particle:SetAngles(normal:Angle())
 	end
 
-	emitter:Finish()
-	emitter2:Finish()
+	emitter:Finish() emitter = nil collectgarbage("step", 64)
+	emitter2:Finish() emitter2 = nil collectgarbage("step", 64)
 end
 
 function EFFECT:Think()

@@ -57,7 +57,7 @@ function EFFECT:Init(data)
 		particle:SetGravity(vel * -0.7)
 	end
 
-	emitter:Finish()
+	emitter:Finish() emitter = nil collectgarbage("step", 64)
 end
 
 function EFFECT:Think()
