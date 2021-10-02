@@ -1,6 +1,8 @@
 ENT.Type = "anim"
 ENT.Base = "status__base"
 
+ENT.Ephemeral = true
+
 function ENT:Initialize()
 	self.BaseClass.Initialize(self)
 
