@@ -2728,7 +2728,7 @@ end
 
 function GM:NestDestroyed(ent, attacker)
 	if IsValid(ent) and IsValid(attacker) and attacker:IsPlayer() and attacker:Team() == TEAM_UNDEAD then
-		PrintMessage(HUD_PRINTCONSOLE, attacker:Name().." team killed a nest at "..tostring(ent:GetPos()).." (builder: "..(ent:GetOwner() and ent:GetOwner():IsValid() and ent:GetOwner():IsPlayer() and ent:GetOwner():LogID() or "unknown")..")")
+		PrintMessage(HUD_PRINTCONSOLE, attacker:Name().." team killed a nest at "..tostring(ent:GetPos()).." (builder: "..(ent:GetNestOwner() and ent:GetNestOwner():IsValid() and ent:GetNestOwner():IsPlayer() and ent:GetNestOwner():Name() or "unknown")..")")
 	end
 end
 
