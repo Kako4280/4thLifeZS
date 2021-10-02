@@ -1,6 +1,8 @@
 ENT.Type = "anim"
 
 ENT.NoNails = true
+ENT.IgnoreMelee = true
+ENT.IgnoreBullets = true
 ENT.IgnoreTraces = true
 
 ENT.RenderGroup = RENDERGROUP_TRANSLUCENT
