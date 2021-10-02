@@ -1,0 +1,2502 @@
+<Logging continued from "data/ulx_logs/01-16-20.txt">
+[00:35:57] Client "bronknorth" connected.
+[00:43:24] Client "bronknorth" connected.
+[00:45:29] Client "bronknorth" connected.
+[02:36:51] Client "sgt_sas1905" connected.
+[04:04:51] Client "BeefyBunnyz" connected.
+[04:40:18] Client "Warzzacchi" connected.
+[04:42:58] Client "Warzzacchi" spawned in server <STEAM_0:0:89476637> (took 160 seconds).
+[04:43:34] (Console) called a votemap!
+[04:44:03] Server is shutting down/changing levels.
+
+
+
+[04:44:07] New map: zs_the_pub_final7
+[04:45:29] Client "Warzzacchi" spawned in server <STEAM_0:0:89476637> (took 85 seconds).
+[04:45:30] Client "Beloved Gabi" connected.
+[04:45:30] Client "" spawned in server <BOT> (took 86 seconds).
+[04:49:30] Warzzacchi killed Beloved Gabi using weapon_zs_z9000
+[04:51:06] Warzzacchi killed Beloved Gabi using weapon_zs_sledgehammer
+[04:51:29] Warzzacchi killed Beloved Gabi using weapon_zs_sledgehammer
+[04:51:53] Warzzacchi killed Beloved Gabi using weapon_zs_z9000_q2
+[04:52:09] Warzzacchi killed Beloved Gabi using weapon_zs_z9000_q2
+[04:52:27] Warzzacchi killed Beloved Gabi using weapon_zs_z9000_q2
+[04:52:52] Warzzacchi killed Beloved Gabi using weapon_zs_z9000_q2
+[04:54:04] Warzzacchi killed Beloved Gabi using weapon_zs_z9000_q2
+[04:54:26] Warzzacchi killed Beloved Gabi using weapon_zs_z9000_q2
+[04:54:38] Warzzacchi killed Beloved Gabi using weapon_zs_z9000_q2
+[04:54:56] Warzzacchi killed Beloved Gabi using weapon_zs_z9000_q2
+[04:55:20] Warzzacchi killed Beloved Gabi using weapon_zs_z9000_q2
+[04:55:47] Warzzacchi killed Beloved Gabi using weapon_zs_z9000_q2
+[04:56:05] Warzzacchi killed Beloved Gabi using weapon_zs_z9000_q2
+[04:56:15] Warzzacchi killed Beloved Gabi using weapon_zs_z9000_q2
+[04:56:34] Warzzacchi killed Beloved Gabi using weapon_zs_sledgehammer
+[04:56:54] Warzzacchi killed Beloved Gabi using weapon_zs_z9000_q2
+[04:57:12] Warzzacchi killed Beloved Gabi using weapon_zs_sledgehammer
+[04:57:28] Warzzacchi killed Beloved Gabi using weapon_zs_z9000_q2
+[04:57:41] Warzzacchi killed Beloved Gabi using weapon_zs_z9000_q2
+[04:58:03] Warzzacchi killed Beloved Gabi using weapon_zs_z9000_q2
+[04:58:46] Client "Docile Penguin" connected.
+[04:58:46] Client "" spawned in server <BOT> (took 882 seconds).
+[04:59:09] Warzzacchi killed Beloved Gabi using weapon_zs_quasar
+[04:59:30] Warzzacchi killed Beloved Gabi using weapon_zs_quasar
+[04:59:45] Warzzacchi killed Beloved Gabi using weapon_zs_quasar
+[05:01:37] Warzzacchi killed Docile Penguin using weapon_zs_quasar
+[05:01:42] Warzzacchi killed Beloved Gabi using weapon_zs_quasar
+[05:02:02] Warzzacchi killed Docile Penguin using weapon_zs_quasar
+[05:02:08] Warzzacchi killed Beloved Gabi using weapon_zs_quasar
+[05:02:35] Warzzacchi killed Beloved Gabi using weapon_zs_quasar
+[05:02:42] Warzzacchi killed Docile Penguin using weapon_zs_quasar
+[05:03:06] Warzzacchi killed Beloved Gabi using weapon_zs_quasar
+[05:03:21] Warzzacchi killed Docile Penguin using weapon_zs_sledgehammer
+[05:05:40] Warzzacchi killed Beloved Gabi using weapon_zs_quasar
+[05:08:11] Warzzacchi killed Docile Penguin using weapon_zs_quasar
+[05:09:12] Warzzacchi killed Beloved Gabi using weapon_zs_quasar
+[05:09:32] Docile Penguin suicided!
+[05:10:11] Warzzacchi killed Beloved Gabi using weapon_zs_quasar
+[05:10:40] Warzzacchi killed Docile Penguin using weapon_zs_quasar
+[05:10:53] Warzzacchi killed Beloved Gabi using weapon_zs_quasar
+[05:11:06] Warzzacchi killed Docile Penguin using weapon_zs_quasar
+[05:11:20] Warzzacchi killed Beloved Gabi using weapon_zs_quasar
+[05:11:43] Warzzacchi killed Beloved Gabi using weapon_zs_quasar
+[05:12:09] Warzzacchi killed Beloved Gabi using weapon_zs_quasar
+[05:12:24] Warzzacchi killed Beloved Gabi using weapon_zs_quasar
+[05:13:07] Warzzacchi killed Docile Penguin using weapon_zs_quasar_q1
+[05:13:50] Warzzacchi killed Docile Penguin using weapon_zs_quasar_q1
+[05:14:20] Warzzacchi killed Docile Penguin using weapon_zs_quasar_q1
+[05:14:39] Warzzacchi killed Beloved Gabi using weapon_zs_quasar_q1
+[05:15:34] Warzzacchi killed Beloved Gabi using weapon_zs_quasar_q1
+[05:15:54] Warzzacchi killed Docile Penguin using weapon_zs_quasar_q1
+[05:16:03] Warzzacchi killed Beloved Gabi using weapon_zs_quasar_q1
+[05:16:22] Warzzacchi killed Docile Penguin using weapon_zs_quasar_q1
+[05:16:48] Warzzacchi killed Docile Penguin using weapon_zs_quasar_q1
+[05:17:33] Warzzacchi killed Docile Penguin using weapon_zs_quasar_q2
+[05:17:53] Warzzacchi killed Docile Penguin using weapon_zs_quasar_q2
+[05:18:28] Warzzacchi killed Docile Penguin using weapon_zs_quasar_q2
+[05:19:30] Warzzacchi killed Docile Penguin using weapon_zs_quasar_q2
+[05:20:05] Warzzacchi killed Docile Penguin using weapon_zs_quasar_q2
+[05:20:32] Warzzacchi killed Docile Penguin using weapon_zs_quasar_q2
+[05:20:48] Warzzacchi killed Beloved Gabi using weapon_zs_quasar_q2
+[05:21:19] Beloved Gabi killed Docile Penguin using weapon_zs_superzombie
+[05:21:27] Dropped "Warzzacchi" from server<STEAM_0:0:89476637>
+[05:21:27] Dropped "Beloved Gabi" from server<BOT>
+[05:21:27] Dropped "Docile Penguin" from server<BOT>
+[05:21:47] (Console) called a votemap!
+[05:22:16] Server is shutting down/changing levels.
+
+
+
+[05:22:20] New map: zs_barren
+[06:36:29] Client "laundry basket" connected.
+[06:37:21] Client "laundry basket" spawned in server <STEAM_0:0:186165214> (took 52 seconds).
+[06:37:58] (Console) called a votemap!
+[06:38:27] Server is shutting down/changing levels.
+
+
+
+[06:38:30] New map: zs_asdf_b2
+[06:39:52] Client "laundry basket" spawned in server <STEAM_0:0:186165214> (took 85 seconds).
+[06:39:52] Client "Anime Corn" connected.
+[06:39:52] Client "" spawned in server <BOT> (took 85 seconds).
+[06:40:52] (SILENT) laundry basket gave Themself weapon_zs_sigilplacer
+[06:42:24] Dropped "Anime Corn" from server<BOT>
+[06:44:12] Client "Farfetch'd" connected.
+[06:44:12] Client "" spawned in server <BOT> (took 345 seconds).
+[06:49:25] laundry basket killed Farfetch'd using weapon_zs_lamp
+[06:49:50] laundry basket killed Farfetch'd using weapon_zs_lamp
+[06:52:05] laundry basket killed Farfetch'd using weapon_zs_lamp
+[06:52:24] laundry basket killed Farfetch'd using weapon_zs_lamp
+[06:53:48] Client "A.I.W.D.K.H.T.P." connected.
+[06:53:50] laundry basket killed Farfetch'd using weapon_zs_lamp
+[06:54:16] laundry basket killed Farfetch'd using weapon_zs_lamp
+[06:54:32] laundry basket killed Farfetch'd using weapon_zs_lamp
+[06:54:46] laundry basket killed Farfetch'd using weapon_zs_lamp
+[06:54:58] laundry basket killed Farfetch'd using weapon_zs_lamp
+[06:55:50] Client "A.I.W.D.K.H.T.P." spawned in server <STEAM_0:1:79744396> (took 122 seconds).
+[06:55:50] Client "Gabe Newell" connected.
+[06:55:50] Client "" spawned in server <BOT> (took 1043 seconds).
+[06:55:54] laundry basket killed Farfetch'd using weapon_zs_lamp
+[06:56:17] Client "SpongeBOI" connected.
+[06:56:42] laundry basket killed Farfetch'd using weapon_zs_lamp
+[06:56:45] laundry basket killed Gabe Newell using weapon_zs_lamp
+[06:57:03] laundry basket killed Gabe Newell using weapon_zs_lamp
+[06:57:33] laundry basket killed Gabe Newell using weapon_zs_lamp
+[06:57:42] laundry basket killed Farfetch'd using weapon_zs_glock3
+[06:57:52] laundry basket killed Farfetch'd using weapon_zs_lamp
+[06:57:55] laundry basket killed Gabe Newell using weapon_zs_lamp
+[06:58:07] Client "SpongeBOI" spawned in server <STEAM_0:0:60285123> (took 110 seconds).
+[06:58:47] Client "Salty Moonman" connected.
+[06:58:47] Client "" spawned in server <BOT> (took 1220 seconds).
+[06:59:01] laundry basket killed Gabe Newell using weapon_zs_glock3_s1
+[06:59:01] laundry basket killed Salty Moonman using weapon_zs_glock3_s1
+[06:59:02] laundry basket killed Farfetch'd using weapon_zs_glock3_s1
+[06:59:22] laundry basket killed Salty Moonman using weapon_zs_glock3_s1
+[06:59:23] SpongeBOI killed Gabe Newell using weapon_zs_sawhack
+[06:59:41] A.I.W.D.K.H.T.P. killed Salty Moonman using weapon_zs_lamp
+[07:00:13] laundry basket killed Gabe Newell using weapon_zs_glock3_s1
+[07:00:13] SpongeBOI killed Farfetch'd using weapon_zs_sawhack
+[07:00:36] laundry basket killed Farfetch'd using weapon_zs_glock3_s1
+[07:00:41] laundry basket killed Salty Moonman using weapon_zs_glock3_s1
+[07:00:46] laundry basket killed Gabe Newell using weapon_zs_glock3_s1
+[07:01:01] SpongeBOI killed Farfetch'd using weapon_zs_sawhack
+[07:01:06] laundry basket killed Gabe Newell using weapon_zs_glock3_s1
+[07:01:12] A.I.W.D.K.H.T.P. killed Salty Moonman using weapon_zs_lamp
+[07:01:24] SpongeBOI killed Farfetch'd using weapon_zs_sawhack
+[07:01:32] laundry basket killed Salty Moonman using weapon_zs_glock3_s3
+[07:01:37] laundry basket killed Farfetch'd using weapon_zs_glock3_s3
+[07:01:38] A.I.W.D.K.H.T.P. killed Gabe Newell using weapon_zs_lamp
+[07:01:51] laundry basket killed Salty Moonman using weapon_zs_glock3_s3
+[07:01:55] laundry basket killed Farfetch'd using weapon_zs_glock3_s3
+[07:01:55] laundry basket killed Gabe Newell using weapon_zs_glock3_s3
+[07:02:13] laundry basket killed Gabe Newell using weapon_zs_fists
+[07:02:15] laundry basket killed Farfetch'd using weapon_zs_fists
+[07:02:28] laundry basket killed Farfetch'd using weapon_zs_glock3_s3
+[07:02:31] laundry basket killed Gabe Newell using weapon_zs_glock3_s3
+[07:02:41] laundry basket killed Farfetch'd using weapon_zs_glock3_s3
+[07:02:53] laundry basket killed Farfetch'd using weapon_zs_glock3_s3
+[07:02:59] laundry basket killed Gabe Newell using weapon_zs_glock3_s3
+[07:03:05] laundry basket killed Farfetch'd using weapon_zs_glock3_s3
+[07:03:06] SpongeBOI killed Salty Moonman using weapon_zs_sawhack
+[07:03:21] SpongeBOI killed Gabe Newell using weapon_zs_sawhack
+[07:03:21] SpongeBOI killed Farfetch'd using weapon_zs_sawhack
+[07:04:06] laundry basket killed Farfetch'd using weapon_zs_glock3_s3
+[07:04:07] A.I.W.D.K.H.T.P. killed Gabe Newell using weapon_zs_silencer
+[07:04:16] laundry basket killed Salty Moonman using weapon_zs_glock3_s3
+[07:04:20] laundry basket killed Gabe Newell using weapon_zs_glock3_s3
+[07:04:30] laundry basket killed Salty Moonman using weapon_zs_glock3_s3
+[07:04:36] A.I.W.D.K.H.T.P. killed Farfetch'd using weapon_zs_silencer
+[07:04:42] A.I.W.D.K.H.T.P. killed Salty Moonman using weapon_zs_silencer
+[07:04:43] SpongeBOI killed Gabe Newell using weapon_zs_sawhack
+[07:04:54] laundry basket killed Salty Moonman using weapon_zs_glock3_s3
+[07:05:00] laundry basket killed Gabe Newell using weapon_zs_glock3_s3
+[07:05:07] A.I.W.D.K.H.T.P. killed Farfetch'd using weapon_zs_silencer
+[07:05:19] SpongeBOI killed Salty Moonman using weapon_zs_sawhack
+[07:05:25] laundry basket killed Gabe Newell using weapon_zs_glock3_s3
+[07:05:30] laundry basket killed Salty Moonman using weapon_zs_glock3_s3
+[07:05:36] laundry basket killed Gabe Newell using weapon_zs_glock3_s3
+[07:05:45] laundry basket killed Farfetch'd using weapon_zs_glock3_s3
+[07:06:04] A.I.W.D.K.H.T.P. killed Salty Moonman using weapon_zs_silencer
+[07:06:17] laundry basket killed Farfetch'd using weapon_zs_glock3_s3
+[07:06:40] SpongeBOI killed Gabe Newell using weapon_zs_sawhack
+[07:06:40] laundry basket killed Salty Moonman using weapon_zs_glock3_s3
+[07:07:25] A.I.W.D.K.H.T.P. killed Gabe Newell using weapon_zs_axe
+[07:07:37] A.I.W.D.K.H.T.P. killed Farfetch'd using weapon_zs_axe
+[07:07:38] A.I.W.D.K.H.T.P. killed Salty Moonman using weapon_zs_axe
+[07:07:43] laundry basket killed Gabe Newell using weapon_zs_glock3_s3
+[07:07:53] A.I.W.D.K.H.T.P. killed Farfetch'd using weapon_zs_axe
+[07:07:57] laundry basket killed Gabe Newell using weapon_zs_glock3_s3
+[07:07:58] laundry basket killed Salty Moonman using weapon_zs_glock3_s3
+[07:08:10] laundry basket killed Farfetch'd using weapon_zs_glock3_s3
+[07:08:26] SpongeBOI killed Salty Moonman using weapon_zs_sawhack
+[07:08:26] SpongeBOI killed Gabe Newell using weapon_zs_sawhack
+[07:08:32] SpongeBOI killed Farfetch'd using weapon_zs_sawhack
+[07:08:35] Gabe Newell was killed by prop_physics
+[07:09:22] Client "Mr_Ben Shapiro" connected.
+[07:09:22] Client "" spawned in server <BOT> (took 1855 seconds).
+[07:09:32] laundry basket killed Mr_Ben Shapiro using weapon_zs_glock3_s3
+[07:09:41] SpongeBOI killed Salty Moonman using weapon_zs_sawhack_q1
+[07:09:41] SpongeBOI killed Gabe Newell using weapon_zs_sawhack_q1
+[07:09:42] laundry basket killed Mr_Ben Shapiro using weapon_zs_glock3_s3
+[07:09:56] A.I.W.D.K.H.T.P. killed Farfetch'd using weapon_zs_axe
+[07:09:58] SpongeBOI killed Gabe Newell using weapon_zs_sawhack_q1
+[07:10:15] laundry basket killed Mr_Ben Shapiro using weapon_zs_glock3_s3
+[07:10:19] laundry basket killed Salty Moonman using weapon_zs_glock3_s3
+[07:10:23] laundry basket killed Gabe Newell using weapon_zs_glock3_s3
+[07:10:25] SpongeBOI killed Farfetch'd using weapon_zs_owens
+[07:10:40] laundry basket killed Salty Moonman using weapon_zs_glock3_s3
+[07:10:48] laundry basket killed Mr_Ben Shapiro using weapon_zs_glock3_s3
+[07:11:01] laundry basket killed Farfetch'd using weapon_zs_glock3_s3
+[07:11:01] laundry basket killed Gabe Newell using weapon_zs_glock3_s3
+[07:11:11] laundry basket killed Mr_Ben Shapiro using weapon_zs_glock3_s3
+[07:11:15] A.I.W.D.K.H.T.P. killed Farfetch'd using weapon_zs_sledgehammer
+[07:11:20] laundry basket killed Salty Moonman using weapon_zs_glock3_s3
+[07:11:23] SpongeBOI killed Gabe Newell using weapon_zs_sawhack_q1
+[07:11:26] laundry basket killed Mr_Ben Shapiro using weapon_zs_glock3_s3
+[07:11:33] A.I.W.D.K.H.T.P. killed Gabe Newell using weapon_zs_sledgehammer
+[07:11:48] laundry basket killed Gabe Newell using weapon_zs_glock3_s3
+[07:11:49] SpongeBOI killed Mr_Ben Shapiro using weapon_zs_redeemers
+[07:12:02] laundry basket killed Farfetch'd using weapon_zs_innervator
+[07:12:13] SpongeBOI killed Mr_Ben Shapiro using weapon_zs_redeemers
+[07:12:15] laundry basket killed Gabe Newell using weapon_zs_glock3_s3
+[07:12:34] laundry basket killed Mr_Ben Shapiro using weapon_zs_glock3_s3
+[07:12:39] laundry basket killed Farfetch'd using weapon_zs_glock3_s3
+[07:12:47] laundry basket killed Mr_Ben Shapiro using weapon_zs_glock3_s3
+[07:12:53] laundry basket killed Farfetch'd using weapon_zs_glock3_s3
+[07:12:59] laundry basket killed Gabe Newell using weapon_zs_glock3_s3
+[07:13:03] laundry basket killed Salty Moonman using weapon_zs_glock3_s3
+[07:13:08] laundry basket killed Farfetch'd using weapon_zs_innervator
+[07:13:15] laundry basket killed Gabe Newell using weapon_zs_innervator
+[07:13:26] SpongeBOI killed Mr_Ben Shapiro using weapon_zs_redeemers
+[07:13:33] SpongeBOI killed Salty Moonman using weapon_zs_sawhack_q1
+[07:13:40] laundry basket killed Mr_Ben Shapiro using weapon_zs_innervator
+[07:13:42] laundry basket killed Salty Moonman using weapon_zs_innervator
+[07:13:46] A.I.W.D.K.H.T.P. killed Farfetch'd using weapon_zs_uzi_r1
+[07:13:51] laundry basket killed Gabe Newell using weapon_zs_innervator
+[07:13:55] laundry basket killed Mr_Ben Shapiro using weapon_zs_innervator
+[07:14:04] SpongeBOI killed Salty Moonman using weapon_zs_redeemers
+[07:14:09] laundry basket killed Farfetch'd using weapon_zs_innervator
+[07:14:13] laundry basket killed Gabe Newell using weapon_zs_innervator
+[07:14:29] laundry basket killed Mr_Ben Shapiro using weapon_zs_innervator
+[07:15:02] Client "Racist Frisbee" connected.
+[07:15:02] Client "" spawned in server <BOT> (took 2195 seconds).
+[07:15:14] laundry basket killed Salty Moonman using weapon_zs_hephaestus_q2
+[07:15:20] A.I.W.D.K.H.T.P. killed Farfetch'd using weapon_zs_uzi_q2
+[07:15:25] A.I.W.D.K.H.T.P. killed Mr_Ben Shapiro using weapon_zs_uzi_q2
+[07:15:26] A.I.W.D.K.H.T.P. killed Racist Frisbee using weapon_zs_uzi_q2
+[07:15:35] A.I.W.D.K.H.T.P. killed Salty Moonman using weapon_zs_uzi_q2
+[07:15:44] laundry basket killed Farfetch'd using weapon_zs_hephaestus_q2
+[07:15:44] laundry basket killed Racist Frisbee using weapon_zs_hephaestus_q2
+[07:15:53] SpongeBOI killed Mr_Ben Shapiro using weapon_zs_redeemers
+[07:15:57] laundry basket killed Racist Frisbee using weapon_zs_hephaestus_q2
+[07:15:59] laundry basket killed Farfetch'd using weapon_zs_hephaestus_q2
+[07:16:02] laundry basket killed Mr_Ben Shapiro using weapon_zs_hephaestus_q2
+[07:16:03] SpongeBOI killed Salty Moonman using weapon_zs_redeemers
+[07:16:04] A.I.W.D.K.H.T.P. killed Gabe Newell using weapon_zs_uzi_q2
+[07:16:12] laundry basket killed Racist Frisbee using weapon_zs_hephaestus_q2
+[07:16:13] laundry basket killed Mr_Ben Shapiro using weapon_zs_hephaestus_q2
+[07:16:15] laundry basket killed Gabe Newell using weapon_zs_hephaestus_q2
+[07:16:19] laundry basket killed Racist Frisbee using weapon_zs_hephaestus_q2
+[07:16:28] laundry basket killed Salty Moonman using weapon_zs_hephaestus_q2
+[07:16:30] SpongeBOI killed Farfetch'd using weapon_zs_galestorm
+[07:16:30] laundry basket killed Gabe Newell using weapon_zs_hephaestus_q2
+[07:16:35] laundry basket killed Salty Moonman using weapon_zs_hephaestus_q2
+[07:16:38] laundry basket killed Gabe Newell using weapon_zs_hephaestus_q2
+[07:16:44] A.I.W.D.K.H.T.P. killed Mr_Ben Shapiro using weapon_zs_uzi_q2
+[07:16:46] A.I.W.D.K.H.T.P. killed Racist Frisbee using weapon_zs_uzi_q2
+[07:16:47] laundry basket killed Gabe Newell using weapon_zs_hephaestus_q2
+[07:17:00] A.I.W.D.K.H.T.P. killed Farfetch'd using weapon_zs_uzi_q2
+[07:17:03] laundry basket killed Racist Frisbee using weapon_zs_hephaestus_q2
+[07:17:08] A.I.W.D.K.H.T.P. killed Salty Moonman using weapon_zs_uzi_q2
+[07:17:13] laundry basket killed Mr_Ben Shapiro using weapon_zs_hephaestus_q2
+[07:17:15] laundry basket killed Racist Frisbee using weapon_zs_hephaestus_q2
+[07:17:27] SpongeBOI killed Salty Moonman using weapon_zs_galestorm
+[07:17:42] A.I.W.D.K.H.T.P. killed Gabe Newell using weapon_zs_uzi_q2
+[07:17:45] A.I.W.D.K.H.T.P. killed Mr_Ben Shapiro using weapon_zs_uzi_q2
+[07:17:52] SpongeBOI killed Salty Moonman using weapon_zs_galestorm
+[07:17:55] laundry basket killed Gabe Newell using weapon_zs_hephaestus_q2
+[07:17:59] SpongeBOI killed Racist Frisbee using weapon_zs_galestorm
+[07:18:03] laundry basket killed Salty Moonman using weapon_zs_hephaestus_q2
+[07:18:05] laundry basket killed Gabe Newell using weapon_zs_hephaestus_q2
+[07:18:07] SpongeBOI killed Mr_Ben Shapiro using weapon_zs_sawhack_q1
+[07:18:13] laundry basket killed Salty Moonman using weapon_zs_hephaestus_q2
+[07:18:16] laundry basket killed Gabe Newell using weapon_zs_hephaestus_q2
+[07:18:18] laundry basket killed Mr_Ben Shapiro using weapon_zs_hephaestus_q2
+[07:18:19] SpongeBOI killed Racist Frisbee using weapon_zs_sawhack_q1
+[07:18:21] laundry basket killed Salty Moonman using weapon_zs_hephaestus_q2
+[07:18:21] Farfetch'd suicided!
+[07:18:28] laundry basket killed Mr_Ben Shapiro using weapon_zs_hephaestus_q2
+[07:18:31] laundry basket killed Farfetch'd using weapon_zs_hephaestus_q2
+[07:18:43] laundry basket killed Gabe Newell using weapon_zs_hephaestus_q2
+[07:18:47] SpongeBOI killed Racist Frisbee using weapon_zs_galestorm
+[07:18:49] SpongeBOI killed Salty Moonman using weapon_zs_galestorm
+[07:18:51] laundry basket killed Mr_Ben Shapiro using weapon_zs_hephaestus_q2
+[07:18:59] Client "Chilly WIlly" connected.
+[07:19:00] A.I.W.D.K.H.T.P. killed Mr_Ben Shapiro using weapon_zs_uzi_q3
+[07:19:07] laundry basket killed Farfetch'd using weapon_zs_hephaestus_q2
+[07:19:11] laundry basket killed Mr_Ben Shapiro using weapon_zs_hephaestus_q2
+[07:19:15] laundry basket killed Farfetch'd using weapon_zs_hephaestus_q2
+[07:19:23] laundry basket killed Racist Frisbee using weapon_zs_hephaestus_q2
+[07:19:25] laundry basket killed Gabe Newell using weapon_zs_hephaestus_q2
+[07:19:27] laundry basket killed Mr_Ben Shapiro using weapon_zs_hephaestus_q2
+[07:19:34] laundry basket killed Racist Frisbee using weapon_zs_hephaestus_q2
+[07:19:39] SpongeBOI killed Salty Moonman using weapon_zs_redeemers
+[07:19:40] laundry basket killed Mr_Ben Shapiro using weapon_zs_hephaestus_q2
+[07:19:42] SpongeBOI killed Farfetch'd using weapon_zs_redeemers
+[07:19:50] laundry basket killed Mr_Ben Shapiro using weapon_zs_hephaestus_q2
+[07:20:00] laundry basket killed Gabe Newell using weapon_zs_hephaestus_q2
+[07:20:03] laundry basket killed Racist Frisbee using weapon_zs_hephaestus_q2
+[07:20:06] laundry basket killed Farfetch'd using weapon_zs_hephaestus_q2
+[07:20:10] A.I.W.D.K.H.T.P. killed Salty Moonman using weapon_zs_uzi_q3
+[07:20:11] laundry basket killed Gabe Newell using weapon_zs_hephaestus_q2
+[07:20:14] laundry basket killed Racist Frisbee using weapon_zs_hephaestus_q2
+[07:20:20] laundry basket killed Mr_Ben Shapiro using weapon_zs_hephaestus_q2
+[07:20:23] laundry basket killed Salty Moonman using weapon_zs_hephaestus_q2
+[07:20:24] laundry basket killed Gabe Newell using weapon_zs_hephaestus_q2
+[07:20:27] laundry basket killed Farfetch'd using weapon_zs_hephaestus_q2
+[07:20:34] laundry basket killed Mr_Ben Shapiro using weapon_zs_hephaestus_q2
+[07:20:39] laundry basket killed Farfetch'd using weapon_zs_hephaestus_q2
+[07:20:42] A.I.W.D.K.H.T.P. killed Gabe Newell using weapon_zs_uzi_q3
+[07:20:43] A.I.W.D.K.H.T.P. killed Salty Moonman using weapon_zs_uzi_q3
+[07:20:48] laundry basket killed Racist Frisbee using weapon_zs_hephaestus_q3
+[07:20:59] laundry basket killed Salty Moonman using weapon_zs_hephaestus_q3
+[07:21:00] A.I.W.D.K.H.T.P. killed Mr_Ben Shapiro using weapon_zs_uzi_q3
+[07:22:01] Mr_Ben Shapiro killed Farfetch'd using weapon_zs_superzombie
+[07:22:03] (Console) called a votemap!
+[07:22:32] Server is shutting down/changing levels.
+
+
+
+[07:22:36] New map: zs_alexg_metro_v4
+[07:22:56] Client "A.I.W.D.K.H.T.P." spawned in server <STEAM_0:1:79744396> (took 23 seconds).
+[07:22:57] Client "SpongeBOI" spawned in server <STEAM_0:0:60285123> (took 24 seconds).
+[07:22:57] Client "Fake Kanye" connected.
+[07:22:57] Client "" spawned in server <BOT> (took 24 seconds).
+[07:23:05] Client "laundry basket" spawned in server <STEAM_0:0:186165214> (took 32 seconds).
+[07:23:06] Client "Humorous Fallout 76" connected.
+[07:23:06] Client "" spawned in server <BOT> (took 33 seconds).
+[07:23:43] Client "Wolf_Master" connected.
+[07:23:46] SpongeBOI killed Fake Kanye using weapon_zs_fists
+[07:24:45] Client "Wolf_Master" spawned in server <STEAM_0:1:455287427> (took 62 seconds).
+[07:25:20] A.I.W.D.K.H.T.P. killed Fake Kanye using weapon_zs_hammer
+[07:25:23] A.I.W.D.K.H.T.P. killed Humorous Fallout 76 using weapon_zs_hammer
+[07:25:32] Client "AduriteMaster23" connected.
+[07:27:40] Client "AduriteMaster23" spawned in server <STEAM_0:1:215994882> (took 128 seconds).
+[07:27:49] laundry basket killed Humorous Fallout 76 using weapon_zs_electrohammer
+[07:27:51] SpongeBOI: my  stuff
+[07:28:17] Wolf_Master killed Humorous Fallout 76 using weapon_zs_owens
+[07:28:20] SpongeBOI: thaks
+[07:28:37] laundry basket killed Humorous Fallout 76 using weapon_zs_shovel
+[07:28:56] A.I.W.D.K.H.T.P. killed Humorous Fallout 76 using weapon_zs_peashooter
+[07:29:03] A.I.W.D.K.H.T.P. killed Fake Kanye using weapon_zs_peashooter
+[07:29:21] Wolf_Master killed Fake Kanye using weapon_zs_owens
+[07:30:21] Wolf_Master killed Humorous Fallout 76 using weapon_zs_owens
+[07:30:34] AduriteMaster23: ello
+[07:30:36] Wolf_Master killed Humorous Fallout 76 using weapon_zs_owens
+[07:30:47] laundry basket: hi
+[07:30:47] A.I.W.D.K.H.T.P. killed Humorous Fallout 76 using weapon_zs_peashooter
+[07:30:58] A.I.W.D.K.H.T.P. killed Humorous Fallout 76 using weapon_zs_peashooter
+[07:31:08] Fake Kanye suicided!
+[07:31:11] AduriteMaster23 killed Humorous Fallout 76 using weapon_zs_crackler
+[07:31:20] AduriteMaster23 killed Fake Kanye using weapon_zs_crackler
+[07:31:30] AduriteMaster23 killed Humorous Fallout 76 using weapon_zs_crackler
+[07:31:42] AduriteMaster23: >kleiner commits die.mp4
+[07:31:47] AduriteMaster23: ngl,
+[07:31:47] SpongeBOI killed Humorous Fallout 76 using weapon_zs_fists
+[07:31:58] AduriteMaster23: windows is shit design for the keyboard
+[07:32:03] AduriteMaster23: because the one key that can outtab it
+[07:32:04] SpongeBOI killed Humorous Fallout 76 using weapon_zs_fists
+[07:32:05] AduriteMaster23: you*
+[07:32:08] AduriteMaster23: is right next to alt
+[07:32:13] AduriteMaster23: which is used to rotate props
+[07:32:16] Client "Miserable Bee" connected.
+[07:32:16] Client "" spawned in server <BOT> (took 583 seconds).
+[07:32:29] laundry basket killed Fake Kanye using weapon_zs_shovel
+[07:32:31] laundry basket killed Humorous Fallout 76 using weapon_zs_shovel
+[07:32:33] laundry basket killed Miserable Bee using weapon_zs_shovel
+[07:32:38] laundry basket: you can remap keys you know
+[07:32:41] Client "MathLC" connected.
+[07:32:43] A.I.W.D.K.H.T.P. killed Fake Kanye using weapon_zs_peashooter
+[07:32:48] SpongeBOI killed Miserable Bee using weapon_zs_owens
+[07:32:50] AduriteMaster23 killed Humorous Fallout 76 using weapon_zs_crackler
+[07:32:53] AduriteMaster23: true but
+[07:32:58] SpongeBOI killed Fake Kanye using weapon_zs_owens
+[07:33:05] Wolf_Master killed Miserable Bee using weapon_zs_owens
+[07:33:08] AduriteMaster23: who'd thought that'd be a good spot to put the windows key
+[07:33:12] A.I.W.D.K.H.T.P. killed Fake Kanye using weapon_zs_peashooter
+[07:33:17] Wolf_Master killed Humorous Fallout 76 using weapon_zs_owens
+[07:33:22] AduriteMaster23 killed Miserable Bee using weapon_zs_crackler
+[07:33:26] SpongeBOI killed Fake Kanye using weapon_zs_owens
+[07:33:35] SpongeBOI killed Humorous Fallout 76 using weapon_zs_owens
+[07:33:38] AduriteMaster23 killed Miserable Bee using weapon_zs_crackler
+[07:33:39] SpongeBOI killed Fake Kanye using weapon_zs_owens
+[07:33:47] SpongeBOI killed Humorous Fallout 76 using weapon_zs_owens
+[07:33:49] SpongeBOI killed Fake Kanye using weapon_zs_owens
+[07:33:53] A.I.W.D.K.H.T.P. killed Miserable Bee using weapon_zs_peashooter
+[07:33:59] Wolf_Master killed Humorous Fallout 76 using weapon_zs_owens
+[07:34:07] SpongeBOI killed Miserable Bee using weapon_zs_owens
+[07:34:11] A.I.W.D.K.H.T.P. killed Humorous Fallout 76 using weapon_zs_peashooter
+[07:34:11] laundry basket killed Fake Kanye using weapon_zs_z9000
+[07:34:20] Wolf_Master killed Fake Kanye using weapon_zs_owens
+[07:34:21] AduriteMaster23: any remantles
+[07:34:26] Wolf_Master killed Humorous Fallout 76 using weapon_zs_owens
+[07:34:33] Wolf_Master killed Fake Kanye using weapon_zs_owens
+[07:34:42] Wolf_Master killed Humorous Fallout 76 using weapon_zs_owens
+[07:34:43] laundry basket: can buy one
+[07:34:48] AduriteMaster23: yea can you please
+[07:34:53] Miserable Bee suicided!
+[07:34:55] (TEAM) laundry basket: did
+[07:34:55] SpongeBOI killed Humorous Fallout 76 using weapon_zs_galestorm
+[07:34:59] (TEAM) AduriteMaster23: thanks
+[07:35:03] A.I.W.D.K.H.T.P. killed Fake Kanye using weapon_zs_peashooter
+[07:35:08] SpongeBOI killed Humorous Fallout 76 using weapon_zs_galestorm
+[07:35:14] SpongeBOI killed Fake Kanye using weapon_zs_galestorm
+[07:35:16] laundry basket killed Miserable Bee using weapon_zs_z9000
+[07:35:21] SpongeBOI killed Humorous Fallout 76 using weapon_zs_galestorm
+[07:35:29] SpongeBOI killed Miserable Bee using weapon_zs_galestorm
+[07:35:31] SpongeBOI killed Fake Kanye using weapon_zs_galestorm
+[07:35:32] SpongeBOI killed Humorous Fallout 76 using weapon_zs_galestorm
+[07:35:42] SpongeBOI killed Humorous Fallout 76 using weapon_zs_galestorm
+[07:35:42] AduriteMaster23 killed Fake Kanye using weapon_zs_annabelle_r1
+[07:35:51] AduriteMaster23 killed Humorous Fallout 76 using weapon_zs_annabelle_r1
+[07:35:55] A.I.W.D.K.H.T.P. killed Miserable Bee using weapon_zs_peashooter
+[07:35:59] AduriteMaster23 killed Fake Kanye using weapon_zs_annabelle_r1
+[07:36:05] laundry basket killed Miserable Bee using weapon_zs_z9000
+[07:36:06] AduriteMaster23 killed Humorous Fallout 76 using weapon_zs_annabelle_r1
+[07:36:10] laundry basket killed Fake Kanye using weapon_zs_z9000
+[07:36:15] laundry basket killed Humorous Fallout 76 using weapon_zs_z9000
+[07:36:18] SpongeBOI killed Miserable Bee using weapon_zs_galestorm
+[07:36:31] SpongeBOI killed Fake Kanye using weapon_zs_fists
+[07:36:34] AduriteMaster23: the sniper
+[07:37:12] Client "Suffering Gregg" connected.
+[07:37:12] Client "" spawned in server <BOT> (took 879 seconds).
+[07:37:21] AduriteMaster23 killed Suffering Gregg using weapon_zs_annabelle_r1
+[07:37:23] AduriteMaster23 killed Fake Kanye using weapon_zs_annabelle_r1
+[07:37:27] A.I.W.D.K.H.T.P. killed Miserable Bee using weapon_zs_peashooter_r1
+[07:37:32] SpongeBOI killed Suffering Gregg using weapon_zs_galestorm
+[07:37:36] laundry basket killed Humorous Fallout 76 using weapon_zs_z9000_q1
+[07:37:37] SpongeBOI killed Fake Kanye using weapon_zs_galestorm
+[07:37:43] SpongeBOI killed Miserable Bee using weapon_zs_galestorm
+[07:37:48] SpongeBOI killed Suffering Gregg using weapon_zs_galestorm
+[07:37:55] AduriteMaster23 killed Miserable Bee using weapon_zs_annabelle_r1
+[07:37:58] laundry basket killed Humorous Fallout 76 using weapon_zs_z9000_q1
+[07:37:59] AduriteMaster23 killed Suffering Gregg using weapon_zs_annabelle_r1
+[07:38:00] A.I.W.D.K.H.T.P. killed Fake Kanye using weapon_zs_peashooter_r1
+[07:38:06] AduriteMaster23 killed Miserable Bee using weapon_zs_annabelle_r1
+[07:38:11] Wolf_Master killed Suffering Gregg using weapon_zs_redeemers
+[07:38:12] SpongeBOI killed Fake Kanye using weapon_zs_galestorm
+[07:38:19] A.I.W.D.K.H.T.P. killed Humorous Fallout 76 using weapon_zs_peashooter_r2
+[07:38:22] SpongeBOI killed Suffering Gregg using weapon_zs_galestorm
+[07:38:26] SpongeBOI killed Fake Kanye using weapon_zs_galestorm
+[07:38:30] SpongeBOI killed Humorous Fallout 76 using weapon_zs_galestorm
+[07:38:37] SpongeBOI killed Fake Kanye using weapon_zs_galestorm
+[07:38:38] AduriteMaster23 killed Suffering Gregg using weapon_zs_annabelle_r1
+[07:38:44] laundry basket killed Humorous Fallout 76 using weapon_zs_z9000_q1
+[07:38:50] Wolf_Master killed Suffering Gregg using weapon_zs_redeemers
+[07:38:56] A.I.W.D.K.H.T.P. killed Fake Kanye using weapon_zs_peashooter_r2
+[07:38:58] SpongeBOI killed Humorous Fallout 76 using weapon_zs_galestorm
+[07:39:01] AduriteMaster23 killed Suffering Gregg using weapon_zs_annabelle_r1
+[07:39:05] Miserable Bee suicided!
+[07:39:19] AduriteMaster23 killed Suffering Gregg using weapon_zs_annabelle_r1
+[07:39:25] A.I.W.D.K.H.T.P. killed Fake Kanye using weapon_zs_peashooter_r2
+[07:39:28] A.I.W.D.K.H.T.P. killed Miserable Bee using weapon_zs_peashooter_r2
+[07:39:38] AduriteMaster23 killed Suffering Gregg using weapon_zs_annabelle_r1
+[07:39:39] Wolf_Master killed Fake Kanye using weapon_zs_redeemers
+[07:39:49] A.I.W.D.K.H.T.P. killed Suffering Gregg using weapon_zs_peashooter_r2
+[07:39:54] AduriteMaster23 killed Fake Kanye using weapon_zs_annabelle_r1
+[07:39:55] A.I.W.D.K.H.T.P. killed Miserable Bee using weapon_zs_peashooter_r2
+[07:40:06] Wolf_Master killed Fake Kanye using weapon_zs_redeemers
+[07:40:10] A.I.W.D.K.H.T.P. killed Suffering Gregg using weapon_zs_peashooter_r2
+[07:40:15] AduriteMaster23 killed Fake Kanye using weapon_zs_annabelle_r1
+[07:40:19] A.I.W.D.K.H.T.P. killed Miserable Bee using weapon_zs_peashooter_r2
+[07:40:31] AduriteMaster23 killed Miserable Bee using weapon_zs_annabelle_r1
+[07:40:37] A.I.W.D.K.H.T.P. killed Suffering Gregg using weapon_zs_peashooter_r2
+[07:40:38] A.I.W.D.K.H.T.P. killed Fake Kanye using weapon_zs_peashooter_r2
+[07:40:46] AduriteMaster23 killed Miserable Bee using weapon_zs_annabelle_r1
+[07:40:54] AduriteMaster23 killed Suffering Gregg using weapon_zs_annabelle_r1
+[07:40:59] laundry basket killed Fake Kanye using weapon_zs_z9000_q1
+[07:41:03] A.I.W.D.K.H.T.P. killed Miserable Bee using weapon_zs_peashooter_r3
+[07:41:09] laundry basket killed Suffering Gregg using weapon_zs_z9000_q1
+[07:41:13] Client "MathLC" connected.
+[07:41:13] laundry basket killed Fake Kanye using weapon_zs_z9000_q1
+[07:41:18] laundry basket killed Miserable Bee using weapon_zs_z9000_q1
+[07:41:26] laundry basket killed Fake Kanye using weapon_zs_z9000_q1
+[07:41:36] laundry basket killed Miserable Bee using weapon_zs_electrohammer
+[07:41:39] AduriteMaster23: what'll you think kako'll do if he just removes melee?
+[07:41:50] AduriteMaster23: or just like, anything that makes it pretty usefuk
+[07:41:52] Client "Small_S" connected.
+[07:41:55] SpongeBOI killed Humorous Fallout 76 using weapon_zs_galestorm
+[07:42:02] Humorous Fallout 76 was killed by prop_physics
+[07:42:03] AduriteMaster23: one thing for sure is he'd have to either revamp or remove one of the zombies
+[07:42:10] AduriteMaster23: the anti melee shadow skeleton
+[07:42:22] Client "Electric Democrat" connected.
+[07:42:22] Client "" spawned in server <BOT> (took 1189 seconds).
+[07:42:23] AduriteMaster23: because it's advantage would be utterly useless
+[07:42:32] AduriteMaster23 killed Fake Kanye using weapon_zs_annabelle_r1
+[07:42:37] AduriteMaster23 killed Humorous Fallout 76 using weapon_zs_annabelle_r1
+[07:42:37] laundry basket killed Suffering Gregg using weapon_zs_z9000_q1
+[07:42:39] laundry basket killed Suffering Gregg using weapon_zs_z9000_q1
+[07:42:43] AduriteMaster23 killed Miserable Bee using weapon_zs_annabelle_r1
+[07:42:46] A.I.W.D.K.H.T.P. killed Electric Democrat using weapon_zs_peashooter_r3
+[07:42:58] Wolf_Master killed Suffering Gregg using weapon_zs_redeemers
+[07:43:01] AduriteMaster23 killed Miserable Bee using weapon_zs_annabelle_r1
+[07:43:01] SpongeBOI killed Fake Kanye using weapon_zs_galestorm
+[07:43:04] AduriteMaster23 killed Humorous Fallout 76 using weapon_zs_annabelle_r1
+[07:43:05] AduriteMaster23 killed Electric Democrat using weapon_zs_annabelle_r1
+[07:43:21] (TEAM) AduriteMaster23: uh i think they can get in
+[07:43:23] laundry basket killed Fake Kanye using weapon_zs_glock3_r2
+[07:43:24] laundry basket killed Suffering Gregg using weapon_zs_glock3_r2
+[07:43:29] (TEAM) laundry basket: where
+[07:43:30] A.I.W.D.K.H.T.P. killed Miserable Bee using weapon_zs_peashooter_r3
+[07:43:31] AduriteMaster23: OOF
+[07:43:37] A.I.W.D.K.H.T.P. killed Humorous Fallout 76 using weapon_zs_peashooter_r3
+[07:43:38] SpongeBOI killed Suffering Gregg using weapon_zs_galestorm
+[07:43:38] SpongeBOI killed Electric Democrat using weapon_zs_galestorm
+[07:43:39] SpongeBOI killed Fake Kanye using weapon_zs_galestorm
+[07:43:52] A.I.W.D.K.H.T.P. killed Miserable Bee using weapon_zs_peashooter_r3
+[07:43:54] SpongeBOI killed Fake Kanye using weapon_zs_galestorm
+[07:44:06] A.I.W.D.K.H.T.P. killed Humorous Fallout 76 using weapon_zs_peashooter_r3
+[07:44:07] A.I.W.D.K.H.T.P. killed Suffering Gregg using weapon_zs_peashooter_r3
+[07:44:07] SpongeBOI killed Miserable Bee using weapon_zs_galestorm
+[07:44:10] SpongeBOI killed Fake Kanye using weapon_zs_galestorm
+[07:44:12] A.I.W.D.K.H.T.P. killed Electric Democrat using weapon_zs_peashooter_r3
+[07:44:23] Client "Mole Rat" connected.
+[07:44:29] laundry basket killed Miserable Bee using weapon_zs_glock3_r2
+[07:44:29] AduriteMaster23 killed Electric Democrat using weapon_zs_annabelle_r1
+[07:44:30] A.I.W.D.K.H.T.P. killed Humorous Fallout 76 using weapon_zs_peashooter_r3
+[07:44:32] AduriteMaster23 killed Fake Kanye using weapon_zs_annabelle_r1
+[07:44:49] AduriteMaster23 killed Humorous Fallout 76 using weapon_zs_annabelle_r1
+[07:44:52] AduriteMaster23: medic
+[07:45:00] laundry basket killed Miserable Bee using weapon_zs_glock3_r2
+[07:45:00] AduriteMaster23: thanks
+[07:45:03] SpongeBOI killed Fake Kanye using weapon_zs_galestorm
+[07:45:09] laundry basket killed Humorous Fallout 76 using weapon_zs_glock3_r2
+[07:45:16] AduriteMaster23 killed Fake Kanye using weapon_zs_annabelle_r1
+[07:45:17] A.I.W.D.K.H.T.P. killed Electric Democrat using weapon_zs_peashooter_r3
+[07:45:20] AduriteMaster23 killed Humorous Fallout 76 using weapon_zs_annabelle_r1
+[07:45:27] laundry basket killed Miserable Bee using weapon_zs_glock3_r2
+[07:45:28] AduriteMaster23 killed Electric Democrat using weapon_zs_annabelle_r1
+[07:45:31] SpongeBOI killed Fake Kanye using weapon_zs_galestorm
+[07:45:38] SpongeBOI killed Humorous Fallout 76 using weapon_zs_galestorm
+[07:45:39] SpongeBOI killed Miserable Bee using weapon_zs_galestorm
+[07:45:47] SpongeBOI killed Electric Democrat using weapon_zs_galestorm
+[07:45:47] A.I.W.D.K.H.T.P. killed Fake Kanye using weapon_zs_akbar
+[07:45:50] A.I.W.D.K.H.T.P. killed Miserable Bee using weapon_zs_akbar
+[07:46:00] laundry basket killed Humorous Fallout 76 using weapon_zs_glock3_r3
+[07:46:01] SpongeBOI killed Fake Kanye using weapon_zs_galestorm
+[07:46:02] Client "CoalaLife" connected.
+[07:46:03] AduriteMaster23 killed Electric Democrat using weapon_zs_annabelle_r1
+[07:46:13] SpongeBOI killed Fake Kanye using weapon_zs_galestorm
+[07:46:14] Client "CoalaLife" connected.
+[07:46:16] AduriteMaster23: INVISIBLE ZOMBIE
+[07:46:18] AduriteMaster23: FAKE KANYE
+[07:46:20] AduriteMaster23: i think
+[07:46:20] Client "CoalaLife" connected.
+[07:46:25] A.I.W.D.K.H.T.P. killed Electric Democrat using weapon_zs_akbar_q1
+[07:46:26] laundry basket: even if i kick it
+[07:46:29] laundry basket: another one will spawn
+[07:46:31] Miserable Bee suicided!
+[07:46:35] AduriteMaster23: damn that's alot of them
+[07:46:35] laundry basket: it's liek a disease
+[07:46:41] laundry basket killed Electric Democrat using weapon_zs_glock3_r3
+[07:46:46] A.I.W.D.K.H.T.P.: cool
+[07:46:48] laundry basket killed Humorous Fallout 76 using weapon_zs_glock3_r3
+[07:46:51] SpongeBOI killed Electric Democrat using weapon_zs_galestorm
+[07:46:52] laundry basket killed Fake Kanye using weapon_zs_glock3_r3
+[07:46:57] A.I.W.D.K.H.T.P. killed Miserable Bee using weapon_zs_akbar_q1
+[07:47:19] AduriteMaster23: actually you don't need to shove that there
+[07:47:26] AduriteMaster23: you could just angel
+[07:47:31] AduriteMaster23: angle it a bit more upwards
+[07:47:42] AduriteMaster23: oh yea just do that too
+[07:48:00] laundry basket killed Miserable Bee using weapon_zs_glock3_r3
+[07:48:01] laundry basket killed Fake Kanye using weapon_zs_glock3_r3
+[07:48:05] A.I.W.D.K.H.T.P. killed Humorous Fallout 76 using weapon_zs_akbar_q2
+[07:48:07] laundry basket killed Electric Democrat using weapon_zs_glock3_r3
+[07:48:09] laundry basket killed Suffering Gregg using weapon_zs_glock3_r3
+[07:48:12] AduriteMaster23 killed Fake Kanye using weapon_zs_annabelle_r1
+[07:48:14] AduriteMaster23 killed Miserable Bee using weapon_zs_annabelle_r1
+[07:48:17] laundry basket killed Humorous Fallout 76 using weapon_zs_glock3_r3
+[07:48:22] SpongeBOI killed Electric Democrat using weapon_zs_galestorm
+[07:48:22] A.I.W.D.K.H.T.P. killed Suffering Gregg using weapon_zs_akbar_q2
+[07:48:24] (TEAM) AduriteMaster23: medic
+[07:48:31] AduriteMaster23 killed Fake Kanye using weapon_zs_annabelle_r1
+[07:48:32] SpongeBOI killed Miserable Bee using weapon_zs_galestorm
+[07:48:34] A.I.W.D.K.H.T.P. killed Humorous Fallout 76 using weapon_zs_akbar_q2
+[07:48:35] AduriteMaster23 killed Electric Democrat using weapon_zs_annabelle_r1
+[07:48:43] laundry basket killed Suffering Gregg using weapon_zs_glock3_r3
+[07:48:50] (TEAM) AduriteMaster23: shoot sponge
+[07:48:51] Wolf_Master killed Miserable Bee using weapon_zs_redeemers
+[07:48:55] (TEAM) AduriteMaster23: that's maxxed
+[07:48:56] laundry basket killed Fake Kanye using weapon_zs_glock3_r3
+[07:49:00] (TEAM) laundry basket: just fall back
+[07:49:05] AduriteMaster23 killed Miserable Bee using weapon_zs_annabelle_r1
+[07:49:10] AduriteMaster23 killed Suffering Gregg using weapon_zs_annabelle_r1
+[07:49:13] Electric Democrat suicided!
+[07:49:14] (TEAM) AduriteMaster23: GET INSIDE.
+[07:49:22] (TEAM) AduriteMaster23: GET INSIDE, IT'S GONNA FALL
+[07:49:23] Wolf_Master killed Miserable Bee using weapon_zs_redeemers
+[07:49:24] laundry basket killed Humorous Fallout 76 using weapon_zs_glock3_r3
+[07:49:26] Wolf_Master killed Fake Kanye using weapon_zs_redeemers
+[07:49:33] A.I.W.D.K.H.T.P. killed Suffering Gregg using weapon_zs_eraser
+[07:49:40] laundry basket killed Humorous Fallout 76 using weapon_zs_glock3_r3
+[07:49:46] laundry basket killed Fake Kanye using weapon_zs_glock3_r3
+[07:49:51] laundry basket killed Miserable Bee using weapon_zs_glock3_r3
+[07:49:53] laundry basket killed Suffering Gregg using weapon_zs_glock3_r3
+[07:49:55] laundry basket killed Electric Democrat using weapon_zs_glock3_r3
+[07:49:59] laundry basket killed Humorous Fallout 76 using weapon_zs_glock3_r3
+[07:50:11] laundry basket killed Miserable Bee using weapon_zs_glock3_r3
+[07:50:13] A.I.W.D.K.H.T.P. killed Suffering Gregg using weapon_zs_eraser_r3
+[07:50:13] A.I.W.D.K.H.T.P. killed Electric Democrat using weapon_zs_eraser_r3
+[07:50:16] A.I.W.D.K.H.T.P. killed Fake Kanye using weapon_zs_eraser_r3
+[07:50:16] laundry basket killed Humorous Fallout 76 using weapon_zs_glock3_r3
+[07:50:27] AduriteMaster23 killed Electric Democrat using weapon_zs_juggernaut
+[07:50:28] A.I.W.D.K.H.T.P. killed Miserable Bee using weapon_zs_eraser_r3
+[07:50:34] A.I.W.D.K.H.T.P. killed Fake Kanye using weapon_zs_eraser_r3
+[07:50:39] laundry basket killed Humorous Fallout 76 using weapon_zs_glock3_r3
+[07:50:46] AduriteMaster23 killed Suffering Gregg using weapon_zs_juggernaut
+[07:50:47] AduriteMaster23 killed Miserable Bee using weapon_zs_juggernaut
+[07:50:51] AduriteMaster23 killed Fake Kanye using weapon_zs_juggernaut
+[07:50:53] Wolf_Master killed Electric Democrat using weapon_zs_redeemers
+[07:50:58] AduriteMaster23 killed Humorous Fallout 76 using weapon_zs_juggernaut
+[07:51:03] laundry basket killed Miserable Bee using weapon_zs_glock3_r3
+[07:51:07] laundry basket killed Electric Democrat using weapon_zs_glock3_r3
+[07:51:11] (TEAM) AduriteMaster23: GUYS THE FRONT
+[07:51:15] AduriteMaster23 killed Fake Kanye using weapon_zs_juggernaut
+[07:51:17] AduriteMaster23 killed Suffering Gregg using weapon_zs_juggernaut
+[07:51:19] Client "BeefyBunnyz" connected.
+[07:51:25] AduriteMaster23 killed Electric Democrat using weapon_zs_juggernaut
+[07:51:26] A.I.W.D.K.H.T.P. killed Humorous Fallout 76 using weapon_zs_eraser_r3
+[07:51:28] A.I.W.D.K.H.T.P. killed Suffering Gregg using weapon_zs_eraser_r3
+[07:51:32] SpongeBOI killed Fake Kanye using weapon_zs_juggernaut
+[07:51:36] A.I.W.D.K.H.T.P. killed Miserable Bee using weapon_zs_eraser_r3
+[07:51:41] SpongeBOI killed Humorous Fallout 76 using weapon_zs_juggernaut
+[07:51:47] AduriteMaster23 killed Fake Kanye using weapon_zs_juggernaut
+[07:51:49] AduriteMaster23 killed Suffering Gregg using weapon_zs_juggernaut
+[07:51:57] A.I.W.D.K.H.T.P. killed Miserable Bee using weapon_zs_eraser_r3
+[07:52:01] SpongeBOI killed Suffering Gregg using weapon_zs_juggernaut
+[07:52:02] SpongeBOI killed Fake Kanye using weapon_zs_juggernaut
+[07:52:12] laundry basket killed Electric Democrat using weapon_zs_boomstick_q1
+[07:52:17] AduriteMaster23 killed Fake Kanye using weapon_zs_juggernaut
+[07:52:26] AduriteMaster23 killed Suffering Gregg using weapon_zs_juggernaut
+[07:52:31] A.I.W.D.K.H.T.P. killed Electric Democrat using weapon_zs_eraser_r3
+[07:52:39] A.I.W.D.K.H.T.P. killed Fake Kanye using weapon_zs_eraser_r3
+[07:53:26] SpongeBOI killed Miserable Bee using weapon_zs_juggernaut
+[07:53:27] Client "Running Bee" connected.
+[07:53:27] Client "" spawned in server <BOT> (took 1854 seconds).
+[07:53:28] Client "Toxic Fox" connected.
+[07:53:28] Client "" spawned in server <BOT> (took 1855 seconds).
+[07:53:35] AduriteMaster23 killed Electric Democrat using weapon_zs_juggernaut
+[07:53:41] Humorous Fallout 76 suicided!
+[07:53:43] A.I.W.D.K.H.T.P. killed Suffering Gregg using weapon_zs_eraser_r3
+[07:53:45] (TEAM) AduriteMaster23: KEEP FIRING
+[07:53:48] AduriteMaster23 killed Running Bee using weapon_zs_juggernaut
+[07:53:49] SpongeBOI killed Fake Kanye using weapon_zs_juggernaut
+[07:53:50] laundry basket killed Electric Democrat using weapon_zs_boomstick_q1
+[07:53:51] A.I.W.D.K.H.T.P. killed Toxic Fox using weapon_zs_eraser_r3
+[07:53:55] laundry basket killed Humorous Fallout 76 using weapon_zs_boomstick_q1
+[07:53:57] Miserable Bee suicided!
+[07:54:02] laundry basket killed Running Bee using weapon_zs_boomstick_q1
+[07:54:03] SpongeBOI killed Fake Kanye using weapon_zs_juggernaut
+[07:54:05] A.I.W.D.K.H.T.P. killed Suffering Gregg using weapon_zs_eraser_r3
+[07:54:06] SpongeBOI killed Toxic Fox using weapon_zs_juggernaut
+[07:54:11] laundry basket killed Humorous Fallout 76 using weapon_zs_boomstick_q1
+[07:54:14] A.I.W.D.K.H.T.P. killed Miserable Bee using weapon_zs_eraser_r3
+[07:54:17] Dropped "Wolf_Master" from server<STEAM_0:1:455287427>
+[07:54:18] Dropped "Electric Democrat" from server<BOT>
+[07:54:20] laundry basket killed Toxic Fox using weapon_zs_boomstick_q1
+[07:54:20] laundry basket killed Suffering Gregg using weapon_zs_boomstick_q1
+[07:54:22] A.I.W.D.K.H.T.P. killed Fake Kanye using weapon_zs_eraser_r3
+[07:54:31] SpongeBOI killed Humorous Fallout 76 using weapon_zs_juggernaut
+[07:54:31] SpongeBOI killed Miserable Bee using weapon_zs_juggernaut
+[07:54:33] laundry basket killed Toxic Fox using weapon_zs_boomstick_q1
+[07:54:37] SpongeBOI killed Fake Kanye using weapon_zs_juggernaut
+[07:54:39] SpongeBOI killed Suffering Gregg using weapon_zs_juggernaut
+[07:54:51] SpongeBOI killed Suffering Gregg using weapon_zs_juggernaut
+[07:54:52] SpongeBOI killed Fake Kanye using weapon_zs_juggernaut
+[07:54:52] SpongeBOI killed Humorous Fallout 76 using weapon_zs_juggernaut
+[07:54:52] laundry basket killed Toxic Fox using weapon_zs_boomstick_q1
+[07:54:58] laundry basket killed Miserable Bee using weapon_zs_boomstick_q1
+[07:55:07] laundry basket killed Running Bee using weapon_zs_boomstick_q1
+[07:55:08] A.I.W.D.K.H.T.P. killed Fake Kanye using weapon_zs_eraser_r3
+[07:55:08] A.I.W.D.K.H.T.P. killed Humorous Fallout 76 using weapon_zs_eraser_r3
+[07:55:09] AduriteMaster23 killed Toxic Fox using weapon_zs_juggernaut
+[07:55:10] AduriteMaster23 killed Miserable Bee using weapon_zs_juggernaut
+[07:55:12] SpongeBOI killed Suffering Gregg using weapon_zs_juggernaut
+[07:55:23] SpongeBOI killed Humorous Fallout 76 using weapon_zs_juggernaut
+[07:55:24] AduriteMaster23 killed Running Bee using weapon_zs_juggernaut
+[07:55:26] SpongeBOI killed Toxic Fox using weapon_zs_juggernaut
+[07:55:32] AduriteMaster23 killed Humorous Fallout 76 using weapon_zs_juggernaut
+[07:55:36] AduriteMaster23: damn
+[07:55:37] laundry basket killed Fake Kanye using weapon_zs_boomstick_q1
+[07:55:37] laundry basket killed Miserable Bee using weapon_zs_boomstick_q1
+[07:55:43] AduriteMaster23 killed Running Bee using weapon_zs_juggernaut
+[07:55:51] AduriteMaster23: K
+[07:55:52] Toxic Fox killed AduriteMaster23 using weapon_zs_tormentedwraith
+[07:55:52] Dropped "Fake Kanye" from server<BOT>
+[07:55:56] laundry basket killed Toxic Fox using weapon_zs_boomstick_q1
+[07:55:56] AduriteMaster23: nice
+[07:56:02] SpongeBOI killed AduriteMaster23 using weapon_zs_juggernaut
+[07:56:08] AduriteMaster23: just nice.
+[07:56:12] Running Bee suicided!
+[07:56:18] SpongeBOI killed Toxic Fox using weapon_zs_juggernaut
+[07:56:19] SpongeBOI killed Humorous Fallout 76 using weapon_zs_juggernaut
+[07:56:23] laundry basket killed Miserable Bee using weapon_zs_boomstick_q1
+[07:56:23] laundry basket killed Suffering Gregg using weapon_zs_boomstick_q1
+[07:56:38] laundry basket killed Humorous Fallout 76 using weapon_zs_boomstick_q1
+[07:56:38] laundry basket killed Suffering Gregg using weapon_zs_boomstick_q1
+[07:56:38] AduriteMaster23 suicided!
+[07:56:45] AduriteMaster23: crabby craby crab
+[07:56:54] A.I.W.D.K.H.T.P. killed Humorous Fallout 76 using weapon_zs_inferno_r2
+[07:56:55] laundry basket killed AduriteMaster23 using weapon_zs_boomstick_q1
+[07:56:57] AduriteMaster23: :c
+[07:56:59] Miserable Bee suicided!
+[07:57:04] SpongeBOI killed AduriteMaster23 using weapon_zs_juggernaut
+[07:57:04] A.I.W.D.K.H.T.P. killed Suffering Gregg using entityflame
+[07:57:05] A.I.W.D.K.H.T.P. killed Toxic Fox using weapon_zs_inferno_r2
+[07:57:16] laundry basket killed AduriteMaster23 using weapon_zs_boomstick_q1
+[07:57:22] laundry basket killed Humorous Fallout 76 using weapon_zs_boomstick_q1
+[07:57:23] A.I.W.D.K.H.T.P. killed Suffering Gregg using weapon_zs_inferno_r2
+[07:57:24] laundry basket killed AduriteMaster23 using weapon_zs_boomstick_q1
+[07:57:29] laundry basket killed Miserable Bee using prop_zapper_arc
+[07:57:30] Running Bee suicided!
+[07:57:34] laundry basket killed AduriteMaster23 using weapon_zs_boomstick_q1
+[07:57:36] A.I.W.D.K.H.T.P. killed Toxic Fox using weapon_zs_inferno_r2
+[07:57:36] A.I.W.D.K.H.T.P. killed Suffering Gregg using weapon_zs_inferno_r2
+[07:57:40] laundry basket killed AduriteMaster23 using weapon_zs_boomstick_q1
+[07:57:46] laundry basket killed Humorous Fallout 76 using weapon_zs_boomstick_q1
+[07:57:48] laundry basket killed Running Bee using weapon_zs_boomstick_q1
+[07:57:50] laundry basket killed Miserable Bee using weapon_zs_boomstick_q1
+[07:57:59] A.I.W.D.K.H.T.P. killed Humorous Fallout 76 using entityflame
+[07:58:04] laundry basket killed Running Bee using weapon_zs_boomstick_q1
+[07:58:06] SpongeBOI killed Suffering Gregg using weapon_zs_juggernaut
+[07:58:06] laundry basket killed Miserable Bee using weapon_zs_boomstick_q1
+[07:58:19] laundry basket killed AduriteMaster23 using weapon_zs_boomstick_q1
+[07:58:23] SpongeBOI killed Suffering Gregg using weapon_zs_juggernaut
+[07:58:26] laundry basket killed Humorous Fallout 76 using weapon_zs_boomstick_q1
+[07:58:26] laundry basket killed Running Bee using prop_zapper_arc
+[07:58:29] laundry basket killed AduriteMaster23 using weapon_zs_boomstick_q1
+[07:58:37] laundry basket killed AduriteMaster23 using weapon_zs_boomstick_q1
+[07:58:42] laundry basket killed Suffering Gregg using weapon_zs_boomstick_q1
+[07:58:44] laundry basket killed Humorous Fallout 76 using weapon_zs_boomstick_q1
+[07:58:48] laundry basket killed AduriteMaster23 using weapon_zs_boomstick_q1
+[07:58:55] laundry basket killed Running Bee using weapon_zs_boomstick_q1
+[07:58:58] laundry basket killed AduriteMaster23 using weapon_zs_boomstick_q1
+[07:59:02] AduriteMaster23 suicided!
+[07:59:04] laundry basket killed Toxic Fox using weapon_zs_boomstick_q1
+[07:59:14] A.I.W.D.K.H.T.P. killed Suffering Gregg using weapon_zs_inferno_r2
+[07:59:15] SpongeBOI killed Toxic Fox using weapon_zs_juggernaut_q1
+[07:59:17] laundry basket killed Humorous Fallout 76 using weapon_zs_boomstick_q1
+[07:59:23] laundry basket killed AduriteMaster23 using weapon_zs_boomstick_q1
+[07:59:29] A.I.W.D.K.H.T.P. killed Running Bee using entityflame
+[07:59:30] laundry basket killed Toxic Fox using weapon_zs_boomstick_q1
+[07:59:32] SpongeBOI killed Suffering Gregg using weapon_zs_juggernaut_q1
+[07:59:34] SpongeBOI killed Humorous Fallout 76 using weapon_zs_juggernaut_q1
+[07:59:48] A.I.W.D.K.H.T.P. killed Toxic Fox using weapon_zs_inferno_r2
+[08:00:07] Toxic Fox killed Miserable Bee using weapon_zs_superzombie
+[08:00:27] (Console) called a votemap!
+[08:00:56] Server is shutting down/changing levels.
+
+
+
+[08:01:00] New map: zs_asbf_b2
+[08:01:17] Client "A.I.W.D.K.H.T.P." spawned in server <STEAM_0:1:79744396> (took 20 seconds).
+[08:01:18] Client "Just... Snowflake" connected.
+[08:01:18] Client "" spawned in server <BOT> (took 21 seconds).
+[08:01:38] Client "laundry basket" spawned in server <STEAM_0:0:186165214> (took 41 seconds).
+[08:02:08] Client "AduriteMaster23" spawned in server <STEAM_0:1:215994882> (took 71 seconds).
+[08:02:09] Client "Sleeping Firemaster" connected.
+[08:02:09] Client "" spawned in server <BOT> (took 72 seconds).
+[08:02:40] laundry basket killed Sleeping Firemaster using prop_physics
+[08:05:53] AduriteMaster23: cading B i GUESS-
+[08:05:56] AduriteMaster23: nvm
+[08:06:11] laundry basket killed Sleeping Firemaster using weapon_zs_shovel
+[08:06:15] (TEAM) laundry basket: help downstairs
+[08:06:19] (TEAM) AduriteMaster23: ok
+[08:06:26] laundry basket killed Sleeping Firemaster using weapon_zs_shovel
+[08:06:28] (TEAM) laundry basket: the other side
+[08:06:39] laundry basket killed Sleeping Firemaster using weapon_zs_shovel
+[08:06:42] laundry basket killed Just... Snowflake using weapon_zs_shovel
+[08:06:43] AduriteMaster23: oh
+[08:06:53] A.I.W.D.K.H.T.P. killed Just... Snowflake using weapon_zs_peashooter
+[08:07:09] laundry basket killed Just... Snowflake using weapon_zs_shovel
+[08:07:14] laundry basket killed Sleeping Firemaster using weapon_zs_shovel
+[08:07:31] A.I.W.D.K.H.T.P. killed Sleeping Firemaster using weapon_zs_peashooter
+[08:07:32] A.I.W.D.K.H.T.P. killed Just... Snowflake using weapon_zs_peashooter
+[08:07:49] A.I.W.D.K.H.T.P. killed Sleeping Firemaster using weapon_zs_peashooter
+[08:08:02] laundry basket killed Sleeping Firemaster using weapon_zs_shovel
+[08:08:10] laundry basket killed Just... Snowflake using prop_gunturret
+[08:08:25] laundry basket killed Just... Snowflake using weapon_zs_shovel
+[08:08:26] laundry basket killed Sleeping Firemaster using weapon_zs_shovel
+[08:08:34] laundry basket killed Just... Snowflake using prop_gunturret
+[08:08:42] laundry basket killed Sleeping Firemaster using prop_gunturret
+[08:08:50] laundry basket killed Sleeping Firemaster using prop_gunturret
+[08:08:55] laundry basket killed Just... Snowflake using weapon_zs_shovel
+[08:08:56] laundry basket killed Sleeping Firemaster using weapon_zs_shovel
+[08:09:05] laundry basket killed Just... Snowflake using weapon_zs_shovel
+[08:09:07] (TEAM) laundry basket: place the ars
+[08:09:13] (TEAM) AduriteMaster23: sure
+[08:09:21] laundry basket killed Sleeping Firemaster using weapon_zs_shovel
+[08:09:42] laundry basket killed Sleeping Firemaster using weapon_zs_shovel
+[08:09:44] laundry basket killed Just... Snowflake using weapon_zs_shovel
+[08:10:46] laundry basket killed Just... Snowflake using weapon_zs_shovel
+[08:10:48] laundry basket killed Sleeping Firemaster using weapon_zs_shovel
+[08:10:56] laundry basket killed Sleeping Firemaster using weapon_zs_shovel
+[08:10:57] laundry basket killed Just... Snowflake using weapon_zs_shovel
+[08:11:06] laundry basket killed Sleeping Firemaster using prop_gunturret
+[08:11:16] laundry basket killed Sleeping Firemaster using prop_gunturret
+[08:11:29] laundry basket killed Sleeping Firemaster using prop_gunturret
+[08:11:30] laundry basket killed Just... Snowflake using weapon_zs_shovel
+[08:11:39] laundry basket killed Just... Snowflake using prop_gunturret
+[08:11:49] laundry basket killed Just... Snowflake using prop_gunturret
+[08:11:52] laundry basket killed Sleeping Firemaster using prop_gunturret
+[08:11:59] laundry basket killed Just... Snowflake using prop_gunturret
+[08:12:03] laundry basket killed Sleeping Firemaster using weapon_zs_shovel
+[08:12:14] laundry basket killed Just... Snowflake using weapon_zs_shovel
+[08:12:21] laundry basket killed Just... Snowflake using weapon_zs_shovel
+[08:12:22] laundry basket killed Sleeping Firemaster using weapon_zs_shovel
+[08:12:35] laundry basket killed Just... Snowflake using weapon_zs_shovel
+[08:12:37] laundry basket killed Sleeping Firemaster using prop_gunturret_q2
+[08:12:46] laundry basket killed Sleeping Firemaster using weapon_zs_shovel
+[08:12:46] laundry basket killed Just... Snowflake using prop_gunturret_q2
+[08:12:57] laundry basket killed Sleeping Firemaster using weapon_zs_shovel
+[08:13:09] laundry basket killed Just... Snowflake using weapon_zs_shovel
+[08:13:25] laundry basket killed Sleeping Firemaster using weapon_zs_shovel
+[08:13:40] laundry basket killed Just... Snowflake using weapon_zs_shovel
+[08:14:04] laundry basket killed Just... Snowflake using prop_gunturret_q2
+[08:14:07] laundry basket killed Sleeping Firemaster using weapon_zs_shovel
+[08:14:16] A.I.W.D.K.H.T.P. killed Just... Snowflake using weapon_zs_peashooter
+[08:14:16] laundry basket killed Sleeping Firemaster using prop_gunturret_q2
+[08:14:27] A.I.W.D.K.H.T.P. killed Sleeping Firemaster using weapon_zs_peashooter
+[08:14:29] A.I.W.D.K.H.T.P. killed Just... Snowflake using weapon_zs_peashooter
+[08:14:35] laundry basket killed Just... Snowflake using prop_gunturret_q2
+[08:14:52] laundry basket killed Sleeping Firemaster using weapon_zs_glock3_r1
+[08:14:54] laundry basket: gtg
+[08:14:56] AduriteMaster23: bye then
+[08:14:58] Dropped "laundry basket" from server<STEAM_0:0:186165214>
+[08:15:11] AduriteMaster23: i gtg too
+[08:15:15] Dropped "AduriteMaster23" from server<STEAM_0:1:215994882>
+[08:15:16] Dropped "Just... Snowflake" from server<BOT>
+[08:15:17] A.I.W.D.K.H.T.P.: me neither
+[08:15:36] Client "Chad Nebos" connected.
+[08:15:36] Client "" spawned in server <BOT> (took 879 seconds).
+[08:15:39] Dropped "A.I.W.D.K.H.T.P." from server<STEAM_0:1:79744396>
+[08:16:01] Chad Nebos killed Sleeping Firemaster using weapon_zs_zombie_gore_blaster
+[08:25:33] Client "NachoKin" connected.
+[08:34:00] Client "MathLC" connected.
+[08:37:47] Client "BeefyBunnyz" connected.
+[08:52:52] Chad Nebos killed Sleeping Firemaster using weapon_zs_zombie
+[08:53:04] Chad Nebos killed Sleeping Firemaster using weapon_zs_zombie
+[08:53:28] (Console) called a votemap!
+[08:53:57] Server is shutting down/changing levels.
+
+
+
+[08:54:01] New map: zs_lighthouse_v2b2
+[08:56:04] Client "ErikAutoBot" connected.
+[09:00:48] Client "laundry basket" connected.
+[09:01:25] Client "BeefyBunnyz" connected.
+[09:01:40] Client "Wolf_Master" connected.
+[09:01:54] Client "laundry basket" spawned in server <STEAM_0:0:186165214> (took 66 seconds).
+[09:01:54] Client "Plastic Fortnite Player" connected.
+[09:01:54] Client "" spawned in server <BOT> (took 476 seconds).
+[09:02:04] Client "BeefyBunnyz" connected.
+[09:02:18] Client "Wolf_Master" spawned in server <STEAM_0:1:455287427> (took 38 seconds).
+[09:02:21] Plastic Fortnite Player suicided!
+[09:03:08] Wolf_Master killed Plastic Fortnite Player using weapon_zs_owens
+[09:04:06] Client "Screaming Snowflake" connected.
+[09:04:06] Client "" spawned in server <BOT> (took 608 seconds).
+[09:04:30] Screaming Snowflake killed Wolf_Master using weapon_zs_zombie
+[09:04:30] Dropped "Plastic Fortnite Player" from server<BOT>
+[09:04:34] Screaming Snowflake killed laundry basket using weapon_zs_zombie
+[09:04:37] Dropped "Screaming Snowflake" from server<BOT>
+[09:05:10] Client "Tryhard Penguin" connected.
+[09:05:10] Client "" spawned in server <BOT> (took 672 seconds).
+[09:07:17] Client "SpongeBOI" connected.
+[09:07:40] Client "Chilly WIlly" connected.
+[09:08:33] Client "SpongeBOI" spawned in server <STEAM_0:0:60285123> (took 76 seconds).
+[09:08:33] Client "Credit Card" connected.
+[09:08:33] Client "" spawned in server <BOT> (took 875 seconds).
+[09:08:50] Client "Chilly WIlly" connected.
+[09:10:34] laundry basket killed Tryhard Penguin using weapon_zs_electrohammer
+[09:10:58] Wolf_Master killed Tryhard Penguin using weapon_zs_owens
+[09:11:17] laundry basket killed Credit Card using weapon_zs_electrohammer
+[09:11:21] SpongeBOI killed Tryhard Penguin using weapon_zs_owens
+[09:11:24] SpongeBOI killed Tryhard Penguin using weapon_zs_owens
+[09:11:32] Wolf_Master killed Credit Card using weapon_zs_owens
+[09:11:39] SpongeBOI killed Tryhard Penguin using weapon_zs_owens
+[09:11:49] SpongeBOI killed Credit Card using weapon_zs_owens
+[09:12:01] SpongeBOI killed Tryhard Penguin using weapon_zs_owens
+[09:12:11] laundry basket killed Credit Card using weapon_zs_electrohammer
+[09:12:33] Wolf_Master killed Tryhard Penguin using weapon_zs_keyboard
+[09:13:03] SpongeBOI killed Tryhard Penguin using weapon_zs_owens
+[09:13:27] SpongeBOI killed Tryhard Penguin using weapon_zs_owens
+[09:13:58] SpongeBOI killed Tryhard Penguin using weapon_zs_lamp
+[09:15:18] SpongeBOI killed Tryhard Penguin using weapon_zs_owens
+[09:15:54] Wolf_Master killed Tryhard Penguin using weapon_zs_lamp
+[09:16:31] SpongeBOI killed Tryhard Penguin using weapon_zs_galestorm
+[09:16:48] SpongeBOI killed Credit Card using weapon_zs_galestorm
+[09:17:15] SpongeBOI killed Tryhard Penguin using weapon_zs_keyboard
+[09:17:29] SpongeBOI killed Credit Card using weapon_zs_keyboard
+[09:17:42] laundry basket: how the fuck did you die
+[09:17:48] laundry basket killed Tryhard Penguin using weapon_zs_lamp
+[09:17:52] SpongeBOI: world
+[09:17:54] laundry basket killed Credit Card using weapon_zs_lamp
+[09:18:17] Wolf_Master suicided!
+[09:18:26] SpongeBOI killed Tryhard Penguin using weapon_zs_keyboard
+[09:18:30] SpongeBOI killed Credit Card using weapon_zs_keyboard
+[09:19:14] laundry basket killed Tryhard Penguin using weapon_zs_lamp
+[09:19:16] laundry basket killed Credit Card using weapon_zs_lamp
+[09:20:18] SpongeBOI killed Tryhard Penguin using weapon_zs_galestorm
+[09:20:19] SpongeBOI killed Credit Card using weapon_zs_galestorm
+[09:20:41] SpongeBOI killed Tryhard Penguin using weapon_zs_galestorm
+[09:20:48] SpongeBOI killed Credit Card using weapon_zs_galestorm
+[09:21:12] laundry basket killed Tryhard Penguin using weapon_zs_owens
+[09:21:23] laundry basket killed Credit Card using weapon_zs_lamp
+[09:21:43] SpongeBOI killed Tryhard Penguin using weapon_zs_galestorm
+[09:21:51] SpongeBOI killed Credit Card using weapon_zs_galestorm
+[09:22:36] SpongeBOI killed Credit Card using weapon_zs_galestorm
+[09:22:37] Tryhard Penguin suicided!
+[09:23:19] laundry basket killed Credit Card using weapon_zs_glock3_r1
+[09:23:20] laundry basket killed Tryhard Penguin using weapon_zs_glock3_r1
+[09:23:50] laundry basket killed Credit Card using weapon_zs_glock3_r1
+[09:23:51] laundry basket killed Tryhard Penguin using weapon_zs_glock3_r1
+[09:24:21] laundry basket killed Credit Card using weapon_zs_glock3_r1
+[09:24:22] laundry basket killed Tryhard Penguin using weapon_zs_glock3_r1
+[09:24:39] laundry basket killed Tryhard Penguin using weapon_zs_electrohammer
+[09:24:55] Client "Autsistic Bee" connected.
+[09:24:55] Client "" spawned in server <BOT> (took 1857 seconds).
+[09:25:24] laundry basket killed Autsistic Bee using weapon_zs_glock3_r1
+[09:25:27] laundry basket killed Tryhard Penguin using weapon_zs_glock3_r1
+[09:25:28] SpongeBOI killed Credit Card using weapon_zs_galestorm
+[09:25:48] laundry basket killed Autsistic Bee using weapon_zs_glock3_r1
+[09:25:59] laundry basket killed Credit Card using weapon_zs_glock3_r1
+[09:26:20] Tryhard Penguin suicided!
+[09:26:43] SpongeBOI killed Autsistic Bee using weapon_zs_galestorm_q1
+[09:26:53] SpongeBOI killed Credit Card using weapon_zs_galestorm_q1
+[09:26:55] SpongeBOI killed Tryhard Penguin using weapon_zs_galestorm_q1
+[09:27:28] SpongeBOI killed Credit Card using weapon_zs_galestorm_q1
+[09:27:42] laundry basket killed Tryhard Penguin using weapon_zs_glock3_r2
+[09:27:48] laundry basket killed Autsistic Bee using weapon_zs_glock3_r2
+[09:27:49] SpongeBOI killed Wolf_Master using weapon_zs_galestorm_q1
+[09:28:02] SpongeBOI killed Credit Card using weapon_zs_galestorm_q1
+[09:28:21] Tryhard Penguin suicided!
+[09:28:26] SpongeBOI killed Autsistic Bee using weapon_zs_galestorm_q2
+[09:28:34] SpongeBOI killed Credit Card using weapon_zs_galestorm_q2
+[09:28:54] laundry basket killed Tryhard Penguin using weapon_zs_electrohammer_q2
+[09:29:00] laundry basket killed Autsistic Bee using weapon_zs_glock3_r3
+[09:29:07] laundry basket killed Credit Card using weapon_zs_glock3_r3
+[09:29:34] laundry basket killed Autsistic Bee using weapon_zs_glock3_r3
+[09:29:37] laundry basket killed Tryhard Penguin using weapon_zs_glock3_r3
+[09:29:43] laundry basket killed Credit Card using weapon_zs_glock3_r3
+[09:30:43] laundry basket killed Autsistic Bee using weapon_zs_glock3_r3
+[09:31:00] laundry basket killed Credit Card using weapon_zs_glock3_r3
+[09:31:05] laundry basket killed Tryhard Penguin using weapon_zs_electrohammer_q3
+[09:31:15] laundry basket killed Autsistic Bee using weapon_zs_glock3_r3
+[09:31:31] laundry basket killed Credit Card using weapon_zs_glock3_r3
+[09:31:44] laundry basket killed Tryhard Penguin using weapon_zs_glock3_r3
+[09:32:01] SpongeBOI killed Credit Card using weapon_zs_galestorm_q2
+[09:32:13] Tryhard Penguin suicided!
+[09:32:30] laundry basket killed Autsistic Bee using weapon_zs_glock3_r3
+[09:32:32] SpongeBOI killed Credit Card using weapon_zs_galestorm_q2
+[09:32:47] SpongeBOI killed Tryhard Penguin using weapon_zs_galestorm_q2
+[09:32:54] laundry basket killed Autsistic Bee using weapon_zs_glock3_r3
+[09:33:02] laundry basket killed Credit Card using weapon_zs_glock3_r3
+[09:33:10] laundry basket killed Tryhard Penguin using weapon_zs_glock3_r3
+[09:33:23] Autsistic Bee suicided!
+[09:33:34] laundry basket killed Credit Card using weapon_zs_glock3_r3
+[09:33:40] laundry basket killed Tryhard Penguin using weapon_zs_glock3_r3
+[09:33:48] laundry basket killed Autsistic Bee using weapon_zs_glock3_r3
+[09:34:06] laundry basket killed Tryhard Penguin using weapon_zs_glock3_r3
+[09:34:12] laundry basket killed Credit Card using weapon_zs_glock3_r3
+[09:34:18] laundry basket killed Autsistic Bee using weapon_zs_glock3_r3
+[09:34:47] laundry basket killed Tryhard Penguin using weapon_zs_glock3_r3
+[09:34:51] laundry basket killed Autsistic Bee using weapon_zs_glock3_r3
+[09:35:00] laundry basket killed Credit Card using weapon_zs_glock3_r3
+[09:35:33] laundry basket killed Autsistic Bee using weapon_zs_glock3_r3
+[09:35:34] laundry basket killed Tryhard Penguin using weapon_zs_glock3_r3
+[09:36:00] Client "Blue News" connected.
+[09:36:00] Client "" spawned in server <BOT> (took 2522 seconds).
+[09:36:11] Client "NachoKin" spawned in server <STEAM_0:0:100265731> (took 2533 seconds).
+[09:36:27] Dropped "Wolf_Master" from server<STEAM_0:1:455287427>
+[09:36:27] laundry basket killed Credit Card using weapon_zs_glock3_r3
+[09:36:28] laundry basket killed Autsistic Bee using weapon_zs_glock3_r3
+[09:36:29] Dropped "SpongeBOI" from server<STEAM_0:0:60285123>
+[09:36:30] Dropped "Credit Card" from server<BOT>
+[09:36:31] Dropped "Blue News" from server<BOT>
+[09:36:31] laundry basket killed Blue News using player
+[09:36:33] laundry basket killed Tryhard Penguin using weapon_zs_glock3_r3
+[09:36:55] Autsistic Bee suicided!
+[09:37:07] laundry basket killed Tryhard Penguin using weapon_zs_scar_q1
+[09:37:24] laundry basket killed Autsistic Bee using weapon_zs_scar_q1
+[09:37:33] laundry basket killed Tryhard Penguin using weapon_zs_scar_q2
+[09:37:41] NachoKin: that took way fucking longer than usual
+[09:37:48] laundry basket: something's fucked
+[09:37:50] laundry basket: WINRAR
+[09:37:58] laundry basket killed Tryhard Penguin using weapon_zs_scar_q2
+[09:38:16] Autsistic Bee suicided!
+[09:38:25] NachoKin: I just wish we knew if the others had the issue and patiently sat through it
+[09:38:26] Tryhard Penguin suicided!
+[09:38:35] NachoKin: hopefully it was just isolated to a few of us
+[09:38:45] laundry basket: I could test on other servers
+[09:38:48] laundry basket killed Autsistic Bee using weapon_zs_scar_q2
+[09:38:50] laundry basket killed NachoKin using weapon_zs_scar_q2
+[09:38:52] NachoKin: im gonna rejoin
+[09:38:55] NachoKin: to see if it does it again
+[09:38:55] laundry basket: aight
+[09:38:58] laundry basket killed Tryhard Penguin using weapon_zs_scar_q2
+[09:39:00] NachoKin: then ill go connect ot random servers
+[09:39:02] laundry basket: gl
+[09:39:08] Dropped "NachoKin" from server<STEAM_0:0:100265731>
+[09:39:10] laundry basket killed Autsistic Bee using weapon_zs_scar_q2
+[09:39:17] Client "Alonso_CLP" connected.
+[09:39:17] Client "NachoKin" connected.
+[09:39:27] laundry basket killed Tryhard Penguin using weapon_zs_scar_q2
+[09:39:49] laundry basket killed Autsistic Bee using weapon_zs_boomstick
+[09:39:56] laundry basket killed Tryhard Penguin using weapon_zs_scar_q2
+[09:40:16] laundry basket killed Autsistic Bee using weapon_zs_scar_q2
+[09:40:22] laundry basket killed Tryhard Penguin using weapon_zs_scar_q2
+[09:40:39] Client "Alonso_CLP" connected.
+[09:40:42] laundry basket killed Autsistic Bee using weapon_zs_scar_q2
+[09:40:45] laundry basket killed Tryhard Penguin using weapon_zs_scar_q2
+[09:41:11] laundry basket killed Tryhard Penguin using weapon_zs_scar_q2
+[09:41:12] laundry basket killed Autsistic Bee using weapon_zs_scar_q2
+[09:41:41] Autsistic Bee suicided!
+[09:41:45] laundry basket killed Tryhard Penguin using weapon_zs_boomstick_q2
+[09:42:19] laundry basket killed Autsistic Bee using weapon_zs_boomstick_q2
+[09:42:21] laundry basket killed Tryhard Penguin using weapon_zs_boomstick_q2
+[09:43:01] (Console) called a votemap!
+[09:43:30] Server is shutting down/changing levels.
+
+
+
+[09:43:34] New map: zs_urban_strain_b1
+[09:44:11] Client "laundry basket" spawned in server <STEAM_0:0:186165214> (took 40 seconds).
+[09:44:12] Client "Poor Lochness Monster" connected.
+[09:44:12] Client "" spawned in server <BOT> (took 41 seconds).
+[09:46:02] Dropped "laundry basket" from server<STEAM_0:0:186165214>
+[09:49:33] Dropped "Poor Lochness Monster" from server<BOT>
+[09:49:39] Client "Alonso_CLP" connected.
+[09:49:43] Client "Alonso_CLP" connected.
+[09:50:09] Server is shutting down/changing levels.
+
+
+
+[09:50:13] New map: zs_sludge_k2a
+[09:53:28] Client "Not_Is_Ok" connected.
+[10:00:22] Client "ⓅⓇⓄs1mpleⓅⓇⓄ" connected.
+[10:28:53] Client "Alonso_CLP" connected.
+[10:56:43] Client "Alonso_CLP" connected.
+[10:56:54] Client "Alonso_CLP" connected.
+[11:08:36] Client "Alonso_CLP" connected.
+[11:10:24] Client "Alonso_CLP" connected.
+[11:10:47] Client "Alonso_CLP" connected.
+[11:18:09] Client "Alonso_CLP" connected.
+[11:27:32] Client "Adik" connected.
+[11:58:13] Client "Chilly WIlly" connected.
+[12:13:07] Client "UberFreakingAwesomeAmazingMan" connected.
+[12:17:36] Client "Warzzacchi" connected.
+[12:23:12] Client "UberFreakingAwesomeAmazingMan" connected.
+[13:43:47] Client "Foretoo" connected.
+[13:44:24] Client "Foretoo" spawned in server <STEAM_0:1:154075665> (took 37 seconds).
+[13:45:00] (Console) called a votemap!
+[13:45:29] Server is shutting down/changing levels.
+
+
+
+[13:45:34] New map: zs_abandoned_mall_v9
+[13:45:50] Client "Foretoo" spawned in server <STEAM_0:1:154075665> (took 19 seconds).
+[13:45:51] Client "Vietcong Muslim" connected.
+[13:45:51] Client "" spawned in server <BOT> (took 20 seconds).
+[13:48:37] Dropped "Foretoo" from server<STEAM_0:1:154075665>
+[13:48:37] Dropped "Vietcong Muslim" from server<BOT>
+[13:49:13] Server is shutting down/changing levels.
+
+
+
+[13:49:17] New map: zs_antarctic_hospital
+[13:52:30] Client "Foretoo" connected.
+[13:52:41] Client "Foretoo" spawned in server <STEAM_0:1:154075665> (took 11 seconds).
+[13:52:42] Client "Weird Weasel" connected.
+[13:52:42] Client "" spawned in server <BOT> (took 208 seconds).
+[13:55:27] Foretoo killed Weird Weasel using weapon_zs_deagle
+[13:55:49] Foretoo killed Weird Weasel using weapon_zs_deagle
+[13:56:02] Foretoo killed Weird Weasel using weapon_zs_deagle
+[13:56:17] Foretoo killed Weird Weasel using weapon_zs_deagle
+[13:56:35] Foretoo killed Weird Weasel using weapon_zs_electrohammer
+[14:00:14] Client "Wolf_Master" connected.
+[14:00:56] Client "Wolf_Master" spawned in server <STEAM_0:1:455287427> (took 42 seconds).
+[14:00:56] Client "Paleo Nugan" connected.
+[14:00:56] Client "" spawned in server <BOT> (took 702 seconds).
+[14:01:31] Wolf_Master killed Weird Weasel using weapon_zs_z9000
+[14:01:34] Paleo Nugan suicided!
+[14:01:52] Foretoo killed Weird Weasel using weapon_zs_deagle
+[14:01:56] Foretoo killed Paleo Nugan using weapon_zs_deagle
+[14:02:10] Wolf_Master killed Paleo Nugan using weapon_zs_z9000
+[14:02:30] Foretoo killed Weird Weasel using weapon_zs_deagle
+[14:02:35] Foretoo killed Paleo Nugan using weapon_zs_deagle
+[14:02:49] Wolf_Master killed Weird Weasel using weapon_zs_z9000
+[14:02:49] Foretoo killed Paleo Nugan using weapon_zs_deagle_q1
+[14:03:59] Wolf_Master killed Weird Weasel using weapon_zs_tosser
+[14:04:05] Foretoo killed Paleo Nugan using weapon_zs_deagle_q1
+[14:04:15] Foretoo killed Weird Weasel using weapon_zs_deagle_q1
+[14:04:19] Foretoo killed Paleo Nugan using weapon_zs_deagle_q1
+[14:04:25] Wolf_Master killed Weird Weasel using weapon_zs_tosser
+[14:04:38] Foretoo killed Paleo Nugan using weapon_zs_deagle_q1
+[14:04:44] Foretoo killed Weird Weasel using weapon_zs_deagle_q1
+[14:05:02] Foretoo killed Weird Weasel using weapon_zs_deagle_q1
+[14:05:03] Paleo Nugan suicided!
+[14:05:15] Foretoo killed Weird Weasel using weapon_zs_deagle_q1
+[14:05:24] Foretoo killed Paleo Nugan using weapon_zs_deagle_q1
+[14:05:31] Foretoo killed Weird Weasel using weapon_zs_electrohammer_q2
+[14:05:41] Foretoo killed Paleo Nugan using weapon_zs_deagle_q1
+[14:05:45] Client "Warzzacchi" connected.
+[14:05:54] Foretoo killed Weird Weasel using weapon_zs_deagle_q1
+[14:05:58] Foretoo killed Paleo Nugan using weapon_zs_deagle_q1
+[14:06:12] Foretoo killed Weird Weasel using weapon_zs_deagle_q1
+[14:06:26] Foretoo killed Weird Weasel using weapon_zs_deagle_q1
+[14:06:33] Foretoo killed Paleo Nugan using weapon_zs_deagle_q1
+[14:06:43] Wolf_Master killed Weird Weasel using weapon_zs_tosser
+[14:06:56] Foretoo killed Paleo Nugan using weapon_zs_deagle_q1
+[14:07:08] Foretoo killed Weird Weasel using weapon_zs_deagle_q1
+[14:07:09] (TEAM) Wolf_Master: do you talk
+[14:07:16] Foretoo: sometimes
+[14:07:20] Wolf_Master killed Weird Weasel using weapon_zs_tosser
+[14:07:28] Wolf_Master killed Paleo Nugan using weapon_zs_tosser
+[14:07:33] (TEAM) Wolf_Master: ok
+[14:07:39] (TEAM) Foretoo: im no t really a talking guy
+[14:07:50] Client "Warzzacchi" spawned in server <STEAM_0:0:89476637> (took 125 seconds).
+[14:09:01] Client "Charlememe" connected.
+[14:09:02] Client "Mystical Mushroom" connected.
+[14:09:02] Client "" spawned in server <BOT> (took 1188 seconds).
+[14:09:03] Paleo Nugan suicided!
+[14:09:06] (TEAM) Foretoo: shit
+[14:09:11] Weird Weasel suicided!
+[14:09:14] Wolf_Master killed Mystical Mushroom using weapon_zs_tosser
+[14:09:27] Foretoo killed Paleo Nugan using weapon_zs_deagle_q1
+[14:09:32] Foretoo killed Mystical Mushroom using weapon_zs_deagle_q1
+[14:09:49] Foretoo killed Paleo Nugan using weapon_zs_deagle_q1
+[14:09:53] Foretoo killed Weird Weasel using weapon_zs_deagle_q1
+[14:10:07] Foretoo killed Mystical Mushroom using weapon_zs_deagle_q1
+[14:10:09] Wolf_Master killed Paleo Nugan using weapon_zs_z9000
+[14:10:22] Client "Charlememe" spawned in server <STEAM_0:1:40902923> (took 81 seconds).
+[14:10:30] Wolf_Master killed Mystical Mushroom using weapon_zs_z9000
+[14:10:41] Paleo Nugan suicided!
+[14:10:50] Charlememe suicided!
+[14:10:59] Foretoo killed Weird Weasel using weapon_zs_deagle_q1
+[14:11:03] Warzzacchi: ok now im afk
+[14:11:21] Charlememe suicided!
+[14:11:29] Wolf_Master killed Paleo Nugan using weapon_zs_z9000
+[14:11:30] Wolf_Master killed Weird Weasel using weapon_zs_z9000
+[14:11:30] Foretoo killed Charlememe using weapon_zs_deagle_q1
+[14:11:41] Wolf_Master killed Paleo Nugan using weapon_zs_z9000
+[14:11:44] Foretoo killed Weird Weasel using weapon_zs_deagle_q1
+[14:11:56] Foretoo killed Weird Weasel using weapon_zs_deagle_q1
+[14:12:02] Foretoo killed Charlememe using weapon_zs_deagle_q1
+[14:12:25] Foretoo killed Weird Weasel using weapon_zs_deagle_q1
+[14:12:26] Foretoo killed Mystical Mushroom using weapon_zs_deagle_q1
+[14:12:31] Foretoo killed Paleo Nugan using weapon_zs_deagle_q1
+[14:12:43] Foretoo killed Mystical Mushroom using weapon_zs_deagle_q1
+[14:12:44] Charlememe killed Wolf_Master using weapon_zs_skeleton
+[14:12:44] Charlememe killed Foretoo using weapon_zs_skeleton
+[14:12:45] Dropped "Paleo Nugan" from server<BOT>
+[14:12:50] Dropped "Mystical Mushroom" from server<BOT>
+[14:12:53] Dropped "Weird Weasel" from server<BOT>
+[14:12:53] Dropped "Wolf_Master" from server<STEAM_0:1:455287427>
+[14:13:04] Warzzacchi killed Foretoo using weapon_zs_butcherknifez
+[14:13:06] Foretoo: man when people join i was not pepare
+[14:13:10] Warzzacchi killed Charlememe using weapon_zs_butcherknifez
+[14:13:21] (Console) called a votemap!
+[14:13:50] Server is shutting down/changing levels.
+
+
+
+[14:13:54] New map: zs_locality_v3
+[14:14:51] Client "Foretoo" spawned in server <STEAM_0:1:154075665> (took 60 seconds).
+[14:14:52] Client "Pious Virus" connected.
+[14:14:52] Client "" spawned in server <BOT> (took 61 seconds).
+[14:15:17] Client "Warzzacchi" spawned in server <STEAM_0:0:89476637> (took 86 seconds).
+[14:15:50] Client "Charlememe" spawned in server <STEAM_0:1:40902923> (took 119 seconds).
+[14:15:50] Client "Deep Fried Fox" connected.
+[14:15:50] Client "" spawned in server <BOT> (took 119 seconds).
+[14:15:52] Warzzacchi: big ass map man
+[14:16:40] Warzzacchi: idk were we can cade
+[14:17:15] Warzzacchi: B is good
+[14:17:21] (TEAM) Foretoo: im cading A
+[14:18:48] Foretoo killed Deep Fried Fox using weapon_zs_electrohammer
+[14:19:10] Warzzacchi killed Deep Fried Fox using weapon_zs_owens
+[14:19:19] Warzzacchi killed Pious Virus using weapon_zs_owens
+[14:19:20] Warzzacchi killed Pious Virus using weapon_zs_owens
+[14:19:35] Warzzacchi killed Deep Fried Fox using weapon_zs_owens
+[14:19:51] Warzzacchi killed Pious Virus using weapon_zs_owens
+[14:20:01] Charlememe killed Pious Virus using weapon_zs_tosser_q1
+[14:20:14] Charlememe killed Deep Fried Fox using weapon_zs_tosser_q1
+[14:20:24] Warzzacchi killed Deep Fried Fox using weapon_zs_owens
+[14:20:47] Warzzacchi: i can see alredy i gona die by lag
+[14:20:52] Charlememe killed Deep Fried Fox using weapon_zs_tosser_q1
+[14:21:00] (TEAM) Foretoo: thin get in
+[14:21:04] Charlememe killed Pious Virus using weapon_zs_tosser_q1
+[14:21:05] Warzzacchi killed Deep Fried Fox using weapon_zs_owens
+[14:21:17] Charlememe killed Deep Fried Fox using weapon_zs_tosser_q1
+[14:21:23] Foretoo killed Pious Virus using weapon_zs_blaster
+[14:21:42] Charlememe killed Pious Virus using weapon_zs_tosser_q1
+[14:22:08] Charlememe killed Pious Virus using weapon_zs_tosser_q1
+[14:22:25] Warzzacchi killed Pious Virus using weapon_zs_owens_q1
+[14:22:42] Charlememe killed Pious Virus using weapon_zs_tosser_q2
+[14:23:19] Charlememe killed Deep Fried Fox using weapon_zs_tosser_q2
+[14:24:02] Charlememe killed Pious Virus using weapon_zs_tosser_q2
+[14:24:27] Deep Fried Fox suicided!
+[14:24:40] Charlememe killed Pious Virus using weapon_zs_tosser_q2
+[14:24:49] Charlememe killed Pious Virus using weapon_zs_tosser_q2
+[14:25:01] Charlememe killed Deep Fried Fox using weapon_zs_tosser_q2
+[14:25:13] Charlememe killed Deep Fried Fox using weapon_zs_tosser_q2
+[14:25:19] Charlememe killed Pious Virus using weapon_zs_tosser_q2
+[14:25:24] Charlememe killed Deep Fried Fox using weapon_zs_tosser_q2
+[14:25:45] Charlememe killed Deep Fried Fox using weapon_zs_tosser_q2
+[14:26:01] Charlememe killed Deep Fried Fox using weapon_zs_tosser_q2
+[14:26:02] Foretoo killed Pious Virus using weapon_zs_blaster
+[14:26:14] Charlememe killed Deep Fried Fox using weapon_zs_tosser_q2
+[14:26:23] Warzzacchi killed Pious Virus using weapon_zs_galestorm_q1
+[14:26:37] Charlememe killed Deep Fried Fox using weapon_zs_tosser_q3
+[14:26:43] Charlememe killed Pious Virus using weapon_zs_tosser_q3
+[14:26:56] Charlememe killed Deep Fried Fox using weapon_zs_tosser_q3
+[14:27:10] Warzzacchi killed Pious Virus using weapon_zs_galestorm_q1
+[14:27:13] Charlememe killed Deep Fried Fox using weapon_zs_tosser_q3
+[14:27:27] Foretoo killed Deep Fried Fox using weapon_zs_blaster_q2
+[14:27:34] Charlememe killed Pious Virus using weapon_zs_tosser_q3
+[14:27:48] Warzzacchi killed Deep Fried Fox using weapon_zs_galestorm_q1
+[14:28:33] Client "Gay Muslim" connected.
+[14:28:33] Client "" spawned in server <BOT> (took 882 seconds).
+[14:28:42] Charlememe killed Deep Fried Fox using weapon_zs_tosser_q3
+[14:28:54] Charlememe killed Pious Virus using weapon_zs_tosser_q3
+[14:29:04] Warzzacchi killed Deep Fried Fox using weapon_zs_galestorm_q1
+[14:29:11] Charlememe killed Pious Virus using weapon_zs_tosser_q3
+[14:29:16] Warzzacchi killed Gay Muslim using weapon_zs_galestorm_q1
+[14:29:32] Warzzacchi: cha
+[14:29:38] Warzzacchi: nail this pls
+[14:29:44] Warzzacchi: ty
+[14:29:47] Charlememe killed Gay Muslim using weapon_zs_tosser_q3
+[14:29:47] Charlememe killed Pious Virus using weapon_zs_tosser_q3
+[14:29:54] Charlememe killed Deep Fried Fox using weapon_zs_tosser_q3
+[14:30:07] Charlememe killed Pious Virus using weapon_zs_tosser_q3
+[14:30:07] Foretoo killed Gay Muslim using weapon_zs_electrohammer_q3
+[14:30:30] Warzzacchi killed Gay Muslim using weapon_zs_galestorm_q1
+[14:30:39] Foretoo killed Deep Fried Fox using weapon_zs_blaster_q2
+[14:30:46] Foretoo killed Pious Virus using weapon_zs_blaster_q2
+[14:30:53] Warzzacchi killed Gay Muslim using weapon_zs_galestorm_q1
+[14:30:56] Charlememe killed Deep Fried Fox using weapon_zs_tosser_q3
+[14:31:17] Charlememe killed Gay Muslim using weapon_zs_tosser_q3
+[14:31:22] Warzzacchi killed Pious Virus using weapon_zs_galestorm_q1
+[14:31:23] Warzzacchi killed Deep Fried Fox using weapon_zs_galestorm_q1
+[14:31:45] Warzzacchi killed Deep Fried Fox using weapon_zs_galestorm_q1
+[14:31:47] Warzzacchi killed Gay Muslim using weapon_zs_galestorm_q1
+[14:31:58] Charlememe killed Pious Virus using weapon_zs_tosser_q3
+[14:32:06] Charlememe killed Gay Muslim using weapon_zs_tosser_q3
+[14:32:17] Warzzacchi killed Pious Virus using weapon_zs_galestorm_q2
+[14:32:30] Warzzacchi killed Deep Fried Fox using weapon_zs_galestorm_q2
+[14:32:31] Warzzacchi killed Gay Muslim using weapon_zs_galestorm_q2
+[14:32:56] Charlememe killed Gay Muslim using weapon_zs_tosser_q3
+[14:33:17] Charlememe killed Deep Fried Fox using weapon_zs_tosser_q3
+[14:33:45] Client "crfrider05" connected.
+[14:33:53] Charlememe killed Gay Muslim using weapon_zs_tosser_q3
+[14:34:27] Charlememe killed Deep Fried Fox using weapon_zs_tosser_q3
+[14:34:39] Charlememe killed Gay Muslim using weapon_zs_tosser_q3
+[14:34:44] Warzzacchi killed Deep Fried Fox using weapon_zs_galestorm_q2
+[14:35:01] Warzzacchi killed Pious Virus using weapon_zs_galestorm_q2
+[14:35:06] Warzzacchi killed Gay Muslim using weapon_zs_galestorm_q2
+[14:35:16] Charlememe killed Pious Virus using weapon_zs_tosser_q3
+[14:35:21] Warzzacchi killed Deep Fried Fox using weapon_zs_galestorm_q2
+[14:35:28] Warzzacchi killed Gay Muslim using weapon_zs_galestorm_q2
+[14:35:42] Warzzacchi killed Deep Fried Fox using weapon_zs_galestorm_q2
+[14:35:59] Charlememe killed Pious Virus using weapon_zs_tosser_q3
+[14:36:25] Gay Muslim suicided!
+[14:36:34] Warzzacchi killed Deep Fried Fox using weapon_zs_galestorm_q2
+[14:37:08] Charlememe killed Gay Muslim using weapon_zs_tosser_q3
+[14:37:10] Charlememe killed Deep Fried Fox using weapon_zs_tosser_q3
+[14:37:26] Warzzacchi killed Gay Muslim using weapon_zs_galestorm_q2
+[14:37:37] Charlememe killed Deep Fried Fox using weapon_zs_pulserifle
+[14:37:45] Charlememe killed Pious Virus using weapon_zs_pulserifle
+[14:37:59] Warzzacchi killed Deep Fried Fox using weapon_zs_galestorm_q2
+[14:38:13] Foretoo killed Gay Muslim using weapon_zs_blaster_q2
+[14:38:27] Charlememe killed Deep Fried Fox using weapon_zs_pulserifle
+[14:39:07] Client "Black Star" connected.
+[14:39:07] Client "" spawned in server <BOT> (took 1516 seconds).
+[14:39:21] Foretoo killed Pious Virus using weapon_zs_electrohammer_q3
+[14:39:23] Charlememe killed Gay Muslim using weapon_zs_pulserifle
+[14:39:26] Warzzacchi killed Black Star using weapon_zs_asmd_q1
+[14:39:36] Warzzacchi killed Deep Fried Fox using weapon_zs_asmd_q1
+[14:39:42] Foretoo killed Black Star using weapon_zs_blaster_q2
+[14:39:46] Warzzacchi killed Gay Muslim using weapon_zs_asmd_q1
+[14:39:47] Warzzacchi killed Pious Virus using weapon_zs_asmd_q1
+[14:39:49] Charlememe killed Deep Fried Fox using weapon_zs_pulserifle
+[14:39:59] Charlememe killed Black Star using weapon_zs_pulserifle
+[14:40:03] Charlememe killed Pious Virus using weapon_zs_pulserifle
+[14:40:07] Charlememe killed Deep Fried Fox using weapon_zs_pulserifle
+[14:40:17] Charlememe killed Pious Virus using weapon_zs_pulserifle
+[14:40:20] Warzzacchi killed Gay Muslim using weapon_zs_asmd_q1
+[14:40:27] Charlememe killed Deep Fried Fox using weapon_zs_pulserifle
+[14:40:34] Client "genevieve.guertin" connected.
+[14:40:36] Charlememe killed Gay Muslim using weapon_zs_pulserifle
+[14:40:44] Warzzacchi killed Black Star using weapon_zs_asmd_q1
+[14:40:51] Warzzacchi killed Deep Fried Fox using weapon_zs_asmd_q1
+[14:41:00] Charlememe killed Gay Muslim using weapon_zs_pulserifle_q1
+[14:41:08] Charlememe killed Pious Virus using weapon_zs_pulserifle_q1
+[14:41:16] Charlememe killed Deep Fried Fox using weapon_zs_pulserifle_q1
+[14:41:20] Warzzacchi killed Black Star using weapon_zs_asmd_q1
+[14:41:33] Warzzacchi killed Pious Virus using weapon_zs_asmd_q1
+[14:41:43] Charlememe killed Black Star using weapon_zs_pulserifle_q1
+[14:41:45] Warzzacchi killed Gay Muslim using weapon_zs_asmd_q1
+[14:41:55] Charlememe killed Black Star using weapon_zs_pulserifle_q1
+[14:41:57] Warzzacchi killed Pious Virus using weapon_zs_asmd_q1
+[14:41:58] Charlememe killed Gay Muslim using weapon_zs_pulserifle_q1
+[14:42:05] Foretoo killed Deep Fried Fox using prop_gunturret_buckshot
+[14:42:16] Charlememe killed Pious Virus using weapon_zs_pulserifle_q1
+[14:42:28] Warzzacchi killed Deep Fried Fox using weapon_zs_asmd_q1
+[14:42:38] Warzzacchi killed Black Star using weapon_zs_asmd_q1
+[14:42:41] Warzzacchi killed Pious Virus using weapon_zs_asmd_q1
+[14:42:45] Charlememe killed Gay Muslim using weapon_zs_pulserifle_q1
+[14:42:54] Warzzacchi killed Deep Fried Fox using weapon_zs_asmd_q1
+[14:43:03] Foretoo killed Gay Muslim using weapon_zs_electrohammer_q3
+[14:43:04] Foretoo killed Pious Virus using weapon_zs_electrohammer_q3
+[14:43:13] Charlememe killed Black Star using weapon_zs_pulserifle_q1
+[14:43:23] Charlememe killed Deep Fried Fox using weapon_zs_pulserifle_q1
+[14:43:24] Charlememe killed Pious Virus using weapon_zs_pulserifle_q1
+[14:43:24] Charlememe killed Gay Muslim using weapon_zs_pulserifle_q1
+[14:43:31] Warzzacchi killed Black Star using weapon_zs_asmd_q2
+[14:43:45] Warzzacchi killed Pious Virus using weapon_zs_asmd_q2
+[14:43:46] Charlememe killed Deep Fried Fox using weapon_zs_pulserifle_q1
+[14:43:52] Charlememe killed Black Star using weapon_zs_pulserifle_q1
+[14:44:03] Charlememe killed Gay Muslim using weapon_zs_pulserifle_q1
+[14:44:47] Client "Dark Fox" connected.
+[14:44:47] Client "" spawned in server <BOT> (took 1856 seconds).
+[14:45:05] Foretoo killed Deep Fried Fox using weapon_zs_electrohammer_q3
+[14:45:08] Foretoo killed Pious Virus using weapon_zs_electrohammer_q3
+[14:45:15] Charlememe killed Black Star using weapon_zs_pulserifle_q1
+[14:45:18] Charlememe killed Gay Muslim using weapon_zs_pulserifle_q1
+[14:45:26] Charlememe killed Pious Virus using weapon_zs_pulserifle_q1
+[14:45:27] Charlememe killed Deep Fried Fox using weapon_zs_pulserifle_q1
+[14:45:32] Charlememe killed Dark Fox using weapon_zs_pulserifle_q1
+[14:45:35] Warzzacchi killed Black Star using weapon_zs_asmd_q2
+[14:45:39] Charlememe killed Gay Muslim using weapon_zs_pulserifle_q1
+[14:45:43] Warzzacchi killed Deep Fried Fox using weapon_zs_asmd_q2
+[14:45:45] Warzzacchi killed Pious Virus using weapon_zs_asmd_q2
+[14:45:50] Charlememe killed Black Star using weapon_zs_pulserifle_q1
+[14:46:08] Warzzacchi killed Deep Fried Fox using weapon_zs_asmd_q2
+[14:46:10] Foretoo killed Pious Virus using weapon_zs_electrohammer_q3
+[14:46:12] Foretoo killed Black Star using weapon_zs_electrohammer_q3
+[14:46:17] Foretoo killed Gay Muslim using weapon_zs_electrohammer_q3
+[14:46:18] Warzzacchi killed Dark Fox using weapon_zs_asmd_q2
+[14:46:26] Warzzacchi killed Deep Fried Fox using weapon_zs_asmd_q2
+[14:46:31] Warzzacchi killed Pious Virus using weapon_zs_asmd_q2
+[14:46:44] Foretoo killed Deep Fried Fox using prop_gunturret_buckshot_q3
+[14:46:45] Charlememe killed Black Star using weapon_zs_pulserifle_q1
+[14:46:47] Warzzacchi killed Dark Fox using weapon_zs_asmd_q2
+[14:47:01] Charlememe killed Gay Muslim using weapon_zs_pulserifle_q1
+[14:47:08] Foretoo killed Dark Fox using prop_gunturret_buckshot_q3
+[14:47:10] Charlememe killed Deep Fried Fox using weapon_zs_pulserifle_q1
+[14:47:15] Charlememe killed Pious Virus using weapon_zs_pulserifle_q1
+[14:47:37] Charlememe killed Pious Virus using weapon_zs_pulserifle_q1
+[14:47:41] Foretoo killed Deep Fried Fox using prop_gunturret_buckshot_q3
+[14:47:41] (TEAM) Foretoo: fall back
+[14:47:43] Foretoo killed Black Star using prop_gunturret_buckshot_q3
+[14:47:51] Foretoo killed Gay Muslim using prop_zapper_q2
+[14:48:00] Warzzacchi killed Black Star using weapon_zs_asmd_q2
+[14:48:01] Warzzacchi killed Pious Virus using weapon_zs_asmd_q2
+[14:48:02] Warzzacchi killed Deep Fried Fox using weapon_zs_asmd_q2
+[14:48:03] Charlememe killed Dark Fox using weapon_zs_pulserifle_q2
+[14:48:18] Warzzacchi killed Dark Fox using weapon_zs_asmd_q2
+[14:48:23] Charlememe killed Deep Fried Fox using weapon_zs_pulserifle_q2
+[14:48:32] Warzzacchi killed Dark Fox using weapon_zs_asmd_q2
+[14:48:52] Charlememe killed Dark Fox using weapon_zs_pulserifle_q2
+[14:48:55] Warzzacchi killed Pious Virus using weapon_zs_asmd_q2
+[14:48:55] Warzzacchi killed Gay Muslim using weapon_zs_asmd_q2
+[14:49:01] Charlememe killed Deep Fried Fox using weapon_zs_pulserifle_q2
+[14:49:05] Warzzacchi killed Pious Virus using weapon_zs_asmd_q2
+[14:49:15] Charlememe killed Gay Muslim using weapon_zs_pulserifle_q2
+[14:49:20] Charlememe killed Black Star using weapon_zs_pulserifle_q2
+[14:49:26] Warzzacchi killed Deep Fried Fox using weapon_zs_asmd_q2
+[14:49:48] Charlememe killed Deep Fried Fox using weapon_zs_pulserifle_q2
+[14:49:51] Charlememe killed Black Star using weapon_zs_pulserifle_q2
+[14:49:52] Charlememe killed Gay Muslim using weapon_zs_pulserifle_q2
+[14:49:52] Charlememe killed Pious Virus using weapon_zs_pulserifle_q2
+[14:50:00] Charlememe killed Dark Fox using weapon_zs_pulserifle_q2
+[14:50:11] Charlememe killed Gay Muslim using weapon_zs_pulserifle_q2
+[14:50:13] Charlememe killed Deep Fried Fox using weapon_zs_pulserifle_q2
+[14:50:13] Charlememe killed Black Star using weapon_zs_pulserifle_q2
+[14:50:17] Charlememe killed Pious Virus using weapon_zs_pulserifle_q2
+[14:50:27] Charlememe killed Dark Fox using weapon_zs_pulserifle_q2
+[14:50:30] Warzzacchi killed Deep Fried Fox using weapon_zs_asmd_q2
+[14:50:34] Charlememe killed Black Star using weapon_zs_pulserifle_q2
+[14:50:35] Charlememe killed Pious Virus using weapon_zs_pulserifle_q2
+[14:50:38] Charlememe killed Gay Muslim using weapon_zs_pulserifle_q2
+[14:50:56] Foretoo killed Deep Fried Fox using prop_zapper_q3
+[14:50:59] Client "Bad Company" connected.
+[14:51:19] Dropped "Dark Fox" from server<BOT>
+[14:51:22] Charlememe: doors pls
+[14:51:29] Warzzacchi: XD
+[14:51:34] Foretoo killed Gay Muslim using prop_zapper_q3
+[14:51:45] Foretoo killed Black Star using prop_zapper_q3
+[14:51:48] Deep Fried Fox suicided!
+[14:51:55] (Console) called a votemap!
+[14:52:24] Server is shutting down/changing levels.
+
+
+
+[14:52:28] New map: zs_november_b2
+[14:52:40] Client "Foretoo" spawned in server <STEAM_0:1:154075665> (took 15 seconds).
+[14:52:41] Client "Tragic Fox" connected.
+[14:52:41] Client "" spawned in server <BOT> (took 16 seconds).
+[14:53:02] Client "Warzzacchi" spawned in server <STEAM_0:0:89476637> (took 37 seconds).
+[14:53:49] Dropped "Foretoo" from server<STEAM_0:1:154075665>
+[14:54:28] Client "Charlememe" spawned in server <STEAM_0:1:40902923> (took 123 seconds).
+[14:57:39] Charlememe killed Tragic Fox using weapon_zs_crackler
+[14:58:02] Charlememe killed Tragic Fox using weapon_zs_crackler
+[14:58:17] Charlememe killed Tragic Fox using weapon_zs_crackler
+[14:58:32] Charlememe killed Tragic Fox using weapon_zs_crackler
+[14:58:44] Charlememe killed Tragic Fox using weapon_zs_crackler
+[14:59:03] Charlememe killed Tragic Fox using weapon_zs_crackler
+[14:59:16] Charlememe killed Tragic Fox using weapon_zs_crackler
+[14:59:30] Charlememe killed Tragic Fox using weapon_zs_crackler
+[14:59:49] Charlememe killed Tragic Fox using weapon_zs_crackler
+[15:00:17] Charlememe killed Tragic Fox using weapon_zs_crackler
+[15:00:29] Charlememe killed Tragic Fox using weapon_zs_crackler
+[15:00:30] Client "nottoolatetoorder" connected.
+[15:00:32] Client "Bad Company" connected.
+[15:00:43] Charlememe killed Tragic Fox using weapon_zs_crackler
+[15:00:59] Charlememe killed Tragic Fox using weapon_zs_crackler
+[15:01:15] Charlememe killed Tragic Fox using weapon_zs_crackler
+[15:01:23] Warzzacchi: C and B are caded
+[15:01:26] (TEAM) Charlememe: k
+[15:02:08] Client "Sick Mushroom" connected.
+[15:02:08] Client "" spawned in server <BOT> (took 583 seconds).
+[15:02:25] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:02:44] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:02:53] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:03:05] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:03:14] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:03:24] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:03:30] Client "nottoolatetoorder" spawned in server <STEAM_0:1:524955595> (took 180 seconds).
+[15:03:34] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:03:40] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:03:40] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:03:58] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:04:05] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:04:19] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:04:29] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:04:38] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:04:49] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:04:58] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:05:22] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:05:27] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:05:37] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:05:54] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:06:10] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:06:33] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:07:04] Client "Spiteful Fox" connected.
+[15:07:04] Client "" spawned in server <BOT> (took 879 seconds).
+[15:07:12] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:07:24] Charlememe killed Spiteful Fox using weapon_zs_amigo_s1
+[15:07:25] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:07:37] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:07:43] Charlememe killed Spiteful Fox using weapon_zs_amigo_s1
+[15:07:45] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:07:55] Charlememe killed Spiteful Fox using weapon_zs_amigo_s1
+[15:08:07] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:08:14] Charlememe killed Spiteful Fox using weapon_zs_amigo_s1
+[15:08:34] Charlememe killed Spiteful Fox using weapon_zs_amigo_s1
+[15:08:47] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:08:58] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:09:12] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:09:20] Warzzacchi killed Spiteful Fox using weapon_zs_electrohammer_q2
+[15:09:22] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:09:30] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:09:41] Charlememe killed Spiteful Fox using weapon_zs_amigo_s1
+[15:09:43] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:09:49] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:10:06] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:10:08] Charlememe killed Spiteful Fox using weapon_zs_amigo_s1
+[15:10:17] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:10:24] Charlememe killed Spiteful Fox using weapon_zs_amigo_s1
+[15:10:28] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:10:37] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:10:56] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:10:56] Charlememe killed Spiteful Fox using weapon_zs_amigo_s1
+[15:11:11] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:11:16] Client "Phloppy" connected.
+[15:11:20] Charlememe killed Tragic Fox using weapon_zs_amigo_s1
+[15:11:29] Charlememe killed Spiteful Fox using weapon_zs_amigo_s1
+[15:11:39] Charlememe killed Sick Mushroom using weapon_zs_amigo_s1
+[15:12:05] Client "YooooAdrian" connected.
+[15:12:33] Warzzacchi: ...
+[15:12:42] Charlememe killed Tragic Fox using weapon_zs_innervator
+[15:12:42] Charlememe killed Spiteful Fox using weapon_zs_innervator
+[15:13:01] Charlememe killed Spiteful Fox using weapon_zs_innervator
+[15:13:01] Charlememe killed Tragic Fox using weapon_zs_innervator
+[15:13:16] Charlememe killed Tragic Fox using weapon_zs_innervator
+[15:13:19] Charlememe killed Spiteful Fox using weapon_zs_innervator
+[15:13:27] Charlememe killed Tragic Fox using weapon_zs_innervator
+[15:13:40] Charlememe killed Tragic Fox using weapon_zs_innervator
+[15:14:01] Charlememe killed Tragic Fox using weapon_zs_innervator
+[15:14:13] Warzzacchi killed Sick Mushroom using weapon_zs_gladiator
+[15:14:22] Charlememe killed Tragic Fox using weapon_zs_innervator
+[15:14:33] Warzzacchi killed Sick Mushroom using weapon_zs_gladiator
+[15:14:42] Charlememe killed Tragic Fox using weapon_zs_innervator
+[15:14:47] Charlememe killed Sick Mushroom using weapon_zs_innervator
+[15:14:59] Charlememe killed Spiteful Fox using weapon_zs_innervator
+[15:15:12] Warzzacchi killed Sick Mushroom using weapon_zs_gladiator
+[15:15:12] Warzzacchi killed Tragic Fox using weapon_zs_gladiator
+[15:15:17] Client "Bad Company" connected.
+[15:15:20] Charlememe killed Spiteful Fox using weapon_zs_innervator
+[15:15:26] Charlememe killed Tragic Fox using weapon_zs_innervator
+[15:15:32] Charlememe killed Sick Mushroom using weapon_zs_innervator
+[15:15:40] Charlememe killed Spiteful Fox using weapon_zs_innervator
+[15:15:49] Charlememe killed Sick Mushroom using weapon_zs_innervator
+[15:15:49] Charlememe killed Tragic Fox using weapon_zs_innervator
+[15:15:58] Warzzacchi: its ok there
+[15:16:00] Charlememe killed Spiteful Fox using weapon_zs_innervator
+[15:16:04] Warzzacchi: ?
+[15:16:06] Charlememe killed Tragic Fox using weapon_zs_innervator
+[15:16:06] Charlememe killed Sick Mushroom using weapon_zs_innervator
+[15:16:10] (TEAM) Charlememe: it's alright
+[15:16:14] Warzzacchi: ok
+[15:16:14] Charlememe killed Spiteful Fox using weapon_zs_innervator
+[15:16:18] (TEAM) Charlememe: 2 props out of repairs
+[15:16:20] Charlememe killed Tragic Fox using weapon_zs_innervator
+[15:16:23] (TEAM) Charlememe: 1 will hold
+[15:16:25] Warzzacchi: i know
+[15:16:25] Charlememe killed Sick Mushroom using weapon_zs_innervator
+[15:16:35] Charlememe killed Spiteful Fox using weapon_zs_innervator
+[15:16:43] Warzzacchi killed Tragic Fox using weapon_zs_gladiator
+[15:16:43] Charlememe killed Sick Mushroom using weapon_zs_innervator
+[15:16:52] Charlememe killed Spiteful Fox using weapon_zs_innervator
+[15:17:38] Client "Insane Jon" connected.
+[15:17:38] Client "" spawned in server <BOT> (took 1513 seconds).
+[15:17:50] Charlememe killed Spiteful Fox using weapon_zs_hephaestus_r1
+[15:17:53] Charlememe killed Tragic Fox using weapon_zs_hephaestus_r1
+[15:17:56] Charlememe killed Insane Jon using weapon_zs_hephaestus_r1
+[15:18:05] Charlememe killed Tragic Fox using weapon_zs_hephaestus_r1
+[15:18:12] Charlememe killed Spiteful Fox using weapon_zs_hephaestus_r1
+[15:18:23] Charlememe killed Insane Jon using weapon_zs_hephaestus_r1
+[15:18:23] Warzzacchi: wait that gun do not got remove?
+[15:18:29] Charlememe killed Tragic Fox using weapon_zs_hephaestus_r1
+[15:18:32] Charlememe killed Spiteful Fox using weapon_zs_hephaestus_r1
+[15:18:45] (TEAM) Charlememe: was kako thinking of removing it?
+[15:18:46] Charlememe killed Tragic Fox using weapon_zs_hephaestus_r1
+[15:18:54] Charlememe killed Insane Jon using weapon_zs_hephaestus_r1
+[15:18:57] Charlememe killed Tragic Fox using weapon_zs_hephaestus_r1
+[15:18:58] Warzzacchi: i dontr know maybe
+[15:19:12] Warzzacchi: but how do you get now?
+[15:19:19] nottoolatetoorder killed Insane Jon using weapon_zs_lamp
+[15:19:21] Warzzacchi killed Tragic Fox using weapon_zs_gladiator
+[15:19:27] Warzzacchi killed Spiteful Fox using weapon_zs_gladiator
+[15:19:30] nottoolatetoorder killed Sick Mushroom using weapon_zs_crackler
+[15:19:43] nottoolatetoorder killed Insane Jon using weapon_zs_crackler
+[15:19:49] nottoolatetoorder killed Tragic Fox using weapon_zs_crackler
+[15:19:54] Warzzacchi killed Sick Mushroom using weapon_zs_gladiator
+[15:19:55] nottoolatetoorder killed Spiteful Fox using weapon_zs_crackler
+[15:20:14] Warzzacchi killed Sick Mushroom using weapon_zs_gladiator
+[15:20:15] nottoolatetoorder killed Tragic Fox using weapon_zs_crackler
+[15:20:16] nottoolatetoorder killed Insane Jon using weapon_zs_crackler
+[15:20:17] Warzzacchi killed Spiteful Fox using weapon_zs_gladiator
+[15:20:40] Sick Mushroom killed nottoolatetoorder using weapon_zs_noxiousghoul
+[15:20:41] Dropped "Sick Mushroom" from server<BOT>
+[15:20:45] Warzzacchi killed nottoolatetoorder using weapon_zs_gladiator
+[15:20:56] Tragic Fox killed Charlememe using weapon_zs_fastzombie
+[15:20:56] Dropped "Spiteful Fox" from server<BOT>
+[15:20:58] nottoolatetoorder killed Warzzacchi using weapon_zs_zombie_gore_blaster
+[15:20:58] Dropped "Tragic Fox" from server<BOT>
+[15:21:02] Dropped "Insane Jon" from server<BOT>
+[15:21:20] Dropped "Charlememe" from server<STEAM_0:1:40902923>
+[15:21:34] (Console) called a votemap!
+[15:21:42] Warzzacchi: welp
+[15:21:51] nottoolatetoorder: THis server is dead
+[15:22:03] Server is shutting down/changing levels.
+
+
+
+[15:22:09] New map: zs_midnight_motel_v3
+[15:25:16] Client "nottoolatetoorder" spawned in server <STEAM_0:1:524955595> (took 191 seconds).
+[15:25:16] Client "Miserable Farfetch'd" connected.
+[15:25:16] Client "" spawned in server <BOT> (took 191 seconds).
+[15:25:45] Client "Bad Company" connected.
+[15:27:42] Miserable Farfetch'd killed nottoolatetoorder using weapon_zs_zombie
+[15:27:45] Dropped "Miserable Farfetch'd" from server<BOT>
+[15:28:19] Client "Yun" connected.
+[15:28:19] Client "" spawned in server <BOT> (took 374 seconds).
+[15:28:20] Client "basil the spice" connected.
+[15:28:35] Client "Charlememe" connected.
+[15:31:24] Client "Charlememe" spawned in server <STEAM_0:1:40902923> (took 169 seconds).
+[15:32:15] Dropped "Charlememe" from server<STEAM_0:1:40902923>
+[15:36:52] Client "eplj82" connected.
+[15:41:29] Client "Foretoo" connected.
+[15:42:33] Client "Foretoo" spawned in server <STEAM_0:1:154075665> (took 64 seconds).
+[15:42:34] Client "Orange Nazi" connected.
+[15:42:34] Client "" spawned in server <BOT> (took 1229 seconds).
+[15:42:54] Client "TIO MAQUITO (LORY)" connected.
+[15:43:02] Dropped "nottoolatetoorder" from server<STEAM_0:1:524955595>
+[15:43:19] Foretoo killed Orange Nazi using weapon_zs_owens
+[15:43:21] Foretoo killed Yun using weapon_zs_owens
+[15:44:03] Foretoo killed Yun using weapon_zs_peashooter_r2
+[15:44:12] Client "nottoolatetoorder" connected.
+[15:44:20] Foretoo suicided!
+[15:44:23] Dropped "Orange Nazi" from server<BOT>
+[15:44:27] Dropped "Yun" from server<BOT>
+[15:44:31] Client "TIO MAQUITO (LORY)" spawned in server <STEAM_0:1:429228666> (took 97 seconds).
+[15:44:56] (Console) called a votemap!
+[15:45:04] TIO MAQUITO (LORY): hi
+[15:45:07] Foretoo: hi
+[15:45:15] Dropped "TIO MAQUITO (LORY)" from server<STEAM_0:1:429228666>
+[15:45:25] Server is shutting down/changing levels.
+
+
+
+[15:45:29] New map: zs_scrapyard
+[15:47:29] Client "nottoolatetoorder" connected.
+[15:48:10] Client "Foretoo" connected.
+[15:48:44] Client "Foretoo" connected.
+[15:49:37] Client "Foretoo" spawned in server <STEAM_0:1:154075665> (took 53 seconds).
+[15:49:37] Client "T-Posing Bee" connected.
+[15:49:37] Client "" spawned in server <BOT> (took 251 seconds).
+[15:52:47] Dropped "Foretoo" from server<STEAM_0:1:154075665>
+[15:56:33] Client "nottoolatetoorder" connected.
+[16:00:31] Client "nottoolatetoorder" connected.
+[16:05:01] Client "BeefyBunnyz" connected.
+[16:08:29] Client "jonathan.correll42" connected.
+[16:21:12] Client "roadkill_bod" connected.
+[16:22:37] Client "Colton" connected.
+[16:26:36] Client "Mario Verde" connected.
+[16:27:38] Client "Kako" connected.
+[16:29:12] Client "nottoolatetoorder" connected.
+[16:30:16] Client "But Hentai Is Better!" connected.
+[16:30:27] Client "Kako" spawned in server <STEAM_0:1:17433654> (took 169 seconds).
+[16:30:27] Dropped "T-Posing Bee" from server<BOT>
+[16:31:02] (Console) called a votemap!
+[16:31:27] Kako changed the map to zs_snowy_castle
+[16:31:27] Server is shutting down/changing levels.
+
+
+
+[16:31:31] New map: zs_snowy_castle
+[16:33:37] Client "MuteGamerpro" connected.
+[16:33:57] Client "Kako" spawned in server <STEAM_0:1:17433654> (took 149 seconds).
+[16:33:58] Client "Hydrated Nugan" connected.
+[16:33:58] Client "" spawned in server <BOT> (took 150 seconds).
+[16:35:11] Client "But Hentai Is Better!" spawned in server <STEAM_0:1:203173844> (took 223 seconds).
+[16:35:31] But Hentai Is Better!: shit holy
+[16:35:44] But Hentai Is Better!: DOOOOOOOOOORS
+[16:35:53] But Hentai Is Better!: THERE ISNT ANY DOORS ON THIS MAP
+[16:36:14] Client "nottoolatetoorder" spawned in server <STEAM_0:1:524955595> (took 286 seconds).
+[16:36:15] Client "Mexican Credit Card" connected.
+[16:36:15] Client "" spawned in server <BOT> (took 287 seconds).
+[16:37:48] But Hentai Is Better! killed Mexican Credit Card using weapon_zs_stunbaton
+[16:37:53] nottoolatetoorder killed Hydrated Nugan using weapon_zs_shovel
+[16:38:12] Client "Lurry_the_loafster" connected.
+[16:38:38] nottoolatetoorder killed Mexican Credit Card using weapon_zs_shovel
+[16:38:54] But Hentai Is Better!: yeet
+[16:38:56] Dropped "But Hentai Is Better!" from server<STEAM_0:1:203173844>
+[16:38:57] Dropped "Hydrated Nugan" from server<BOT>
+[16:40:18] Client "Lurry_the_loafster" spawned in server <STEAM_0:0:205866806> (took 126 seconds).
+[16:40:18] Client "Famous Retard" connected.
+[16:40:18] Client "" spawned in server <BOT> (took 530 seconds).
+[16:40:23] Famous Retard killed Lurry_the_loafster using weapon_zs_zombie
+[16:40:23] Dropped "Mexican Credit Card" from server<BOT>
+[16:40:30] nottoolatetoorder: RIP
+[16:40:53] Famous Retard killed nottoolatetoorder using weapon_zs_zombie
+[16:41:03] nottoolatetoorder killed Kako using weapon_zs_freshdead
+[16:41:07] Dropped "Famous Retard" from server<BOT>
+[16:41:39] Client "Lunar Feminist" connected.
+[16:41:39] Client "" spawned in server <BOT> (took 611 seconds).
+[16:41:40] Client "Mexican Lemon" connected.
+[16:41:40] Client "" spawned in server <BOT> (took 612 seconds).
+[16:44:06] Kako: was the load time better
+[16:44:25] nottoolatetoorder: kinda
+[16:44:28] Dropped "Kako" from server<STEAM_0:1:17433654>
+[16:44:29] Dropped "Lunar Feminist" from server<BOT>
+[16:45:03] Client "Kako" connected.
+[16:45:34] Client "Kako" spawned in server <STEAM_0:1:17433654> (took 31 seconds).
+[16:46:23] Client "Bad Company" connected.
+[16:46:56] Lurry_the_loafster killed Mexican Lemon using weapon_zs_crackler
+[16:46:57] nottoolatetoorder killed Kako using weapon_zs_owens
+[16:47:16] Lurry_the_loafster killed Mexican Lemon using weapon_zs_crackler
+[16:47:32] nottoolatetoorder killed Mexican Lemon using weapon_zs_owens
+[16:47:47] Lurry_the_loafster killed Mexican Lemon using weapon_zs_battleaxe
+[16:47:58] nottoolatetoorder killed Mexican Lemon using weapon_zs_shovel
+[16:48:02] Lurry_the_loafster killed Kako using weapon_zs_battleaxe
+[16:48:27] nottoolatetoorder killed Mexican Lemon using weapon_zs_owens
+[16:48:46] nottoolatetoorder killed Mexican Lemon using weapon_zs_owens
+[16:49:08] nottoolatetoorder killed Mexican Lemon using weapon_zs_owens
+[16:49:32] Lurry_the_loafster killed Mexican Lemon using weapon_zs_crackler
+[16:49:53] Lurry_the_loafster killed Mexican Lemon using weapon_zs_shovel
+[16:50:35] nottoolatetoorder killed Mexican Lemon using weapon_zs_owens
+[16:51:19] Client "PizzaTheHut" connected.
+[16:51:20] Client "Blue Donald Trump" connected.
+[16:51:20] Client "" spawned in server <BOT> (took 1192 seconds).
+[16:51:37] Lurry_the_loafster killed Blue Donald Trump using weapon_zs_crackler_q2
+[16:51:42] Lurry_the_loafster killed Mexican Lemon using weapon_zs_crackler_q2
+[16:51:55] Lurry_the_loafster killed Mexican Lemon using weapon_zs_crackler_q2
+[16:51:55] Client "PizzaTheHut" spawned in server <STEAM_0:0:31165618> (took 36 seconds).
+[16:52:01] Lurry_the_loafster killed Blue Donald Trump using weapon_zs_crackler_q2
+[16:52:02] Dropped "nottoolatetoorder" from server<STEAM_0:1:524955595>
+[16:52:19] Lurry_the_loafster killed Blue Donald Trump using weapon_zs_crackler_q2
+[16:52:24] Lurry_the_loafster killed Mexican Lemon using weapon_zs_crackler_q2
+[16:52:36] Lurry_the_loafster killed Mexican Lemon using weapon_zs_crackler_q2
+[16:52:43] Lurry_the_loafster killed Blue Donald Trump using weapon_zs_crackler_q2
+[16:52:54] (TEAM) Lurry_the_loafster: help repair
+[16:52:58] Lurry_the_loafster killed Mexican Lemon using weapon_zs_crackler_q2
+[16:53:00] Lurry_the_loafster killed Blue Donald Trump using weapon_zs_crackler_q2
+[16:53:21] Lurry_the_loafster killed Mexican Lemon using weapon_zs_crackler_q2
+[16:53:27] Lurry_the_loafster killed Blue Donald Trump using weapon_zs_crackler_q2
+[16:53:39] Lurry_the_loafster killed Mexican Lemon using weapon_zs_crackler_q2
+[16:53:53] Lurry_the_loafster killed Blue Donald Trump using weapon_zs_crackler_q2
+[16:53:59] Lurry_the_loafster killed Mexican Lemon using weapon_zs_crackler_q2
+[16:54:16] Lurry_the_loafster killed Blue Donald Trump using weapon_zs_crackler_q2
+[16:54:22] Lurry_the_loafster killed Mexican Lemon using weapon_zs_crackler_q2
+[16:54:44] Lurry_the_loafster killed Mexican Lemon using weapon_zs_crackler_q2
+[16:54:46] Lurry_the_loafster killed Blue Donald Trump using weapon_zs_crackler_q2
+[16:55:00] Lurry_the_loafster killed Blue Donald Trump using weapon_zs_crackler_q2
+[16:55:09] Lurry_the_loafster killed Mexican Lemon using weapon_zs_shovel
+[16:55:35] PizzaTheHut killed Blue Donald Trump using weapon_zs_shovel
+[16:55:43] PizzaTheHut killed Mexican Lemon using weapon_zs_shovel
+[16:56:24] Lurry_the_loafster killed Blue Donald Trump using weapon_zs_crackler_q2
+[16:56:48] PizzaTheHut killed Blue Donald Trump using weapon_zs_shovel
+[16:57:06] Lurry_the_loafster killed Blue Donald Trump using weapon_zs_crackler_q2
+[16:57:11] Mexican Lemon suicided!
+[16:57:21] Lurry_the_loafster killed Blue Donald Trump using weapon_zs_crackler_q2
+[16:57:47] Lurry_the_loafster killed Mexican Lemon using weapon_zs_crackler_q2
+[16:57:54] (TEAM) Lurry_the_loafster: help repair
+[16:57:58] Blue Donald Trump suicided!
+[16:58:12] Lurry_the_loafster killed Mexican Lemon using weapon_zs_hammer
+[16:58:19] Lurry_the_loafster killed Blue Donald Trump using weapon_zs_crackler_q2
+[16:58:30] Lurry_the_loafster killed Mexican Lemon using weapon_zs_crackler_q2
+[16:58:37] Lurry_the_loafster killed Blue Donald Trump using weapon_zs_crackler_q2
+[16:58:43] (TEAM) Lurry_the_loafster: help repair
+[16:58:45] (TEAM) Lurry_the_loafster: help repair
+[16:58:56] Lurry_the_loafster killed Mexican Lemon using weapon_zs_crackler_q2
+[16:59:08] Lurry_the_loafster killed Blue Donald Trump using weapon_zs_crackler_q2
+[16:59:45] Lurry_the_loafster killed Blue Donald Trump using weapon_zs_crackler_q2
+[16:59:46] Lurry_the_loafster killed Mexican Lemon using weapon_zs_crackler_q2
+[17:00:13] Lurry_the_loafster killed Mexican Lemon using weapon_zs_crackler_q2
+[17:00:27] Lurry_the_loafster killed Blue Donald Trump using weapon_zs_crackler_q2
+[17:00:32] PizzaTheHut killed Mexican Lemon using weapon_zs_amigo
+[17:01:24] Client "Super Saiyan Bee" connected.
+[17:01:24] Client "" spawned in server <BOT> (took 1796 seconds).
+[17:01:38] Blue Donald Trump killed Lurry_the_loafster using weapon_zs_lacerator
+[17:01:38] Dropped "Super Saiyan Bee" from server<BOT>
+[17:01:41] PizzaTheHut killed Blue Donald Trump using weapon_zs_amigo
+[17:01:49] PizzaTheHut killed Lurry_the_loafster using weapon_zs_amigo
+[17:01:53] PizzaTheHut killed Lurry_the_loafster using weapon_zs_amigo
+[17:02:03] PizzaTheHut killed Mexican Lemon using weapon_zs_amigo
+[17:02:23] Lurry_the_loafster suicided!
+[17:02:42] PizzaTheHut killed Mexican Lemon using weapon_zs_amigo
+[17:03:29] PizzaTheHut killed Lurry_the_loafster using weapon_zs_amigo_r1
+[17:03:43] Blue Donald Trump suicided!
+[17:04:23] PizzaTheHut killed Lurry_the_loafster using weapon_zs_amigo_r1
+[17:04:45] PizzaTheHut killed Blue Donald Trump using weapon_zs_amigo_r1
+[17:05:03] Lurry_the_loafster suicided!
+[17:05:16] PizzaTheHut killed Lurry_the_loafster using weapon_zs_smg
+[17:05:37] Lurry_the_loafster suicided!
+[17:05:43] PizzaTheHut killed Mexican Lemon using weapon_zs_smg_q1
+[17:05:50] Client "Foffim!" connected.
+[17:06:06] PizzaTheHut killed Mexican Lemon using weapon_zs_smg_q1
+[17:06:11] PizzaTheHut killed Lurry_the_loafster using weapon_zs_smg_q1
+[17:06:36] PizzaTheHut killed Blue Donald Trump using weapon_zs_smg_q1
+[17:07:11] PizzaTheHut killed Blue Donald Trump using weapon_zs_smg_q1
+[17:07:11] PizzaTheHut killed Mexican Lemon using weapon_zs_smg_q1
+[17:07:25] PizzaTheHut killed Lurry_the_loafster using weapon_zs_smg_q1
+[17:07:43] Lurry_the_loafster killed PizzaTheHut using weapon_zs_bloodsucker_headcrab
+[17:07:45] Dropped "Blue Donald Trump" from server<BOT>
+[17:07:50] Dropped "Mexican Lemon" from server<BOT>
+[17:08:01] Client "regular navy" connected.
+[17:08:19] (Console) called a votemap!
+[17:08:44] Lurry_the_loafster: ill buy ressupply
+[17:08:48] Server is shutting down/changing levels.
+
+
+
+[17:08:52] New map: zs_lighthouse_v2b2
+[17:09:13] Client "PizzaTheHut" spawned in server <STEAM_0:0:31165618> (took 24 seconds).
+[17:09:13] Client "Running Yeti" connected.
+[17:09:13] Client "" spawned in server <BOT> (took 24 seconds).
+[17:09:45] Client "Kako" spawned in server <STEAM_0:1:17433654> (took 56 seconds).
+[17:09:47] Client "Lurry_the_loafster" spawned in server <STEAM_0:0:205866806> (took 58 seconds).
+[17:09:47] Client "Islamaphobe" connected.
+[17:09:47] Client "" spawned in server <BOT> (took 58 seconds).
+[17:10:56] Lurry_the_loafster killed Islamaphobe using weapon_zs_hammer
+[17:14:15] PizzaTheHut killed Islamaphobe using weapon_zs_tosser
+[17:14:33] PizzaTheHut killed Islamaphobe using weapon_zs_tosser
+[17:14:44] PizzaTheHut killed Running Yeti using weapon_zs_tosser
+[17:14:58] PizzaTheHut killed Islamaphobe using weapon_zs_tosser
+[17:15:21] Lurry_the_loafster killed Running Yeti using weapon_zs_blaster
+[17:15:32] PizzaTheHut killed Islamaphobe using weapon_zs_tosser
+[17:15:49] Running Yeti suicided!
+[17:15:53] Lurry_the_loafster killed Islamaphobe using weapon_zs_blaster
+[17:16:06] Lurry_the_loafster killed Running Yeti using weapon_zs_blaster
+[17:16:13] Lurry_the_loafster killed Islamaphobe using weapon_zs_blaster
+[17:16:37] PizzaTheHut killed Running Yeti using weapon_zs_tosser
+[17:16:56] Islamaphobe suicided!
+[17:17:10] Lurry_the_loafster killed Running Yeti using weapon_zs_blaster
+[17:17:32] Lurry_the_loafster killed Islamaphobe using weapon_zs_blaster
+[17:17:55] PizzaTheHut killed Running Yeti using weapon_zs_tosser
+[17:19:31] Lurry_the_loafster killed Running Yeti using weapon_zs_blaster
+[17:20:07] Client "Supertoaster" connected.
+[17:20:16] Lurry_the_loafster killed Running Yeti using weapon_zs_blaster
+[17:20:21] Islamaphobe killed PizzaTheHut using weapon_zs_freshdead
+[17:20:42] Islamaphobe suicided!
+[17:21:01] Running Yeti suicided!
+[17:21:12] PizzaTheHut killed Kako using weapon_zs_freshdead
+[17:21:13] Dropped "Islamaphobe" from server<BOT>
+[17:21:15] PizzaTheHut suicided!
+[17:21:36] Lurry_the_loafster killed Running Yeti using weapon_zs_annabelle
+[17:21:50] Lurry_the_loafster killed PizzaTheHut using weapon_zs_blaster
+[17:22:21] Lurry_the_loafster killed Running Yeti using weapon_zs_annabelle
+[17:22:36] Client "Pace TM" connected.
+[17:22:52] Client "pyromaniac" connected.
+[17:23:06] Lurry_the_loafster killed PizzaTheHut using weapon_zs_annabelle
+[17:23:29] Client "Jewish Naruto" connected.
+[17:23:29] Client "" spawned in server <BOT> (took 880 seconds).
+[17:23:35] Running Yeti suicided!
+[17:24:00] Lurry_the_loafster killed Running Yeti using weapon_zs_stabber
+[17:24:35] Lurry_the_loafster killed Running Yeti using weapon_zs_stabber
+[17:25:02] Running Yeti suicided!
+[17:25:42] Dropped "Kako" from server<STEAM_0:1:17433654>
+[17:26:20] Running Yeti suicided!
+[17:26:25] Lurry_the_loafster killed Jewish Naruto using weapon_zs_stabber
+[17:26:52] Jewish Naruto suicided!
+[17:27:09] Jewish Naruto suicided!
+[17:27:39] Lurry_the_loafster killed PizzaTheHut using weapon_zs_stabber
+[17:27:53] Client "NachoKin" connected.
+[17:28:18] Lurry_the_loafster killed Jewish Naruto using weapon_zs_stabber
+[17:29:28] Lurry_the_loafster killed Jewish Naruto using entityflame
+[17:29:41] Lurry_the_loafster killed PizzaTheHut using weapon_zs_stabber
+[17:30:15] Jewish Naruto suicided!
+[17:30:17] Client "eccentricego" connected.
+[17:30:19] Lurry_the_loafster killed PizzaTheHut using weapon_zs_stabber
+[17:30:40] Lurry_the_loafster killed Jewish Naruto using weapon_zs_stabber
+[17:31:10] Lurry_the_loafster killed Running Yeti using weapon_zs_stabber
+[17:31:17] Client "eccentricego" spawned in server <STEAM_0:1:7796489> (took 60 seconds).
+[17:31:24] Lurry_the_loafster killed Jewish Naruto using weapon_zs_stabber
+[17:31:31] Lurry_the_loafster killed PizzaTheHut using weapon_zs_stabber
+[17:31:57] Lurry_the_loafster killed Jewish Naruto using weapon_zs_stabber
+[17:32:05] Lurry_the_loafster killed Running Yeti using weapon_zs_stabber
+[17:32:09] eccentricego suicided!
+[17:32:39] eccentricego suicided!
+[17:32:43] Lurry_the_loafster killed Jewish Naruto using weapon_zs_stabber
+[17:32:43] Lurry_the_loafster killed PizzaTheHut using weapon_zs_stabber
+[17:33:28] Lurry_the_loafster killed Jewish Naruto using weapon_zs_stabber
+[17:33:50] Lurry_the_loafster killed PizzaTheHut using weapon_zs_jackhammer
+[17:34:15] Running Yeti suicided!
+[17:34:20] Lurry_the_loafster killed eccentricego using weapon_zs_jackhammer
+[17:34:38] eccentricego killed Lurry_the_loafster using weapon_zs_lacerator
+[17:34:42] Dropped "Running Yeti" from server<BOT>
+[17:34:46] Dropped "Jewish Naruto" from server<BOT>
+[17:34:48] eccentricego killed Lurry_the_loafster using weapon_zs_lacerator
+[17:35:14] (Console) called a votemap!
+[17:35:33] Lurry_the_loafster: Eccent
+[17:35:37] Lurry_the_loafster: are you cading?
+[17:35:42] eccentricego: sure
+[17:35:43] Server is shutting down/changing levels.
+
+
+
+[17:35:47] New map: zs_sludge_k2a
+[17:36:05] Client "eccentricego" spawned in server <STEAM_0:1:7796489> (took 21 seconds).
+[17:36:06] Client "Gay Bee" connected.
+[17:36:06] Client "" spawned in server <BOT> (took 22 seconds).
+[17:37:25] Client "PizzaTheHut" connected.
+[17:37:29] Client "pyromaniac" connected.
+[17:37:39] Client "Lurry_the_loafster" spawned in server <STEAM_0:0:205866806> (took 115 seconds).
+[17:38:07] Client "SpongeBOI" connected.
+[17:38:17] Lurry_the_loafster: ill buy the resupply
+[17:38:27] Client "FlyingBones" connected.
+[17:38:28] Lurry_the_loafster: nvm
+[17:38:33] Gay Bee was killed by prop_physics
+[17:40:23] Client "PizzaTheHut" connected.
+[17:41:09] eccentricego killed Gay Bee using weapon_zs_stubber
+[17:41:11] Client "Wolf_Master" connected.
+[17:41:44] Lurry_the_loafster killed Gay Bee using weapon_zs_crackler
+[17:42:01] eccentricego killed Gay Bee using weapon_zs_stubber
+[17:42:21] Lurry_the_loafster killed Gay Bee using weapon_zs_crackler
+[17:42:45] eccentricego killed Gay Bee using weapon_zs_electrohammer
+[17:43:04] Client "Wolf_Master" connected.
+[17:43:21] Lurry_the_loafster killed Gay Bee using weapon_zs_crackler
+[17:43:29] (TEAM) Lurry_the_loafster: need repairs on this side
+[17:43:32] eccentricego killed Gay Bee using weapon_zs_stubber
+[17:43:52] Lurry_the_loafster killed Gay Bee using weapon_zs_crackler
+[17:44:09] eccentricego killed Gay Bee using weapon_zs_stubber
+[17:44:35] Lurry_the_loafster killed Gay Bee using weapon_zs_crackler_q1
+[17:45:27] Client "Virus" connected.
+[17:45:27] Client "" spawned in server <BOT> (took 583 seconds).
+[17:45:45] eccentricego killed Gay Bee using weapon_zs_stubber
+[17:46:06] eccentricego killed Gay Bee using weapon_zs_stubber
+[17:46:29] eccentricego killed Virus using weapon_zs_stubber
+[17:46:34] eccentricego killed Gay Bee using weapon_zs_stubber
+[17:46:51] Lurry_the_loafster killed Virus using weapon_zs_crackler_q2
+[17:46:53] eccentricego killed Gay Bee using weapon_zs_electrohammer
+[17:47:14] eccentricego killed Gay Bee using weapon_zs_stubber
+[17:47:28] eccentricego killed Gay Bee using weapon_zs_stubber
+[17:47:40] Lurry_the_loafster killed Virus using weapon_zs_crackler_q2
+[17:47:55] eccentricego killed Gay Bee using weapon_zs_stubber
+[17:48:00] eccentricego killed Virus using weapon_zs_stubber
+[17:48:14] eccentricego killed Gay Bee using weapon_zs_stubber
+[17:48:18] Lurry_the_loafster killed Virus using weapon_zs_crackler_q2
+[17:48:35] eccentricego killed Virus using weapon_zs_stubber
+[17:48:55] Lurry_the_loafster killed Gay Bee using weapon_zs_crackler_q2
+[17:49:05] eccentricego killed Virus using weapon_zs_stubber
+[17:49:08] eccentricego killed Virus using weapon_zs_stubber
+[17:49:08] Lurry_the_loafster killed Gay Bee using weapon_zs_crackler_q2
+[17:49:28] Lurry_the_loafster killed Virus using weapon_zs_crackler_q2
+[17:49:40] eccentricego killed Gay Bee using weapon_zs_stubber
+[17:49:52] Lurry_the_loafster killed Virus using weapon_zs_hammer
+[17:50:38] eccentricego killed Virus using weapon_zs_stubber_q2
+[17:50:50] eccentricego killed Gay Bee using weapon_zs_stubber_q2
+[17:51:03] Lurry_the_loafster killed Gay Bee using weapon_zs_crackler_q2
+[17:51:05] eccentricego killed Virus using weapon_zs_stubber_q2
+[17:51:15] Lurry_the_loafster killed Virus using weapon_zs_crackler_q2
+[17:51:28] eccentricego killed Gay Bee using weapon_zs_electrohammer
+[17:51:40] eccentricego killed Virus using weapon_zs_stubber_q2
+[17:51:45] Lurry_the_loafster killed Gay Bee using weapon_zs_crackler_q2
+[17:51:51] Client "derp derp" connected.
+[17:52:09] Lurry_the_loafster killed Gay Bee using weapon_zs_crackler_q2
+[17:52:15] eccentricego killed Virus using weapon_zs_electrohammer
+[17:52:15] Client "derp derp" connected.
+[17:52:35] eccentricego killed Gay Bee using weapon_zs_stubber_q2
+[17:52:39] Lurry_the_loafster killed Virus using weapon_zs_crackler_q2
+[17:52:56] Lurry_the_loafster killed Virus using weapon_zs_crackler_q2
+[17:53:16] eccentricego killed Virus using weapon_zs_stubber_q2
+[17:53:37] eccentricego killed Virus using weapon_zs_stubber_q2
+[17:53:50] eccentricego killed Gay Bee using weapon_zs_stubber_q2
+[17:54:02] Lurry_the_loafster killed Virus using weapon_zs_crackler_q2
+[17:54:28] Lurry_the_loafster killed Gay Bee using weapon_zs_hammer
+[17:54:41] eccentricego killed Virus using weapon_zs_stubber_q2
+[17:54:41] Lurry_the_loafster killed Gay Bee using weapon_zs_crackler_q2
+[17:55:33] Client "Famous News" connected.
+[17:55:33] Client "" spawned in server <BOT> (took 1189 seconds).
+[17:55:43] eccentricego killed Famous News using weapon_zs_quasar
+[17:55:46] eccentricego killed Virus using weapon_zs_quasar
+[17:55:58] eccentricego killed Gay Bee using weapon_zs_quasar
+[17:56:06] Lurry_the_loafster killed Virus using weapon_zs_sweepershotgun
+[17:56:09] eccentricego killed Famous News using weapon_zs_quasar
+[17:56:20] eccentricego killed Gay Bee using weapon_zs_quasar
+[17:56:25] Lurry_the_loafster killed Virus using weapon_zs_sweepershotgun
+[17:56:33] eccentricego killed Famous News using weapon_zs_quasar
+[17:56:43] Lurry_the_loafster killed Gay Bee using weapon_zs_sweepershotgun
+[17:56:55] eccentricego killed Virus using weapon_zs_quasar
+[17:56:58] eccentricego killed Famous News using weapon_zs_quasar
+[17:57:05] eccentricego killed Gay Bee using weapon_zs_quasar
+[17:57:11] eccentricego killed Virus using weapon_zs_quasar
+[17:57:19] Lurry_the_loafster killed Gay Bee using weapon_zs_sweepershotgun
+[17:57:21] Client "AJ-The-Great" connected.
+[17:57:30] eccentricego killed Famous News using weapon_zs_quasar
+[17:57:38] eccentricego killed Virus using weapon_zs_quasar
+[17:57:38] Lurry_the_loafster killed Gay Bee using weapon_zs_sweepershotgun
+[17:57:59] eccentricego killed Famous News using weapon_zs_quasar
+[17:58:05] eccentricego killed Gay Bee using weapon_zs_quasar
+[17:58:07] Lurry_the_loafster killed Virus using weapon_zs_sweepershotgun
+[17:58:21] eccentricego killed Famous News using weapon_zs_quasar
+[17:58:25] Lurry_the_loafster killed Virus using weapon_zs_sweepershotgun
+[17:58:33] eccentricego killed Gay Bee using weapon_zs_quasar
+[17:58:40] eccentricego killed Famous News using weapon_zs_quasar
+[17:58:41] Lurry_the_loafster killed Virus using weapon_zs_sweepershotgun
+[17:58:53] eccentricego killed Gay Bee using weapon_zs_quasar
+[17:59:03] eccentricego killed Virus using weapon_zs_quasar
+[17:59:07] Lurry_the_loafster killed Famous News using weapon_zs_sweepershotgun
+[17:59:13] eccentricego killed Gay Bee using weapon_zs_quasar
+[17:59:21] eccentricego killed Virus using weapon_zs_quasar
+[17:59:31] Lurry_the_loafster killed Famous News using weapon_zs_sweepershotgun
+[17:59:33] eccentricego killed Gay Bee using weapon_zs_quasar
+[17:59:39] eccentricego killed Virus using weapon_zs_quasar
+[17:59:47] Client "crfrider05" spawned in server <STEAM_0:1:105055371> (took 1443 seconds).
+[18:00:00] Lurry_the_loafster killed Gay Bee using weapon_zs_sweepershotgun
+[18:00:06] eccentricego killed Famous News using weapon_zs_quasar
+[18:00:13] eccentricego killed Virus using weapon_zs_quasar
+[18:01:13] Lurry_the_loafster killed Virus using weapon_zs_sweepershotgun
+[18:01:14] Lurry_the_loafster killed Gay Bee using weapon_zs_sweepershotgun
+[18:01:15] eccentricego killed Famous News using weapon_zs_quasar
+[18:01:30] Lurry_the_loafster killed Gay Bee using weapon_zs_sweepershotgun
+[18:01:39] eccentricego killed Virus using weapon_zs_spinfusor
+[18:01:40] Lurry_the_loafster killed Famous News using weapon_zs_sweepershotgun
+[18:01:50] Client "derp derp" connected.
+[18:01:55] Lurry_the_loafster killed Gay Bee using weapon_zs_sweepershotgun
+[18:02:01] Lurry_the_loafster killed Virus using weapon_zs_sweepershotgun
+[18:02:02] eccentricego killed Famous News using weapon_zs_spinfusor
+[18:02:15] Lurry_the_loafster killed Gay Bee using weapon_zs_sweepershotgun
+[18:02:20] Lurry_the_loafster killed Virus using weapon_zs_sweepershotgun
+[18:02:21] Lurry_the_loafster killed Famous News using weapon_zs_sweepershotgun
+[18:02:35] eccentricego killed Gay Bee using weapon_zs_spinfusor_q1
+[18:02:42] eccentricego killed Virus using weapon_zs_spinfusor_q1
+[18:02:43] Lurry_the_loafster killed Famous News using weapon_zs_sweepershotgun
+[18:02:54] Lurry_the_loafster killed Gay Bee using weapon_zs_sweepershotgun
+[18:03:02] eccentricego killed Virus using weapon_zs_spinfusor_q1
+[18:03:02] eccentricego killed Famous News using weapon_zs_spinfusor_q1
+[18:03:06] Lurry_the_loafster killed Gay Bee using weapon_zs_sweepershotgun
+[18:03:20] Lurry_the_loafster killed Famous News using weapon_zs_sweepershotgun
+[18:03:23] eccentricego killed Virus using weapon_zs_spinfusor_q1
+[18:03:27] eccentricego killed Gay Bee using weapon_zs_spinfusor_q1
+[18:03:41] eccentricego killed Famous News using weapon_zs_spinfusor_q1
+[18:03:45] Lurry_the_loafster killed Gay Bee using weapon_zs_sweepershotgun
+[18:03:47] eccentricego killed Virus using weapon_zs_spinfusor_q1
+[18:04:00] Lurry_the_loafster killed Famous News using weapon_zs_sweepershotgun
+[18:04:06] Lurry_the_loafster killed Virus using weapon_zs_sweepershotgun
+[18:04:09] eccentricego killed Gay Bee using weapon_zs_spinfusor_q1
+[18:04:16] eccentricego killed Famous News using weapon_zs_spinfusor_q1
+[18:04:23] Lurry_the_loafster killed Virus using weapon_zs_sweepershotgun
+[18:04:27] eccentricego killed Gay Bee using weapon_zs_spinfusor_q1
+[18:04:34] Lurry_the_loafster killed Famous News using weapon_zs_sweepershotgun
+[18:04:36] Client "NachoKin" connected.
+[18:04:38] eccentricego killed Virus using weapon_zs_spinfusor_q1
+[18:04:48] Lurry_the_loafster killed Gay Bee using weapon_zs_sweepershotgun
+[18:04:54] eccentricego killed Famous News using weapon_zs_spinfusor_q1
+[18:04:56] Client "Wolf_Master" connected.
+[18:04:59] Lurry_the_loafster killed Virus using weapon_zs_hammer_q3
+[18:05:22] eccentricego killed Famous News using weapon_zs_spinfusor_q1
+[18:05:23] Lurry_the_loafster killed Virus using weapon_zs_sweepershotgun
+[18:05:40] Lurry_the_loafster killed Virus using weapon_zs_sweepershotgun
+[18:06:16] Lurry_the_loafster killed Famous News using weapon_zs_sweepershotgun
+[18:06:22] Lurry_the_loafster killed Gay Bee using weapon_zs_sweepershotgun
+[18:06:33] Client "Epic_Gabriel" connected.
+[18:06:38] Client "Lost Elon Musk" connected.
+[18:06:38] Client "" spawned in server <BOT> (took 1854 seconds).
+[18:06:54] Lurry_the_loafster killed Virus using weapon_zs_deathdealers_q1
+[18:06:54] Lurry_the_loafster killed Gay Bee using weapon_zs_deathdealers_q1
+[18:06:56] Lurry_the_loafster killed Famous News using weapon_zs_deathdealers_q1
+[18:07:01] Lurry_the_loafster killed Lost Elon Musk using weapon_zs_deathdealers_q1
+[18:07:08] eccentricego killed Virus using weapon_zs_spinfusor_q1
+[18:07:09] Lurry_the_loafster killed Gay Bee using weapon_zs_deathdealers_q1
+[18:07:14] Lurry_the_loafster killed Famous News using weapon_zs_deathdealers_q1
+[18:07:19] eccentricego killed Lost Elon Musk using weapon_zs_spinfusor_q1
+[18:07:21] Lurry_the_loafster killed Gay Bee using weapon_zs_deathdealers_q1
+[18:07:23] Lurry_the_loafster killed Virus using weapon_zs_deathdealers_q1
+[18:07:33] eccentricego killed Gay Bee using weapon_zs_spinfusor_q1
+[18:07:35] eccentricego killed Famous News using weapon_zs_spinfusor_q1
+[18:07:41] Lurry_the_loafster killed Virus using weapon_zs_deathdealers_q1
+[18:07:44] Lurry_the_loafster killed Lost Elon Musk using weapon_zs_deathdealers_q1
+[18:07:50] Lurry_the_loafster killed Famous News using weapon_zs_deathdealers_q1
+[18:07:51] Lurry_the_loafster killed Gay Bee using weapon_zs_deathdealers_q1
+[18:07:58] Lurry_the_loafster killed Virus using weapon_zs_deathdealers_q1
+[18:08:00] Lurry_the_loafster killed Lost Elon Musk using weapon_zs_deathdealers_q1
+[18:08:14] Lurry_the_loafster killed Famous News using weapon_zs_deathdealers_q1
+[18:08:17] Lurry_the_loafster killed Gay Bee using weapon_zs_deathdealers_q1
+[18:08:20] eccentricego killed Virus using weapon_zs_spinfusor_q1
+[18:08:22] eccentricego killed Lost Elon Musk using weapon_zs_spinfusor_q1
+[18:08:32] Lurry_the_loafster killed Famous News using weapon_zs_deathdealers_q1
+[18:08:38] eccentricego killed Lost Elon Musk using weapon_zs_spinfusor_q1
+[18:08:41] eccentricego killed Virus using weapon_zs_spinfusor_q1
+[18:08:43] eccentricego killed Gay Bee using weapon_zs_spinfusor_q1
+[18:08:45] Lurry_the_loafster killed Famous News using weapon_zs_deathdealers_q1
+[18:08:53] Lurry_the_loafster killed Lost Elon Musk using weapon_zs_deathdealers_q1
+[18:08:55] eccentricego killed Virus using weapon_zs_spinfusor_q1
+[18:09:00] Lurry_the_loafster killed Famous News using weapon_zs_deathdealers_q1
+[18:09:05] eccentricego killed Gay Bee using weapon_zs_spinfusor_q1
+[18:09:11] eccentricego killed Lost Elon Musk using weapon_zs_spinfusor_q1
+[18:09:15] eccentricego killed Virus using weapon_zs_spinfusor_q1
+[18:09:18] Lurry_the_loafster killed Famous News using weapon_zs_deathdealers_q1
+[18:09:21] Lurry_the_loafster killed Gay Bee using weapon_zs_deathdealers_q1
+[18:09:25] Lurry_the_loafster killed Virus using weapon_zs_deathdealers_q1
+[18:09:27] Lurry_the_loafster killed Lost Elon Musk using weapon_zs_deathdealers_q1
+[18:09:33] Lurry_the_loafster killed Famous News using weapon_zs_deathdealers_q1
+[18:09:39] eccentricego killed Gay Bee using weapon_zs_spinfusor_q1
+[18:09:44] eccentricego killed Virus using weapon_zs_spinfusor_q1
+[18:09:47] Lurry_the_loafster killed Lost Elon Musk using weapon_zs_deathdealers_q1
+[18:09:50] Lurry_the_loafster killed Famous News using weapon_zs_deathdealers_q1
+[18:10:00] eccentricego killed Gay Bee using weapon_zs_spinfusor_q1
+[18:10:01] Lurry_the_loafster killed Lost Elon Musk using weapon_zs_deathdealers_q1
+[18:10:06] eccentricego killed Virus using weapon_zs_spinfusor_q1
+[18:10:07] Lurry_the_loafster killed Famous News using weapon_zs_deathdealers_q1
+[18:10:11] Lurry_the_loafster killed Gay Bee using weapon_zs_deathdealers_q1
+[18:10:22] eccentricego killed Lost Elon Musk using weapon_zs_spinfusor_q1
+[18:10:25] Lurry_the_loafster killed Virus using weapon_zs_deathdealers_q1
+[18:10:26] eccentricego killed Famous News using weapon_zs_spinfusor_q1
+[18:10:27] Lurry_the_loafster killed Gay Bee using weapon_zs_deathdealers_q1
+[18:10:31] Client "NachoKin" connected.
+[18:10:38] Lurry_the_loafster killed Lost Elon Musk using weapon_zs_deathdealers_q1
+[18:10:42] eccentricego killed Virus using weapon_zs_spinfusor_q1
+[18:10:43] Lurry_the_loafster killed Gay Bee using weapon_zs_deathdealers_q1
+[18:10:46] Lurry_the_loafster killed Famous News using weapon_zs_deathdealers_q1
+[18:10:54] eccentricego killed Lost Elon Musk using weapon_zs_spinfusor_q1
+[18:10:58] eccentricego killed Virus using weapon_zs_spinfusor_q1
+[18:11:02] eccentricego killed Gay Bee using weapon_zs_spinfusor_q1
+[18:11:04] eccentricego killed Famous News using weapon_zs_spinfusor_q1
+[18:11:05] Lurry_the_loafster killed Lost Elon Musk using weapon_zs_deathdealers_q1
+[18:11:15] eccentricego killed Virus using weapon_zs_spinfusor_q1
+[18:11:22] eccentricego killed Gay Bee using weapon_zs_spinfusor_q1
+[18:11:26] Lurry_the_loafster killed Famous News using weapon_zs_deathdealers_q1
+[18:11:26] eccentricego killed Virus using weapon_zs_spinfusor_q1
+[18:11:26] eccentricego killed Lost Elon Musk using weapon_zs_spinfusor_q1
+[18:11:40] Lurry_the_loafster killed Gay Bee using weapon_zs_deathdealers_q1
+[18:11:40] Lurry_the_loafster killed Lost Elon Musk using weapon_zs_deathdealers_q1
+[18:11:46] Lurry_the_loafster killed Virus using weapon_zs_deathdealers_q1
+[18:11:47] Lurry_the_loafster killed Famous News using weapon_zs_deathdealers_q1
+[18:11:54] eccentricego killed Lost Elon Musk using weapon_zs_spinfusor_q1
+[18:11:59] Lurry_the_loafster killed Gay Bee using weapon_zs_deathdealers_q2
+[18:12:07] Lurry_the_loafster killed Famous News using weapon_zs_deathdealers_q2
+[18:12:07] Lurry_the_loafster killed Virus using weapon_zs_deathdealers_q2
+[18:12:14] eccentricego killed Gay Bee using weapon_zs_spinfusor_q1
+[18:12:38] Lurry_the_loafster killed Gay Bee using weapon_zs_deathdealers_q2
+[18:12:40] Lurry_the_loafster killed Lost Elon Musk using weapon_zs_deathdealers_q2
+[18:12:45] Lurry_the_loafster killed Famous News using weapon_zs_deathdealers_q2
+[18:13:19] Dropped "eccentricego" from server<STEAM_0:1:7796489>
+[18:13:20] Dropped "Virus" from server<BOT>
+[18:13:21] Dropped "Famous News" from server<BOT>
+[18:13:36] (Console) called a votemap!
+[18:13:44] Gay Bee suicided!
+[18:13:50] Lost Elon Musk suicided!
+[18:13:58] Dropped "Lurry_the_loafster" from server<STEAM_0:0:205866806>
+[18:13:58] Dropped "Lost Elon Musk" from server<BOT>
+[18:13:59] Dropped "Gay Bee" from server<BOT>
+[18:14:05] Server is shutting down/changing levels.
+
+
+
+[18:14:09] New map: zs_asylum_k2a
+[18:14:35] Client "crfrider05" spawned in server <STEAM_0:1:105055371> (took 28 seconds).
+[18:14:36] Client "Black Furry" connected.
+[18:14:36] Client "" spawned in server <BOT> (took 29 seconds).
+[18:28:46] Client "Rancid Muslim" connected.
+[18:28:46] Client "" spawned in server <BOT> (took 879 seconds).
+[18:30:09] Client "1996 Ford Crown Victoria" connected.
+[18:30:49] Client "1996 Ford Crown Victoria" spawned in server <STEAM_0:1:52721748> (took 40 seconds).
+[18:30:51] Rancid Muslim killed crfrider05 using weapon_zs_zombie_gore_blaster
+[18:30:52] Dropped "Black Furry" from server<BOT>
+[18:30:56] Dropped "Rancid Muslim" from server<BOT>
+[18:31:27] (Console) called a votemap!
+[18:31:56] Server is shutting down/changing levels.
+
+
+
+[18:31:59] New map: zs_the_pub_final7
+[18:32:10] Client "1996 Ford Crown Victoria" spawned in server <STEAM_0:1:52721748> (took 13 seconds).
+[18:32:11] Client "Underage Pokemon" connected.
+[18:32:11] Client "" spawned in server <BOT> (took 14 seconds).
+[18:32:20] Client "crfrider05" spawned in server <STEAM_0:1:105055371> (took 23 seconds).
+[18:33:14] Dropped "1996 Ford Crown Victoria" from server<STEAM_0:1:52721748>
+[18:46:35] Client "Kliener" connected.
+[18:46:35] Client "" spawned in server <BOT> (took 878 seconds).
+[18:48:29] Underage Pokemon killed crfrider05 using weapon_zs_zombie
+[18:48:29] Dropped "Underage Pokemon" from server<BOT>
+[18:48:33] Dropped "Kliener" from server<BOT>
+[18:49:05] (Console) called a votemap!
+[18:49:34] Server is shutting down/changing levels.
+
+
+
+[18:49:39] New map: zs_orilla_estate_b1
+[18:50:00] Client "crfrider05" spawned in server <STEAM_0:1:105055371> (took 25 seconds).
+[18:50:00] Client "Zodiac Killer Del Taco" connected.
+[18:50:00] Client "" spawned in server <BOT> (took 25 seconds).
+[18:55:28] Zodiac Killer Del Taco killed crfrider05 using weapon_zs_zombie
+[18:55:32] Dropped "Zodiac Killer Del Taco" from server<BOT>
+[18:55:54] Client "Foretoo" connected.
+[18:56:05] Client "Offended Yeti" connected.
+[18:56:05] Client "" spawned in server <BOT> (took 390 seconds).
+[18:56:29] Client "Foretoo" spawned in server <STEAM_0:1:154075665> (took 35 seconds).
+[18:58:13] Client "nottoolatetoorder" connected.
+[18:58:40] Dropped "Foretoo" from server<STEAM_0:1:154075665>
+[19:02:46] Client "nottoolatetoorder" spawned in server <STEAM_0:1:524955595> (took 273 seconds).
+[19:03:43] Dropped "nottoolatetoorder" from server<STEAM_0:1:524955595>
+[19:05:42] Client "Pace TM" connected.
+[19:07:33] Client "Baby Picklefinger" connected.
+[19:08:22] Client "Baby Picklefinger" spawned in server <STEAM_0:1:46927039> (took 49 seconds).
+[19:08:22] Client "Mystical Vampire" connected.
+[19:08:22] Client "" spawned in server <BOT> (took 1127 seconds).
+[19:08:49] Offended Yeti killed Baby Picklefinger using weapon_zs_zombie
+[19:08:50] Dropped "Mystical Vampire" from server<BOT>
+[19:09:11] Baby Picklefinger killed crfrider05 using weapon_zs_freshdead
+[19:09:14] Dropped "Offended Yeti" from server<BOT>
+[19:09:47] (Console) called a votemap!
+[19:10:16] Server is shutting down/changing levels.
+
+
+
+[19:10:20] New map: zs_homegrown_v2
+[19:10:33] Client "Baby Picklefinger" spawned in server <STEAM_0:1:46927039> (took 16 seconds).
+[19:10:34] Client "Trailer Park Supervisor" connected.
+[19:10:34] Client "" spawned in server <BOT> (took 17 seconds).
+[19:10:42] Client "crfrider05" spawned in server <STEAM_0:1:105055371> (took 25 seconds).
+[19:11:57] Baby Picklefinger killed Trailer Park Supervisor using weapon_zs_lamp
+[19:17:53] Baby Picklefinger killed Trailer Park Supervisor using weapon_zs_peashooter
+[19:18:51] Baby Picklefinger killed Trailer Park Supervisor using weapon_zs_peashooter
+[19:20:00] Client "Awful Dinklesperg" connected.
+[19:20:00] Client "" spawned in server <BOT> (took 583 seconds).
+[19:20:10] Baby Picklefinger killed Trailer Park Supervisor using weapon_zs_shovel
+[19:20:45] Baby Picklefinger killed Trailer Park Supervisor using weapon_zs_peashooter
+[19:20:45] Baby Picklefinger killed Awful Dinklesperg using weapon_zs_peashooter
+[19:21:22] Baby Picklefinger killed Trailer Park Supervisor using weapon_zs_uzi
+[19:21:49] Trailer Park Supervisor suicided!
+[19:22:27] Baby Picklefinger killed Trailer Park Supervisor using weapon_zs_uzi
+[19:23:00] Baby Picklefinger killed Awful Dinklesperg using weapon_zs_uzi
+[19:23:31] Baby Picklefinger killed Awful Dinklesperg using weapon_zs_uzi
+[19:24:22] Baby Picklefinger killed Awful Dinklesperg using weapon_zs_uzi
+[19:24:28] Baby Picklefinger killed Trailer Park Supervisor using weapon_zs_uzi
+[19:25:22] Trailer Park Supervisor suicided!
+[19:25:44] Baby Picklefinger killed Awful Dinklesperg using weapon_zs_uzi_q1
+[19:26:02] Baby Picklefinger killed Awful Dinklesperg using weapon_zs_uzi_q1
+[19:26:21] Baby Picklefinger killed Trailer Park Supervisor using weapon_zs_uzi_q1
+[19:26:33] Baby Picklefinger killed Awful Dinklesperg using weapon_zs_uzi_q1
+[19:26:56] Baby Picklefinger killed Trailer Park Supervisor using weapon_zs_uzi_q1
+[19:27:23] Baby Picklefinger killed Awful Dinklesperg using weapon_zs_uzi_q1
+[19:27:51] Baby Picklefinger killed Trailer Park Supervisor using weapon_zs_shovel
+[19:28:08] Baby Picklefinger killed Awful Dinklesperg using weapon_zs_uzi_q1
+[19:28:30] Baby Picklefinger killed Trailer Park Supervisor using weapon_zs_uzi_q1
+[19:29:03] Trailer Park Supervisor killed Baby Picklefinger using weapon_zs_wraith
+[19:29:37] Baby Picklefinger killed crfrider05 using weapon_zs_freshdead
+[19:29:41] Dropped "Trailer Park Supervisor" from server<BOT>
+[19:29:45] Dropped "Awful Dinklesperg" from server<BOT>
+[19:30:13] (Console) called a votemap!
+[19:30:42] Server is shutting down/changing levels.
+
+
+
+[19:30:45] New map: zs_asbf_b2
+[19:31:04] Client "crfrider05" spawned in server <STEAM_0:1:105055371> (took 21 seconds).
+[19:31:04] Client "Anime Box" connected.
+[19:31:04] Client "" spawned in server <BOT> (took 21 seconds).
+[19:31:09] Client "Baby Picklefinger" spawned in server <STEAM_0:1:46927039> (took 26 seconds).
+[19:34:17] Baby Picklefinger killed Anime Box using weapon_zs_hammer
+[19:36:25] Anime Box suicided!
+[19:37:16] Baby Picklefinger killed Anime Box using weapon_zs_peashooter
+[19:39:51] Baby Picklefinger killed Anime Box using weapon_zs_peashooter
+[19:40:26] Client "Dreadful Bad Company" connected.
+[19:40:26] Client "" spawned in server <BOT> (took 583 seconds).
+[19:41:30] Baby Picklefinger killed Dreadful Bad Company using weapon_zs_peashooter
+[19:42:19] Dreadful Bad Company killed Baby Picklefinger using weapon_zs_ghoul
+[19:42:19] Dropped "Anime Box" from server<BOT>
+[19:42:36] Baby Picklefinger killed crfrider05 using weapon_zs_freshdead
+[19:42:37] Dropped "Dreadful Bad Company" from server<BOT>
+[19:43:13] Client "Virgin Man" connected.
+[19:43:13] Client "" spawned in server <BOT> (took 750 seconds).
+[19:44:47] crfrider05: hi
+[19:44:49] crfrider05: XD
+[19:45:05] crfrider05: took like 4 hours to load
+[19:45:17] crfrider05: Ima play a game for a bit so aafk!
+[19:47:45] (TEAM) crfrider05: Can I have your hammer?
+[19:48:11] (TEAM) crfrider05: thx
+[19:48:21] Baby Picklefinger: OJ
+[19:48:42] (TEAM) crfrider05: how long did it take you to load?
+[19:48:44] crfrider05: /advert PD Raid
+[19:48:45] crfrider05: /advert PD Raid
+[19:48:50] Baby Picklefinger: 2 MINS
+[19:48:51] Baby Picklefinger: /dropweapon
+[19:49:03] Baby Picklefinger: /me salutes with Respect and Honor 
+[19:49:15] crfrider05 killed Virgin Man using weapon_zs_hammer
+[19:49:34] crfrider05: /advert PD Raid
+[19:49:36] crfrider05: /advert PD Raid
+[19:49:52] crfrider05: /advert PD Raid
+[19:50:42] Baby Picklefinger killed Virgin Man using weapon_zs_peashooter
+[19:51:15] Baby Picklefinger killed Virgin Man using weapon_zs_peashooter
+[19:51:38] crfrider05 killed Virgin Man using weapon_zs_hammer
+[19:52:00] crfrider05 killed Virgin Man using weapon_zs_hammer
+[19:52:53] Client "Fruity Sochi Water" connected.
+[19:52:53] Client "" spawned in server <BOT> (took 1330 seconds).
+[19:53:24] Virgin Man suicided!
+[19:53:43] Baby Picklefinger killed Virgin Man using weapon_zs_peashooter_r2
+[19:54:06] Virgin Man killed Baby Picklefinger using weapon_zs_zombie
+[19:54:07] Dropped "Fruity Sochi Water" from server<BOT>
+[19:54:11] crfrider05 killed Virgin Man using weapon_zs_electrohammer_q2
+[19:54:17] crfrider05 killed Baby Picklefinger using weapon_zs_electrohammer_q2
+[19:54:26] Virgin Man killed crfrider05 using weapon_zs_ghoul
+[19:54:30] Dropped "Virgin Man" from server<BOT>
+[19:55:03] (Console) called a votemap!
+[19:55:28] Baby Picklefinger: heLLO
+[19:55:32] Server is shutting down/changing levels.
+
+
+
+[19:55:36] New map: zs_abandoned_mall_v9
+[19:55:48] Client "crfrider05" spawned in server <STEAM_0:1:105055371> (took 15 seconds).
+[19:55:49] Client "Hydra" connected.
+[19:55:49] Client "" spawned in server <BOT> (took 16 seconds).
+[19:56:02] Client "Baby Picklefinger" spawned in server <STEAM_0:1:46927039> (took 29 seconds).
+[19:56:34] (TEAM) crfrider05: c?
+[19:57:32] (TEAM) crfrider05: I say C
+[19:57:46] (TEAM) crfrider05: make a cade
+[19:57:48] (TEAM) crfrider05: afk
+[20:00:53] Baby Picklefinger killed Hydra using weapon_zs_peashooter
+[20:01:11] Baby Picklefinger killed Hydra using weapon_zs_peashooter
+[20:01:35] Baby Picklefinger killed Hydra using weapon_zs_peashooter
+[20:03:54] Baby Picklefinger killed Hydra using weapon_zs_peashooter
+[20:04:40] crfrider05 killed Hydra using weapon_zs_fists
+[20:04:53] (TEAM) crfrider05: want me to hammer? Or you good?
+[20:04:54] crfrider05: /advert PD Raid
+[20:04:55] crfrider05: /advert PD Raid
+[20:04:56] crfrider05: /advert PD Raid
+[20:05:16] Client "Defiled Antigamer" connected.
+[20:05:16] Client "" spawned in server <BOT> (took 583 seconds).
+[20:05:20] Baby Picklefinger: yah sure im not that good
+[20:05:35] Defiled Antigamer killed Baby Picklefinger using weapon_zs_zombie
+[20:05:35] Dropped "Defiled Antigamer" from server<BOT>
+[20:05:41] crfrider05 killed Baby Picklefinger using weapon_zs_hammer
+[20:05:44] crfrider05: ;c
+[20:07:04] crfrider05 killed Baby Picklefinger using weapon_zs_peashooter
+[20:07:28] Baby Picklefinger suicided!
+[20:09:16] crfrider05 killed Baby Picklefinger using weapon_zs_peashooter
+[20:10:12] Client "Purple Fox" connected.
+[20:10:12] Client "" spawned in server <BOT> (took 879 seconds).
+[20:11:05] Hydra killed crfrider05 using weapon_zs_zombie
+[20:11:07] Dropped "Hydra" from server<BOT>
+[20:11:12] Dropped "Purple Fox" from server<BOT>
+[20:11:31] Baby Picklefinger: gg
+[20:11:38] Baby Picklefinger: good game
+[20:11:39] crfrider05: g g
+[20:11:42] (Console) called a votemap!
+[20:11:56] crfrider05: alright]
+[20:12:03] crfrider05: you get all the crates,
+[20:12:09] crfrider05: I build/ shoot
+[20:12:11] Server is shutting down/changing levels.
+
+
+
+[20:12:15] New map: zs_insurance_v3
+[20:12:26] Client "crfrider05" spawned in server <STEAM_0:1:105055371> (took 14 seconds).
+[20:12:26] Client "Chad Pokemon" connected.
+[20:12:26] Client "" spawned in server <BOT> (took 14 seconds).
+[20:12:27] Client "Baby Picklefinger" spawned in server <STEAM_0:1:46927039> (took 15 seconds).
+[20:13:56] Baby Picklefinger: which are we defending
+[20:14:01] crfrider05: c
+[20:14:11] crfrider05: cense the bots cant go through the windows
+[20:14:11] Baby Picklefinger: aight
+[20:14:30] Baby Picklefinger: bn is also good thio
+[20:15:08] crfrider05: you know how to buy right?
+[20:15:14] Baby Picklefinger: yah;
+[20:15:17] crfrider05: good
+[20:15:24] Baby Picklefinger: great
+[20:15:36] (TEAM) crfrider05: outstanding
+[20:15:41] Baby Picklefinger: Awmesome
+[20:15:47] crfrider05: wholesom
+[20:16:03] Baby Picklefinger: meanwordcism
+[20:16:09] (TEAM) crfrider05: ;-;
+[20:17:38] crfrider05 killed Chad Pokemon using weapon_zs_owens
+[20:17:54] crfrider05 killed Chad Pokemon using weapon_zs_owens
+[20:18:04] Client "?" connected.
+[20:18:06] crfrider05: can you cover"
+[20:18:14] crfrider05 killed Chad Pokemon using weapon_zs_owens
+[20:18:16] Baby Picklefinger: yah
+[20:19:07] Chad Pokemon suicided!
+[20:19:11] (TEAM) crfrider05: uh
+[20:19:11] Client "Пакетик Чая" connected.
+[20:19:29] Baby Picklefinger killed Chad Pokemon using weapon_zs_blaster
+[20:19:41] Baby Picklefinger killed Chad Pokemon using weapon_zs_blaster
+[20:20:01] Baby Picklefinger killed Chad Pokemon using weapon_zs_blaster
+[20:20:41] Baby Picklefinger killed Chad Pokemon using weapon_zs_blaster
+[20:21:05] crfrider05 killed Chad Pokemon using weapon_zs_owens
+[20:21:34] crfrider05 killed Chad Pokemon using prop_physics
+[20:21:42] Baby Picklefinger: Upgrage station?
+[20:21:53] crfrider05: got one?
+[20:21:55] Client "Toxic Bee" connected.
+[20:21:55] Client "" spawned in server <BOT> (took 583 seconds).
+[20:22:04] Baby Picklefinger: not enough pointsd
+[20:22:05] crfrider05: bring that resupply back
+[20:22:14] crfrider05 killed Chad Pokemon using weapon_zs_owens
+[20:22:32] crfrider05 killed Toxic Bee using weapon_zs_owens
+[20:22:33] Baby Picklefinger: lets teleport to B?
+[20:22:44] crfrider05 killed Toxic Bee using weapon_zs_owens
+[20:22:55] (TEAM) crfrider05: cant repair that
+[20:23:47] Toxic Bee suicided!
+[20:24:24] Baby Picklefinger: got an arsenal crate
+[20:24:58] crfrider05 killed Chad Pokemon using weapon_zs_owens
+[20:25:24] crfrider05 killed Chad Pokemon using weapon_zs_owens
+[20:25:44] Baby Picklefinger killed Toxic Bee using weapon_zs_blaster
+[20:26:03] crfrider05 killed Chad Pokemon using weapon_zs_galestorm
+[20:26:09] (TEAM) crfrider05: push
+[20:27:58] Toxic Bee killed Baby Picklefinger using weapon_zs_zombie
+[20:28:04] crfrider05: NO
+[20:28:17] Baby Picklefinger: Give me blaaaaaaaaad
+[20:28:27] crfrider05 killed Baby Picklefinger using weapon_zs_galestorm
+[20:28:31] crfrider05 killed Toxic Bee using weapon_zs_galestorm
+[20:28:53] Baby Picklefinger killed crfrider05 using weapon_zs_fleshcreeper
+[20:28:53] Dropped "Toxic Bee" from server<BOT>
+[20:28:58] Dropped "Chad Pokemon" from server<BOT>
+[20:28:59] crfrider05: oooooooooooooooooooooof
+[20:29:10] Baby Picklefinger: ewww +A
+[20:29:29] (Console) called a votemap!
+[20:29:58] Server is shutting down/changing levels.
+
+
+
+[20:30:01] New map: zs_trainstation
+[20:30:11] Client "crfrider05" spawned in server <STEAM_0:1:105055371> (took 12 seconds).
+[20:30:11] Client "Lustful Elon Musk" connected.
+[20:30:11] Client "" spawned in server <BOT> (took 12 seconds).
+[20:30:27] Client "Baby Picklefinger" spawned in server <STEAM_0:1:46927039> (took 28 seconds).
+[20:31:01] crfrider05: buy all the crates
+[20:31:41] Baby Picklefinger: got it
+[20:31:47] crfrider05: yay
+[20:32:13] Baby Picklefinger: if u find an hammer tekk me
+[20:32:26] crfrider05: k
+[20:35:39] crfrider05 killed Lustful Elon Musk using weapon_zs_owens
+[20:35:51] Baby Picklefinger: you lust naiked that door to another door
+[20:36:07] (TEAM) crfrider05: lol
+[20:36:09] (TEAM) crfrider05: XD
+[20:36:19] crfrider05 killed Lustful Elon Musk using weapon_zs_owens
+[20:36:30] Baby Picklefinger: *nailed
+[20:36:51] Baby Picklefinger killed Lustful Elon Musk using weapon_zs_tosser
+[20:37:05] (TEAM) Baby Picklefinger: YOUR FACE
+[20:37:17] (TEAM) crfrider05: ?
+[20:37:56] crfrider05 killed Lustful Elon Musk using weapon_zs_owens
+[20:38:14] Client "SkillShot" connected.
+[20:38:31] crfrider05 killed Lustful Elon Musk using weapon_zs_owens
+[20:39:03] Baby Picklefinger killed Lustful Elon Musk using weapon_zs_tosser_q2
+[20:39:36] (TEAM) Baby Picklefinger: i think thats what happens when you nail props to toher props. if one breaks, the others follow
+[20:39:41] Client "Zodiac Killer Odie" connected.
+[20:39:41] Client "" spawned in server <BOT> (took 582 seconds).
+[20:39:55] (TEAM) crfrider05: yeah
+[20:40:07] crfrider05 killed Lustful Elon Musk using weapon_zs_hammer
+[20:40:12] Baby Picklefinger killed Zodiac Killer Odie using weapon_zs_tosser_q2
+[20:40:39] Lustful Elon Musk suicided!
+[20:40:54] crfrider05 killed Zodiac Killer Odie using weapon_zs_owens
+[20:41:20] crfrider05 killed Lustful Elon Musk using weapon_zs_owens
+[20:41:30] Zodiac Killer Odie suicided!
+[20:42:01] crfrider05 killed Lustful Elon Musk using weapon_zs_owens
+[20:42:03] crfrider05 killed Zodiac Killer Odie using weapon_zs_owens
+[20:42:33] Lustful Elon Musk suicided!
+[20:42:35] Zodiac Killer Odie suicided!
+[20:43:13] Baby Picklefinger killed Lustful Elon Musk using weapon_zs_tosser_q2
+[20:43:18] crfrider05 killed Zodiac Killer Odie using weapon_zs_owens
+[20:43:50] crfrider05 killed Lustful Elon Musk using weapon_zs_owens
+[20:43:50] crfrider05 killed Zodiac Killer Odie using weapon_zs_owens
+[20:43:50] Baby Picklefinger killed Zodiac Killer Odie using weapon_zs_tosser_q2
+[20:45:13] Baby Picklefinger killed Lustful Elon Musk using weapon_zs_uzi_q1
+[20:45:35] Baby Picklefinger killed Zodiac Killer Odie using weapon_zs_uzi_q1
+[20:45:41] crfrider05 killed Lustful Elon Musk using weapon_zs_owens
+[20:46:05] crfrider05 killed Zodiac Killer Odie using weapon_zs_owens
+[20:46:13] (TEAM) crfrider05: uzi?
+[20:46:14] Baby Picklefinger: hammer?
+[20:46:16] crfrider05 killed Lustful Elon Musk using weapon_zs_owens
+[20:46:38] Baby Picklefinger: GIVE ME CHEESEEEE
+[20:46:44] Baby Picklefinger killed Zodiac Killer Odie using weapon_zs_uzi_q1
+[20:46:49] Baby Picklefinger killed Lustful Elon Musk using weapon_zs_uzi_q1
+[20:46:56] (TEAM) crfrider05: get the owens handgun and dismantle it to get a double barrel attachment for the uzi
+[20:47:28] crfrider05 killed Zodiac Killer Odie using prop_gunturret_assault
+[20:47:36] Baby Picklefinger killed Lustful Elon Musk using weapon_zs_uzi_q1
+[20:47:56] crfrider05 killed Zodiac Killer Odie using prop_gunturret_assault
+[20:48:05] (TEAM) crfrider05: fully automated lol
+[20:48:21] crfrider05 killed Lustful Elon Musk using prop_gunturret_assault
+[20:48:35] crfrider05 killed Zodiac Killer Odie using prop_gunturret_assault
+[20:48:44] Baby Picklefinger: jjj
+[20:48:53] crfrider05 killed Lustful Elon Musk using weapon_zs_owens
+[20:49:10] Baby Picklefinger killed Zodiac Killer Odie using weapon_zs_uzi_q1
+[20:49:47] Client "Defiled Furry" connected.
+[20:49:47] Client "" spawned in server <BOT> (took 1188 seconds).
+[20:50:06] Baby Picklefinger: csdhjkjkfhasdlk
+[20:50:14] Baby Picklefinger killed Defiled Furry using weapon_zs_uzi_q1
+[20:50:16] crfrider05 killed Zodiac Killer Odie using prop_gunturret_assault
+[20:50:21] crfrider05 killed Lustful Elon Musk using prop_gunturret_assault
+[20:50:48] Zodiac Killer Odie suicided!
+[20:50:51] crfrider05 killed Defiled Furry using prop_gunturret_assault
+[20:51:01] crfrider05 killed Lustful Elon Musk using prop_gunturret_assault
+[20:51:34] crfrider05 killed Zodiac Killer Odie using prop_gunturret_assault
+[20:51:38] crfrider05 killed Defiled Furry using weapon_zs_owens
+[20:51:41] Baby Picklefinger killed Lustful Elon Musk using prop_manhack
+[20:51:47] Client "Nyeo" connected.
+[20:51:53] crfrider05: oh no
+[20:51:56] crfrider05: a real player
+[20:52:01] crfrider05: also
+[20:52:04] crfrider05: here
+[20:52:13] Baby Picklefinger killed Defiled Furry using prop_manhack
+[20:52:15] Baby Picklefinger killed Zodiac Killer Odie using prop_manhack
+[20:52:15] Baby Picklefinger killed Lustful Elon Musk using prop_manhack
+[20:52:21] Baby Picklefinger: noooo
+[20:52:25] crfrider05: hey
+[20:52:25] Client "Eight" connected.
+[20:52:30] crfrider05: grab your drone
+[20:52:42] Client "Nyeo" spawned in server <STEAM_0:0:93562108> (took 55 seconds).
+[20:52:48] Client "Eight" connected.
+[20:53:02] Baby Picklefinger killed Zodiac Killer Odie using prop_manhack_saw
+[20:53:05] crfrider05 killed Defiled Furry using prop_gunturret_assault
+[20:53:07] crfrider05 killed Lustful Elon Musk using weapon_zs_owens
+[20:53:07] Nyeo suicided!
+[20:53:26] Client "BiG Cheese" connected.
+[20:53:27] crfrider05 killed Nyeo using weapon_zs_owens
+[20:53:32] Nyeo suicided!
+[20:53:38] crfrider05 killed Lustful Elon Musk using prop_gunturret_assault
+[20:53:43] crfrider05 killed Zodiac Killer Odie using weapon_zs_owens
+[20:53:49] crfrider05 killed Defiled Furry using weapon_zs_owens
+[20:54:10] crfrider05 killed Lustful Elon Musk using prop_gunturret_assault
+[20:54:20] crfrider05 killed Zodiac Killer Odie using weapon_zs_owens
+[20:54:30] crfrider05 killed Defiled Furry using prop_gunturret_assault
+[20:54:31] Client "Eight" spawned in server <STEAM_0:1:84947845> (took 103 seconds).
+[20:54:36] crfrider05 killed Nyeo using weapon_zs_owens
+[20:55:01] Baby Picklefinger: hello people
+[20:55:10] Client "BiG Cheese" connected.
+[20:56:08] Baby Picklefinger killed Zodiac Killer Odie using weapon_zs_uzi_q2
+[20:56:09] Baby Picklefinger killed Eight using weapon_zs_uzi_q2
+[20:56:22] crfrider05 killed Defiled Furry using prop_gunturret_assault
+[20:56:24] Baby Picklefinger killed Lustful Elon Musk using weapon_zs_uzi_q2
+[20:56:33] Baby Picklefinger killed Nyeo using weapon_zs_uzi_q2
+[20:56:34] crfrider05 killed Eight using weapon_zs_bulletstorm
+[20:56:38] Zodiac Killer Odie killed crfrider05 using weapon_zs_skelesham
+[20:56:38] Client "BiG Cheese" spawned in server <STEAM_0:0:35812678> (took 88 seconds).
+[20:56:39] Dropped "Lustful Elon Musk" from server<BOT>
+[20:56:43] Nyeo suicided!
+[20:56:48] Defiled Furry suicided!
+[20:56:58] Baby Picklefinger killed crfrider05 using weapon_zs_uzi_q2
+[20:57:00] Zodiac Killer Odie killed Baby Picklefinger using weapon_zs_skelesham
+[20:57:03] Dropped "Zodiac Killer Odie" from server<BOT>
+[20:57:05] Dropped "crfrider05" from server<STEAM_0:1:105055371>
+[20:57:07] Dropped "Defiled Furry" from server<BOT>
+[20:57:35] Dropped "Baby Picklefinger" from server<STEAM_0:1:46927039>
+[20:57:37] (Console) called a votemap!
+[20:58:06] Server is shutting down/changing levels.
+
+
+
+[21:02:20] New map: zs_infirmary_ka2
+[22:42:09] Client "But Hentai Is Better!" connected.
+<Logging continued in "data/ulx_logs/01-18-20.txt">

@@ -1,0 +1,14 @@
+VertexLitGeneric
+{
+$BaseTexture "models/weapons/c_sledgehammer/sledge"
+$BumpMap "models/weapons/c_sledgehammer/sledge_normal"
+
+$EnvMap ENV_CUBEMAP
+$EnvMapFresnel 1
+$NormalMapAlphaEnvMapMask 1
+
+$Phong 1
+$PhongBoost 12
+$PhongExponent 12
+$PhongFresnelRanges "[0 .7 1.64]"
+}

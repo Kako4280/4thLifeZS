@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/weapons/c_blaster/body_skin"
+		"$envmapmask" "models/weapons/c_blaster/body_skin_specular"
+		"$envmap" "env_cubemap"
+		"$envmaptint" "[ .45 .45 .45 ]"
+		"$envmapconstrast" .4
+}
+
+
