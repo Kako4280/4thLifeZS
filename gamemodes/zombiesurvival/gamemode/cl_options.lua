@@ -68,6 +68,8 @@ GM.RewardIcons["weapon_zs_barricadekit"] = "models/props_debris/wood_board05a.md
 
 GM.CrosshairColor = Color(CreateClientConVar("zs_crosshair_colr", "255", true, false):GetInt(), CreateClientConVar("zs_crosshair_colg", "255", true, false):GetInt(), CreateClientConVar("zs_crosshair_colb", "255", true, false):GetInt(), CreateClientConVar("zs_crosshair_cola", "220", true, false):GetInt())
 GM.CrosshairColor2 = Color(CreateClientConVar("zs_crosshair_colr2", "220", true, false):GetInt(), CreateClientConVar("zs_crosshair_colg2", "0", true, false):GetInt(), CreateClientConVar("zs_crosshair_colb2", "0", true, false):GetInt(), CreateClientConVar("zs_crosshair_cola2", "220", true, false):GetInt())
+GM.DamageNumberColor = Color(CreateClientConVar("zs_damagenumber_colr", "220", true, false):GetInt(), CreateClientConVar("zs_damagenumber_colg", "0", true, false):GetInt(), CreateClientConVar("zs_damagenumber_colb", "0", true, false):GetInt(), CreateClientConVar("zs_damagenumber_cola", "255", true, false):GetInt())
+GM.PropDamageNumberColor = Color(CreateClientConVar("zs_propdamagenumber_colr", "220", true, false):GetInt(), CreateClientConVar("zs_propdamagenumber_colg", "220", true, false):GetInt(), CreateClientConVar("zs_propdamagenumber_colb", "0", true, false):GetInt(), CreateClientConVar("zs_propdamagenumber_cola", "255", true, false):GetInt())
 cvars.AddChangeCallback("zs_crosshair_colr", function(cvar, oldvalue, newvalue) GAMEMODE.CrosshairColor.r = tonumber(newvalue) or 255 end)
 cvars.AddChangeCallback("zs_crosshair_colg", function(cvar, oldvalue, newvalue) GAMEMODE.CrosshairColor.g = tonumber(newvalue) or 255 end)
 cvars.AddChangeCallback("zs_crosshair_colb", function(cvar, oldvalue, newvalue) GAMEMODE.CrosshairColor.b = tonumber(newvalue) or 255 end)
@@ -76,6 +78,14 @@ cvars.AddChangeCallback("zs_crosshair_colr2", function(cvar, oldvalue, newvalue)
 cvars.AddChangeCallback("zs_crosshair_colg2", function(cvar, oldvalue, newvalue) GAMEMODE.CrosshairColor2.g = tonumber(newvalue) or 255 end)
 cvars.AddChangeCallback("zs_crosshair_colb2", function(cvar, oldvalue, newvalue) GAMEMODE.CrosshairColor2.b = tonumber(newvalue) or 255 end)
 cvars.AddChangeCallback("zs_crosshair_cola2", function(cvar, oldvalue, newvalue) GAMEMODE.CrosshairColor2.a = tonumber(newvalue) or 255 end)
+cvars.AddChangeCallback("zs_damagenumber_colr", function(cvar, oldvalue, newvalue) GAMEMODE.DamageNumberColor.r = tonumber(newvalue) or 255 end)
+cvars.AddChangeCallback("zs_damagenumber_colg", function(cvar, oldvalue, newvalue) GAMEMODE.DamageNumberColor.g = tonumber(newvalue) or 255 end)
+cvars.AddChangeCallback("zs_damagenumber_colb", function(cvar, oldvalue, newvalue) GAMEMODE.DamageNumberColor.b = tonumber(newvalue) or 255 end)
+cvars.AddChangeCallback("zs_damagenumber_cola", function(cvar, oldvalue, newvalue) GAMEMODE.DamageNumberColor.a = tonumber(newvalue) or 255 end)
+cvars.AddChangeCallback("zs_propdamagenumber_colr", function(cvar, oldvalue, newvalue) GAMEMODE.PropDamageNumberColor.r = tonumber(newvalue) or 255 end)
+cvars.AddChangeCallback("zs_propdamagenumber_colg", function(cvar, oldvalue, newvalue) GAMEMODE.PropDamageNumberColor.g = tonumber(newvalue) or 255 end)
+cvars.AddChangeCallback("zs_propdamagenumber_colb", function(cvar, oldvalue, newvalue) GAMEMODE.PropDamageNumberColor.b = tonumber(newvalue) or 255 end)
+cvars.AddChangeCallback("zs_propdamagenumber_cola", function(cvar, oldvalue, newvalue) GAMEMODE.PropDamageNumberColor.a = tonumber(newvalue) or 255 end)
 
 GM.FilmMode = CreateClientConVar("zs_filmmode", "0", true, false):GetBool()
 cvars.AddChangeCallback("zs_filmmode", function(cvar, oldvalue, newvalue)
@@ -84,11 +94,14 @@ cvars.AddChangeCallback("zs_filmmode", function(cvar, oldvalue, newvalue)
 	gamemode.Call("EvaluateFilmMode")
 end)
 
+
+
 CreateClientConVar("zs_noredeem", "0", true, true)
 CreateClientConVar("zs_alwaysvolunteer", "0", true, true)
 CreateClientConVar("zs_nobosspick", "0", true, true)
 CreateClientConVar("zs_nousetodeposit", "0", true, true)
 CreateClientConVar("zs_nopickupprops", "0", true, true)
+CreateClientConVar("zs_nodeploypacking", "0", true, true)
 CreateClientConVar("zs_playermodel", "models/player/alyx.mdl", true, true)
 CreateClientConVar("zs_playerskin", "0", true, true)
 CreateClientConVar("zs_giveammoamount", "15", true, true)
@@ -123,6 +136,16 @@ cvars.AddChangeCallback("zs_damagefloaterswalls", function(cvar, oldvalue, newva
 	GAMEMODE.DamageNumberThroughWalls = tonumber(newvalue) == 1
 end)
 
+--[[GM.EnableDroppedItemNames = CreateClientConVar("zs_droppeditemnames", "0", true, false):GetBool() not sure if kako wants this one
+cvars.AddChangeCallback("zs_droppeditemnames", function(cvar, oldvalue, newvalue)
+	GAMEMODE.EnableDroppedItemNames = tonumber(newvalue) == 1
+end)]]
+
+GM.EnableCustomViewModelPosition = CreateClientConVar("zs_enableviewmodelpos", "0", true, false):GetBool()
+cvars.AddChangeCallback("zs_enableviewmodelpos", function(cvar, oldvalue, newvalue)
+	GAMEMODE.EnableCustomViewModelPosition = tonumber(newvalue) == 1
+end)
+
 GM.BeatsVolume = math.Clamp(CreateClientConVar("zs_beatsvolume", 80, true, false):GetInt(), 0, 100) / 100
 cvars.AddChangeCallback("zs_beatsvolume", function(cvar, oldvalue, newvalue)
 	GAMEMODE.BeatsVolume = math.Clamp(tonumber(newvalue) or 0, 0, 100) / 100
@@ -141,11 +164,6 @@ end)
 GM.CrosshairThickness = math.Clamp(CreateClientConVar("zs_crosshairthickness", 1, true, false):GetFloat(), 0.5, 2)
 cvars.AddChangeCallback("zs_crosshairthickness", function(cvar, oldvalue, newvalue)
 	GAMEMODE.CrosshairThickness = math.Clamp(tonumber(newvalue) or 1, 0.5, 2)
-end)
-
-GM.EnableCustomViewModelPosition = CreateClientConVar("zs_enableviewmodelpos", "0", true, false):GetBool()
-cvars.AddChangeCallback("zs_enableviewmodelpos", function(cvar, oldvalue, newvalue)
-	GAMEMODE.EnableCustomViewModelPosition = tonumber(newvalue) == 1
 end)
 
 GM.PropRotationSensitivity = math.Clamp(CreateClientConVar("zs_proprotationsens", 1, true, false):GetFloat(), 0.1, 4)
@@ -244,7 +262,7 @@ cvars.AddChangeCallback("zs_hideviewmodels", function(cvar, oldvalue, newvalue)
 	GAMEMODE.HideViewModels = tonumber(newvalue) == 1
 end)
 
-GM.TransparencyRadiusMax = 2048
+GM.TransparencyRadiusMax = 8192
 GM.TransparencyRadius = 0
 
 GM.TransparencyRadius1p = math.Clamp(CreateClientConVar("zs_transparencyradius", 140, true, false):GetInt(), 0, GM.TransparencyRadiusMax) ^ 2
@@ -296,6 +314,11 @@ end)
 GM.HidePacks = CreateClientConVar("zs_hidepacks", "0", true, false):GetBool()
 cvars.AddChangeCallback("zs_hidepacks", function(cvar, oldvalue, newvalue)
 	GAMEMODE.HidePacks = tonumber(newvalue) == 1
+end)
+
+GM.DisableSCKWorldModels = CreateClientConVar("zs_disableSCKworldmodels", "0", true, false):GetBool()
+cvars.AddChangeCallback("zs_disableSCKworldmodels", function(cvar, oldvalue, newvalue)
+	GAMEMODE.DisableSCKWorldModels = tonumber(newvalue) == 1
 end)
 
 GM.AlwaysDrawFriend = CreateClientConVar("zs_showfriends", "0", true, false):GetBool()
