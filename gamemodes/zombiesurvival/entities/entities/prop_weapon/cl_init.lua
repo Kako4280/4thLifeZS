@@ -15,9 +15,19 @@ function ENT:Think()
 			local showmdl = weptab.ShowWorldModel or not self:LookupBone("ValveBiped.Bip01_R_Hand") and not weptab.NoDroppedWorldModel
 			self.ShowBaseModel = weptab.ShowWorldModel == nil and true or showmdl
 
-			if weptab.WElements then
+			local DisableSCK = GAMEMODE.DisableSCKWorldModels
+			if DisableSCK == true then
+			  if weptab.WElements then
+				self.ShowWorldModel = true
+				self.ShowBaseModel = true
+			  end
+			end
+
+		    if not DisableSCK then
+			   if weptab.WElements then
 				self.WElements = table.FullCopy(weptab.WElements)
 				self:CreateModels(self.WElements)
+			   end
 			end
 
 			self.ColorModulation = weptab.DroppedColorModulation or self.ColorModulation

@@ -26,11 +26,26 @@ function SWEP:Anim_Initialize()
 
 		-- Create a new table for every weapon instance
 		self.VElements = table.FullCopy( self.VElements )
-		self.WElements = table.FullCopy( self.WElements )
+		--self.WElements = table.FullCopy( self.WElements )
 		self.ViewModelBoneMods = table.FullCopy( self.ViewModelBoneMods )
 
+		local DisableSCK = GAMEMODE.DisableSCKWorldModels
+		if DisableSCK == true then
+		  if self.WElements then
+			self.ShowWorldModel = true
+			self.ShowBaseModel = true
+		  end
+		end
+
+		if not DisableSCK then
+		   if self.WElements then
+			self.WElements = table.FullCopy(self.WElements)
+			self:CreateModels(self.WElements)
+		   end
+		end
+
 		self:CreateModels(self.VElements) -- create viewmodels
-		self:CreateModels(self.WElements) -- create worldmodels
+		--self:CreateModels(self.WElements) -- create worldmodels
 
 		-- init view model bone build function
 		if IsValid(self:GetOwner()) then
