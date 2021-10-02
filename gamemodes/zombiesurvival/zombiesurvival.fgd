@@ -547,6 +547,7 @@
 	// Inputs
 	input setzombiespeedmultiplier(float)  : "Multiplyer for Zombie speed."
 	input setzombiedamagemultiplier(float) : "Multiplyer for Zombie damage."
+	input setnumberofsigils(integer) : "Determines number of sigils on the map"
 ]
 
 @PointClass base(Targetname) = logic_pickups : "ZS: Allows you to control how much stuff people can pickup in the map. Only things placed by the mapper work with this system. Stuff from dead humans doesn't count."
