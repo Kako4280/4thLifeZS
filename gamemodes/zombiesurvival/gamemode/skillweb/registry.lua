@@ -902,9 +902,9 @@ GM:AddSkill(SKILL_ASSASSIN3, "Assassin III", GOOD.."+10% Melee Damage\n"..GOOD..
 																8,			4,					{SKILL_ASSASSIN2}, TREE_MELEETREE)
 GM:AddSkill(SKILL_GLADIATOR1, "Gladiator I", GOOD.."+5% Melee Damage\n"..GOOD.."+4 Blood Armor\n"..BAD.."-5 Movement Speed\n"..BAD.."-7% Phasing Speed",
 																4,			-2,					{SKILL_BATTLER6}, TREE_MELEETREE)	
-GM:AddSkill(SKILL_GLADIATOR2, "Gladiator I", GOOD.."+5% Melee Damage\n"..GOOD.."+4 Blood Armor\n"..BAD.."-5 Movement Speed\n"..BAD.."-7% Phasing Speed",
+GM:AddSkill(SKILL_GLADIATOR2, "Gladiator II", GOOD.."+5% Melee Damage\n"..GOOD.."+4 Blood Armor\n"..BAD.."-5 Movement Speed\n"..BAD.."-7% Phasing Speed",
 																6,			-3,					{SKILL_GLADIATOR1}, TREE_MELEETREE)		
-GM:AddSkill(SKILL_GLADIATOR3, "Gladiator I", GOOD.."+10% Melee Damage\n"..GOOD.."+7 Blood Armor\n"..BAD.."-5 Movement Speed\n"..BAD.."-6% Phasing Speed",
+GM:AddSkill(SKILL_GLADIATOR3, "Gladiator III", GOOD.."+10% Melee Damage\n"..GOOD.."+7 Blood Armor\n"..BAD.."-5 Movement Speed\n"..BAD.."-6% Phasing Speed",
 																8,			-4,					{SKILL_GLADIATOR2}, TREE_MELEETREE)																		
 
 GM:SetSkillModifierFunction(SKILLMOD_SPEED, function(pl, amount)
