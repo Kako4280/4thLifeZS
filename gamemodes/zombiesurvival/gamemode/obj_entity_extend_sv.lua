@@ -312,6 +312,8 @@ end
 function meta:PackUp(pl)
 	if not self.CanPackUp then return end
 
+	if pl:GetInfo("zs_nodeploypacking") == "1" then return end
+
 	local cur = pl:GetStatus("packup")
 	if cur and cur:IsValid() then return end
 
