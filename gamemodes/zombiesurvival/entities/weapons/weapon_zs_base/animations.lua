@@ -243,6 +243,8 @@ if CLIENT then
 				model:EnableMatrix( "RenderMultiply", matrix )
 
 				if (v.material == "") then
+					model:SetMaterial("")
+				elseif (model:GetMaterial() != v.material) then
 					model:SetMaterial( v.material )
 				end
 
