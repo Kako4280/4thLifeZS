@@ -1674,7 +1674,7 @@ function GM:RestartRound()
 		net.WriteString("RestartRound")
 	net.Broadcast()
 	
-	for k, v in pairs(Player.GetAll()) do
+	for k, v in pairs(player.GetAll()) do
 		v:SetNWInt("points", 0)
 	end
 end
