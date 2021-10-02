@@ -51,7 +51,7 @@ if SERVER then
 		if pl:WasHitInHead() or pl:GetStatus("shockdebuff") or hitgroup == HITGROUP_LEFTLEG or hitgroup == HITGROUP_RIGHTLEG then return end
 
 		local dmgtype = dmginfo:GetDamageType()
-		if bit_band(dmgtype, DMG_ALWAYSGIB) ~= 0 or bit_band(dmgtype, DMG_BURN) ~= 0 or bit_band(dmgtype, DMG_CRUSH) ~= 0 then return end
+		if bit.band(dmgtype, DMG_ALWAYSGIB) ~= 0 or bit.band(dmgtype, DMG_BURN) ~= 0 or bit.band(dmgtype, DMG_CRUSH) ~= 0 then return end
 
 		if pl.FeignDeath and pl.FeignDeath:IsValid() then return end
 
