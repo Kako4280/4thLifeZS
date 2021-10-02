@@ -41,6 +41,8 @@ SWEP.HitDecal = "Manhackcut"
 
 SWEP.AllowQualityWeapons = true
 
+SWEP.Tier = 1
+
 GAMEMODE:AttachWeaponModifier(SWEP, WEAPON_MODIFIER_MELEE_RANGE, 3)
 
 function SWEP:PlaySwingSound()

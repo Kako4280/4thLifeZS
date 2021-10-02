@@ -36,6 +36,8 @@ SWEP.NoHitSoundFlesh = true
 
 SWEP.AllowQualityWeapons = true
 
+SWEP.Tier = 1
+
 GAMEMODE:AttachWeaponModifier(SWEP, WEAPON_MODIFIER_FIRE_DELAY, -0.085)
 
 function SWEP:PlaySwingSound()

@@ -42,6 +42,8 @@ SWEP.SwingHoldType = "melee"
 SWEP.AllowQualityWeapons = true
 SWEP.DismantleDiv = 2
 
+SWEP.Tier = 1
+
 GAMEMODE:AttachWeaponModifier(SWEP, WEAPON_MODIFIER_FIRE_DELAY, -0.1)
 
 function SWEP:PlaySwingSound()

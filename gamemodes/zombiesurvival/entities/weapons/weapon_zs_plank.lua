@@ -42,6 +42,8 @@ SWEP.MissGesture = SWEP.HitGesture
 
 SWEP.AllowQualityWeapons = true
 
+SWEP.Tier = 1
+
 GAMEMODE:AttachWeaponModifier(SWEP, WEAPON_MODIFIER_MELEE_RANGE, 4)
 
 function SWEP:PlaySwingSound()

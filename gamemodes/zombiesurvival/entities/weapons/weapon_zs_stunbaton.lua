@@ -28,6 +28,8 @@ SWEP.SwingHoldType = "grenade"
 
 SWEP.AllowQualityWeapons = true
 
+SWEP.Tier = 1
+
 GAMEMODE:AttachWeaponModifier(SWEP, WEAPON_MODIFIER_FIRE_DELAY, -0.09)
 GAMEMODE:AttachWeaponModifier(SWEP, WEAPON_MODIFIER_LEG_DAMAGE, 2)
 

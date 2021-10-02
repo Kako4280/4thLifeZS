@@ -42,4 +42,6 @@ SWEP.NoGlassWeapons = false
 
 SWEP.AllowQualityWeapons = true
 
+SWEP.Tier = 1
+
 GAMEMODE:AttachWeaponModifier(SWEP, WEAPON_MODIFIER_FIRE_DELAY, -0.06)

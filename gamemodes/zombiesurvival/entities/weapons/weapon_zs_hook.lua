@@ -42,6 +42,8 @@ SWEP.NoGlassWeapons = true
 SWEP.AllowQualityWeapons = true
 SWEP.Weaken = false
 
+SWEP.Tier = 1
+
 GAMEMODE:AttachWeaponModifier(SWEP, WEAPON_MODIFIER_MELEE_IMPACT_DELAY, -0.1)
 GAMEMODE:AddNewRemantleBranch(SWEP, 1, "Meat Grapple", "Deals less damage but zombies affected by it take more damage from any source", function(wept)
 	wept.Weaken = true

@@ -41,6 +41,8 @@ SWEP.SwingHoldType = "grenade"
 SWEP.AllowQualityWeapons = true
 SWEP.Culinary = true
 
+SWEP.Tier = 1
+
 GAMEMODE:AttachWeaponModifier(SWEP, WEAPON_MODIFIER_FIRE_DELAY, -0.1)
 
 function SWEP:PlayHitSound()
