@@ -1,5 +1,3 @@
-INC_CLIENT()
-
 AddCSLuaFile()
 
 SWEP.PrintName = "'Nova Colt' Handcannon"
