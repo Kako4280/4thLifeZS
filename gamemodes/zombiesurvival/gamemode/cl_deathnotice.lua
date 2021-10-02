@@ -390,9 +390,11 @@ killicon.Add("weapon_zs_craftingpack", "zombiesurvival/killicons/weapon_zs_craft
 killicon.Add("weapon_zs_camera", "zombiesurvival/killicons/weapon_zs_camera")
 
 killicon.Add("status_bleed", "zombiesurvival/killicons/bleed", Color(255, 0, 0))
+killicon.Add("status_human_bleed", "zombiesurvival/killicons/bleed", Color(255, 0, 0))
+killicon.Add("status_human_fire", "zombiesurvival/killicons/burn", Color(255, 182, 0))
 killicon.Add("status_poison", "zombiesurvival/killicons/projectile_poisonflesh")
-killicon.Add("env_fire", "zombiesurvival/killicons/burn")
-killicon.Add("entityflame", "zombiesurvival/killicons/burn")
+killicon.Add("env_fire", "zombiesurvival/killicons/burn", Color(255, 182, 0))
+killicon.Add("entityflame", "zombiesurvival/killicons/burn", Color(255, 182, 0))
 
 killicon.Add("ammo_pistol", "zombiesurvival/killicons/pistol_ammo_icon", Color(255, 255, 200))
 killicon.Add("ammo_shotgun", "zombiesurvival/killicons/shotgun_ammo_icon", Color(255, 140, 120))
