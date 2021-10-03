@@ -131,11 +131,11 @@ wept.Primary.Delay = 0.67
 
     wept.Acid = true
     wept.AcidDamage = 9
-	wept.AcidChance = 100
+	wept.AcidChance = 1
 	
     wept.Corrosion = true 
     wept.CorrosionDuration = 4
-    wept.CorrosionChance = 100
+    wept.CorrosionChance = 0.8
 
     wept.IronSightsPos = Vector(0, 0, 0)
     wept.IronSightsAng = Vector(0, -1, 0)
