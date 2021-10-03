@@ -131,6 +131,11 @@ function SWEP:Draw2DHUD()
 
 	local wid, hei = 180 * screenscale, 64 * screenscale
 	local x, y = ScrW() - wid - screenscale * 128, ScrH() - hei - screenscale * 72
+
+	if self.Special then
+	    x, y = ScrW() - wid - screenscale * 128, ScrH() - hei - screenscale * 125
+	end
+	
 	local clip = self:Clip1()
 	local spare = self:GetOwner():GetAmmoCount(self:GetPrimaryAmmoType())
 	local maxclip = self.Primary.ClipSize
