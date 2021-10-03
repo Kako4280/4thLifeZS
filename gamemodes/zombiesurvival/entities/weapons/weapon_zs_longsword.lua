@@ -58,8 +58,8 @@ local branch = GAMEMODE:AddNewRemantleBranch(SWEP, 1, "Type XIIIb Longsword", "B
 	wept.Primary.Delay = wept.Primary.Delay * 0.75
 
 	wept.Burn = true
-	wept.BurnChance = 40
-	wept.BurnDamage = 5
+	wept.BurnChance = 0.40
+	wept.BurnDamage = 12
 
 	if CLIENT then
 		wept.ViewModelFOV = 65
