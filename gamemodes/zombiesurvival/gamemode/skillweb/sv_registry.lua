@@ -1,13 +1,17 @@
 GM:SetSkillModifierFunction(SKILLMOD_HEALTH, function(pl, amount)
+	pl.HealthAdded = math.Clamp(amount, -10000, 10000)
+
 	local current = pl:GetMaxHealth()
-	local new = 100 + math.Clamp(amount, -99, 1000)
+	local new = math.max(math.Round((100 + (pl.HealthAdded or 0)) * (pl.HealthMul or 1), 0),1)
 	pl:SetMaxHealth(new)
 	pl:SetHealth(math.max(1, pl:Health() / current * new))
 end)
 
 GM:SetSkillModifierFunction(SKILLMOD_HEALTH_MUL, function(pl, amount)
+	pl.HealthMul = math.Clamp(amount + 1.0, 0.01, 10.0)
+	
 	local current = pl:GetMaxHealth()
-	local new = 100 + math.Clamp(amount, -99, 1000)
+	local new = math.max(math.Round((100 + (pl.HealthAdded or 0)) * (pl.HealthMul or 1), 0),1)
 	pl:SetMaxHealth(new)
 	pl:SetHealth(math.max(1, pl:Health() / current * new))
 end)

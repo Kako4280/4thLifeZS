@@ -113,6 +113,8 @@ GM.Assemblies["trinket_phantom_electrum"]				= {"comp_electrum",			"trinket_phan
 GM.Assemblies["trinket_phantom_platinum"]				= {"comp_platinum",			"trinket_phantom_base"}
 GM.Assemblies["trinket_phantom_iridium"]				= {"comp_iridium",			"trinket_phantom_base"}
 GM.Assemblies["comp_electrum"]							= {"comp_silver",			"comp_gold"}
+GM.Assemblies["trinket_heartsilver"]					= {"trinket_vitpackagei",			"comp_silver"}
+GM.Assemblies["trinket_heartgold"]						= {"trinket_vitpackageii",			"comp_gold"}
 
 GM:AddInventoryItemData("comp_modbarrel",		"Modular Barrel",			"A modular barrel suited for pairing up with another gun barrel.",								"models/props_c17/trappropeller_lever.mdl")
 GM:AddInventoryItemData("comp_burstmech",		"Burst Fire Mechanism",		"A mechanism that could be used to make a gun burst fire.",										"models/props_c17/trappropeller_lever.mdl")
@@ -199,9 +201,17 @@ GM:AddSkillModifier(trinket, SKILLMOD_HEALTH, 10)
 GM:AddSkillModifier(trinket, SKILLMOD_HEALING_RECEIVED, 0.1)
 trinketwep.PermitDismantle = true
 
+trinket, trinketwep = GM:AddTrinket("Silver Heart", "heartsilver", false, hpveles, hpweles, 2, "+5 maximum health\n+5% maximum health")
+GM:AddSkillModifier(trinket, SKILLMOD_HEALTH, 5)
+GM:AddSkillModifier(trinket, SKILLMOD_HEALTH_MUL, 0.05)
+
 trinket = GM:AddTrinket("Vitality Bank", "vitpackageii", false, hpveles, hpweles, 4, "+15 maximum health\n+15% healing received")
 GM:AddSkillModifier(trinket, SKILLMOD_HEALTH, 15)
 GM:AddSkillModifier(trinket, SKILLMOD_HEALING_RECEIVED, 0.15)
+
+trinket = GM:AddTrinket("Golden Heart", "heartgold", false, hpveles, hpweles, 4, "+5 maximum health\n+10% maximum health")
+GM:AddSkillModifier(trinket, SKILLMOD_HEALTH, 5)
+GM:AddSkillModifier(trinket, SKILLMOD_HEALTH_MUL, 0.10)
 
 trinket, trinketwep = GM:AddTrinket("Blood Transfusion Pack", "bloodpack", false, hpveles, hpweles, 2, "Generates 20 blood armor if health falls bellow 50%\nConsumes itself on activation.", nil, 15)
 trinketwep.PermitDismantle = true
@@ -558,6 +568,13 @@ trinket = GM:AddTrinket("Foxfire Ruby", "redruby", false, nil, {
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 10, y = 10 }, color = Color(255, 0, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/props_junk/cardboard_box004a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(255, 0, 0, 150), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
 }, nil, "Has a chance to spread fire. 30 second cooldown.")
+
+trinket = GM:AddTrinket("Pink Ruby", "pinkruby", false, nil, {
+	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(225, 0, 200, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
+	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 10, y = 10 }, color = Color(255, 0, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
+	["black_core"] = { type = "Model", model = "models/props_junk/cardboard_box004a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(255, 75, 125, 185), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
+}, nil, "Increases health by 30%.")
+GM:AddSkillModifier(trinket, SKILLMOD_HEALTH_MUL, 0.30)
 
 trinket = GM:AddTrinket("Bloodstone Splinter", "bloodstonesplinter", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(200, 0, 150, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
