@@ -246,6 +246,7 @@ killicon.Add("weapon_zs_jackhammer", "zombiesurvival/killicons/weapon_zs_jackham
 killicon.AddFont("weapon_zs_quicksilver", "zsdeathnoticecs", "i")
 killicon.AddFont("weapon_zs_zequicksilver", "zsdeathnoticecs", "i")
 killicon.Add("weapon_zs_zeus", "zombiesurvival/killicons/weapon_zs_zeus")
+killicon.Add("weapon_zs_calico", "zombiesurvival/killicons/weapon_zs_calico")
 killicon.Add("weapon_zs_charon", "zombiesurvival/killicons/weapon_zs_charon3")
 killicon.Add("weapon_zs_slinger", "zombiesurvival/killicons/weapon_zs_slinger")
 killicon.Add("weapon_zs_novablaster", "zombiesurvival/killicons/weapon_zs_novablaster2")
