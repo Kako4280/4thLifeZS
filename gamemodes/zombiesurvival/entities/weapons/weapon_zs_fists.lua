@@ -25,6 +25,9 @@ SWEP.AutoSwitchFrom = true
 
 SWEP.Unarmed = true
 
+SWEP.Bleed = false
+SWEP.BleedDamage = 0
+
 SWEP.Undroppable = true
 SWEP.NoPickupNotification = true
 SWEP.NoDismantle = true
@@ -158,6 +161,10 @@ function SWEP:DealDamage()
 	self:SetNextPrimaryFire( time + delay )
 	self:SetNextSecondaryFire( time + delay )
 
+	if self.Bleed == true then
+		self:ApplyBleeding(hitent)
+	end
+
 	if hitent:IsValid() then
 		local damagemultiplier = owner:GetTotalAdditiveModifier("UnarmedDamageMul", "MeleeDamageMultiplier")
 		if owner:IsSkillActive(SKILL_LASTSTAND) then
@@ -254,6 +261,20 @@ function SWEP:OnRemove()
 	if CLIENT and self:GetOwner():IsValid() and self:GetOwner():IsPlayer() then
 		local vm = self:GetOwner():GetViewModel()
 		if IsValid(vm) then vm:SetMaterial("") end
+	end
+end
+
+function SWEP:ApplyBleeding(hitent)
+	local owner = self:GetOwner()
+	local tr = owner:CompensatedMeleeTrace(self.HitDistance * (owner.MeleeRangeMul or 1), 3)
+	local hitent = tr.Entity
+	
+	if hitent:IsPlayer() then
+		local bleed = hitent:GiveStatus("human_bleed")
+		if bleed and bleed:IsValid() then
+			bleed:AddDamage(self.BleedDamage)
+			bleed.Damager = owner
+		end
 	end
 end
 
