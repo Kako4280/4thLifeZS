@@ -5,6 +5,8 @@ AddCSLuaFile("animations.lua")
 function SWEP:ServerMeleeHitEntity(tr, hitent, damagemultiplier)
 	if not hitent or not hitent:IsValid() then return end
 
+	
+
 	local phys = hitent:GetPhysicsObject()
 	if hitent:GetMoveType() == MOVETYPE_VPHYSICS and phys:IsValid() and phys:IsMoveable() then
 		hitent:SetPhysicsAttacker(self:GetOwner())
@@ -21,6 +23,30 @@ function SWEP:ServerMeleePostHitEntity(tr, hitent, damagemultiplier)
 		util.Effect("weapon_shattered", effectdata, true, true)
 
 		owner:StripWeapon(self:GetClass())
+	end
+
+	if SERVER then
+		if hitent:IsValidZombie() and hitent:Alive() then
+			if self.Bleed and not hitent:GetZombieClassTable().BleedImmune then
+				self:ApplyBleeding(hitent)
+			end
+				
+			if self.Pulse and not hitent:GetZombieClassTable().PulseImmune then
+				self:ApplyPulse(hitent, attacker)
+			end
+				
+			if self.Electric and not hitent:GetZombieClassTable().ElectricImmune then
+				self:ApplyElectric(hitent, attacker, dmginfo)
+			end
+				
+			if self.Burn and not hitent:GetZombieClassTable().BurnImmune then
+				self:ApplyBurn(hitent, attacker)
+			end
+				
+			if self.Cold and not hitent:GetZombieClassTable().ColdImmune then
+				self:ApplyCold(hitent, attacker, inf)
+			end
+		end
 	end
 end
 
@@ -46,6 +72,12 @@ function SWEP:ApplyBleeding(hitent)
 end
 
 function SWEP:ApplyPulse(hitent)
+	local owner = self:GetOwner()
+	local PulseSlowPower = self.PulseSlowPower * owner.PulseWeaponSlowMul
+
+	if hitent:IsValidLivingZombie() then
+		hitent:AddLegDamageExt(PulseSlowPower, owner, self, SLOWTYPE_PULSE)
+	end
 end
 
 function SWEP:ApplyElectric(hitent)
@@ -66,4 +98,10 @@ function SWEP:ApplyBurn(hitent, attacker)
 end
 
 function SWEP:ApplyCold(hitent)
+	local owner = self:GetOwner()
+	local IceSlowPower = self.IceSlowPower
+
+	if hitent:IsValidLivingZombie() then
+	   hitent:AddLegDamageExt(IceSlowPower, owner, self, SLOWTYPE_COLD)
+	end
 end
