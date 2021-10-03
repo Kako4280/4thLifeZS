@@ -66,7 +66,7 @@ function SWEP:PrimaryAttack()
 	local n = 1
 	local f = false
 	
-	ModelTable = self.AdvancedJunkModelsSmall
+	ModelTable = self.AdvancedJunkModelsFoxes
 	n = math.random(1,3)
 
 	if SERVER then
