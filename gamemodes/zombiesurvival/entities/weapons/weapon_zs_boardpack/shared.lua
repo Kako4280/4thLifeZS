@@ -173,6 +173,7 @@ function SWEP:PrimaryAttack()
 					ent:SetModel(ModelTable[math.random(#ModelTable)])
 					ent:Spawn()
 					ent:SetHealth(350)
+					ent:SetMaxHealth(94821) -- creating a unique identifier for junk pack props.. not my proudest moment!
 					ent.NoVolumeCarryCheck = true
 					ent.NoDisTime = CurTime() + 15
 					ent.NoDisOwner = self:GetOwner()

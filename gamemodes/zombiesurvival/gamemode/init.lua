@@ -2777,6 +2777,19 @@ function GM:EntityTakeDamage(ent, dmginfo)
 		local ZScore = math.Round(dmginfo:GetDamage() / 11, 1)
 		attacker:SetNWFloat("zscore", attacker:GetNWFloat("zscore") + ZScore)
 	end
+
+	if ent:IsValid() and ent:GetClass() == "prop_physics" then -- my solution to make metal junk pack props breakable for now, might find a better way later
+		if ent:GetMaxHealth() == 94821 then
+			local junkpackprophp = ent:Health()
+
+			junkpackprophp = junkpackprophp - dmginfo:GetDamage()
+
+			ent:SetHealth(junkpackprophp)
+
+			ent.PropHealth = junkpackprophp
+			ent.TotalHealth = 350
+		end
+	end
 	
 	if ent:IsValid() and ent:GetClass() == "prop_door_rotating" then
 		local doordamage = dmginfo:GetDamage()
@@ -2787,7 +2800,7 @@ function GM:EntityTakeDamage(ent, dmginfo)
 		elseif inflictor:GetClass() == "weapon_zs_hammer_q2" then
 			doordamage = 120
 		elseif inflictor:GetClass() == "weapon_zs_hammer_q3" then
-			ddoordamage = 130
+			doordamage = 130
 		elseif inflictor:GetClass() == "weapon_zs_electrohammer" then
 			doordamage = 140
 		elseif inflictor:GetClass() == "weapon_zs_electrohammer_q1" then
