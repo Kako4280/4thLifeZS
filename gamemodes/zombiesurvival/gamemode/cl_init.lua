@@ -1328,7 +1328,11 @@ function GM:DrawNailIndicators()
 						lvlRed = 0
 						lvlGre = 250 - math.floor(2.5 * colLvl)
 						lvlBlu = 250
-					end				
+					elseif colLvl > 200 then --just make it white if the player is above level 200
+						lvlRed = 250
+						lvlGre = 250
+						lvlBlu = 250
+					end			
 					
 					hcolor = Color(lvlRed, lvlGre, lvlBlu, 255)
 					expert = true
