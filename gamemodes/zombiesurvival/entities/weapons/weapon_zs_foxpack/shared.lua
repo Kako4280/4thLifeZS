@@ -66,10 +66,8 @@ function SWEP:PrimaryAttack()
 	local n = 1
 	local f = false
 	
-	if math.random(1,5) <= 3 then
-		ModelTable = self.AdvancedJunkModelsSmall
-		n = math.random(1,3)
-	end
+	ModelTable = self.AdvancedJunkModelsSmall
+	n = math.random(1,3)
 
 	if SERVER then
 		owner:RestartGesture(ACT_HL2MP_GESTURE_RANGE_ATTACK_MELEE)
