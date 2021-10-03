@@ -12,6 +12,9 @@ function ENT:Initialize()
 	self:SetCustomCollisionCheck(true)
 	self:SetCollisionGroup(COLLISION_GROUP_PROJECTILE)
 
+	local owner = self:GetOwner()
+	self.Ticks = self.Ticks + owner.GrenadeTicks
+
 	local phys = self:GetPhysicsObject()
 	if phys:IsValid() then
 		phys:SetMass(1)
