@@ -152,7 +152,10 @@ local drops_regular_weapon_tier1 = {
 	[103] = {"weapon_zs_medicalkit", 1000},
 	[104] = {"weapon_zs_medicalkit_q1", 200},
 	[105] = {"weapon_zs_medicalkit_q2", 50},
-	[106] = {"weapon_zs_medicalkit_q3", 10}
+	[106] = {"weapon_zs_medicalkit_q3", 10},
+	[107] = {"weapon_zs_honeydipper", 200},
+	[108] = {"weapon_zs_honeydipper", 50},
+	[109] = {"weapon_zs_honeydipper", 10}
 }
 
 --Item, Weight
