@@ -1337,7 +1337,7 @@ function GM:Think()
 				--if pl:IsSkillActive(SKILL_STOWAGE) and self:GetWave() > 0 and time > (pl.NextResupplyUse or 0) then
 				if self:GetWave() > 0 and time > (pl.NextResupplyUse or 0) then
 
-					pl.NextResupplyUse = time + self.ResupplyBoxCooldown * (pl.ResupplyDelayMul or 1)
+					pl.NextResupplyUse = time + self.ResupplyBoxCooldown * (pl.ResupplyDelayMul or 1) * (pl.WelfareMul or 1)
 					pl.StowageCaches = (pl.StowageCaches or 0) + 1
 
 					net.Start("zs_nextresupplyuse")

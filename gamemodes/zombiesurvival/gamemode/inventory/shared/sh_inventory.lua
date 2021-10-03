@@ -546,6 +546,14 @@ trinket = GM:AddTrinket("Magnetic Core", "magneticcore", false, nil, {
 GM:AddSkillModifier(trinket, SKILLMOD_DROP_CHANCE_MUL, 0.05)
 GM:AddSkillModifier(trinket, SKILLMOD_COLLECT_CHANCE_MUL, 0.30)
 
+trinket = GM:AddTrinket("Welfare Pearl", "welfarepearl", false, nil, {
+	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(0, 0, 255, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
+	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 10, y = 10 }, color = Color(0, 255, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
+	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 8.5, y = 8.5 }, color = Color(255, 0, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
+	["black_core"] = { type = "Model", model = "models/dav0r/hoverball.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.349, 0.349, 0.349), color = Color(100, 100, 100, 80), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
+}, nil, "Free shit from Bernie Sanders.")
+GM:AddSkillModifier(trinket, SKILLMOD_WELFARE_MUL, -0.50)
+
 trinket = GM:AddTrinket("Scavenging Core", "scavcore", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(90, 200, 150, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 10, y = 10 }, color = Color(90, 200, 150, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},

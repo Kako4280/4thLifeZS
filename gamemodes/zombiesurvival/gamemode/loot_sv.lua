@@ -559,7 +559,8 @@ local drops_regular_trinket = {
 	[3] = {"trinket_bloodstonesplinter", 1},
 	[4] = {"trinket_scavcore", 1},
 	[5] = {"trinket_rubysplinter", 1},
-	[6] = {"trinket_pinkruby", 1}
+	[6] = {"trinket_pinkruby", 1},
+	[7] = {"trinket_welfarepearl", 1}
 }
 
 --Item, Weight
