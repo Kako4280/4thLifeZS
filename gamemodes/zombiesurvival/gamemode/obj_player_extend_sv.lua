@@ -36,7 +36,7 @@ function meta:ProcessDamage(dmginfo)
 			return
 		end
 
-		local corrosion = self.Corrosion and self.Corrosion + 2 > CurTime()
+		local corrosion = self:GetStatus("zombiecorrosion")
 		if self ~= attacker and not corrosion and not dmgbypass then
 			dmginfo:SetDamage(dmginfo:GetDamage() * GAMEMODE:GetZombieDamageScale(dmginfo:GetDamagePosition(), self))
 		end

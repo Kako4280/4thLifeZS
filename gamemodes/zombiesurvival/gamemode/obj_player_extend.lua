@@ -153,6 +153,10 @@ function meta:GetHBleedDamage()
 	return self.HBleed and self.HBleed:IsValid() and self.HBleed:GetDamage() or 0
 end
 
+function meta:GetAcidDamage()
+	return self.Acid and self.Acid:IsValid() and self.Acid:GetDamage() or 0
+end
+
 function meta:GetHFireDamage()
 	return self.HFire and self.HFire:IsValid() and self.HFire:GetDamage() or 0
 end

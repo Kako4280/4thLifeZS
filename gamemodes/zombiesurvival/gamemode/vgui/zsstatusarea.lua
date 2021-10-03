@@ -131,6 +131,13 @@ local statusdisplays = {
 	Icon = Material("zombiesurvival/reaper.png")
 },
 {
+	Color = Color(255, 255, 0),
+	Name = "RAPID FIRE!",
+	ValFunc = statusValueFunction("rapidfire"),
+	Max = 10,
+	Icon = Material("zombiesurvival/strength_shot.png")
+},
+{
 	Color = Color(235, 160, 40),
 	Name = "Renegade!",
 	ValFunc = statusValueFunction("renegade"),
