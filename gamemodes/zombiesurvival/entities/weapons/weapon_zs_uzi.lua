@@ -71,6 +71,70 @@ GAMEMODE:AddNewRemantleBranch(SWEP, 1, "'Disperser' Uzi", "Decreases the clip si
 	end
 end)
 
+local branch = GAMEMODE:AddNewRemantleBranch(SWEP, 2, "'Blight' Chemical SMG", "Changes the ammo type to chemical, bullets have a chance to remove damage resistance", function(wept)
+    wept.Primary.Damage = wept.Primary.Damage * 1.4
+	wept.Primary.ClipSize = math.floor(wept.Primary.ClipSize * 0.6)
+	wept.Primary.Delay = 0.09
+	
+	wept.Corrosion = true
+	wept.CorrosionDuration = 10
+	wept.CorrosionChance = 17
+	wept.Primary.Ammo = "chemical"
+	wept.Acid = true
+	wept.AcidChance = 34
+	wept.AcidDamage = 3
+
+wept.ShowViewModel = false
+wept.ShowWorldModel = false
+
+if CLIENT then
+	wept.HUD3DBone = "v_weapon.mac10_parent"
+	wept.HUD3DPos = Vector(-2, -4.2, 0.7)
+	wept.HUD3DAng = Angle(0, 0, 0)
+	wept.HUD3DScale = 0.015
+
+	wept.ViewModelBoneMods = {}
+
+	wept.VElements = {
+	["blight_base"] = { type = "Model", model = "models/props_phx/construct/metal_plate_curve360x2.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(-5, 3, 0.6), angle = Angle(0, 90, 90), size = Vector(0.025, 0.025, 0.1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_pipes/pipemetal004a", skin = 0, bodygroup = {} },
+	["blight_base_detail1"] = { type = "Model", model = "models/props_wasteland/laundry_basket001.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(-4, 3, 0.6), angle = Angle(45, -90, -90), size = Vector(0.045, 0.045, 0.045), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_pipes/pipemetal004a", skin = 0, bodygroup = {} },
+	["blight_base_detail10"] = { type = "Model", model = "models/props_phx/construct/metal_plate_curve360x2.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(6.5, 3, 0.6), angle = Angle(90, 0, 0), size = Vector(0.007, 0.007, 0.02), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_pipes/pipemetal004a", skin = 0, bodygroup = {} },
+	["blight_base_detail11"] = { type = "Model", model = "models/props_c17/trappropeller_lever.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(0.75, 1.5, 0.6), angle = Angle(0, 0, 0), size = Vector(0.4, 0.2, 0.4), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+	["blight_base_detail2"] = { type = "Model", model = "models/hunter/misc/roundthing4.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(1, 3.75, 0.75), angle = Angle(90, 90, 0), size = Vector(0.01, 0.013, 0.01), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_pipes/GutterMetal01a", skin = 0, bodygroup = {} },
+	["blight_base_detail3"] = { type = "Model", model = "models/hunter/misc/roundthing4.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(-5.1, 3.4, -0.25), angle = Angle(-25, 90, 90), size = Vector(0.01, 0.01, 0.003), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_pipes/GutterMetal01a", skin = 0, bodygroup = {} },
+	["blight_base_detail4"] = { type = "Model", model = "models/hunter/geometric/hex1x1.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(-5.1, 3, 0.6), angle = Angle(90, 0, 0), size = Vector(0.005, 0.005, 0.05), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_pipes/GutterMetal01a", skin = 0, bodygroup = {} },
+	["blight_base_detail5"] = { type = "Model", model = "models/props_wasteland/horizontalcoolingtank04.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(-2.5, 3, 2.2), angle = Angle(0, 180, 0), size = Vector(0.01, 0.01, 0.01), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+	["blight_base_detail6"] = { type = "Model", model = "models/props_pipes/pipecluster16d_001a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(-1.5, 2.1, 1.85), angle = Angle(0, 90, 0), size = Vector(0.02, 0.02, 0.02), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_pipes/pipemetal004a", skin = 0, bodygroup = {} },
+	["blight_base_detail7"] = { type = "Model", model = "models/props_c17/consolebox03a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(-0.9, 1.9, -0.125), angle = Angle(0, 90, 0), size = Vector(0.025, 0.1, 0.175), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_c17/substation_transformer01a", skin = 0, bodygroup = {} },
+	["blight_base_detail8"] = { type = "Model", model = "models/props_wasteland/coolingtank02.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(-3.75, 1.25, 0.6), angle = Angle(0, 0, -90), size = Vector(0.01, 0.01, 0.003), color = Color(255, 255, 255, 255), surpresslightning = false, material = "phoenix_storms/indenttiles_1-2", skin = 0, bodygroup = {} },
+	["blight_base_detail9"] = { type = "Model", model = "models/props_wasteland/laundry_washer001a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(3.6, 3.125, 0.67), angle = Angle(110, -90, -90), size = Vector(0.029, 0.029, 0.03), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_pipes/pipemetal004a", skin = 0, bodygroup = {} },
+	["blight_bolt"] = { type = "Model", model = "models/props_c17/pottery04a.mdl", bone = "v_weapon.mac10_bolt", rel = "", pos = Vector(-0.1, 0.65, 0.1), angle = Angle(0, 0, -90), size = Vector(0.05, 0.05, 0.075), color = Color(255, 255, 255, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+	["blight_grip"] = { type = "Model", model = "models/hunter/blocks/cube025x05x025.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(3.7, 0.5, -0.5), angle = Angle(5, 2, 92), size = Vector(0.15, 0.225, 0.1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_c17/substation_transformer01a", skin = 0, bodygroup = {} },
+	["blight_magazine"] = { type = "Model", model = "models/props_phx/misc/iron_beam1.mdl", bone = "v_weapon.mac10_clip", rel = "", pos = Vector(0, 3, -0.625), angle = Angle(0, 90, 0), size = Vector(0.2, 0.1, 0.15), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_c17/substation_transformer01a", skin = 0, bodygroup = {} }
+}
+
+wept.WElements = {
+	["blight_base"] = { type = "Model", model = "models/props_phx/construct/metal_plate_curve360x2.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(-5, 3, 0.6), angle = Angle(0, 90, 90), size = Vector(0.025, 0.025, 0.1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_pipes/pipemetal004a", skin = 0, bodygroup = {} },
+	["blight_base_detail1"] = { type = "Model", model = "models/props_wasteland/laundry_basket001.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(-4, 3, 0.6), angle = Angle(45, -90, -90), size = Vector(0.045, 0.045, 0.045), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_pipes/pipemetal004a", skin = 0, bodygroup = {} },
+	["blight_base_detail10"] = { type = "Model", model = "models/props_phx/construct/metal_plate_curve360x2.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(6.5, 3, 0.6), angle = Angle(90, 0, 0), size = Vector(0.007, 0.007, 0.02), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_pipes/pipemetal004a", skin = 0, bodygroup = {} },
+	["blight_base_detail11"] = { type = "Model", model = "models/props_c17/trappropeller_lever.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(1.25, 1.5, 0.6), angle = Angle(0, 0, 0), size = Vector(0.4, 0.2, 0.4), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+	["blight_base_detail2"] = { type = "Model", model = "models/hunter/misc/roundthing4.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(1, 3.75, 0.6), angle = Angle(90, 90, 0), size = Vector(0.01, 0.013, 0.01), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_pipes/GutterMetal01a", skin = 0, bodygroup = {} },
+	["blight_base_detail3"] = { type = "Model", model = "models/hunter/misc/roundthing4.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(-5.1, 3.4, -0.25), angle = Angle(-25, 90, 90), size = Vector(0.01, 0.01, 0.003), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_pipes/GutterMetal01a", skin = 0, bodygroup = {} },
+	["blight_base_detail4"] = { type = "Model", model = "models/hunter/geometric/hex1x1.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(-5.1, 3, 0.6), angle = Angle(90, 0, 0), size = Vector(0.005, 0.005, 0.05), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_pipes/GutterMetal01a", skin = 0, bodygroup = {} },
+	["blight_base_detail5"] = { type = "Model", model = "models/props_wasteland/horizontalcoolingtank04.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(-2.5, 3, 2.2), angle = Angle(0, 180, 0), size = Vector(0.01, 0.01, 0.01), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+	["blight_base_detail6"] = { type = "Model", model = "models/props_pipes/pipecluster16d_001a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(-1.5, 2.1, 1.85), angle = Angle(0, 90, 0), size = Vector(0.02, 0.02, 0.02), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_pipes/pipemetal004a", skin = 0, bodygroup = {} },
+	["blight_base_detail7"] = { type = "Model", model = "models/props_c17/consolebox03a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(-0.9, 1.9, -0.125), angle = Angle(0, 90, 0), size = Vector(0.025, 0.1, 0.175), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_c17/substation_transformer01a", skin = 0, bodygroup = {} },
+	["blight_base_detail8"] = { type = "Model", model = "models/props_wasteland/coolingtank02.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(-3.75, 1.25, 0.6), angle = Angle(0, 0, -90), size = Vector(0.01, 0.01, 0.003), color = Color(255, 255, 255, 255), surpresslightning = false, material = "phoenix_storms/indenttiles_1-2", skin = 0, bodygroup = {} },
+	["blight_base_detail9"] = { type = "Model", model = "models/props_wasteland/laundry_washer001a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "blight_grip", pos = Vector(3.6, 3.125, 0.67), angle = Angle(110, -90, -90), size = Vector(0.029, 0.029, 0.03), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_pipes/pipemetal004a", skin = 0, bodygroup = {} },
+	["blight_bolt"] = { type = "Model", model = "models/props_c17/pottery04a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 1.2, -3.8), angle = Angle(0, 0, -175), size = Vector(0.05, 0.05, 0.075), color = Color(255, 255, 255, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+	["blight_grip"] = { type = "Model", model = "models/hunter/blocks/cube025x05x025.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4.2, 0.7, -0.5), angle = Angle(0, -5, 92), size = Vector(0.15, 0.225, 0.1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_c17/substation_transformer01a", skin = 0, bodygroup = {} },
+	["blight_magazine"] = { type = "Model", model = "models/props_phx/misc/iron_beam1.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(2.5, 1.3, 4), angle = Angle(92, 85, 90), size = Vector(0.2, 0.1, 0.15), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/props_c17/substation_transformer01a", skin = 0, bodygroup = {} }
+}
+end
+end)
+branch.Colors = {Color(0, 255, 100), Color(0, 175, 100), Color(0, 100, 100)} -- placeholder colors / name, not sure what chemical weapons should have.. OPEN TO SUGGESTIONS!!!
+branch.NewNames = {"Acidic", "Caustic", "Corrosive"}
+
 function SWEP:PrimaryAttack()
 	if not self:CanPrimaryAttack() then return end
 	local ironsights = self:GetIronsights()
