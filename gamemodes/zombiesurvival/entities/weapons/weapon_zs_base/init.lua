@@ -98,3 +98,25 @@ function SWEP:ApplyCold(hitent, attacker, inf)
 		hitent:AddLegDamageExt(self.ColdStrength, attacker, inf, SLOWTYPE_COLD)
 	end
 end
+
+function SWEP:ApplyCorrosion(hitent)
+	if self.CorrosionChance * 10000 > math.random(1, 10000) then
+		if hitent:IsValid() and hitent:IsValidLivingZombie() then
+			hitent:GiveStatus("zombiecorrosion", self.CorrosionDuration)
+		end
+	end
+end
+
+function SWEP:ApplyAcid(hitent, attacker)
+	local owner = self:GetOwner()
+
+	if self.AcidChance * 10000 > math.random(1, 10000) then
+		if hitent:IsValid() and hitent:IsValidLivingZombie() then
+			local Acid = hitent:GiveStatus("acid")
+			if Acid and Acid:IsValid() then
+			   Acid:AddDamage(self.AcidDamage)
+			   Acid.Damager = owner
+			end
+		end
+	end
+end
