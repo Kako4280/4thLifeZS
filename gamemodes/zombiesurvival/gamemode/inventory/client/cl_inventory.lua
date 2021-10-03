@@ -220,6 +220,8 @@ function GM:CreateInventoryInfoViewer()
 	for i = 1, 3 do
 		local craftb = vgui.Create("DButton", viewer)
 		craftb:SetText("")
+		craftb:Dock(BOTTOM)
+	    craftb:DockMargin(4, 0, 0, 0)
 		craftb:SetSize(viewer:GetWide() / 1.15, 27 * screenscale)
 		craftb:SetVisible(false)
 
@@ -233,6 +235,8 @@ function GM:CreateInventoryInfoViewer()
 
 	local craftwith = EasyLabel(viewer, "Craft With...", "ZSBodyTextFontBig", COLOR_WHITE)
 	craftwith:SetSize(viewer:GetWide() / 1.15, 27 * screenscale)
+	craftwith:Dock(BOTTOM)
+	craftwith:DockMargin(4, 0, 0, 0)
 	craftwith:SetVisible(false)
 	viewer.m_CraftWith = craftwith
 end
