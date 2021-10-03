@@ -62,7 +62,7 @@ function SWEP:DrawHUD()
 	surface.SetDrawColor(255, 30, 10, 220)
 	surface.DrawOutlinedRect(x, y, wid, hei)
 
-	draw.SimpleText("Weapon special time left: "..math.Round(timeleft, 0), "ZSHUDFontSmall", x, texty, COLOR_WHITE, TEXT_ALIGN_LEFT)
+	draw.SimpleText("Weapon special time left: "..math.floor(timeleft), "ZSHUDFontSmall", x, texty, COLOR_WHITE, TEXT_ALIGN_LEFT)
 
 	elseif timeleft <= 0 then
 	    draw.SimpleText("Weapon special is ready", "ZSHUDFontSmall", x, texty, COLOR_WHITE, TEXT_ALIGN_LEFT)
