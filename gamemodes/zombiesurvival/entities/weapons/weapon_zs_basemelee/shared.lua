@@ -356,33 +356,6 @@ function SWEP:MeleeHitEntity(tr, hitent, damagemultiplier)
 		end
 	end
 	
-	local attacker = owner
-	local inf = self
-	
-	if SERVER then
-		if hitent:IsValidZombie() and hitent:Alive() then
-			if inf.Bleed and not hitent:GetZombieClassTable().BleedImmune then
-				inf:ApplyBleeding(hitent)
-			end
-				
-			if inf.Pulse and not hitent:GetZombieClassTable().PulseImmune then
-				inf:ApplyPulse(hitent, attacker)
-			end
-				
-			if inf.Electric and not hitent:GetZombieClassTable().ElectricImmune then
-				inf:ApplyElectric(hitent, attacker, dmginfo)
-			end
-				
-			if inf.Burn and not hitent:GetZombieClassTable().BurnImmune then
-				inf:ApplyBurn(hitent, attacker)
-			end
-				
-			if inf.Cold and not hitent:GetZombieClassTable().ColdImmune then
-				inf:ApplyCold(hitent, attacker, inf)
-			end
-		end
-	end
-
 	self:PostHitUtil(owner, hitent, dmginfo, tr, vel)
 end
 

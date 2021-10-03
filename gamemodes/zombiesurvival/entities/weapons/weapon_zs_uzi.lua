@@ -77,11 +77,11 @@ local branch = GAMEMODE:AddNewRemantleBranch(SWEP, 2, "'Blight' Chemical SMG", "
 	wept.Primary.Delay = 0.09
 	
 	wept.Corrosion = true
-	wept.CorrosionDuration = 10
-	wept.CorrosionChance = 17
+	wept.CorrosionDuration = 6
+	wept.CorrosionChance = 0.17
 	wept.Primary.Ammo = "chemical"
 	wept.Acid = true
-	wept.AcidChance = 34
+	wept.AcidChance = 0.34
 	wept.AcidDamage = 3
 
 wept.ShowViewModel = false

@@ -455,6 +455,14 @@ function SWEP.BulletCallback(attacker, tr, dmginfo, inf)
 			if inf.Cold and not hitent:GetZombieClassTable().ColdImmune then
 				inf:ApplyCold(hitent, attacker, inf)
 			end
+
+			if inf.Corrosion and not hitent:GetZombieClassTable().CorrosionImmune then
+				inf:ApplyCorrosion(hitent)
+			end
+
+			if inf.Acid and not hitent:GetZombieClassTable().AcidImmune then
+				inf:ApplyAcid(hitent, attacker, inf)
+			end
 		end
 	end
 	

@@ -41,6 +41,10 @@ SWEP.MeleeSize = 2.5
 
 SWEP.Primary.Delay = 1.4
 
+SWEP.Burn = false
+SWEP.BurnChance = 0.40
+SWEP.BurnDamage = 12
+
 SWEP.Tier = 3
 
 SWEP.WalkSpeed = SPEED_SLOW
@@ -58,8 +62,6 @@ local branch = GAMEMODE:AddNewRemantleBranch(SWEP, 1, "Type XIIIb Longsword", "B
 	wept.Primary.Delay = wept.Primary.Delay * 0.75
 
 	wept.Burn = true
-	wept.BurnChance = 0.40
-	wept.BurnDamage = 12
 
 	if CLIENT then
 		wept.ViewModelFOV = 65
@@ -97,7 +99,7 @@ branch.NewNames = {"Warm", "Hot", "Searing"}
 local branch = GAMEMODE:AddNewRemantleBranch(SWEP, 2, "'Type XIIIc' Ice Fragment", "slow zombies down with ice at the cost of damage.", function(wept)
 	wept.MeleeDamage = wept.MeleeDamage * 0.74
 
-	wept.Ice = true
+	wept.Cold = true
     wept.IceSlowPower = 9
 	
 	if CLIENT then
