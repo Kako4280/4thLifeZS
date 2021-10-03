@@ -50,20 +50,82 @@ SWEP.SwingOffset = Vector(0, -30, 0)
 SWEP.SwingTime = 0.65
 SWEP.SwingHoldType = "melee"
 
-SWEP.Burn = false
-SWEP.BurnChance = 0.40
-SWEP.BurnDamage = 12
-
 SWEP.AllowQualityWeapons = true
 
 GAMEMODE:AttachWeaponModifier(SWEP, WEAPON_MODIFIER_FIRE_DELAY, -0.125)
 local branch = GAMEMODE:AddNewRemantleBranch(SWEP, 1, "Type XIIIb Longsword", "Burns zombies with holy light.", function(wept)
 	wept.MeleeDamage = wept.MeleeDamage * 0.70
 	wept.Primary.Delay = wept.Primary.Delay * 0.75
+
 	wept.Burn = true
+	wept.BurnChance = 40
+	wept.BurnDamage = 5
+
+	if CLIENT then
+		wept.ViewModelFOV = 65
+		wept.ShowViewModel = false
+		wept.ShowWorldModel = false
+
+		wept.VElements = {
+			["kb_ridge_detail"] = { type = "Model", model = "models/phxtended/bar1x45a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(2.5, 1.95, -7), angle = Angle(0, 90, 85), size = Vector(0.15, 0.05, 0.15), color = Color(40, 40, 40, 255), surpresslightning = false, material = "phoenix_storms/construct/concrete_barrier00", skin = 0, bodygroup = {} },
+			["kb_grip_detail"] = { type = "Model", model = "models/phxtended/bar1x.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(3, 2.059, -4.45), angle = Angle(0, 90, 85), size = Vector(0.189, 0.18, 0.115), color = Color(220, 220, 220, 255), surpresslightning = false, material = "models/debug/debugwhite", skin = 0, bodygroup = {} },
+			["kb_ridge2_1"] = { type = "Model", model = "models/hunter/tubes/circle2x2d.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(5.4, 1.5, -32.951), angle = Angle(-5, 180, 90), size = Vector(0.029, 0.039, 0.1), color = Color(255, 0, 0, 255), surpresslightning = false, material = "phoenix_storms/grey_chrome", skin = 0, bodygroup = {} },
+			["kb_grip"] = { type = "Model", model = "models/props_phx/misc/iron_beam1.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(3.099, 2, 0), angle = Angle(95, 0, -90), size = Vector(0.2, 0.15, 0.1), color = Color(40, 40, 40, 255), surpresslightning = false, material = "phoenix_storms/construct/concrete_barrier00", skin = 0, bodygroup = {} },
+			["kb_ridge1"] = { type = "Model", model = "models/hunter/blocks/cube025x4x025.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4.849, 1.2, -16.101), angle = Angle(5, 0, 90), size = Vector(0.09, 0.15, 0.05), color = Color(40, 40, 40, 255), surpresslightning = false, material = "phoenix_storms/construct/concrete_barrier00", skin = 0, bodygroup = {} },
+			["kb_guard"] = { type = "Model", model = "models/hunter/blocks/cube05x075x025.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(3.5, 1.5, -4.6), angle = Angle(0, 90, -5), size = Vector(0.1, 0.125, 0.025), color = Color(40, 40, 40, 255), surpresslightning = false, material = "phoenix_storms/construct/concrete_barrier00", skin = 0, bodygroup = {} },
+			["kb_ridge1_2"] = { type = "Model", model = "models/hunter/tubes/circle2x2d.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(5.26, 1.5, -33.03), angle = Angle(-5, 180, 90), size = Vector(0.023, 0.029, 0.2), color = Color(40, 40, 40, 255), surpresslightning = false, material = "phoenix_storms/construct/concrete_barrier00", skin = 0, bodygroup = {} },
+			["kb_ridge2"] = { type = "Model", model = "models/hunter/blocks/cube025x4x025.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(5.5, 1.35, -17.701), angle = Angle(5, 0, 90), size = Vector(0.09, 0.135, 0.025), color = Color(255, 0, 0, 255), surpresslightning = false, material = "phoenix_storms/grey_chrome", skin = 0, bodygroup = {} }
+		}
+		
+		wept.WElements = {
+			["kb_grip_detail"] = { type = "Model", model = "models/phxtended/bar1x.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(2.65, 2.174, -2.701), angle = Angle(-5, 90, 90), size = Vector(0.189, 0.18, 0.115), color = Color(220, 220, 220, 255), surpresslightning = false, material = "models/debug/debugwhite", skin = 0, bodygroup = {} },
+			["kb_grip"] = { type = "Model", model = "models/props_phx/misc/iron_beam1.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(3, 1.75, 1.75), angle = Angle(-95, 90, 0), size = Vector(0.2, 0.15, 0.1), color = Color(40, 40, 40, 255), surpresslightning = false, material = "phoenix_storms/construct/concrete_barrier00", skin = 0, bodygroup = {} },
+			["kb_ridge2_1"] = { type = "Model", model = "models/hunter/tubes/circle2x2d.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(2.329, 4.07, -31.101), angle = Angle(0, 180, 95), size = Vector(0.029, 0.039, 0.1), color = Color(255, 0, 0, 255), surpresslightning = false, material = "phoenix_storms/grey_chrome", skin = 0, bodygroup = {} },
+			["kb_ridge2"] = { type = "Model", model = "models/hunter/blocks/cube025x4x025.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(3.75, 2.599, -16), angle = Angle(0, 0, 85), size = Vector(0.09, 0.135, 0.025), color = Color(255, 0, 0, 255), surpresslightning = false, material = "phoenix_storms/grey_chrome", skin = 0, bodygroup = {} },
+			["kb_cutaway"] = { type = "Model", model = "models/hunter/plates/platehole1x1.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(3.759, 1.636, -3.25), angle = Angle(0, 0, 85), size = Vector(0.009, 0.05, 0.1), color = Color(255, 0, 0, 255), surpresslightning = false, material = "phoenix_storms/grey_chrome", skin = 0, bodygroup = {} },
+			["kb_ridge1"] = { type = "Model", model = "models/hunter/blocks/cube025x4x025.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(3.349, 2.325, -14.322), angle = Angle(0, 0, 85), size = Vector(0.09, 0.15, 0.05), color = Color(40, 40, 40, 255), surpresslightning = false, material = "phoenix_storms/construct/concrete_barrier00", skin = 0, bodygroup = {} },
+			["kb_guard"] = { type = "Model", model = "models/hunter/blocks/cube05x075x025.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(3, 1.6, -2.901), angle = Angle(-5, 90, 0), size = Vector(0.1, 0.125, 0.025), color = Color(40, 40, 40, 255), surpresslightning = false, material = "phoenix_storms/construct/concrete_barrier00", skin = 0, bodygroup = {} },
+			["kb_ridge1_2"] = { type = "Model", model = "models/hunter/tubes/circle2x2d.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(2.279, 4.09, -31.101), angle = Angle(0, 180, 95), size = Vector(0.023, 0.029, 0.2), color = Color(40, 40, 40, 255), surpresslightning = false, material = "phoenix_storms/construct/concrete_barrier00", skin = 0, bodygroup = {} },
+			["kb_ridge_detail"] = { type = "Model", model = "models/phxtended/bar1x45a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(2, 2.299, -5.401), angle = Angle(-5, 90, 90), size = Vector(0.15, 0.05, 0.15), color = Color(40, 40, 40, 255), surpresslightning = false, material = "phoenix_storms/construct/concrete_barrier00", skin = 0, bodygroup = {} }
+		}
+	end
 end)
 branch.Colors = {Color(214, 46, 4), Color(229, 95, 0), Color(255, 182, 0)}
 branch.NewNames = {"Warm", "Hot", "Searing"}
+
+
+local branch = GAMEMODE:AddNewRemantleBranch(SWEP, 2, "'Type XIIIc' Ice Fragment", "slow zombies down with ice at the cost of damage.", function(wept)
+	wept.MeleeDamage = wept.MeleeDamage * 0.74
+
+	wept.Ice = true
+    wept.IceSlowPower = 9
+	
+	if CLIENT then
+		wept.ViewModelFOV = 65
+		wept.ShowViewModel = false
+		wept.ShowWorldModel = false
+	
+		wept.VElements = {
+			["if1"] = { type = "Model", model = "models/props_combine/breenlight.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(3.299, 1.399, -2.47), angle = Angle(10, 0, -180), size = Vector(0.4, 0.3, 0.8), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/player/shared/ice_player", skin = 0, bodygroup = {} },
+			["if3"] = { type = "Model", model = "models/props_combine/combinebuttress.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(1.799, 1.399, -11.75), angle = Angle(165, -180, 0), size = Vector(0.019, 0.014, 0.1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/player/shared/ice_player", skin = 0, bodygroup = {} },
+			["if4"] = { type = "Model", model = "models/combine_helicopter/bomb_debris_2.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(6.25, 1.399, -7.5), angle = Angle(105, 0, 0), size = Vector(0.275, 0.2, 0.224), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/player/shared/ice_player", skin = 0, bodygroup = {} },
+			["if2"] = { type = "Model", model = "models/props_combine/combine_barricade_bracket01b.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(3.799, 0.925, -8), angle = Angle(110, 0, 90), size = Vector(0.2, 0.2, 0.3), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/player/shared/ice_player", skin = 0, bodygroup = {} }
+		}
+		
+		wept.WElements = {
+			["if1"] = { type = "Model", model = "models/props_combine/breenlight.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(3.099, 1.399, 0), angle = Angle(180, 15, 4), size = Vector(0.349, 0.3, 0.899), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/player/shared/ice_player", skin = 0, bodygroup = {} },
+			["if3"] = { type = "Model", model = "models/props_combine/combinebuttress.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(1.2, 2.7, -9.5), angle = Angle(170, -165, -5), size = Vector(0.019, 0.014, 0.1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/player/shared/ice_player", skin = 0, bodygroup = {} },
+			["if4"] = { type = "Model", model = "models/combine_helicopter/bomb_debris_2.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(5.8, 1.1, -6), angle = Angle(-97, 150, -50), size = Vector(0.3, 0.15, 0.2), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/player/shared/ice_player", skin = 0, bodygroup = {} },
+			["if2"] = { type = "Model", model = "models/props_combine/combine_barricade_bracket01b.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(3.25, 1.45, -6.401), angle = Angle(103.333, -5, 112.222), size = Vector(0.2, 0.2, 0.3), color = Color(255, 255, 255, 255), surpresslightning = false, material = "models/player/shared/ice_player", skin = 0, bodygroup = {} }
+		}
+	end
+
+wept.SwingRotation = Angle(0, 0, -80)
+wept.SwingOffset = Vector(0, -30, 0)
+wept.SwingTime = 0.6
+end)
+branch.Colors = {Color(100, 75, 255), Color(120, 165, 255), Color(135, 200, 255)}
+branch.NewNames = {"Cold", "Frigid", "Glacial"}
 
 function SWEP:PlaySwingSound()
 	self:EmitSound("weapons/iceaxe/iceaxe_swing1.wav", 75, math.random(65, 85))
@@ -201,22 +263,6 @@ function SWEP:MeleeHitEntity(tr, hitent, damagemultiplier, damage)
 			end
 		end
 		
-		if SERVER then
-			if self.Burn and hitent:IsValidLivingZombie() then
-				if self.BurnChance * 10000 > math.random(1, 10000) then
-					local owner = self:GetOwner()
-					
-					if hitent:IsPlayer() then
-						local fire = hitent:GiveStatus("human_fire")
-						if fire and fire:IsValid() then
-							fire:AddDamage(math.Round((self.BurnDamage * math.Rand(0.5,2)) + (owner.FireAddedDuration or 0),0))
-							fire.Damager = owner
-						end
-					end
-				end
-			end
-		end
-
 		hitent:MeleeViewPunch(damage)
 		if hitent:IsHeadcrab() then
 			damage = damage * 2
