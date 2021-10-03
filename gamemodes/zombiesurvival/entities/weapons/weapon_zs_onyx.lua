@@ -87,6 +87,20 @@ SWEP.Tier = 3
 SWEP.FireAnimSpeed = 0.6
 
 GAMEMODE:AttachWeaponModifier(SWEP, WEAPON_MODIFIER_FIRE_DELAY, -0.05, 1)
+GAMEMODE:AddNewRemantleBranch(SWEP, 1, "'Headhunter' Rifle", "More headshot damage, gain renegade stacks on headshot, lower fire rate", function(wept)
+ wept.Primary.Damage = 65
+ wept.HeadshotMulti = 3.3
+ wept.Primary.Delay = 0.85
+
+ wept.OnZombieKilled = function(self, zombie, total, dmginfo)
+	local killer = self:GetOwner()
+
+	if killer:IsValid() and zombie:WasHitInHead() then
+			killer:GiveStatus("renegade", 5)
+	    end
+    end
+end)
+
 
 function SWEP:EmitFireSound()
 	self:EmitSound(self.Primary.Sound, 77, 75, 1)
