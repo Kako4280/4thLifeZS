@@ -173,6 +173,15 @@ function GM:AddCustomAmmo()
 	game.AddAmmoType({name = "foodwater"})
 	game.AddAmmoType({name = "foodhotdog"})
 	game.AddAmmoType({name = "foodhamburger"})
+	game.AddAmmoType({name = "foodjuice"})
+	game.AddAmmoType({name = "foodpotato"})
+	game.AddAmmoType({name = "foodmoonshine"})
+	game.AddAmmoType({name = "foodcookie"})
+	game.AddAmmoType({name = "foodmargarita"})
+	game.AddAmmoType({name = "foodtaco"})
+	game.AddAmmoType({name = "foodcoffee"})
+	game.AddAmmoType({name = "foodburrito"})
+	game.AddAmmoType({name = "foodicecream"})
 end
 
 GM.Food = {}
