@@ -9,7 +9,15 @@ local drops_regular_consumables = {
 	[7] = {"weapon_zs_f_takeout", 1},
 	[8] = {"weapon_zs_f_water", 1},
 	[9] = {"weapon_zs_f_watermelon", 1},
-	[10] = {"weapon_zs_f_hamburger", 1}
+	[10] = {"weapon_zs_f_hamburger", 1},
+	[11] = {"weapon_zs_f_burrito", 1},
+	[12] = {"weapon_zs_f_coffee", 1},
+	[13] = {"weapon_zs_f_cookie", 1},
+	[14] = {"weapon_zs_f_icecream", 1},
+	[15] = {"weapon_zs_f_juice", 1},
+	[16] = {"weapon_zs_f_moonshine", 1},
+	[17] = {"weapon_zs_f_potato", 1},
+	[18] = {"weapon_zs_f_taco", 1}
 }
 
 --Item, Weight, QuanityMin, QuantityMax
