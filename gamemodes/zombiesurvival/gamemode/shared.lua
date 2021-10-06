@@ -405,9 +405,18 @@ function GM:DynamicSpawnIsValid(ent, humans, allplayers)
 	trace_dynspawn.endpos = pos + playerheight
 	trace_dynspawn.filter = allplayers
 	table.insert(trace_dynspawn.filter, ent)
+	
+	local filtertable = {
+		"prop_ammo",
+		"prop_weapon",
+		"prop_invitem"
+	}
+
 	local tr = util.TraceHull(trace_dynspawn)
 	if tr.Hit then
-		return false
+	    if not filtertable then
+		    return false
+	    end
 	end
 
 	-- No need to check this. You shouldn't be able to build a nest on top of nodraw/skybox
