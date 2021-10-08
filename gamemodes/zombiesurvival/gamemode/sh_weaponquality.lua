@@ -89,7 +89,7 @@ GM:AddWeaponQualityModifier(WEAPON_MODIFIER_HEALRANGE,					"Heal Range", 				fal
 GM:AddWeaponQualityModifier(WEAPON_MODIFIER_HEALCOOLDOWN,				"Healing Cooldown", 		false, 	{Delay = true})
 GM:AddWeaponQualityModifier(WEAPON_MODIFIER_BUFF_DURATION,				"Buff Duration", 			false, 	{BuffDuration = false})
 GM:AddWeaponQualityModifier(WEAPON_MODIFIER_LEG_DAMAGE,					"Slow Strength", 			false, 	{LegDamage = false})
-GM:AddWeaponQualityModifier(WEAPON_MODIFIER_REPAIR,						"Repair Strength", 			false, 	{Repair = false})
+GM:AddWeaponQualityModifier(WEAPON_MODIFIER_REPAIR,						"Repair Strength", 			false, 	{HealStrength = false})
 GM:AddWeaponQualityModifier(WEAPON_MODIFIER_TURRET_SPREAD,				"Turret Bullet Spread", 	false, 	{TurretSpread = false})
 GM:AddWeaponQualityModifier(WEAPON_MODIFIER_HEALING,					"Healing Amount", 			false, 	{Heal = false})
 GM:AddWeaponQualityModifier(WEAPON_MODIFIER_HEADSHOT_MULTI,				"Headshot Damage Bonus", 	false, 	{HeadshotMulti = false})

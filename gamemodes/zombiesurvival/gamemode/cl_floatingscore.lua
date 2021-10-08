@@ -7,7 +7,7 @@ function GM:HealedOtherPlayer(other, health)
 end
 
 function GM:RepairedObject(other, health)
-	gamemode.Call("FloatingScore", other, "floatingscore_rep", health, nil, true)
+	gamemode.Call("FloatingScore", other, "floatingscore_rep", math.Round(health, 1), nil, true)
 end
 
 local cvarNoFloatingScore = CreateClientConVar("zs_nofloatingscore", 0, true, false)
