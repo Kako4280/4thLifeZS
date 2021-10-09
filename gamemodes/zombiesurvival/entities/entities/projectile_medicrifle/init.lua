@@ -22,7 +22,8 @@ function ENT:Hit(vHitPos, vHitNormal, eHitEntity, vOldVelocity)
 
 	self:SetPos(vHitPos + vHitNormal)
 
-	local alt = self:GetDTBool(0)
+	local alt = self:GetOwner():GetActiveWeapon().C
+	
 	if eHitEntity:IsValid() then
 		self:AttachToPlayer(vHitPos, eHitEntity)
 
@@ -36,7 +37,7 @@ function ENT:Hit(vHitPos, vHitNormal, eHitEntity, vOldVelocity)
 					POINTSMULTIPLIER = nil
 				end
 
-				local status = eHitEntity:GiveStatus(alt and "zombiestrdebuff" or "zombiedartdebuff")
+				local status = eHitEntity:GiveStatus(table.Random({"zombiestrdebuff", "zombiedartdebuff"}))
 				status.DieTime = CurTime() + (self.BuffDuration or 10)
 				status.Applier = owner
 			elseif eHitEntity:Team() == TEAM_HUMAN then
@@ -47,22 +48,35 @@ function ENT:Hit(vHitPos, vHitNormal, eHitEntity, vOldVelocity)
 					self:EmitSound("buttons/button8.wav", 70, math.random(115,128))
 					self:DoRefund(owner)
 				elseif not (owner:IsSkillActive(SKILL_RECLAIMSOL) and ehithp >= ehitmaxhp) then
-					local status = eHitEntity:GiveStatus(alt and "strengthdartboost" or "medrifledefboost", (alt and 1 or 2) * (self.BuffDuration or 10))
-					status.Applier = owner
+					local statusEffect = {[1] = "medrifledefboost"}
+					local txt = "Medical Rifle"
+					
+					--Defense Medrifle
+					if alt == 2 then
+						statusEffect[1] = "strengthdartboost"
+						txt = "Strength Rifle"
+					--Upgraded Medrifle
+					elseif alt == 3 then
+						statusEffect[2] = "strengthdartboost"
+						txt = "Advanced Medical Rifle"
+					end
+					
+					for k, v in pairs(statusEffect) do
+						local status = eHitEntity:GiveStatus(v, self.BuffDuration or 10)
+						status.Applier = owner
+						
+						net.Start("zs_buffby")
+							net.WriteEntity(owner)
+							net.WriteString(txt)
+						net.Send(eHitEntity)
+
+						net.Start("zs_buffwith")
+							net.WriteEntity(eHitEntity)
+							net.WriteString(txt)
+						net.Send(owner)
+					end
 
 					owner:HealPlayer(eHitEntity, self.Heal)
-
-					local txt = alt and "Strength Rifle" or "Medical Rifle"
-
-					net.Start("zs_buffby")
-						net.WriteEntity(owner)
-						net.WriteString(txt)
-					net.Send(eHitEntity)
-
-					net.Start("zs_buffwith")
-						net.WriteEntity(eHitEntity)
-						net.WriteString(txt)
-					net.Send(owner)
 				else
 					self:DoRefund(owner)
 				end
@@ -76,13 +90,25 @@ function ENT:Hit(vHitPos, vHitNormal, eHitEntity, vOldVelocity)
 
 	self:SetAngles(vOldVelocity:Angle())
 
-	local effectdata = EffectData()
-		effectdata:SetOrigin(vHitPos)
-		effectdata:SetNormal(vHitNormal)
-		if eHitEntity:IsValid() then
-			effectdata:SetEntity(eHitEntity)
-		else
-			effectdata:SetEntity(NULL)
-		end
-	util.Effect(alt and "hit_strengthdart" or "hit_healdart2", effectdata)
+	local eff = {[1] = "hit_healdart2"}
+					
+	--Defense Medrifle
+	if alt == 2 then
+		eff[1] = "hit_strengthdart"
+	--Upgraded Medrifle
+	elseif alt == 3 then
+		eff[2] = "hit_strengthdart"
+	end
+
+	for k, v in pairs(eff) do
+		local effectdata = EffectData()
+			effectdata:SetOrigin(vHitPos)
+			effectdata:SetNormal(vHitNormal)
+			if eHitEntity:IsValid() then
+				effectdata:SetEntity(eHitEntity)
+			else
+				effectdata:SetEntity(NULL)
+			end
+		util.Effect(v, effectdata)
+	end
 end

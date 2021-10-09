@@ -115,6 +115,8 @@ GM.Assemblies["trinket_phantom_iridium"]				= {"comp_iridium",			"trinket_phanto
 GM.Assemblies["comp_electrum"]							= {"comp_silver",			"comp_gold"}
 GM.Assemblies["trinket_heartsilver"]					= {"trinket_vitpackagei",			"comp_silver"}
 GM.Assemblies["trinket_heartgold"]						= {"trinket_vitpackageii",			"comp_gold"}
+GM.Assemblies["weapon_zs_medicrifle_adv"]				= {"comp_sparking_lodestone",			"weapon_zs_medicrifle_q3"}
+GM.Assemblies["weapon_zs_medicrifle_adv"]				= {"comp_sparking_lodestone",			"weapon_zs_medicrifle_r3"}
 
 GM:AddInventoryItemData("comp_modbarrel",		"Modular Barrel",			"A modular barrel suited for pairing up with another gun barrel.",								"models/props_c17/trappropeller_lever.mdl")
 GM:AddInventoryItemData("comp_burstmech",		"Burst Fire Mechanism",		"A mechanism that could be used to make a gun burst fire.",										"models/props_c17/trappropeller_lever.mdl")
@@ -385,22 +387,22 @@ local eicew = {
 	["base"] = { type = "Model", model = "models/gibs/glass_shard04.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(3.556, 2.519, -1.468), angle = Angle(0, -5.844, -75.974), size = Vector(0.5, 0.5, 0.5), color = Color(0, 137, 255, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
 }
 
-trinket = GM:AddTrinket("Rat Charm", "charm_rat", false, eicev, eicew, 1, "+10% experience gained while held. ")
+trinket = GM:AddTrinket("Rat Charm", "charm_rat", false, eicev, eicew, nil, "+10% experience gained while held. ")
 GM:AddSkillModifier(trinket, SKILLMOD_EXP_MUL, 0.10)
 
-trinket = GM:AddTrinket("Bat Charm", "charm_bat", false, eicev, eicew, 2, "+10% experience gained while held. ")
+trinket = GM:AddTrinket("Bat Charm", "charm_bat", false, eicev, eicew, nil, "+10% experience gained while held. ")
 GM:AddSkillModifier(trinket, SKILLMOD_EXP_MUL, 0.10)
 
-trinket = GM:AddTrinket("Cat Charm", "charm_cat", false, eicev, eicew, 3, "+10% experience gained while held. ")
+trinket = GM:AddTrinket("Cat Charm", "charm_cat", false, eicev, eicew, nil, "+10% experience gained while held. ")
 GM:AddSkillModifier(trinket, SKILLMOD_EXP_MUL, 0.10)
 
-trinket = GM:AddTrinket("Bee Charm", "charm_bee", false, eicev, eicew, 4, "+10% experience gained while held. ")
+trinket = GM:AddTrinket("Bee Charm", "charm_bee", false, eicev, eicew, nil, "+10% experience gained while held. ")
 GM:AddSkillModifier(trinket, SKILLMOD_EXP_MUL, 0.10)
 
-trinket = GM:AddTrinket("Fox Charm", "charm_fox", false, eicev, eicew, 5, "+10% experience gained while held. ")
+trinket = GM:AddTrinket("Fox Charm", "charm_fox", false, eicev, eicew, nil, "+10% experience gained while held. ")
 GM:AddSkillModifier(trinket, SKILLMOD_EXP_MUL, 0.10)
 
-GM:AddTrinket("Iceburst Shield", "iceburst", false, eicev, eicew, 2, "Releases an ice burst when taking a melee hit, slowing zombies down\nRecharges every 40 seconds")
+GM:AddTrinket("Iceburst Shield", "iceburst", false, eicev, eicew, nil, "Releases an ice burst when taking a melee hit, slowing zombies down\nRecharges every 40 seconds")
 
 GM:AddSkillModifier(GM:AddTrinket("Force Dampening Field Emitter", "forcedamp", false, develes, deweles, 2, "-33% physics impact damage taken\nImmune to knockdowns from props\nTake normal physics damage from shades."), SKILLMOD_PHYSICS_DAMAGE_TAKEN_MUL, -0.33)
 
@@ -426,8 +428,8 @@ trinket, trinketwep = GM:AddTrinket("Resupply Pack", "resupplypack", true, nil, 
 }, 4, "Allows humans to resupply from you\nPress LMB with the pack in your hand to resupply yourself.", "resupplypack", 3)
 trinketwep.PermitDismantle = true
 
-GM:AddTrinket("Magnet", "magnet", true, supveles, supweles, 1, "Slowly pulls ammo and weapons towards you\nMust be equipped to take effect", "magnet")
-GM:AddTrinket("Electromagnet", "electromagnet", true, supveles, supweles, 2, "Pulls ammo and weapons towards you quickly\nMust be equipped to take effect", "magnet_electro")
+GM:AddTrinket("Magnet", "magnet", true, supveles, supweles, nil, "Slowly pulls ammo and weapons towards you\nMust be equipped to take effect", "magnet")
+GM:AddTrinket("Electromagnet", "electromagnet", true, supveles, supweles, nil, "Pulls ammo and weapons towards you quickly\nMust be equipped to take effect", "magnet_electro")
 
 trinket, trinketwep = GM:AddTrinket("Loading Exoskeleton", "loadingex", false, supveles, supweles, 2, "-55% prop carrying slow down\n-20% deployable pack time")
 GM:AddSkillModifier(trinket, SKILLMOD_PROP_CARRY_SLOW_MUL, -0.55)
@@ -506,20 +508,20 @@ local blcorew = {
 	["black_core"] = { type = "Model", model = "models/dav0r/hoverball.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.349, 0.349, 0.349), color = Color(20, 20, 20, 255), surpresslightning = false, material = "models/shiny", skin = 0, bodygroup = {} }
 }
 
-GM:AddTrinket("Bleak Soul", "bleaksoul", false, blcorev, blcorew, 2, "Blinds and knocks zombies away when attacked\nRecharges every 35 seconds")
+GM:AddTrinket("Bleak Soul", "bleaksoul", false, blcorev, blcorew, nil, "Blinds and knocks zombies away when attacked\nRecharges every 35 seconds")
 
 trinket = GM:AddTrinket("Spirit Essence", "spiritess", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(255, 255, 255, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 10, y = 10 }, color = Color(255, 255, 255, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/dav0r/hoverball.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.349, 0.349, 0.349), color = Color(255, 255, 255, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 2, "+10% jump height.")
+}, nil, "+10% jump height.")
 GM:AddSkillModifier(trinket, SKILLMOD_JUMPPOWER_MUL, 0.13)
 
 trinket = GM:AddTrinket("Glimmering Core", "glimmeringcore", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(125, 125, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 10, y = 10 }, color = Color(125, 125, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/dav0r/hoverball.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.349, 0.349, 0.349), color = Color(255, 255, 130, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 3, "+35% chance for zombies killed to drop loot. +10% chance for loot to be directly received instead of dropped.")
+}, nil, "+35% chance for zombies killed to drop loot. +10% chance for loot to be directly received instead of dropped.")
 GM:AddSkillModifier(trinket, SKILLMOD_DROP_CHANCE_MUL, 0.35)
 GM:AddSkillModifier(trinket, SKILLMOD_COLLECT_CHANCE_MUL, 0.10)
 
@@ -527,7 +529,7 @@ trinket = GM:AddTrinket("Gleaming Core", "gleamingcore", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(0, 125, 125, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 10, y = 10 }, color = Color(0, 125, 125, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/dav0r/hoverball.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.349, 0.349, 0.349), color = Color(130, 255, 255, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 3, "+25% chance for zombies killed to drop loot. +15% chance for loot to be directly received instead of dropped.")
+}, nil, "+25% chance for zombies killed to drop loot. +15% chance for loot to be directly received instead of dropped.")
 GM:AddSkillModifier(trinket, SKILLMOD_DROP_CHANCE_MUL, 0.25)
 GM:AddSkillModifier(trinket, SKILLMOD_COLLECT_CHANCE_MUL, 0.15)
 
@@ -535,14 +537,14 @@ trinket = GM:AddTrinket("Shimmering Core", "shimmeringcore", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(255, 0, 255, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 10, y = 10 }, color = Color(0, 255, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/dav0r/hoverball.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.349, 0.349, 0.349), color = Color(0, 0, 0, 80), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 3, "+50% chance for zombies killed to drop loot.")
+}, nil, "+50% chance for zombies killed to drop loot.")
 GM:AddSkillModifier(trinket, SKILLMOD_DROP_CHANCE_MUL, 0.50)
 
 trinket = GM:AddTrinket("Magnetic Core", "magneticcore", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(0, 0, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 10, y = 10 }, color = Color(255, 255, 255, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/dav0r/hoverball.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.349, 0.349, 0.349), color = Color(100, 100, 100, 80), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 3, "+5% chance for zombies killed to drop loot. +30% chance for loot to be directly received instead of dropped.")
+}, nil, "+5% chance for zombies killed to drop loot. +30% chance for loot to be directly received instead of dropped.")
 GM:AddSkillModifier(trinket, SKILLMOD_DROP_CHANCE_MUL, 0.05)
 GM:AddSkillModifier(trinket, SKILLMOD_COLLECT_CHANCE_MUL, 0.30)
 
@@ -551,14 +553,14 @@ trinket = GM:AddTrinket("Welfare Pearl", "welfarepearl", false, nil, {
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 10, y = 10 }, color = Color(0, 255, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 8.5, y = 8.5 }, color = Color(255, 0, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/dav0r/hoverball.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.349, 0.349, 0.349), color = Color(100, 100, 100, 80), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 3, "Free shit from Bernie Sanders.")
+}, nil, "Free shit from Bernie Sanders.")
 GM:AddSkillModifier(trinket, SKILLMOD_WELFARE_MUL, -0.50)
 
 trinket = GM:AddTrinket("Scavenging Core", "scavcore", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(90, 200, 150, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 10, y = 10 }, color = Color(90, 200, 150, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/dav0r/hoverball.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.349, 0.349, 0.349), color = Color(116, 200, 0, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 4, "+40% chance to convert ammo drops into resupply caches. +15 chance for zombies killed to drop loot. -10% Resupply cooldown time.")
+}, nil, "+40% chance to convert ammo drops into resupply caches. +15 chance for zombies killed to drop loot. -10% Resupply cooldown time.")
 GM:AddSkillModifier(trinket, SKILLMOD_AMMOTOCACHE_CHANCE_MUL, 0.40)
 GM:AddSkillModifier(trinket, SKILLMOD_DROP_CHANCE_MUL, 0.15)
 GM:AddSkillModifier(trinket, SKILLMOD_RESUPPLY_DELAY_MUL, -0.10)
@@ -567,7 +569,7 @@ trinket = GM:AddTrinket("Ruby Splinter", "rubysplinter", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(225, 125, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 10, y = 10 }, color = Color(255, 0, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/Gibs/wood_gib01d.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(226, 31, 93, 150), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 4, "Improves effects of fire, +1 damage per tick, +1 tick per application.")
+}, nil, "Improves effects of fire, +1 damage per tick, +1 tick per application.")
 GM:AddSkillModifier(trinket, SKILLMOD_FIRE_ADDED_DAMAGE, 1)
 GM:AddSkillModifier(trinket, SKILLMOD_FIRE_ADDED_DURATION, 2)
 
@@ -575,27 +577,27 @@ trinket = GM:AddTrinket("Foxfire Ruby", "redruby", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(225, 125, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 10, y = 10 }, color = Color(255, 0, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/props_junk/cardboard_box004a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(255, 0, 0, 150), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 4, "Has a chance to spread fire. 30 second cooldown.")
+}, nil, "Has a chance to spread fire. 30 second cooldown.")
 
 trinket = GM:AddTrinket("Pink Ruby", "pinkruby", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(225, 0, 200, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 10, y = 10 }, color = Color(255, 0, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/props_junk/cardboard_box004a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(255, 75, 125, 185), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 3, "Increases health by 30%.")
+}, nil, "Increases health by 30%.")
 GM:AddSkillModifier(trinket, SKILLMOD_HEALTH_MUL, 0.30)
 
 trinket = GM:AddTrinket("Bloodstone Splinter", "bloodstonesplinter", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(200, 0, 150, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 4, y = 4 }, color = Color(175, 0, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/Gibs/wood_gib01d.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(226, 31, 93, 150), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 2, "Attack 15% faster with melee.")
+}, nil, "Attack 15% faster with melee.")
 GM:AddSkillModifier(trinket, SKILLMOD_MELEE_SWING_DELAY_MUL, -13)
 
 trinket = GM:AddTrinket("Chromium Fragment", "chromiumfragment", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(0, 150, 255, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 6, y = 6 }, color = Color(0, 0, 0, 175), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/Gibs/wood_gib01d.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(0, 0, 0, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 5, "Reduces Resonance Cascade threshold by 35%, triggering the effect more often.")
+}, nil, "Reduces Resonance Cascade threshold by 35%, triggering the effect more often.")
 GM:AddSkillModifier(trinket, SKILLMOD_RES_THRESHOLD_MUL, -0.35)
 
 GM:AddInventoryItemData("comp_tachyonic_lodestone", "Tachyonic Lodestone",		"Use with a perfected Spinfusor.",												{
@@ -650,7 +652,7 @@ trinket, trinketwep = GM:AddTrinket("Silver Ring", "ring_silver", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(220, 220, 240, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 6, y = 6 }, color = Color(220, 220, 240, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/props_vehicles/carparts_tire01a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(220, 220, 240, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 2, "Increases drop chance by 15%.\n Increases experience gains by 5%.")
+}, nil, "Increases drop chance by 15%.\n Increases experience gains by 5%.")
 GM:AddSkillModifier(trinket, SKILLMOD_DROP_CHANCE_MUL, 0.15)
 GM:AddSkillModifier(trinket, SKILLMOD_EXP_MUL, 0.05)
 trinketwep.PermitDismantle = true
@@ -659,7 +661,7 @@ trinket = GM:AddTrinket("Phantom Silver", "phantom_silver", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(220, 220, 240, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 6, y = 6 }, color = Color(220, 220, 240, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/props_combine/breenbust.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(220, 220, 240, 180), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 2, "Increases drop chance by 30%.\n Increases experience gains by 10%.")
+}, nil, "Increases drop chance by 30%.\n Increases experience gains by 10%.")
 GM:AddSkillModifier(trinket, SKILLMOD_DROP_CHANCE_MUL, 0.30)
 GM:AddSkillModifier(trinket, SKILLMOD_EXP_MUL, 0.10)
 
@@ -667,7 +669,7 @@ trinket, trinketwep = GM:AddTrinket("Gold Ring", "ring_gold", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(255, 255, 0, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 6, y = 6 }, color = Color(255, 255, 0, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/props_vehicles/carparts_tire01a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(255, 200, 50, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 3, "Increases drop chance by 30%.\n Increases experience gains by 8%.")
+}, nil, "Increases drop chance by 30%.\n Increases experience gains by 8%.")
 GM:AddSkillModifier(trinket, SKILLMOD_DROP_CHANCE_MUL, 0.30)
 GM:AddSkillModifier(trinket, SKILLMOD_EXP_MUL, 0.08)
 trinketwep.PermitDismantle = true
@@ -676,7 +678,7 @@ trinket, trinketwep = GM:AddTrinket("Phantom Gold", "phantom_gold", false, nil, 
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(255, 255, 0, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 6, y = 6 }, color = Color(255, 255, 0, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/props_combine/breenbust.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(255, 200, 50, 180), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 3, "Increases drop chance by 50%.\n Increases experience gains by 15%.")
+}, nil, "Increases drop chance by 50%.\n Increases experience gains by 15%.")
 GM:AddSkillModifier(trinket, SKILLMOD_DROP_CHANCE_MUL, 0.50)
 GM:AddSkillModifier(trinket, SKILLMOD_EXP_MUL, 0.15)
 trinketwep.PermitDismantle = true
@@ -685,7 +687,7 @@ trinket, trinketwep = GM:AddTrinket("Electrum Ring", "ring_electrum", false, nil
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(200, 255, 0, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 6, y = 6 }, color = Color(200, 255, 0, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/props_vehicles/carparts_tire01a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(255, 225, 150, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 5, "Increases drop chance by 35%.\n Increases experience gains by 12%.")
+}, nil, "Increases drop chance by 35%.\n Increases experience gains by 12%.")
 GM:AddSkillModifier(trinket, SKILLMOD_DROP_CHANCE_MUL, 0.35)
 GM:AddSkillModifier(trinket, SKILLMOD_EXP_MUL, 0.12)
 trinketwep.PermitDismantle = true
@@ -694,7 +696,7 @@ trinket, trinketwep = GM:AddTrinket("Phantom Electrum", "phantom_electrum", fals
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(200, 255, 0, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 6, y = 6 }, color = Color(200, 255, 0, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/props_combine/breenbust.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(255, 225, 150, 180), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 5, "Increases drop chance by 70%.\n Increases experience gains by 25%.")
+}, nil, "Increases drop chance by 70%.\n Increases experience gains by 25%.")
 GM:AddSkillModifier(trinket, SKILLMOD_DROP_CHANCE_MUL, 0.70)
 GM:AddSkillModifier(trinket, SKILLMOD_EXP_MUL, 0.25)
 trinketwep.PermitDismantle = true
@@ -703,7 +705,7 @@ trinket, trinketwep = GM:AddTrinket("Platinum Ring", "ring_platinum", false, nil
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(66, 237, 255, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 6, y = 6 }, color = Color(66, 237, 255, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/props_vehicles/carparts_tire01a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(222, 222, 255, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 4, "Increases drop chance by 50%.\n Increases experience gains by 15%.")
+}, nil, "Increases drop chance by 50%.\n Increases experience gains by 15%.")
 GM:AddSkillModifier(trinket, SKILLMOD_DROP_CHANCE_MUL, 0.50)
 GM:AddSkillModifier(trinket, SKILLMOD_EXP_MUL, 0.15)
 trinketwep.PermitDismantle = true
@@ -712,7 +714,7 @@ trinket, trinketwep = GM:AddTrinket("Phantom Platinum", "phantom_platinum", fals
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(66, 237, 255, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 6, y = 6 }, color = Color(66, 237, 255, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/props_combine/breenbust.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(222, 222, 255, 180), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 4, "Increases drop chance by 100%.\n Increases experience gains by 35%.")
+}, nil, "Increases drop chance by 100%.\n Increases experience gains by 35%.")
 GM:AddSkillModifier(trinket, SKILLMOD_DROP_CHANCE_MUL, 1.00)
 GM:AddSkillModifier(trinket, SKILLMOD_EXP_MUL, 0.35)
 trinketwep.PermitDismantle = true
@@ -721,7 +723,7 @@ trinket, trinketwep = GM:AddTrinket("Iridium Ring", "ring_iridium", false, nil, 
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(84, 0, 255, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 6, y = 6 }, color = Color(84, 0, 255, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/props_vehicles/carparts_tire01a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(190, 190, 255, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 5, "Increases drop chance by 100%.\n Increases experience gains by 20%.")
+}, nil, "Increases drop chance by 100%.\n Increases experience gains by 20%.")
 GM:AddSkillModifier(trinket, SKILLMOD_DROP_CHANCE_MUL, 1.00)
 GM:AddSkillModifier(trinket, SKILLMOD_EXP_MUL, 0.20)
 trinketwep.PermitDismantle = true
@@ -730,44 +732,44 @@ trinket, trinketwep = GM:AddTrinket("Phantom Iridium", "phantom_iridium", false,
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(84, 0, 255, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 6, y = 6 }, color = Color(84, 0, 255, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/props_combine/breenbust.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(190, 190, 255, 180), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 5, "Increases drop chance by 200%.\n Increases experience gains by 50%.")
+}, nil, "Increases drop chance by 200%.\n Increases experience gains by 50%.")
 GM:AddSkillModifier(trinket, SKILLMOD_DROP_CHANCE_MUL, 2.00)
 GM:AddSkillModifier(trinket, SKILLMOD_EXP_MUL, 0.50)
 trinketwep.PermitDismantle = true
 
 -- Starter Trinkets
 
-trinket, trinketwep = GM:AddTrinket("Armband", "armband", false, mveles, mweles, 2, "-10% melee swing impact delay\n-4% melee damage taken")
+trinket, trinketwep = GM:AddTrinket("Armband", "armband", false, mveles, mweles, nil, "-10% melee swing impact delay\n-4% melee damage taken")
 GM:AddSkillModifier(trinket, SKILLMOD_MELEE_SWING_DELAY_MUL, -0.1)
 GM:AddSkillModifier(trinket, SKILLMOD_MELEE_DAMAGE_TAKEN_MUL, -0.04)
 trinketwep.PermitDismantle = true
 
-trinket, trinketwep = GM:AddTrinket("Condiments", "condiments", false, supveles, supweles, 2, "+20% recovery from food\n-20% time to eat food")
+trinket, trinketwep = GM:AddTrinket("Condiments", "condiments", false, supveles, supweles, nil, "+20% recovery from food\n-20% time to eat food")
 GM:AddSkillModifier(trinket, SKILLMOD_FOODRECOVERY_MUL, 0.20)
 GM:AddSkillModifier(trinket, SKILLMOD_FOODEATTIME_MUL, -0.20)
 trinketwep.PermitDismantle = true
 
-trinket, trinketwep = GM:AddTrinket("Escape Manual", "emanual", false, develes, deweles, 2, "+20% phasing speed\n-12% low health slow intensity")
+trinket, trinketwep = GM:AddTrinket("Escape Manual", "emanual", false, develes, deweles, nil, "+20% phasing speed\n-12% low health slow intensity")
 GM:AddSkillModifier(trinket, SKILLMOD_BARRICADE_PHASE_SPEED_MUL, 0.20)
 GM:AddSkillModifier(trinket, SKILLMOD_LOW_HEALTH_SLOW_MUL, -0.12)
 trinketwep.PermitDismantle = true
 
-trinket, trinketwep = GM:AddTrinket("Aiming Aid", "aimaid", false, develes, deweles, 2, "+5% tighter aiming reticule\n-7% reduced effect of aim shake effects")
+trinket, trinketwep = GM:AddTrinket("Aiming Aid", "aimaid", false, develes, deweles, nil, "+5% tighter aiming reticule\n-7% reduced effect of aim shake effects")
 GM:AddSkillModifier(trinket, SKILLMOD_AIMSPREAD_MUL, -0.05)
 GM:AddSkillModifier(trinket, SKILLMOD_AIM_SHAKE_MUL, -0.06)
 trinketwep.PermitDismantle = true
 
-trinket, trinketwep = GM:AddTrinket("Vitamin Capsules", "vitamins", false, hpveles, hpweles, 2, "+5 maximum health\n-12% poison damage taken")
+trinket, trinketwep = GM:AddTrinket("Vitamin Capsules", "vitamins", false, hpveles, hpweles, nil, "+5 maximum health\n-12% poison damage taken")
 GM:AddSkillModifier(trinket, SKILLMOD_HEALTH, 5)
 GM:AddSkillModifier(trinket, SKILLMOD_POISON_DAMAGE_TAKEN_MUL, -0.12)
 trinketwep.PermitDismantle = true
 
-trinket, trinketwep = GM:AddTrinket("Welfare Shield", "welfare", false, hpveles, hpweles, 2, "-5% resupply delay\n-7% self damage taken")
+trinket, trinketwep = GM:AddTrinket("Welfare Shield", "welfare", false, hpveles, hpweles, nil, "-5% resupply delay\n-7% self damage taken")
 GM:AddSkillModifier(trinket, SKILLMOD_RESUPPLY_DELAY_MUL, -0.05)
 GM:AddSkillModifier(trinket, SKILLMOD_SELF_DAMAGE_MUL, -0.07)
 trinketwep.PermitDismantle = true
 
-trinket, trinketwep = GM:AddTrinket("Chemistry Set", "chemistry", false, hpveles, hpweles, 2, "+6% medic tool effectiveness\n+12% cloud bomb time")
+trinket, trinketwep = GM:AddTrinket("Chemistry Set", "chemistry", false, hpveles, hpweles, nil, "+6% medic tool effectiveness\n+12% cloud bomb time")
 GM:AddSkillModifier(trinket, SKILLMOD_MEDKIT_EFFECTIVENESS_MUL, 0.06)
 GM:AddSkillModifier(trinket, SKILLMOD_CLOUD_TIME, 0.12)
 trinketwep.PermitDismantle = true
