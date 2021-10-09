@@ -1237,6 +1237,10 @@ GM:SetSkillModifierFunction(SKILLMOD_RESUPPLY_AMMO_MUL, function(pl, amount)
 	pl.ResupplyAmmoMul = math.Clamp(amount + 1.0, 0, 1000.0)
 end)
 
+GM:SetSkillModifierFunction(SKILLMOD_EXP_MUL, function(pl, amount)
+	pl.ExperienceMul = math.Clamp(amount + 1.0, 0, 1000.0) -- change the 1.0 to 2.0 for double exp
+end)
+
 GM:SetSkillModifierFunction(SKILLMOD_PROJECTILE_DAMAGE_TAKEN_MUL, GM:MkGenericMod("ProjDamageTakenMul"))
 GM:SetSkillModifierFunction(SKILLMOD_EXP_DAMAGE_RADIUS, GM:MkGenericMod("ExpDamageRadiusMul"))
 GM:SetSkillModifierFunction(SKILLMOD_WEAPON_WEIGHT_SLOW_MUL, GM:MkGenericMod("WeaponWeightSlowMul"))

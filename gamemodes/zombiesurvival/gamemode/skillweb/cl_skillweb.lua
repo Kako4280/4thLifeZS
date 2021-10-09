@@ -1216,7 +1216,11 @@ function GM:DrawXPBar(x, y, w, h, xpw, barwm, hm, level)
 		end
 
 		draw_SimpleText("Level "..level..append, "ZSXPBar", x, h / 2 + y, COLOR_WHITE, TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
-		draw_SimpleText(string.CommaSeparate(txp).." / "..string.CommaSeparate(GAMEMODE:XPForLevel(level + 1)).." XP", "ZSXPBar", x + barw, h / 2 + y, COLOR_WHITE, TEXT_ALIGN_RIGHT, TEXT_ALIGN_CENTER)
+		if MySelf.ExperienceMul > 1 then
+		   draw_SimpleText(string.CommaSeparate(txp).." / "..string.CommaSeparate(GAMEMODE:XPForLevel(level + 1)).." XP" .. " (" .. (MySelf.ExperienceMul) .. "X)" , "ZSXPBar", x + barw, h / 2 + y, COLOR_WHITE, TEXT_ALIGN_RIGHT, TEXT_ALIGN_CENTER)
+		else
+			draw_SimpleText(string.CommaSeparate(txp).." / "..string.CommaSeparate(GAMEMODE:XPForLevel(level + 1)).." XP", "ZSXPBar", x + barw, h / 2 + y, COLOR_WHITE, TEXT_ALIGN_RIGHT, TEXT_ALIGN_CENTER)
+		end
 	end
 end
 
