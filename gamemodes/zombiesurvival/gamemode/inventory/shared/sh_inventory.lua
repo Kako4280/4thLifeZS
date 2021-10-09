@@ -115,6 +115,8 @@ GM.Assemblies["trinket_phantom_iridium"]				= {"comp_iridium",			"trinket_phanto
 GM.Assemblies["comp_electrum"]							= {"comp_silver",			"comp_gold"}
 GM.Assemblies["trinket_heartsilver"]					= {"trinket_vitpackagei",			"comp_silver"}
 GM.Assemblies["trinket_heartgold"]						= {"trinket_vitpackageii",			"comp_gold"}
+GM.Assemblies["weapon_zs_medicrifle_adv"]				= {"comp_sparking_lodestone",			"weapon_zs_medicrifle_q3"}
+GM.Assemblies["weapon_zs_medicrifle_adv"]				= {"comp_sparking_lodestone",			"weapon_zs_medicrifle_r3"}
 
 GM:AddInventoryItemData("comp_modbarrel",		"Modular Barrel",			"A modular barrel suited for pairing up with another gun barrel.",								"models/props_c17/trappropeller_lever.mdl")
 GM:AddInventoryItemData("comp_burstmech",		"Burst Fire Mechanism",		"A mechanism that could be used to make a gun burst fire.",										"models/props_c17/trappropeller_lever.mdl")
