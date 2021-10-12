@@ -566,13 +566,16 @@ local drops_regular_trinket = {
 	-- [8] = {"trinket_chromiumfragment", 1},
 	-- [9] = {"trinket_redruby", 1},
 	
-	[1] = {"trinket_redruby", 1},
-	[2] = {"trinket_chromiumfragment", 1},
-	[3] = {"trinket_bloodstonesplinter", 1},
-	[4] = {"trinket_scavcore", 1},
-	[5] = {"trinket_rubysplinter", 1},
-	[6] = {"trinket_pinkruby", 1},
-	[7] = {"trinket_welfarepearl", 1}
+	[1] = {"trinket_redruby", 20},
+	[2] = {"trinket_chromiumfragment", 20},
+	[3] = {"trinket_bloodstonesplinter", 20},
+	[4] = {"trinket_scavcore", 20},
+	[5] = {"trinket_rubysplinter", 20},
+	[6] = {"trinket_pinkruby", 20},
+	[7] = {"trinket_welfarepearl", 20},
+	[8] = {"trinket_opalwhite", 18},
+	[9] = {"trinket_opalblack", 2},
+	[10] = {"trinket_opalpink", 20}
 }
 
 --Item, Weight

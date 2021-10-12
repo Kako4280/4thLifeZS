@@ -448,6 +448,7 @@ SKILLMOD_RESUPPLY_AMMO_MUL = 127
 SKILLMOD_EXP_MUL = 128
 SKILLMOD_HEALTH_MUL = 129
 SKILLMOD_WELFARE_MUL = 130
+SKILLMOD_HEALTH_REGEN = 131
 
 local GOOD = "^"..COLORID_GREEN
 local BAD = "^"..COLORID_RED
@@ -652,6 +653,7 @@ GM:AddSkill(SKILL_BLOODLETTER, "Bloodletter", GOOD.."+20% blood armor regenerate
 																0,			4,					{SKILL_ANTIGEN}, TREE_HEALTHTREE)
 GM:AddSkill(SKILL_REGENERATOR, "Regenerator", GOOD.."Regenerate 1 health every 3s",
 																-5,			-2,					{}, TREE_HEALTHTREE)
+GM:AddSkillModifier(SKILL_REGENERATOR, SKILLMOD_HEALTH_REGEN, 2)
 GM:AddSkill(SKILL_BLOODARMOR, "Blood Armor", GOOD.."Regenerate 20% of max blood armor every 2 seconds\nBase blood armor maximum is 8\nBase blood armor damage absorption is 50%\n",
 																2,			2,					{SKILL_IRONBLOOD, SKILL_BLOODLETTER}, TREE_HEALTHTREE)
 GM:AddSkill(SKILL_IRONBLOOD, "Iron Blood", GOOD.."+40% damage reduction from blood armor\n"..GOOD.."Bonus increased by 10% when health is 50% or less\n"..BAD.."-25% maximum blood armor\n"..BAD.."-10 movement speed",
@@ -1250,6 +1252,10 @@ GM:SetSkillModifierFunction(SKILLMOD_MEDDART_EFFECTIVENESS_MUL, GM:MkGenericMod(
 
 GM:SetSkillModifierFunction(SKILLMOD_BLOODARMOR_DMG_REDUCTION, function(pl, amount)
 	pl.BloodArmorDamageReductionAdd = amount
+end)
+
+GM:SetSkillModifierFunction(SKILLMOD_HEALTH_REGEN, function(pl, amount)
+	pl.HealthRegen = math.Clamp(amount + 1.00, 0, 1000.0)
 end)
 
 GM:SetSkillModifierFunction(SKILLMOD_BLOODARMOR_MUL, function(pl, amount)

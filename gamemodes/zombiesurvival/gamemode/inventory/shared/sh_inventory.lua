@@ -115,8 +115,9 @@ GM.Assemblies["trinket_phantom_iridium"]				= {"comp_iridium",			"trinket_phanto
 GM.Assemblies["comp_electrum"]							= {"comp_silver",			"comp_gold"}
 GM.Assemblies["trinket_heartsilver"]					= {"trinket_vitpackagei",			"comp_silver"}
 GM.Assemblies["trinket_heartgold"]						= {"trinket_vitpackageii",			"comp_gold"}
-GM.Assemblies["weapon_zs_medicrifle_adv"]				= {"comp_sparking_lodestone",			"weapon_zs_medicrifle_q3"}
-GM.Assemblies["weapon_zs_medicrifle_adv"]				= {"comp_sparking_lodestone",			"weapon_zs_medicrifle_r3"}
+GM.Assemblies["weapon_zs_medicrifle_adv"]				= {"comp_sparking_lodestone",		"weapon_zs_medicrifle_q3"}
+GM.Assemblies["weapon_zs_medicrifle_adv"]				= {"comp_sparking_lodestone",		"weapon_zs_medicrifle_r3"}
+GM.Assemblies["trinket_regenimplant3"]					= {"trinket_regenimplant2",			"comp_gold"}
 
 GM:AddInventoryItemData("comp_modbarrel",		"Modular Barrel",			"A modular barrel suited for pairing up with another gun barrel.",								"models/props_c17/trappropeller_lever.mdl")
 GM:AddInventoryItemData("comp_burstmech",		"Burst Fire Mechanism",		"A mechanism that could be used to make a gun burst fire.",										"models/props_c17/trappropeller_lever.mdl")
@@ -224,7 +225,9 @@ trinketwep.PermitDismantle = true
 
 GM:AddSkillModifier(GM:AddTrinket("Blood Bank", "cardpackageii", false, hpveles, hpweles, 4, "+5 maximum blood armor"), SKILLMOD_BLOODARMOR, 5)
 
-GM:AddTrinket("Regeneration Implant", "regenimplant", false, hpveles, hpweles, 3, "Heals 1 health every 12 seconds provided no damage was taken recently")
+GM:AddTrinket("Regeneration Implant I", "regenimplant1", false, hpveles, hpweles, 2, "Increases health regeneration by 0.5.")
+GM:AddTrinket("Regeneration Implant II", "regenimplant2", false, hpveles, hpweles, 4, "Increases health regeneration by 1.")
+GM:AddTrinket("Regeneration Implant III", "regenimplant3", false, hpveles, hpweles, 5, "Increases health regeneration by 1.5.")
 
 trinket, trinketwep = GM:AddTrinket("Bio Cleanser", "biocleanser", false, hpveles, hpweles, 2, "Blocks one harmful status effect every 20 seconds")
 trinketwep.PermitDismantle = true
@@ -549,12 +552,31 @@ GM:AddSkillModifier(trinket, SKILLMOD_DROP_CHANCE_MUL, 0.05)
 GM:AddSkillModifier(trinket, SKILLMOD_COLLECT_CHANCE_MUL, 0.30)
 
 trinket = GM:AddTrinket("Welfare Pearl", "welfarepearl", false, nil, {
-	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(0, 0, 255, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
-	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 10, y = 10 }, color = Color(0, 255, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
-	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 8.5, y = 8.5 }, color = Color(255, 0, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
-	["black_core"] = { type = "Model", model = "models/dav0r/hoverball.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.349, 0.349, 0.349), color = Color(100, 100, 100, 80), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
+	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(0, 0, 255, 150), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
+	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.5, y = 7.5 }, color = Color(0, 255, 0, 200), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
+	["black_core_2++"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 5, y = 5 }, color = Color(255, 0, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
+	["black_core"] = { type = "Model", model = "models/dav0r/hoverball.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.2, 0.2, 0.2), color = Color(100, 100, 100, 80), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
 }, 3, "Free shit from Bernie Sanders.")
 GM:AddSkillModifier(trinket, SKILLMOD_WELFARE_MUL, -0.50)
+
+trinket = GM:AddTrinket("White Opal", "opalwhite", false, nil, {
+	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(255, 225, 160, 150), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
+	["black_core"] = { type = "Model", model = "models/props_junk/watermelon01.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.2, 0.2, 0.2), color = Color(255, 240, 200, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
+}, 3, "Increases health regeneration by 1.")
+GM:AddSkillModifier(trinket, SKILLMOD_HEALTH_REGEN, 1.0)
+
+trinket = GM:AddTrinket("Black Opal", "opalblack", false, nil, {
+	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(0, 255, 150, 150), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
+	["black_core"] = { type = "Model", model = "models/props_junk/watermelon01.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.2, 0.2, 0.2), color = Color(0, 0, 0, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
+}, 3, "Increases health regeneration by 2.")
+GM:AddSkillModifier(trinket, SKILLMOD_HEALTH_REGEN, 2.0)
+
+trinket = GM:AddTrinket("Pink Opal", "opalpink", false, nil, {
+	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(225, 50, 90, 150), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
+	["black_core"] = { type = "Model", model = "models/props_junk/watermelon01.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.2, 0.2, 0.2), color = Color(215, 100, 125, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
+}, 3, "Increases health regeneration by 0.5, increases maximum health by 10%.")
+GM:AddSkillModifier(trinket, SKILLMOD_HEALTH_REGEN, 0.5)
+GM:AddSkillModifier(trinket, SKILLMOD_HEALTH_MUL, 0.10)
 
 trinket = GM:AddTrinket("Scavenging Core", "scavcore", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(90, 200, 150, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
@@ -583,8 +605,8 @@ trinket = GM:AddTrinket("Pink Ruby", "pinkruby", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(225, 0, 200, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 10, y = 10 }, color = Color(255, 0, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/props_junk/cardboard_box004a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(255, 75, 125, 185), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 3, "Increases health by 30%.")
-GM:AddSkillModifier(trinket, SKILLMOD_HEALTH_MUL, 0.30)
+}, 3, "Increases health by 25%.")
+GM:AddSkillModifier(trinket, SKILLMOD_HEALTH_MUL, 0.25)
 
 trinket = GM:AddTrinket("Bloodstone Splinter", "bloodstonesplinter", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(200, 0, 150, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
@@ -613,27 +635,27 @@ GM:AddInventoryItemData("comp_sparking_lodestone", "Sparking Lodestone",		"Use w
 })
 
 GM:AddInventoryItemData("comp_silver", "Silver",		"A piece of silver.",												{
-	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(220, 220, 240, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
+	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(220, 220, 240, 175), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/Gibs/wood_gib01d.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(220, 220, 240, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
 })
 
 GM:AddInventoryItemData("comp_gold", "Gold",		"A piece of gold.",												{
-	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(255, 255, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
+	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(255, 255, 0, 175), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/Gibs/wood_gib01d.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(255, 200, 50, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
 })
 
 GM:AddInventoryItemData("comp_electrum", "Electrum",		"A piece of electrum.",												{
-	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(200, 255, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
+	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(200, 255, 0, 175), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/Gibs/wood_gib01d.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(255, 225, 150, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
 })
 
 GM:AddInventoryItemData("comp_platinum", "Platinum",		"A piece of platinum.",												{
-	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(66, 237, 255, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
+	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(66, 237, 255, 175), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/Gibs/wood_gib01d.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(222, 222, 255, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
 })
 
 GM:AddInventoryItemData("comp_iridium", "Iridium",		"A piece of iridium.",												{
-	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(84, 0, 255, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
+	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(84, 0, 255, 175), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/Gibs/wood_gib01d.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(190, 190, 255, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
 })
 

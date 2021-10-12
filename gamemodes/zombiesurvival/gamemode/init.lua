@@ -1271,13 +1271,8 @@ function GM:Think()
 
 				local healmax = pl:IsSkillActive(SKILL_D_FRAIL) and math.floor(pl:GetMaxHealth() * 0.50) or pl:GetMaxHealth()
 
-				if pl:IsSkillActive(SKILL_REGENERATOR) and time >= pl.NextRegenerate and pl:Health() < math.min(healmax, pl:GetMaxHealth()) then
-					pl.NextRegenerate = time + 3
-					pl:SetHealth(math.min(healmax, pl:Health() + 1))
-				end
-
-				if pl:HasTrinket("regenimplant") and time >= pl.NextRegenTrinket and pl:Health() < healmax then
-					pl.NextRegenTrinket = time + 12
+				if time >= pl.NextRegenerate and pl:Health() < math.min(healmax, pl:GetMaxHealth()) then
+					pl.NextRegenerate = time + (15 / pl.HealthRegen)
 					pl:SetHealth(math.min(healmax, pl:Health() + 1))
 				end
 
