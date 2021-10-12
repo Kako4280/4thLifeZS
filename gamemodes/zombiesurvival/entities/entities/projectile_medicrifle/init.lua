@@ -64,17 +64,17 @@ function ENT:Hit(vHitPos, vHitNormal, eHitEntity, vOldVelocity)
 					for k, v in pairs(statusEffect) do
 						local status = eHitEntity:GiveStatus(v, self.BuffDuration or 10)
 						status.Applier = owner
-						
-						net.Start("zs_buffby")
-							net.WriteEntity(owner)
-							net.WriteString(txt)
-						net.Send(eHitEntity)
-
-						net.Start("zs_buffwith")
-							net.WriteEntity(eHitEntity)
-							net.WriteString(txt)
-						net.Send(owner)
 					end
+
+					net.Start("zs_buffby")
+					net.WriteEntity(owner)
+					net.WriteString(txt)
+				    net.Send(eHitEntity)
+
+				    net.Start("zs_buffwith")
+					net.WriteEntity(eHitEntity)
+					net.WriteString(txt)
+				    net.Send(owner)
 
 					owner:HealPlayer(eHitEntity, self.Heal)
 				else
