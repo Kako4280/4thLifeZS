@@ -581,7 +581,8 @@ local drops_regular_trinket = {
 --Item, Weight
 local drops_components_lodestones = {
 	[1] = {"comp_tachyonic_lodestone", 1},
-	[2] = {"comp_sparking_lodestone", 3}
+	[2] = {"comp_chromatic_lodestone", 1},
+	[3] = {"comp_sparking_lodestone", 10}
 }
 
 --Item, Weight
@@ -784,7 +785,7 @@ normalDrops = {
 [2] = {drops_regular_ammo, 8},
 [3] = {"weapon", 2},
 [4] = {drops_regular_trinket, 2},
-[5] = {drops_components_lodestones, 0.2},
+[5] = {drops_components_lodestones, 0.1},
 [6] = {drops_components_metallic, 2.5},
 [7] = {drops_trinket_phantom, 0.1},
 [8] = {drops_regular_other, 2}
