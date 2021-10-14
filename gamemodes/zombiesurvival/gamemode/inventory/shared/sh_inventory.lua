@@ -101,6 +101,7 @@ GM.Assemblies["trinket_projguide"]								= {"comp_cpuparts",			"trinket_targeti
 GM.Assemblies["trinket_projwei"]								= {"comp_busthead",			"trinket_projguide"}
 GM.Assemblies["trinket_controlplat"]							= {"comp_cpuparts",			"trinket_mainsuite"}
 GM.Assemblies["weapon_zs_spinfusor_tachyonic"]					= {"comp_tachyonic_lodestone",			"weapon_zs_spinfusor_q3"}
+GM.Assemblies["weapon_zs_chromatic_gluon"]                      = {"comp_chromatic_lodestone", "weapon_zs_gluon_q3"}
 GM.Assemblies["weapon_zs_z9001"]					= {"comp_sparking_lodestone",			"weapon_zs_z9000_q3"}
 GM.Assemblies["trinket_ring_silver"]					= {"comp_silver",			"comp_ring"}
 GM.Assemblies["trinket_ring_gold"]						= {"comp_gold",				"comp_ring"}
