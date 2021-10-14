@@ -184,6 +184,7 @@ LANGUAGE.point_at_a_sigil_to_choose_destination		= "Point at another sigil to ch
 LANGUAGE.frail_healdart_warning						= "Healing blocked because %s has DEBUFF: FRAIL!"
 LANGUAGE.obtained_a_inv								= "%s added to inventory"
 LANGUAGE.you_already_have_this_trinket				= "You already have this trinket in your inventory."
+LANGUAGE.you_already_have_this_component			= "You already have this component in your inventory."
 LANGUAGE.they_already_have_this_trinket				= "They already have this trinket in their inventory."
 LANGUAGE.you_cannot_carry_more_comps				= "You cannot carry more crafting components."
 LANGUAGE.they_cannot_carry_more_comps				= "They cannot carry more crafting components."

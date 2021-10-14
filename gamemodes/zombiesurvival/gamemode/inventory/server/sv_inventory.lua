@@ -95,6 +95,11 @@ function meta:TryAssembleItem(component, heldclass)
 		return
 	end
 
+	if self:HasTrinket(string.Replace(tostring(desiassembly), "comp_", "")) then
+		self:CenterNotify(COLOR_RED, translate.ClientGet(self, "you_already_have_this_component"))
+		return
+	end
+
 	local desitable
 	if invitemresult then
 		if not self:TakeInventoryItem(component) then return end
