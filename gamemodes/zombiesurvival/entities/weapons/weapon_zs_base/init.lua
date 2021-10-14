@@ -29,9 +29,10 @@ function SWEP:ApplyBleeding(hitent)
 	end
 end
 
-function SWEP:ApplyPulse(hitent, attacker)	
+function SWEP:ApplyPulse(hitent, attacker)
+	local owner = self:GetOwner()
 	if hitent:IsPlayer() then
-		hitent:AddLegDamageExt(self.PulseStrength, attacker, attacker:GetActiveWeapon(), SLOWTYPE_PULSE)
+		hitent:AddLegDamageExt(self.PulseStrength * owner.PulseWeaponSlowMul, attacker, attacker:GetActiveWeapon(), SLOWTYPE_PULSE)
 	end
 end
 
