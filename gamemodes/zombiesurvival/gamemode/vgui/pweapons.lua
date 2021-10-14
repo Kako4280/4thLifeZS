@@ -211,6 +211,7 @@ function MakepWeapons(silent)
 	craftstiersorting3 = frame.CraftsTierTree:AddNode("Tier 3")
 	craftstiersorting4 = frame.CraftsTierTree:AddNode("Tier 4")
 	craftstiersorting5 = frame.CraftsTierTree:AddNode("Tier 5")
+	craftstiersorting6 = frame.CraftsTierTree:AddNode("Tier 6")
 
 	for _, wep in pairs(weps) do
 		local enttab = weapons.Get(wep)
@@ -267,6 +268,8 @@ function MakepWeapons(silent)
 				wepnode = craftstiersorting4:AddNode(enttab.PrintName or wep)
 			elseif enttab.Tier == 5 then
 				wepnode = craftstiersorting5:AddNode(enttab.PrintName or wep)
+			elseif enttab.Tier == 6 then
+				wepnode = craftstiersorting6:AddNode(enttab.PrintName or wep)
 			else
 				wepnode = craftstiersorting:AddNode(enttab.PrintName or wep)
 			end
