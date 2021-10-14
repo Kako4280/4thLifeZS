@@ -1755,7 +1755,7 @@ function meta:CryogenicInduction(attacker, inflictor, damage)
 		local effectdata = EffectData()
 			effectdata:SetOrigin(pos)
 			effectdata:SetNormal(attacker:GetShootPos())
-		util.Effect("hit_ice", effectdata)
+		util.Effect("explosion_cryo", effectdata)
 	end)
 end
 
