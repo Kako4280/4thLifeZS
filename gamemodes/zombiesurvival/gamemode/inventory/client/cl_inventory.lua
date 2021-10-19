@@ -132,7 +132,7 @@ local function ItemPanelDoClick(self)
 
 	GAMEMODE:ViewerStatBarUpdate(viewer, category ~= INVCAT_WEAPONS, sweptable)
 
-	for i = 1, 3 do
+	for i = 1, 4 do
 		local crab, cral = viewer.m_CraftBtns[i][1], viewer.m_CraftBtns[i][2]
 
 		crab:SetVisible(false)
@@ -140,9 +140,19 @@ local function ItemPanelDoClick(self)
 	end
 
 	local assembles = {}
+
 	for k,v in pairs(GAMEMODE.Assemblies) do
 		if v[1] == item then
 			assembles[v[2]] = k
+		end
+		if v[1] == item and v[3] then
+			assembles[v[3]] = k
+		end
+		if v[1] == item and v[4] then
+			assembles[v[4]] = k
+		end
+		if v[1] == item and v[5] then
+			assembles[v[5]] = k
 		end
 	end
 
@@ -209,7 +219,7 @@ function GM:CreateInventoryInfoViewer()
 	if viewer.btnMinim and viewer.btnMinim:IsValid() then viewer.btnMinim:SetVisible(false) end
 	if viewer.btnMaxim and viewer.btnMaxim:IsValid() then viewer.btnMaxim:SetVisible(false) end
 
-	viewer:SetSize(leftframe:GetWide() / 1.25, leftframe:GetTall())
+	viewer:SetSize(leftframe:GetWide() / 1.15, leftframe:GetTall())
 	viewer:MoveRightOf(leftframe, 32)
 	viewer:MoveAbove(leftframe, -leftframe:GetTall())
 	self.m_InvViewer = viewer
@@ -217,7 +227,7 @@ function GM:CreateInventoryInfoViewer()
 	self:CreateItemViewerGenericElems(viewer)
 
 	local craftbtns = {}
-	for i = 1, 3 do
+	for i = 1, 4 do
 		local craftb = vgui.Create("DButton", viewer)
 		craftb:SetText("")
 		craftb:Dock(BOTTOM)

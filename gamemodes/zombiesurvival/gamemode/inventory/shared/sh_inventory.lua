@@ -101,7 +101,7 @@ GM.Assemblies["trinket_projguide"]								= {"comp_cpuparts",			"trinket_targeti
 GM.Assemblies["trinket_projwei"]								= {"comp_busthead",			"trinket_projguide"}
 GM.Assemblies["trinket_controlplat"]							= {"comp_cpuparts",			"trinket_mainsuite"}
 GM.Assemblies["weapon_zs_spinfusor_tachyonic"]					= {"comp_tachyonic_lodestone",			"weapon_zs_spinfusor_q3"}
-GM.Assemblies["weapon_zs_chromatic_gluon"]                      = {"comp_chromatic_lodestone", "weapon_zs_gluon_q3"}
+GM.Assemblies["weapon_zs_chromatic_gluon"]                      = {"comp_chromatic_lodestone", "weapon_zs_gluon_q3", "weapon_zs_gluon_r3", "weapon_zs_gluon_t3", "weapon_zs_gluon_s3"}
 GM.Assemblies["weapon_zs_z9001"]					= {"comp_sparking_lodestone",			"weapon_zs_z9000_q3"}
 GM.Assemblies["trinket_ring_silver"]					= {"comp_silver",			"comp_ring"}
 GM.Assemblies["trinket_ring_gold"]						= {"comp_gold",				"comp_ring"}
@@ -116,8 +116,7 @@ GM.Assemblies["trinket_phantom_iridium"]				= {"comp_iridium",			"trinket_phanto
 GM.Assemblies["comp_electrum"]							= {"comp_silver",			"comp_gold"}
 GM.Assemblies["trinket_heartsilver"]					= {"trinket_vitpackagei",			"comp_silver"}
 GM.Assemblies["trinket_heartgold"]						= {"trinket_vitpackageii",			"comp_gold"}
-GM.Assemblies["weapon_zs_medicrifle_adv"]				= {"comp_sparking_lodestone",		"weapon_zs_medicrifle_q3"}
-GM.Assemblies["weapon_zs_medicrifle_adv"]				= {"comp_sparking_lodestone",		"weapon_zs_medicrifle_r3"}
+GM.Assemblies["weapon_zs_medicrifle_adv"]				= {"comp_sparking_lodestone",		"weapon_zs_medicrifle_q3", "weapon_zs_medicrifle_r3"}
 GM.Assemblies["weapon_zs_tempering_hammer"]				= {"comp_sparking_lodestone",		"weapon_zs_electrohammer_q3"}
 GM.Assemblies["trinket_regenimplant3"]					= {"trinket_regenimplant2",			"comp_gold"}
 
@@ -687,6 +686,7 @@ trinket, trinketwep = GM:AddTrinket("Silver Ring", "ring_silver", false, nil, {
 GM:AddSkillModifier(trinket, SKILLMOD_DROP_CHANCE_MUL, 0.15)
 GM:AddSkillModifier(trinket, SKILLMOD_EXP_MUL, 0.05)
 trinketwep.PermitDismantle = true
+
 
 trinket = GM:AddTrinket("Phantom Silver", "phantom_silver", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(220, 220, 240, 180), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
