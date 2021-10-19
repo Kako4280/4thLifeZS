@@ -118,6 +118,7 @@ GM.Assemblies["trinket_heartsilver"]					= {"trinket_vitpackagei",			"comp_silve
 GM.Assemblies["trinket_heartgold"]						= {"trinket_vitpackageii",			"comp_gold"}
 GM.Assemblies["weapon_zs_medicrifle_adv"]				= {"comp_sparking_lodestone",		"weapon_zs_medicrifle_q3"}
 GM.Assemblies["weapon_zs_medicrifle_adv"]				= {"comp_sparking_lodestone",		"weapon_zs_medicrifle_r3"}
+GM.Assemblies["weapon_zs_tempering_hammer"]				= {"comp_sparking_lodestone",		"weapon_zs_electrohammer_q3"}
 GM.Assemblies["trinket_regenimplant3"]					= {"trinket_regenimplant2",			"comp_gold"}
 
 GM:AddInventoryItemData("comp_modbarrel",		"Modular Barrel",			"A modular barrel suited for pairing up with another gun barrel.",								"models/props_c17/trappropeller_lever.mdl")

@@ -1,0 +1,57 @@
+INC_CLIENT()
+
+SWEP.ViewModelFOV = 65
+SWEP.ViewModelFlip = false
+
+    SWEP.ViewModelBoneMods = {}
+	SWEP.VElements = {
+		["tempering_base"] = { type = "Model", model = "models/props_phx/misc/iron_beam1.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(0.25, 0, -4), angle = Angle(0, 0, 0), size = Vector(0.2, 0.4, 0.4), color = Color(120, 40, 40, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+		["tempering_base10"] = { type = "Model", model = "models/props_wasteland/prison_throwswitchlever001.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(-2.15, 2.17, 6.5), angle = Angle(-150, 180, 0), size = Vector(0.3, 0.3, 0.3), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+		["tempering_base11"] = { type = "Model", model = "models/props_pipes/pipe02_connector01.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(0, 0, 11), angle = Angle(90, 0, 0), size = Vector(0.15, 0.15, 0.15), color = Color(160, 160, 160, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+		["tempering_base12"] = { type = "Model", model = "models/props_pipes/pipe02_straight01_short.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(0, -0.75, 9.75), angle = Angle(0, 0, 90), size = Vector(0.175, 0.075, 0.175), color = Color(160, 160, 160, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+		["tempering_base13"] = { type = "Model", model = "models/props_pipes/pipe02_connector01.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(0, 0, 8.5), angle = Angle(90, 0, 0), size = Vector(0.15, 0.15, 0.15), color = Color(160, 160, 160, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+		["tempering_base2"] = { type = "Model", model = "models/props_c17/TrapPropeller_Engine.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(0, -0.5, -2.35), angle = Angle(90, 0, 0), size = Vector(0.225, 0.225, 0.225), color = Color(160, 160, 160, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+		["tempering_base3"] = { type = "Model", model = "models/mechanics/wheels/wheel_extruded_48.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(-5, 0, -2), angle = Angle(90, 0, 0), size = Vector(0.05, 0.05, 0.075), color = Color(255, 255, 255, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+		["tempering_base4"] = { type = "Model", model = "models/maxofs2d/hover_rings.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(-6.875, 0, -2), angle = Angle(0, 0, 0), size = Vector(0.075, 0.075, 0.075), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+		["tempering_base5"] = { type = "Model", model = "models/props_pipes/pipe02_yjoint01.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(0, 0, 1.5), angle = Angle(-90, 0, -90), size = Vector(0.175, 0.175, 0.175), color = Color(160, 160, 160, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+		["tempering_base6"] = { type = "Model", model = "models/props_pipes/pipe02_straight01_short.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(1.5, 0, 0.1), angle = Angle(0, 90, 45), size = Vector(0.175, 0.175, 0.175), color = Color(160, 160, 160, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+		["tempering_base7"] = { type = "Model", model = "models/props_phx/misc/iron_beam1.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(6, 0, -3.75), angle = Angle(0, 0, 0), size = Vector(0.075, 0.35, 0.35), color = Color(120, 40, 40, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+		["tempering_base8"] = { type = "Model", model = "models/props_wasteland/gear02.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(0, 1, 9.75), angle = Angle(0, 180, 0), size = Vector(0.2, 0.2, 0.2), color = Color(160, 160, 160, 255), surpresslightning = false, material = "phoenix_storms/gear", skin = 0, bodygroup = {} },
+		["tempering_base9"] = { type = "Model", model = "models/hunter/geometric/hex1x1.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(0, 2.025, 9.75), angle = Angle(0, 0, 90), size = Vector(0.01, 0.01, 0.1), color = Color(160, 160, 160, 255), surpresslightning = false, material = "phoenix_storms/gear", skin = 0, bodygroup = {} },
+		["tempering_grip"] = { type = "Model", model = "models/props_c17/signpole001.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4.5, 1.5, -15), angle = Angle(6, 0, 0), size = Vector(0.6, 0.6, 0.2), color = Color(130, 50, 50, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+		["tempering_pommel"] = { type = "Model", model = "models/props_lab/jar01a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(0, 0, 21), angle = Angle(180, 0, 0), size = Vector(0.2, 0.2, 0.2), color = Color(139, 69, 19, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} }
+	}
+	
+	SWEP.WElements = {
+		["tempering_base"] = { type = "Model", model = "models/props_phx/misc/iron_beam1.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(0.25, 0, -4), angle = Angle(0, 0, 0), size = Vector(0.2, 0.4, 0.4), color = Color(120, 40, 40, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+		["tempering_base10"] = { type = "Model", model = "models/props_wasteland/prison_throwswitchlever001.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(-2.15, 2.17, 6.5), angle = Angle(-150, 180, 0), size = Vector(0.3, 0.3, 0.3), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+		["tempering_base11"] = { type = "Model", model = "models/props_pipes/pipe02_connector01.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(0, 0, 11), angle = Angle(90, 0, 0), size = Vector(0.15, 0.15, 0.15), color = Color(160, 160, 160, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+		["tempering_base12"] = { type = "Model", model = "models/props_pipes/pipe02_straight01_short.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(0, -0.75, 9.75), angle = Angle(0, 0, 90), size = Vector(0.175, 0.075, 0.175), color = Color(160, 160, 160, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+		["tempering_base13"] = { type = "Model", model = "models/props_pipes/pipe02_connector01.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(0, 0, 8.5), angle = Angle(90, 0, 0), size = Vector(0.15, 0.15, 0.15), color = Color(160, 160, 160, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+		["tempering_base2"] = { type = "Model", model = "models/props_c17/TrapPropeller_Engine.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(0, -0.5, -2.35), angle = Angle(90, 0, 0), size = Vector(0.225, 0.225, 0.225), color = Color(160, 160, 160, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+		["tempering_base3"] = { type = "Model", model = "models/mechanics/wheels/wheel_extruded_48.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(-5, 0, -2), angle = Angle(90, 0, 0), size = Vector(0.05, 0.05, 0.075), color = Color(255, 255, 255, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+		["tempering_base4"] = { type = "Model", model = "models/maxofs2d/hover_rings.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(-6.875, 0, -2), angle = Angle(0, 0, 0), size = Vector(0.075, 0.075, 0.075), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+		["tempering_base5"] = { type = "Model", model = "models/props_pipes/pipe02_yjoint01.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(0, 0, 1.5), angle = Angle(-90, 0, -90), size = Vector(0.175, 0.175, 0.175), color = Color(160, 160, 160, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+		["tempering_base6"] = { type = "Model", model = "models/props_pipes/pipe02_straight01_short.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(1.5, 0, 0.1), angle = Angle(0, 90, 45), size = Vector(0.175, 0.175, 0.175), color = Color(160, 160, 160, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+		["tempering_base7"] = { type = "Model", model = "models/props_phx/misc/iron_beam1.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(6, 0, -3.75), angle = Angle(0, 0, 0), size = Vector(0.075, 0.35, 0.35), color = Color(120, 40, 40, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+		["tempering_base8"] = { type = "Model", model = "models/props_wasteland/gear02.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(0, 1, 9.75), angle = Angle(0, 180, 0), size = Vector(0.2, 0.2, 0.2), color = Color(160, 160, 160, 255), surpresslightning = false, material = "phoenix_storms/gear", skin = 0, bodygroup = {} },
+		["tempering_base9"] = { type = "Model", model = "models/hunter/geometric/hex1x1.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(0, 2.025, 9.75), angle = Angle(0, 0, 90), size = Vector(0.01, 0.01, 0.1), color = Color(160, 160, 160, 255), surpresslightning = false, material = "phoenix_storms/gear", skin = 0, bodygroup = {} },
+		["tempering_grip"] = { type = "Model", model = "models/props_c17/signpole001.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(5, 1.5, -16), angle = Angle(6, 0, 0), size = Vector(0.6, 0.6, 0.25), color = Color(130, 50, 50, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} },
+		["tempering_pommel"] = { type = "Model", model = "models/props_lab/jar01a.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "tempering_grip", pos = Vector(0, 0, 26), angle = Angle(180, 0, 0), size = Vector(0.2, 0.2, 0.2), color = Color(139, 69, 19, 255), surpresslightning = false, material = "phoenix_storms/grey_steel", skin = 0, bodygroup = {} }
+    }
+	
+function SWEP:DrawHUD()
+	if GetGlobalBool("classicmode") then return end
+
+	local screenscale = BetterScreenScale()
+
+	surface.SetFont("ZSHUDFont")
+	local nails = self:GetPrimaryAmmoCount()
+	local text = translate.Format("nails_x", nails)
+	local nTEXW, nTEXH = surface.GetTextSize(text)
+
+	draw.SimpleTextBlurry(text, "ZSHUDFont", ScrW() - nTEXW * 0.75 - 32 * screenscale, ScrH() - nTEXH * 1.5, nails > 0 and COLOR_LIMEGREEN or COLOR_RED, TEXT_ALIGN_CENTER)
+
+	if GetConVar("crosshair"):GetInt() ~= 1 then return end
+	self:DrawCrosshairDot()
+end
