@@ -86,33 +86,35 @@ function SWEP:OnMeleeHit(hitent, hitflesh, tr)
         end
 
 		local healstrength = self.HealStrength * GAMEMODE.NailHealthPerRepair * (owner.RepairRateMul or 1)
-		local oldhealth = hitent:GetBarricadeHealth()
-		if oldhealth <= 0 or oldhealth >= hitent:GetMaxBarricadeHealth() or hitent:GetBarricadeRepairs() <= 0.01 then return end
 
 		local pos = tr.HitPos
 
 
-        for _, hitent in pairs(ents.FindInSphere(pos, 30)) do
-            if not hitent:IsValid() or hitent == self or not WorldVisible(pos, hitent:NearestPoint(pos)) then
-                continue
-            end
-
-            if hitent:IsNailed() and hitent:GetBarricadeHealth() < hitent:GetMaxBarricadeHealth() then
-                local healstrength = self.HealStrength * GAMEMODE.NailHealthPerRepair * (owner.RepairRateMul or 1)
-                local oldhealth = hitent:GetBarricadeHealth()
-                if oldhealth <= 0 or oldhealth >= hitent:GetMaxBarricadeHealth() or hitent:GetBarricadeRepairs() <= 0.01 then return end
-
-                hitent:SetBarricadeHealth(math.min(hitent:GetMaxBarricadeHealth(), hitent:GetBarricadeHealth() + math.min(hitent:GetBarricadeRepairs(), healstrength)))
-                local healed = hitent:GetBarricadeHealth() - oldhealth
-                hitent:SetBarricadeRepairs(math.max(hitent:GetBarricadeRepairs() - healed, 0))
-                self:PlayRepairSound(hitent)
-                gamemode.Call("PlayerRepairedObject", owner, hitent, healed, self)
-
-                local effectdata = EffectData()
-                effectdata:SetOrigin(tr.HitPos)
-                effectdata:SetNormal(tr.HitNormal)
-                effectdata:SetMagnitude(1)
-                util.Effect("nailrepaired", effectdata, true, true)
+		for _, hitent in pairs(ents.FindInSphere(pos, 30)) do
+			if not hitent:IsValid() or hitent == self or not WorldVisible(pos, hitent:NearestPoint(pos)) then
+				continue
+			end
+	
+			local healed = false
+	
+			if hitent:IsNailed() then
+				local oldhealth = hitent:GetBarricadeHealth()
+				if oldhealth <= 0 or oldhealth >= hitent:GetMaxBarricadeHealth() or hitent:GetBarricadeRepairs() <= 0.01 then continue end
+	
+				hitent:SetBarricadeHealth(math.min(hitent:GetMaxBarricadeHealth(), hitent:GetBarricadeHealth() + math.min(hitent:GetBarricadeRepairs(), healstrength)))
+				healed = hitent:GetBarricadeHealth() - oldhealth
+				hitent:SetBarricadeRepairs(math.max(hitent:GetBarricadeRepairs() - healed, 0))
+			end
+	
+			if healed then
+				self:PlayRepairSound(hitent)
+				gamemode.Call("PlayerRepairedObject", owner, hitent, healed, self)
+		
+				local effectdata = EffectData()
+					effectdata:SetOrigin(tr.HitPos)
+					effectdata:SetNormal(tr.HitNormal)
+					effectdata:SetMagnitude(1)
+				util.Effect("nailrepaired", effectdata, true, true)
 			end
 		end
 
