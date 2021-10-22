@@ -100,7 +100,7 @@ function SWEP:StartSwinging(secondary)
 	local owner = self:GetOwner()
 
 	local armdelay = owner:GetMeleeSpeedMul()
-	self:SetSwingEnd(CurTime() + (secondary and self.SwingTimeSecondary or self.SwingTime) * (owner.MeleeSwingDelayMul or 1) * armdelay)
+	self:SetSwingEnd(CurTime() + (secondary and self.SwingTimeSecondary or self.SwingTime) * 1 * armdelay)
 	if secondary then self:SetCharge(CurTime()) end
 end
 
