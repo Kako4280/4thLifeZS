@@ -614,7 +614,7 @@ trinket = GM:AddTrinket("Bloodstone Splinter", "bloodstonesplinter", false, nil,
 	["black_core_2+"] = { type = "Sprite", sprite = "effects/splashwake1", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 4, y = 4 }, color = Color(175, 0, 0, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
 	["black_core"] = { type = "Model", model = "models/Gibs/wood_gib01d.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.17, 0.17, 0.17), color = Color(226, 31, 93, 150), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
 }, 2, "Attack 15% faster with melee.")
-GM:AddSkillModifier(trinket, SKILLMOD_MELEE_SWING_DELAY_MUL, -13)
+GM:AddSkillModifier(trinket, SKILLMOD_MELEE_SWING_DELAY_MUL, -0.15)
 
 trinket = GM:AddTrinket("Chromium Fragment", "chromiumfragment", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(0, 150, 255, 255), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},
