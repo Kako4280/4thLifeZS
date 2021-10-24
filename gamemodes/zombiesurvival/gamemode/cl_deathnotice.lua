@@ -280,6 +280,7 @@ killicon.Add("weapon_zs_battlerifle", "zombiesurvival/killicons/weapon_zs_battle
 killicon.Add("weapon_zs_eminence", "zombiesurvival/killicons/weapon_zs_eminence")
 killicon.Add("weapon_zs_gladiator", "zombiesurvival/killicons/weapon_zs_gladiator")
 killicon.Add("weapon_zs_medicrifle", "zombiesurvival/killicons/weapon_zs_convalescence")
+killicon.Add("weapon_zs_medicalrifle_adv", "zombiesurvival/killicons/weapon_zs_convalescence")
 killicon.Add("weapon_zs_ripper", "zombiesurvival/killicons/weapon_zs_ripper")
 killicon.Add("weapon_zs_smelter", "zombiesurvival/killicons/weapon_zs_flakcannon")
 killicon.Add("weapon_zs_avelyn", "zombiesurvival/killicons/weapon_zs_avelyn")
