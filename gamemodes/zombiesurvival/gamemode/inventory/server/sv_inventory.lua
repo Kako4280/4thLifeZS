@@ -76,11 +76,19 @@ function meta:TryAssembleItem(component, heldclass)
 
 	for assembly, reqs in pairs(GAMEMODE.Assemblies) do
 		local reqcomp, reqweapon = reqs[1], reqs[2]
+		if reqs[3] == heldclass then
+			reqweapon = reqs[3]
+		elseif reqs[4] == heldclass then
+			reqweapon = reqs[4]
+		elseif reqs[5] == heldclass then
+			reqweapon = reqs[5]
+		end
 		if reqcomp == component and reqweapon == heldclass then
 			desiassembly = assembly
 			break
 		end
 	end
+
 
 	if not desiassembly then
 		self:CenterNotify(COLOR_RED, "You can't make anything with this component and your currently held weapon.")

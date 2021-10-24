@@ -116,7 +116,7 @@ GM.Assemblies["trinket_phantom_iridium"]				= {"comp_iridium",			"trinket_phanto
 GM.Assemblies["comp_electrum"]							= {"comp_silver",			"comp_gold"}
 GM.Assemblies["trinket_heartsilver"]					= {"trinket_vitpackagei",			"comp_silver"}
 GM.Assemblies["trinket_heartgold"]						= {"trinket_vitpackageii",			"comp_gold"}
-GM.Assemblies["weapon_zs_medicrifle_adv"]				= {"comp_sparking_lodestone",		"weapon_zs_medicrifle_q3", "weapon_zs_medicrifle_r3"}
+GM.Assemblies["weapon_zs_medicalrifle_adv"]				= {"comp_sparking_lodestone",		"weapon_zs_medicrifle_q3", "weapon_zs_medicrifle_r3"}
 GM.Assemblies["weapon_zs_tempering_hammer"]				= {"comp_sparking_lodestone",		"weapon_zs_electrohammer_q3"}
 GM.Assemblies["trinket_regenimplant3"]					= {"trinket_regenimplant2",			"comp_gold"}
 
