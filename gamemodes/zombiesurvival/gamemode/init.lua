@@ -2775,14 +2775,15 @@ function GM:EntityTakeDamage(ent, dmginfo)
 
 	if ent:IsValid() and ent:GetClass() == "prop_physics" then -- my solution to make metal junk pack props breakable for now, might find a better way later
 		if ent:GetMaxHealth() == 94821 then
-			local junkpackprophp = ent:Health()
+			if !ent:IsNailed() then -- oops .. check if the prop is not nailed.. otherwise nailed props can be destroyed by humans
+				local junkpackprophp = ent:Health()
+				junkpackprophp = junkpackprophp - dmginfo:GetDamage()
 
-			junkpackprophp = junkpackprophp - dmginfo:GetDamage()
-
-			ent:SetHealth(junkpackprophp)
-
-			ent.PropHealth = junkpackprophp
-			ent.TotalHealth = 350
+				ent:SetHealth(junkpackprophp)
+	
+				ent.PropHealth = junkpackprophp
+				ent.TotalHealth = 350
+			end
 		end
 	end
 	
@@ -2803,6 +2804,14 @@ function GM:EntityTakeDamage(ent, dmginfo)
 		elseif inflictor:GetClass() == "weapon_zs_electrohammer_q2" then
 			doordamage = 180
 		elseif inflictor:GetClass() == "weapon_zs_electrohammer_q3" then
+			doordamage = 200
+		elseif inflictor:GetClass() == "weapon_zs_tempering_hammer" then
+			doordamage = 200
+		elseif inflictor:GetClass() == "weapon_zs_tempering_hammer_q1" then
+			doordamage = 200
+		elseif inflictor:GetClass() == "weapon_zs_tempering_hammer_q2" then
+			doordamage = 200
+		elseif inflictor:GetClass() == "weapon_zs_tempering_hammer_q3" then
 			doordamage = 200
 		end
 		
