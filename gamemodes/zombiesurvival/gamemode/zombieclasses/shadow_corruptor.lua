@@ -26,6 +26,8 @@ CLASS.VoicePitch = 0.75
 
 CLASS.NoHideMainModel = true
 
+CLASS.Shadow = true
+
 CLASS.ModelScale = 0.4
 
 CLASS.Mass = 30

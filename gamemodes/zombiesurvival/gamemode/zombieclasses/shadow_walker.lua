@@ -27,6 +27,8 @@ CLASS.NoHideMainModel = true
 
 CLASS.Skeletal = true
 
+CLASS.Shadow = true
+
 local math_random = math.random
 local math_min = math.min
 local math_max = math.max

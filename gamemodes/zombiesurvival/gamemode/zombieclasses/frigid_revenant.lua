@@ -18,6 +18,8 @@ CLASS.ResistFrost = true
 
 CLASS.Skeletal = true
 
+CLASS.Shadow = true
+
 if not CLIENT then return end
 
 CLASS.Icon = "zombiesurvival/killicons/skeletal_walker"

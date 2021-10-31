@@ -7,6 +7,8 @@ CLASS.Help = "controls_giga_shadow_child"
 
 CLASS.Boss = true
 
+CLASS.Shadow = true
+
 CLASS.Health = 4000
 CLASS.Speed = 190
 

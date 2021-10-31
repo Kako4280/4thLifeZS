@@ -31,6 +31,8 @@ CLASS.IsTorso = true
 
 CLASS.Skeletal = true
 
+CLASS.Shadow = true
+
 local math_random = math.random
 local ACT_IDLE = ACT_IDLE
 local ACT_WALK = ACT_WALK
