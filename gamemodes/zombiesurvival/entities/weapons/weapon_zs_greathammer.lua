@@ -1,14 +1,18 @@
+AddCSLuaFile()
+
 SWEP.Base = "weapon_zs_basemelee"
 
 SWEP.PrintName = "Great Hammer"
-SWEP.Description = "t"
+SWEP.Description = "A large hammer that creates explosions with overkill damage."
 
 SWEP.Tier = 4
 
 SWEP.MeleeDamage = 85
-SWEP.MeleeRange = 65
-SWEP.MeleeSize = 3.4
+SWEP.MeleeRange = 68
+SWEP.MeleeSize = 2.7
 SWEP.MeleeKnockBack = 0
+
+SWEP.Primary.Delay = 1.5
 
 SWEP.SwingRotation = Angle(60, 0, -80)
 SWEP.SwingOffset = Vector(0, -30, 0)
@@ -19,6 +23,8 @@ SWEP.HoldType = "melee2"
 SWEP.ViewModel = "models/weapons/c_crowbar.mdl"
 SWEP.WorldModel = "models/weapons/w_crowbar.mdl"
 SWEP.UseHands = true
+
+SWEP.AllowQualityWeapons = true
 
 if CLIENT then
     SWEP.ViewModelFOV = 65
@@ -55,6 +61,25 @@ if CLIENT then
 end
 
 GAMEMODE:AttachWeaponModifier(SWEP, WEAPON_MODIFIER_MELEE_IMPACT_DELAY, -0.12)
+
+function SWEP:OnZombieKilled(zombie)
+    local killer = self:GetOwner()
+    local minushp = -zombie:Health()
+    if killer:IsValid() and minushp > 10 then
+        local pos = zombie:GetPos()
+
+        timer.Simple(0.15, function()
+            util.BlastDamagePlayer(killer:GetActiveWeapon(), killer, pos, 50, minushp * 0.1, DMG_ALWAYSGIB, 0.85)
+        end)
+
+        local tr = killer:CompensatedMeleeTrace(self.MeleeRange * (killer.MeleeRangeMul or 1), self.MeleeSize)
+
+        local effectdata = EffectData()
+            effectdata:SetOrigin(tr.HitPos)
+            effectdata:SetNormal(tr.HitNormal)
+        util.Effect("shockwave", effectdata, true, true)
+    end
+end
 
 function SWEP:PlaySwingSound()
 	self:EmitSound("weapons/iceaxe/iceaxe_swing1.wav", 75, math.random(25, 35))
