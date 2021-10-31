@@ -69,7 +69,7 @@ function SWEP:OnZombieKilled(zombie)
         local pos = zombie:GetPos()
 
         timer.Simple(0.15, function()
-            util.BlastDamagePlayer(killer:GetActiveWeapon(), killer, pos, 50, minushp * 0.1, DMG_ALWAYSGIB, 0.85)
+            util.BlastDamagePlayer(killer:GetActiveWeapon(), killer, pos, 50, minushp * 0.7, DMG_ALWAYSGIB, 0.85)
         end)
 
         local tr = killer:CompensatedMeleeTrace(self.MeleeRange * (killer.MeleeRangeMul or 1), self.MeleeSize)
