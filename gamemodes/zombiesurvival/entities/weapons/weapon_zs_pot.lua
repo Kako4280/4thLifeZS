@@ -1,6 +1,7 @@
 AddCSLuaFile()
 
 SWEP.PrintName = "Pot"
+SWEP.Description = "A simple culinary weapon that heals you on kill."
 
 if CLIENT then
 	SWEP.ViewModelFlip = false
@@ -31,6 +32,8 @@ SWEP.MeleeSize = 1.15
 
 SWEP.UseMelee1 = true
 
+SWEP.Primary.Delay = 0.8
+
 SWEP.HitGesture = ACT_HL2MP_GESTURE_RANGE_ATTACK_MELEE
 SWEP.MissGesture = SWEP.HitGesture
 
@@ -44,6 +47,12 @@ SWEP.Culinary = true
 SWEP.Tier = 1
 
 GAMEMODE:AttachWeaponModifier(SWEP, WEAPON_MODIFIER_FIRE_DELAY, -0.1)
+
+function SWEP:OnZombieKilled(zombie)
+	local killer = self:GetOwner()
+
+	killer:SetHealth(math.Clamp(killer:Health() + 5, 0, killer:GetMaxHealth()))
+end
 
 function SWEP:PlayHitSound()
 	self:EmitSound("weapons/melee/frying_pan/pan_hit-0"..math.random(4)..".ogg")

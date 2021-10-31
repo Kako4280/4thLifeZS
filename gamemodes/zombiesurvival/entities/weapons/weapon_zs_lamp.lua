@@ -1,6 +1,7 @@
 AddCSLuaFile()
 
 SWEP.PrintName = "Lamp"
+SWEP.Description = "A simple melee weapon that deals increased damage to shadow classes."
 
 if CLIENT then
 	SWEP.ViewModelFOV = 65
@@ -26,17 +27,17 @@ SWEP.HoldType = "melee2"
 
 SWEP.DamageType = DMG_CLUB
 
-SWEP.MeleeDamage = 38
+SWEP.MeleeDamage = 42
 SWEP.MeleeRange = 68
 SWEP.MeleeSize = 2
 
-SWEP.Primary.Delay = 1
+SWEP.Primary.Delay = 0.95
 
 SWEP.WalkSpeed = SPEED_SLOW
 
 SWEP.SwingRotation = Angle(0, -90, -60)
 SWEP.SwingOffset = Vector(0, 30, -40)
-SWEP.SwingTime = 0.4
+SWEP.SwingTime = 0.45
 SWEP.SwingHoldType = "melee"
 
 SWEP.AllowQualityWeapons = true
@@ -45,6 +46,21 @@ SWEP.DismantleDiv = 2
 SWEP.Tier = 1
 
 GAMEMODE:AttachWeaponModifier(SWEP, WEAPON_MODIFIER_FIRE_DELAY, -0.1)
+
+function SWEP:OnMeleeHit(hitent, hitflesh, tr) -- kind of a dumb way to do this but whatever lol dont care
+	if hitent:IsValid() and hitent:IsPlayer() and not self.m_HitShadowClass and hitent:GetZombieClassTable().Shadow then
+		self.m_HitShadowClass = true
+		self.MeleeDamage = self.MeleeDamage * 1.8
+	end
+end
+
+function SWEP:PostOnMeleeHit(hitent, hitflesh, tr)
+	if self.m_HitShadowClass then
+		self.m_HitShadowClass = false
+
+		self.MeleeDamage = self.MeleeDamage / 1.8
+	end
+end
 
 function SWEP:PlaySwingSound()
 	self:EmitSound("weapons/iceaxe/iceaxe_swing1.wav", 80, math.Rand(65, 70))
