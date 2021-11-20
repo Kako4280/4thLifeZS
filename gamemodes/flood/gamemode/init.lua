@@ -1,5 +1,6 @@
 -- Include and AddCSLua everything
 include("shared.lua")
+include("player_data_sv.lua")
 AddCSLuaFile("shared.lua")
 
 MsgN("_-_-_-_- Flood Server Side -_-_-_-_")
@@ -28,10 +29,10 @@ for _, file in pairs (file.Find("flood/gamemode/client/vgui/*.lua", "LUA")) do
 end
 
 -- Timer ConVars! Yay!
-CreateConVar("flood_build_time", 240, FCVAR_NOTIFY, "Time allowed for building (def: 240)")
-CreateConVar("flood_flood_time", 20, FCVAR_NOTIFY, "Time between build phase and fight phase (def: 20)")
-CreateConVar("flood_fight_time", 300, FCVAR_NOTIFY, "Time allowed for fighting (def: 300)")
-CreateConVar("flood_reset_time", 40, FCVAR_NOTIFY, "Time after fight phase to allow water to drain and other ending tasks (def: 40 - Dont recommend changing)")
+CreateConVar("flood_build_time", 15, FCVAR_NOTIFY, "Time allowed for building (def: 240)")
+CreateConVar("flood_flood_time", 15, FCVAR_NOTIFY, "Time between build phase and fight phase (def: 20)")
+CreateConVar("flood_fight_time", 15, FCVAR_NOTIFY, "Time allowed for fighting (def: 300)")
+CreateConVar("flood_reset_time", 15, FCVAR_NOTIFY, "Time after fight phase to allow water to drain and other ending tasks (def: 40 - Dont recommend changing)")
 
 -- Cash Convars
 CreateConVar("flood_participation_cash", 50, FCVAR_NOTIFY, "Amount of cash given to a player every 5 seconds of being alive (def: 50)")
@@ -104,24 +105,24 @@ function GM:EntityTakeDamage(ent, dmginfo)
 			if attacker:IsPlayer() then
 				if attacker:GetActiveWeapon() ~= NULL then
 					if attacker:GetActiveWeapon():GetClass() == "weapon_pistol" then
-						ent:SetNWInt("CurrentPropHealth", ent:GetNWInt("CurrentPropHealth") - 1)
+						ent:SetNWFloat("CurrentPropHealth", ent:GetNWFloat("CurrentPropHealth") - 1)
 					else
 						for _, Weapon in pairs(Weapons) do
 							if attacker:GetActiveWeapon():GetClass() == Weapon.Class then
-								ent:SetNWInt("CurrentPropHealth", ent:GetNWInt("CurrentPropHealth") - tonumber(Weapon.Damage))
+								ent:SetNWFloat("CurrentPropHealth", ent:GetNWFloat("CurrentPropHealth") - tonumber(Weapon.Damage))
 							end
 						end
 					end
 				end
 			else
 				if attacker:GetClass() == "entityflame" then
-					ent:SetNWInt("CurrentPropHealth", ent:GetNWInt("CurrentPropHealth") - 0.5)
+					ent:SetNWFloat("CurrentPropHealth", ent:GetNWFloat("CurrentPropHealth") - 0.5)
 				else
-					ent:SetNWInt("CurrentPropHealth", ent:GetNWInt("CurrentPropHealth") - 1)
+					ent:SetNWFloat("CurrentPropHealth", ent:GetNWFloat("CurrentPropHealth") - 1)
 				end
 			end
 			
-			if ent:GetNWInt("CurrentPropHealth") <= 0 and IsValid(ent) then
+			if ent:GetNWFloat("CurrentPropHealth") <= 0 and IsValid(ent) then
 				ent:Remove()
 			end
 		end

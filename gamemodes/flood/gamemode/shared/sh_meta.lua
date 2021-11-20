@@ -14,11 +14,11 @@ end
 
 -- Player Scores
 function MetaPlayer:GetScore()
-	return self:GetNWInt("flood_score") or 0
+	return self:GetNWFloat("flood_score") or 0
 end
 
 function MetaPlayer:SetScore(score)
-	self:SetNWInt("flood_score", score)
+	self:SetNWFloat("flood_score", score)
 end
 
 -- Player Color
@@ -89,7 +89,7 @@ function MetaPlayer:Save()
 
 	local data = { 
 		name =  string.gsub(self:Nick(), "\"", " ") or "bob",
-		cash = self:GetNWInt("flood_cash"),
+		cash = self:GetNWFloat("flood_cash"),
 		weapons = string.Implode("\n", self.Weapons)
 	}
 	

@@ -134,10 +134,10 @@ function GM:HUDPaint()
 	-- Display Prop's Health
 	local tr = util.TraceLine(util.GetPlayerTrace(LocalPlayer()))
 	if tr.Entity:IsValid() and not tr.Entity:IsPlayer() then
-		if tr.Entity:GetNWInt("CurrentPropHealth") == "" or tr.Entity:GetNWInt("CurrentPropHealth") == nil or tr.Entity:GetNWInt("CurrentPropHealth") == NULL then
+		if tr.Entity:GetNWFloat("CurrentPropHealth") == "" or tr.Entity:GetNWFloat("CurrentPropHealth") == nil or tr.Entity:GetNWFloat("CurrentPropHealth") == NULL then
 			draw.SimpleText("Fetching Health", "Flood_HUD_Small", x * 0.5, y * 0.5 - 25, color_white, 1, 1)
 		else
-			draw.SimpleText("Health: " .. tr.Entity:GetNWInt("CurrentPropHealth"), "Flood_HUD_Small", x * 0.5, y * 0.5 - 25, color_white, 1, 1)
+			draw.SimpleText("Health: " .. tr.Entity:GetNWFloat("CurrentPropHealth"), "Flood_HUD_Small", x * 0.5, y * 0.5 - 25, color_white, 1, 1)
 		end
 	end
 
@@ -178,7 +178,7 @@ function GM:HUDPaint()
 		end
 
 		-- Cash
-		local pCash = LocalPlayer():GetNWInt("flood_cash") or 0
+		local pCash = LocalPlayer():GetNWFloat("flood_cash") or 0
 		local pCashClamp = math.Clamp(pCash / 5000, 0, xSize)
 
 		draw.RoundedBoxEx(6, Spacer * 2, y - ySize - (Spacer * 2), xSize, ySize, Color(0, 225, 50, 255), false, false, true, true)

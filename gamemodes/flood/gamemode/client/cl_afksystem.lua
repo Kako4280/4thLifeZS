@@ -19,10 +19,10 @@ function CheckAFK()
         return
     end
 
-    if LocalPlayer():GetNWInt("flood_afkticks") > 0 then
+    if LocalPlayer():GetNWFloat("flood_afkticks") > 0 then
         if not timer.Exists("AFKCountDecay:"..LocalPlayer():UniqueID()) then 
             timer.Create("AFKCountDecay:"..LocalPlayer():UniqueID(), 600, 1, function()
-                LocalPlayer():SetNWInt("flood_afkticks", 0)
+                LocalPlayer():SetNWFloat("flood_afkticks", 0)
                 chat.AddText(Color(255, 140, 0), "[AFK System] ", color_white, "AFK count before kick has been reset.")
             end)
         end
@@ -45,7 +45,7 @@ function CheckAFK()
             afkinfo.t = CurTime()
 
         elseif CurTime() > (afkinfo.t + afk_timer) then
-            if LocalPlayer():GetNWInt("flood_afkticks") >= 5 then
+            if LocalPlayer():GetNWFloat("flood_afkticks") >= 5 then
                 RunConsoleCommand("kickplayer")
             end
         elseif CurTime() > (afkinfo.t + (afk_timer / 2)) then

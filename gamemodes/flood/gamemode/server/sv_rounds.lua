@@ -43,6 +43,16 @@ function GM:DeclareWinner(case, ply)
 			ct:AddText(ply:Nick(), self:FormatColor(ply:GetPlayerColor()))
 			ct:AddText(" won and recieved an additional $"..cash.."!")
 			ct:SendAll()
+			
+			if not ply:IsBot() then
+				ply.PlayerData.Wins = ply.PlayerData.Wins + 1
+				
+				for _, v in pairs(player.GetAll()) do
+					if not v == ply then
+						ply.PlayerData.Losses = ply.PlayerData.Losses + 1
+					end
+				end
+			end
 		end
 	elseif case == 2 then
 		local ct = ChatText()
@@ -73,9 +83,9 @@ function GM:RefundAllProps()
 	for k, v in pairs(ents.GetAll()) do
 		if v:GetClass() == "prop_physics" then
 			if v:CPPIGetOwner() ~= nil and v:CPPIGetOwner() ~= NULL and v:CPPIGetOwner() ~= "" then
-				local Currenthealth = tonumber(v:GetNWInt("CurrentPropHealth"))
-				local Basehealth = tonumber(v:GetNWInt("BasePropHealth"))
-				local Currentcash = tonumber(v:CPPIGetOwner():GetNWInt("flood_cash"))
+				local Currenthealth = tonumber(v:GetNWFloat("CurrentPropHealth"))
+				local Basehealth = tonumber(v:GetNWFloat("BasePropHealth"))
+				local Currentcash = tonumber(v:CPPIGetOwner():GetNWFloat("flood_cash"))
 				local Recieve = (Currenthealth / Basehealth) * Basehealth
 				if Recieve > 0 then
 					v:Remove()

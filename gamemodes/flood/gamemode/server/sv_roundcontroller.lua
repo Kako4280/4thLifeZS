@@ -17,6 +17,10 @@ end
 
 function GM:SetGameState(state)
 	self.GameState = state
+	
+	if state == 4 then
+		PlayerDataUpdateOnroundEnd()
+	end
 end
 
 function GM:GetStateStart()
@@ -190,17 +194,17 @@ function GM:ResetPhase()
 end
 
 function GM:InitializeRoundController()
-	Flood_buildTime = GetConVar("flood_build_time"):GetFloat()
-	Flood_floodTime = GetConVar("flood_flood_time"):GetFloat()
-	Flood_fightTime = GetConVar("flood_fight_time"):GetFloat()
-	Flood_resetTime = GetConVar("flood_reset_time"):GetFloat()
+	Flood_buildTime = 15--GetConVar("flood_build_time"):GetFloat()
+	Flood_floodTime = 15--GetConVar("flood_flood_time"):GetFloat()
+	Flood_fightTime = 15--GetConVar("flood_fight_time"):GetFloat()
+	Flood_resetTime = 15--GetConVar("flood_reset_time"):GetFloat()
 
 	hook.Add("Think", "Flood_TimeController", function() hook.Call("TimerController", GAMEMODE) end)
 end
 
 function GM:ResetAllTimers()
-	Flood_buildTime = GetConVar("flood_build_time"):GetFloat()
-	Flood_floodTime = GetConVar("flood_flood_time"):GetFloat()
-	Flood_fightTime = GetConVar("flood_fight_time"):GetFloat()
-	Flood_resetTime = GetConVar("flood_reset_time"):GetFloat()
+	Flood_buildTime = 15--GetConVar("flood_build_time"):GetFloat()
+	Flood_floodTime = 15--GetConVar("flood_flood_time"):GetFloat()
+	Flood_fightTime = 15--GetConVar("flood_fight_time"):GetFloat()
+	Flood_resetTime = 15--GetConVar("flood_reset_time"):GetFloat()
 end

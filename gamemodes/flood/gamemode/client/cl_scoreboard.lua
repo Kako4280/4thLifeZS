@@ -23,7 +23,7 @@ function GM:GetTeamScoreInfo()
 		local _team = ply:Team()
 		local _deaths = ply:Deaths()
 		local _ping = ply:Ping()
-		local _cash = ply:GetNWInt("flood_cash")
+		local _cash = ply:GetNWFloat("flood_cash")
 		
 		if (not TeamInfo[_team]) then
 			TeamInfo[_team] = {}
