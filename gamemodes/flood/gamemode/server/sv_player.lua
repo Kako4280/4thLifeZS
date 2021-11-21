@@ -8,6 +8,7 @@ function GM:PlayerInitialSpawn(ply)
 
 	ply:SetCash(data.cash)
 	ply.Weapons = string.Explode("\n", data.weapons)
+	ply.SurvivalTime = 0
 	
 	ply:SetTeam(TEAM_PLAYER)
 

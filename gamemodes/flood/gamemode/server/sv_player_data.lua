@@ -28,15 +28,3 @@ function PlayerDataUpdate(pl)--To be called on round end and player disconnect e
 	sql.Query("UPDATE PlayerData_Flood SET Experience='".. pl.PlayerData.Experience .."', SET Currency='".. pl.PlayerData.Currency .."', SET Wins='".. pl.PlayerData.Wins .."', SET Losses='".. pl.PlayerData.Losses .."', SET TotalDamage='".. pl.PlayerData.TotalDamage .."', SET PropsDestroyed='".. pl.PlayerData.PropsDestroyed .."' WHERE SteamID64='"..pl:SteamID64().."';")
 end
 hook.Add("PlayerDisconnected", "PlayerDataUpdate", PlayerDataUpdate)
-
-function PlayerDataUpdateOnRoundEnd()
-	timer.Simple(1, function()
-		for _, v in pairs(player.GetAll()) do
-			if not v:IsBot() then
-				v.PlayerData.Experience = v.PlayerData.Experience + 1
-				print(v.PlayerData.Experience)
-				PlayerDataUpdate(v)
-			end
-		end
-	end)
-end

@@ -1,5 +1,6 @@
 util.AddNetworkString("RoundState")
 GM.GameState = GAMEMODE and GAMEMODE.GameState or 0
+GM.RoundTime = 0
 
 --
 -- Game States
@@ -18,9 +19,34 @@ end
 function GM:SetGameState(state)
 	self.GameState = state
 	
-	if state == 4 then
-		PlayerDataUpdateOnRoundEnd()
+	if state == 3 then
+		self.RoundTime = CurTime()
+		for k, v in pairs(player.GetAll()) do
+			if not v:IsBot() then
+				v.SurvivalTime = CurTime()
+			end
+		end
+	elseif state == 4 then
+		self.RoundTime = CurTime() - self.RoundTime
+		
+		for k, v in pairs(player.GetAll()) do
+			if not v:IsBot() then
+				v.SurvivalTime = CurTime() - v.SurvivalTime
+			end
+		end
+		
+		self:EndOfRound(self.RoundTime)
 	end
+end
+
+function GM:EndOfRound(RoundTime)
+	timer.Simple(1, function()
+		for k, v in pairs(player.GetAll()) do
+			if not v:IsBot() then
+				local XPReward = 20 + math.Clamp(pl.SurvivalTime / RoundTime * 80, 0, 80)
+			end
+		end
+	end)
 end
 
 function GM:GetStateStart()
