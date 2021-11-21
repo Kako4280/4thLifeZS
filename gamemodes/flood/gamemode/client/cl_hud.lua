@@ -146,43 +146,107 @@ function GM:HUDPaint()
 		draw.SimpleText("Name: " .. tr.Entity:GetName(), "Flood_HUD_Small", x * 0.5, y * 0.5 - 75, color_white, 1, 1)
 		draw.SimpleText("Health: " .. tr.Entity:Health(), "Flood_HUD_Small", x * 0.5, y * 0.5 - 60, color_white, 1, 1)
 	end
+	
+	local elementNo = 0
+	local elementCount = 4
+	local elementColor = {}
+	local elementHeight = 40
+	local elementWidth = 360
+	local elementYSpacing
+	local elementXSpacing
 
 	-- Bottom left HUD Stuff
 	if LocalPlayer():Alive() and IsValid(LocalPlayer()) then
-		draw.RoundedBox(6, 4, y - ySize - Spacer - (bHeight * 2), bWidth, bHeight * 2 + ySize, Color(24, 24, 24, 255))
+		draw.RoundedBox(6, 4, y - (4 * (elementCount + 2)) - (40 * (elementCount)), elementWidth, (4 * (elementCount + 1)) + (40 * elementCount), Color(24, 24, 24, 175))
 		
-		-- Health
 		local pHealth = LocalPlayer():Health()
 		local pHealthClamp = math.Clamp(pHealth / 100, 0, 1)
-		local pHealthWidth = (xSize - Spacer) * pHealthClamp
-
-		draw.RoundedBoxEx(6, Spacer * 2, y - (Spacer * 4) - (ySize * 3), Spacer + pHealthWidth, ySize, Color(255, 25, 50, 255), true, true, false, false)
-		draw.SimpleText(math.Max(pHealth, 0).." HP","Flood_HUD_B", xSize * 0.5 + (Spacer * 2), y - (ySize * 2.5) - (Spacer * 4), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+		
+		--Health
+		elementColor[1] = Color(0, 0, 0, 255)
+		--Ammo
+		elementColor[2] = Color(255, 180, 0, 255)
+		--Money
+		elementColor[3] = Color(200, 0, 50, 255)
+		--Experience
+		elementColor[4] = Color(0, 0, 0, 255)
+		
+		local elementList = {}
+		for i = 1, 4 do
+			draw.RoundedBox(4, 8, y - (4 * (6 - i)) - (40 * (5 - i)), elementWidth - 8, 40, elementColor[i])
+		end
+		
+		--Health 
+		elementNo = 1
+		
+		local r = math.Clamp((100 - pHealth) * 255 / 50, 0, 255)
+		local g = math.Clamp(pHealth * 255 / 50, 0, 255)
+		
+		draw.RoundedBox(4, 8, y - (4 * (6 - elementNo)) - (40 * (5 - elementNo)), math.Round(elementWidth * pHealthClamp, 0) - 8, 40, Color(r or 255, g or 25, 50, 255))
+		draw.SimpleText(math.Max(pHealth, 0).." HP","Flood_HUD_B", (elementWidth / 2) + 8, y - (4 * (6 - elementNo)) - (40 * (4.5 - elementNo)), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 	
-		-- Ammo
+		--Ammo
+		elementNo = 2
 		if IsValid(LocalPlayer():GetActiveWeapon()) then
 			if LocalPlayer():GetAmmoCount(LocalPlayer():GetActiveWeapon():GetPrimaryAmmoType()) > 0 or LocalPlayer():GetActiveWeapon():Clip1() > 0 then
 				local wBulletCount = (LocalPlayer():GetAmmoCount(LocalPlayer():GetActiveWeapon():GetPrimaryAmmoType()) + LocalPlayer():GetActiveWeapon():Clip1()) + 1
 				local wBulletClamp = math.Clamp(wBulletCount / 100, 0, 1)
 				local wBulletWidth = (xSize - bWidth) * wBulletClamp
 
-				draw.RoundedBox(0, Spacer * 2, y - (ySize * 2) - (Spacer * 3), bWidth + wBulletWidth, ySize, Color(255, 180, 0, 255))
-				draw.SimpleText(wBulletCount.." Bullets", "Flood_HUD_B", xSize * 0.5 + (Spacer * 2), y - ySize - (ySize * 0.5) - (Spacer * 3), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+				draw.SimpleText(wBulletCount.." Bullets", "Flood_HUD_B", (elementWidth / 2) + 8, y - (4 * (6 - elementNo)) - (40 * (4.5 - elementNo)), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 			else
-				draw.RoundedBox(0, Spacer * 2, y - (ySize * 2) - (Spacer * 3), xSize, ySize, Color(255, 180, 0, 255))
-				draw.SimpleText("Doesn't Use Ammo", "Flood_HUD_B", xSize * 0.5 + (Spacer * 2), y - ySize - (ySize * 0.5) - (Spacer * 3), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+				draw.SimpleText("Doesn't Use Ammo", "Flood_HUD_B", (elementWidth / 2) + 8, y - (4 * (6 - elementNo)) - (40 * (4.5 - elementNo)), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 			end
 		else
-			draw.RoundedBox(0, Spacer * 2, y - (ySize * 2) - (Spacer * 3), xSize, ySize, Color(255, 180, 0, 255))
-			draw.SimpleText("No Ammo", "Flood_HUD_B", xSize * 0.5 + (Spacer * 2), y - ySize - (ySize * 0.5) - (Spacer * 3), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+			draw.SimpleText("No Ammo", "Flood_HUD_B", (elementWidth / 2) + 8, y - (4 * (6 - elementNo)) - (40 * (4.5 - elementNo)), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 		end
-
-		-- Cash
+		
+		--Money
+		elementNo = 3
+		
 		local pCash = LocalPlayer():GetNWFloat("flood_cash") or 0
 		local pCashClamp = math.Clamp(pCash / 5000, 0, xSize)
+		
+		--Experience/Level
+		elementNo = 4
+		
+		--draw.RoundedBox(4, 8, y - (4 * (6 - elementNo)) - (40 * (5 - elementNo)), math.Round(elementWidth * pHealthClamp, 0) - 8, 40, Color(0, 225, 255, 255))
+		--draw.SimpleText(math.Max(pHealth, 0).." HP","Flood_HUD_B", (elementWidth / 2) + 8, y - (4 * (6 - elementNo)) - (40 * (4.5 - elementNo)), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+		
+		--print(LocalPlayer():GetNWFloat("Experience"))
+		
+		-- -- Health
+		-- local pHealth = LocalPlayer():Health()
+		-- local pHealthClamp = math.Clamp(pHealth / 100, 0, 1)
+		-- local pHealthWidth = (xSize - Spacer) * pHealthClamp
 
-		draw.RoundedBoxEx(6, Spacer * 2, y - ySize - (Spacer * 2), xSize, ySize, Color(0, 225, 50, 255), false, false, true, true)
-		draw.SimpleText("$"..pCash, "Flood_HUD_B", (xSize * 0.5) + (Spacer * 2), y - (ySize * 0.5) - (Spacer * 2), WHITE, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+		-- draw.RoundedBox(6, Spacer * 2, y - (Spacer * 4) - (ySize * 3), Spacer + pHealthWidth, ySize, Color(255, 25, 50, 255))
+		-- 
+	
+		-- -- Ammo
+		-- if IsValid(LocalPlayer():GetActiveWeapon()) then
+			-- if LocalPlayer():GetAmmoCount(LocalPlayer():GetActiveWeapon():GetPrimaryAmmoType()) > 0 or LocalPlayer():GetActiveWeapon():Clip1() > 0 then
+				-- local wBulletCount = (LocalPlayer():GetAmmoCount(LocalPlayer():GetActiveWeapon():GetPrimaryAmmoType()) + LocalPlayer():GetActiveWeapon():Clip1()) + 1
+				-- local wBulletClamp = math.Clamp(wBulletCount / 100, 0, 1)
+				-- local wBulletWidth = (xSize - bWidth) * wBulletClamp
+
+				-- draw.RoundedBox(0, Spacer * 2, y - (ySize * 2) - (Spacer * 3), bWidth + wBulletWidth, ySize, Color(255, 180, 0, 255))
+				-- draw.SimpleText(wBulletCount.." Bullets", "Flood_HUD_B", xSize * 0.5 + (Spacer * 2), y - ySize - (ySize * 0.5) - (Spacer * 3), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+			-- else
+				-- draw.RoundedBox(0, Spacer * 2, y - (ySize * 2) - (Spacer * 3), xSize, ySize, Color(255, 180, 0, 255))
+				-- draw.SimpleText("Doesn't Use Ammo", "Flood_HUD_B", xSize * 0.5 + (Spacer * 2), y - ySize - (ySize * 0.5) - (Spacer * 3), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+			-- end
+		-- else
+			-- draw.RoundedBox(0, Spacer * 2, y - (ySize * 2) - (Spacer * 3), xSize, ySize, Color(255, 180, 0, 255))
+			-- draw.SimpleText("No Ammo", "Flood_HUD_B", xSize * 0.5 + (Spacer * 2), y - ySize - (ySize * 0.5) - (Spacer * 3), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+		-- end
+
+		-- -- Cash
+		-- local pCash = LocalPlayer():GetNWFloat("flood_cash") or 0
+		-- local pCashClamp = math.Clamp(pCash / 5000, 0, xSize)
+
+		-- draw.RoundedBox(6, Spacer * 2, y - ySize - (Spacer * 2), xSize, ySize, Color(0, 225, 50, 255))
+		-- draw.SimpleText("$"..pCash, "Flood_HUD_B", (xSize * 0.5) + (Spacer * 2), y - (ySize * 0.5) - (Spacer * 2), WHITE, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 	end
 end
 
