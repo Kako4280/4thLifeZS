@@ -19,7 +19,7 @@ function GM:SetGameState(state)
 	self.GameState = state
 	
 	if state == 4 then
-		PlayerDataUpdateOnroundEnd()
+		PlayerDataUpdateOnRoundEnd()
 	end
 end
 

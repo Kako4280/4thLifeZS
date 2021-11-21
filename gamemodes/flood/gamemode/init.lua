@@ -1,6 +1,5 @@
 -- Include and AddCSLua everything
 include("shared.lua")
-include("player_data_sv.lua")
 AddCSLuaFile("shared.lua")
 
 MsgN("_-_-_-_- Flood Server Side -_-_-_-_")
