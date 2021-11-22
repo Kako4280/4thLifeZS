@@ -153,3 +153,10 @@ function GM:KeyPress(ply, key)
  		end 
  	end
 end
+
+concommand.Add("testprop", function(pl) 
+	local ent = ents.Create("prop_base")
+	ent:SetModel(ent.Model)
+	ent:SetPos(pl:GetPos())
+	ent:Spawn()
+end)

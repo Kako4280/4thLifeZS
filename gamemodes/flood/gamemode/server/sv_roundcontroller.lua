@@ -43,7 +43,7 @@ function GM:EndOfRound(RoundTime)
 	timer.Simple(1, function()
 		for k, v in pairs(player.GetAll()) do
 			if not v:IsBot() then
-				local XPReward = 20 + math.Clamp(v.SurvivalTime / RoundTime * 80, 0, 80)
+				local XPReward = 20 + math.Clamp(v.SurvivalTime / RoundTime * 40, 0, 40) + math.min(v.SurvivalTime / 10, 0)
 				AddXP(v, XPReward)
 			end
 		end
