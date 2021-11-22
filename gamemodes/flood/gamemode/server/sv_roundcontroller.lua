@@ -33,8 +33,6 @@ function GM:SetGameState(state)
 			if not v:IsBot() and v: Alive() then
 				v.SurvivalTime = CurTime() - v.SurvivalTime
 			end
-			
-			print(v.SurvivalTime)
 		end
 		
 		self:EndOfRound(self.RoundTime)

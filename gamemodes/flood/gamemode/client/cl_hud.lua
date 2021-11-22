@@ -216,49 +216,9 @@ function GM:HUDPaint()
 		local XPNextLevel = ExpForLevel(LocalPlayer())
 		local LVL = CalculateLevel(LocalPlayer())
 		local XPRatio = math.Clamp(XP / XPNextLevel, 0, 1) 
-		print(XP .. " " .. XPNextLevel .. " " .. XPRatio)
 		
 		draw.RoundedBox(4, 8, y - (4 * (6 - elementNo)) - (40 * (5 - elementNo)), math.floor(elementWidth * XPRatio, 0) - 8, 40, Color(0, 225, 255, 255))
-		draw.SimpleText("Level " .. LVL .. ", " .. XP .. " / " .. XPNextLevel .. " Exp", "Flood_HUD_B", (elementWidth / 2) + 8, y - (4 * (6 - elementNo)) - (40 * (4.5 - elementNo)), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-		
-		
-		--draw.RoundedBox(4, 8, y - (4 * (6 - elementNo)) - (40 * (5 - elementNo)), math.Round(elementWidth * pHealthClamp, 0) - 8, 40, Color(0, 225, 255, 255))
-		--draw.SimpleText(math.Max(pHealth, 0).." HP","Flood_HUD_B", (elementWidth / 2) + 8, y - (4 * (6 - elementNo)) - (40 * (4.5 - elementNo)), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-		
-		--print(ExpForLevel(LocalPlayer()) .. " " .. CalculateLevel(LocalPlayer()))
-		
-		-- -- Health
-		-- local pHealth = LocalPlayer():Health()
-		-- local pHealthClamp = math.Clamp(pHealth / 100, 0, 1)
-		-- local pHealthWidth = (xSize - Spacer) * pHealthClamp
-
-		-- draw.RoundedBox(6, Spacer * 2, y - (Spacer * 4) - (ySize * 3), Spacer + pHealthWidth, ySize, Color(255, 25, 50, 255))
-		-- 
-	
-		-- -- Ammo
-		-- if IsValid(LocalPlayer():GetActiveWeapon()) then
-			-- if LocalPlayer():GetAmmoCount(LocalPlayer():GetActiveWeapon():GetPrimaryAmmoType()) > 0 or LocalPlayer():GetActiveWeapon():Clip1() > 0 then
-				-- local wBulletCount = (LocalPlayer():GetAmmoCount(LocalPlayer():GetActiveWeapon():GetPrimaryAmmoType()) + LocalPlayer():GetActiveWeapon():Clip1()) + 1
-				-- local wBulletClamp = math.Clamp(wBulletCount / 100, 0, 1)
-				-- local wBulletWidth = (xSize - bWidth) * wBulletClamp
-
-				-- draw.RoundedBox(0, Spacer * 2, y - (ySize * 2) - (Spacer * 3), bWidth + wBulletWidth, ySize, Color(255, 180, 0, 255))
-				-- draw.SimpleText(wBulletCount.." Bullets", "Flood_HUD_B", xSize * 0.5 + (Spacer * 2), y - ySize - (ySize * 0.5) - (Spacer * 3), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-			-- else
-				-- draw.RoundedBox(0, Spacer * 2, y - (ySize * 2) - (Spacer * 3), xSize, ySize, Color(255, 180, 0, 255))
-				-- draw.SimpleText("Doesn't Use Ammo", "Flood_HUD_B", xSize * 0.5 + (Spacer * 2), y - ySize - (ySize * 0.5) - (Spacer * 3), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-			-- end
-		-- else
-			-- draw.RoundedBox(0, Spacer * 2, y - (ySize * 2) - (Spacer * 3), xSize, ySize, Color(255, 180, 0, 255))
-			-- draw.SimpleText("No Ammo", "Flood_HUD_B", xSize * 0.5 + (Spacer * 2), y - ySize - (ySize * 0.5) - (Spacer * 3), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-		-- end
-
-		-- -- Cash
-		-- local pCash = LocalPlayer():GetNWFloat("flood_cash") or 0
-		-- local pCashClamp = math.Clamp(pCash / 5000, 0, xSize)
-
-		-- draw.RoundedBox(6, Spacer * 2, y - ySize - (Spacer * 2), xSize, ySize, Color(0, 225, 50, 255))
-		-- draw.SimpleText("$"..pCash, "Flood_HUD_B", (xSize * 0.5) + (Spacer * 2), y - (ySize * 0.5) - (Spacer * 2), WHITE, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+		draw.SimpleText("Level " .. LVL .. ", " .. math.floor(XP) .. " / " .. XPNextLevel .. " Exp", "Flood_HUD_B", (elementWidth / 2) + 8, y - (4 * (6 - elementNo)) - (40 * (4.5 - elementNo)), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 	end
 end
 

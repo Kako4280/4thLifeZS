@@ -40,7 +40,6 @@ function ExpForLevel(pl)
 	if not pl:IsBot() then
 		local NextLevel = CalculateLevel(pl) + 1
 		
-		print("e")
 		return math.floor(1.095808^NextLevel+99+(NextLevel-1)*5)
 	end
 end

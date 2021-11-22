@@ -109,7 +109,6 @@ function GM:PlayerDeath(ply, inflictor, attacker )
 	
 	if GAMEMODE:GetGameState() == 3 then
 		ply.SurvivalTime = CurTime() - ply.SurvivalTime
-		print(ply.SurvivalTime)
 	end
 
 	-- Convert the inflictor to the weapon that they're holding if we can.
