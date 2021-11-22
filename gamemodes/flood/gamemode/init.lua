@@ -66,6 +66,10 @@ function GM:ShowHelp(ply)
 	ply:SendLua("GAMEMODE:ShowHelp()")
 end
 
+function GM:ShowSpare2(ply)
+	ply:SendLua("MakepTeamMenu()")
+end
+
 function GM:InitPostEntity()
 	self:CheckForWaterControllers()
 	for k,v in pairs(ents.GetAll()) do 

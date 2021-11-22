@@ -29,31 +29,45 @@ function GM:PlayerNoClip(ply)
 	return false
 end
 
-if SERVER then
+function PlayerCreateTeam(teamname, teamcolor, teamowner, teamisjoinable) -- clientside team creation (MEN)
+	local allteams = team.GetAllTeams()
+
+	local count = 0
+	for k, v in pairs(allteams) do
+		count = count + 1
+	end
+
+	for i = 1, count do
+		if team.GetName(i) == teamname then
+			teamowner:PrintMessage(HUD_PRINTTALK, "There is already a team with that name!")
+			return
+		end
+	end
+
+	local teamnumber = count + 1
+
+	team.SetUp(teamnumber, teamname, teamcolor, teamisjoinable)
+end
+
+if SERVER then -- serverside team creation (MEN)
 	net.Receive("flood_customteamcreation", function()
 		print("e")
 		local teamname = net.ReadString()
 		local teamcolor = net.ReadColor()
 		local teamowner = net.ReadEntity()
-
+		local teamisjoinable = net.ReadBool()
+	
 		local allteams = team.GetAllTeams()
 	
 		local count = 0
 		for k, v in pairs(allteams) do
 			count = count + 1
 		end
-
-		for i = 1, count do
-			if team.GetName(i) == teamname then
-				teamowner:PrintMessage(HUD_PRINTTALK, "There is already a team with that name!")
-				return
-			end
-		end
-
+	
 		local teamnumber = count + 1
 	
-		team.SetUp(teamnumber, teamname, teamcolor)
-
+		team.SetUp(teamnumber, teamname, teamcolor, teamisjoinable)
+	
 		if teamowner:Team() ~= teamnumber then
 			teamowner:SetTeam(teamnumber)
 		end

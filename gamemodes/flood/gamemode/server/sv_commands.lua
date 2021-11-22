@@ -192,6 +192,14 @@ local function Flood_SetTime(ply, txt)
 end
 hook.Add("PlayerSay", "Flood_SetTime", Flood_SetTime)
 
+local function Flood_TeamMenu(ply, txt)
+	if txt == string.lower("!teammenu") then
+		ply:SendLua("MakepTeamMenu()")
+		return ""
+	end
+end
+hook.Add("PlayerSay", "Flood_TeamMenu", Flood_TeamMenu)
+
 -- Returns string
 function FindPlayer(ply, target)
 	name = string.lower(target)

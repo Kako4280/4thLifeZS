@@ -141,7 +141,7 @@ function GM:ShowHelp()
 
 	but = vgui.Create("DButton", menu)
 	but:SetFont("FloodFontDefaultSmall")
-	but:SetText("Create Team Menu")
+	but:SetText("Team Menu")
 	but:SetTall(buttonhei)
 	but:DockMargin(0, 0, 0, 12)
 	but:DockPadding(0, 12, 0, 12)
