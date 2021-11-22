@@ -207,13 +207,25 @@ function GM:HUDPaint()
 		local pCash = LocalPlayer():GetNWFloat("flood_cash") or 0
 		local pCashClamp = math.Clamp(pCash / 5000, 0, xSize)
 		
+		draw.SimpleText("$"..pCash, "Flood_HUD_B", (elementWidth / 2) + 8, y - (4 * (6 - elementNo)) - (40 * (4.5 - elementNo)), WHITE, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+		
 		--Experience/Level
 		elementNo = 4
+		
+		local XP = ExtraExp(LocalPlayer())
+		local XPNextLevel = ExpForLevel(LocalPlayer())
+		local LVL = CalculateLevel(LocalPlayer())
+		local XPRatio = math.Clamp(XP / XPNextLevel, 0, 1) 
+		print(XP .. " " .. XPNextLevel .. " " .. XPRatio)
+		
+		draw.RoundedBox(4, 8, y - (4 * (6 - elementNo)) - (40 * (5 - elementNo)), math.floor(elementWidth * XPRatio, 0) - 8, 40, Color(0, 225, 255, 255))
+		draw.SimpleText("Level " .. LVL .. ", " .. XP .. " / " .. XPNextLevel .. " Exp", "Flood_HUD_B", (elementWidth / 2) + 8, y - (4 * (6 - elementNo)) - (40 * (4.5 - elementNo)), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+		
 		
 		--draw.RoundedBox(4, 8, y - (4 * (6 - elementNo)) - (40 * (5 - elementNo)), math.Round(elementWidth * pHealthClamp, 0) - 8, 40, Color(0, 225, 255, 255))
 		--draw.SimpleText(math.Max(pHealth, 0).." HP","Flood_HUD_B", (elementWidth / 2) + 8, y - (4 * (6 - elementNo)) - (40 * (4.5 - elementNo)), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 		
-		--print(LocalPlayer():GetNWFloat("Experience"))
+		--print(ExpForLevel(LocalPlayer()) .. " " .. CalculateLevel(LocalPlayer()))
 		
 		-- -- Health
 		-- local pHealth = LocalPlayer():Health()

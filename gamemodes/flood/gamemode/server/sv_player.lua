@@ -106,6 +106,11 @@ function GM:PlayerDeath(ply, inflictor, attacker )
 	if ( !IsValid( inflictor ) && IsValid( attacker ) ) then
 		inflictor = attacker
 	end
+	
+	if GAMEMODE:GetGameState() == 3 then
+		ply.SurvivalTime = CurTime() - ply.SurvivalTime
+		print(ply.SurvivalTime)
+	end
 
 	-- Convert the inflictor to the weapon that they're holding if we can.
 	-- This can be right or wrong with NPCs since combine can be holding a 
@@ -150,7 +155,6 @@ function GM:PlayerDeath(ply, inflictor, attacker )
 	net.Broadcast()
 	
 	MsgAll( ply:Nick() .. " was killed by " .. attacker:GetClass() .. "\n" )
-	
 end
 
 function GM:PlayerSwitchWeapon(ply, oldwep, newwep)
