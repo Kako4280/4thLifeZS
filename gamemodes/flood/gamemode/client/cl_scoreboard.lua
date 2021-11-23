@@ -24,6 +24,7 @@ function GM:GetTeamScoreInfo()
 		local _deaths = ply:Deaths()
 		local _ping = ply:Ping()
 		local _cash = ply:GetNWFloat("flood_cash")
+		local _level = CalculateLevel(ply)
 		
 		if (not TeamInfo[_team]) then
 			TeamInfo[_team] = {}
@@ -38,6 +39,7 @@ function GM:GetTeamScoreInfo()
 		PlayerInfo.Name = ply:Nick()
 		PlayerInfo.PlayerObj = ply
 		PlayerInfo.cash = _cash
+		PlayerInfo.Level = _level
 		
 		local insertPos = #TeamInfo[_team].Players + 1
 		for idx, info in pairs(TeamInfo[_team].Players) do
@@ -79,6 +81,7 @@ function GM:HUDDrawScoreBoard()
 	local boardWidth = scrWidth - (2 * xOffset)
 	local boardHeight = scrHeight
 	local colWidth = 75
+	local screenscale = BetterScreenScale()
 
 	local ScoreboardFont = "ScoreboardFont"
 	
@@ -106,6 +109,7 @@ function GM:HUDDrawScoreBoard()
 
 	-- Titles
 	draw.SimpleText("Name", ScoreboardFont, xOffset + 16, ySpacing, color_black)
+	draw.SimpleText("Level", ScoreboardFont, xOffset + boardWidth - (colWidth * 4) + 8, ySpacing, color_black)
 	draw.SimpleText("Cash", ScoreboardFont, xOffset + boardWidth - (colWidth*3) + 8, ySpacing, color_black)
 	draw.SimpleText("Deaths", ScoreboardFont, xOffset + boardWidth - (colWidth*2) + 8, ySpacing, color_black)
 	draw.SimpleText("Ping", ScoreboardFont, xOffset + boardWidth - (colWidth*1) + 8, ySpacing, color_black)
@@ -127,19 +131,23 @@ function GM:HUDDrawScoreBoard()
 		for index, plinfo in pairs(info.Players) do
 					
 			if (plinfo.PlayerObj == LocalPlayer()) then
-				draw.RoundedBox(0, xOffset + 10, yPosition, boardWidth - 20, 16, Color(0, 0, 0, 100))
+				draw.RoundedBox(0, xOffset, yPosition, boardWidth - 20, 16, Color(0, 0, 0, 100))
 			end
+
 						
 			local px = xOffset + 16
 			draw.SimpleText(plinfo.Name, ScoreboardFont, px, yPosition, Color(24, 24, 24, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_LEFT)
 
-			px = xOffset + boardWidth - (colWidth*3) + 8	
+			px = xOffset + boardWidth - (colWidth*4) + 16 * screenscale
+			draw.SimpleText(plinfo.Level or 0, ScoreboardFont, px, yPosition, Color(0, 100, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_LEFT)
+
+			px = xOffset + boardWidth - (colWidth*3) * screenscale	
 			draw.SimpleText("$"..plinfo.cash, ScoreboardFont, px, yPosition, Color(0, 100, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_LEFT)
 
-			px = xOffset + boardWidth - (colWidth*2) + 8			
+			px = xOffset + boardWidth - (colWidth*2) + 16 * screenscale			
 			draw.SimpleText(plinfo.Deaths, ScoreboardFont, px, yPosition, Color(100, 0, 0, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_LEFT)
 			
-			px = xOffset + boardWidth - (colWidth*1) + 8			
+			px = xOffset + boardWidth - (colWidth*1) + 16 * screenscale			
 			draw.SimpleText(plinfo.Ping, ScoreboardFont, px, yPosition, Color(0, 0, 100, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_LEFT)
 			
 			
