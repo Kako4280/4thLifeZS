@@ -38,7 +38,7 @@ Props[24] = {Model = "models/props_interiors/refrigeratorDoor01a.mdl", Group = 2
 Props[25] = {Model = "models/props_interiors/VendingMachineSoda01a.mdl", Group = 1, Price = 1200, Health = 600, DonatorOnly = false, Description = "Vending Machine"}
 Props[26] = {Model = "models/props_interiors/VendingMachineSoda01a_door.mdl", Group = 1, Price = 600, Health = 300, DonatorOnly = false, Description = "Vending Machine Door"}
 Props[27] = {Model = "models/props_building_details/Storefront_Template001a_Bars.mdl", Group = 2, Price = 220, Health = 110, DonatorOnly = false, Description = "Window Bars"}
-Props[28] = {Model = "models/props_borealis/bluebarrel001.mdl", Group = 1, Price = 50, Health = 25, DonatorOnly = false, Description = "Gravestone"}
+Props[28] = {Model = "models/props_borealis/bluebarrel001.mdl", Group = 1, Price = 50, Health = 25, DonatorOnly = false, Description = "Blue Barrel"}
 
 -- Weapons
 Weapons[1] = {Model = "models/weapons/w_crossbow.mdl", Group = 1, Class = "weapon_crossbow", Name = "Crossbow", Price = 25000, Ammo = 1000, AmmoClass = "XBowBolt", Damage = 10, DonatorOnly = false}
