@@ -293,6 +293,12 @@ function GM:PurchaseProp(ply, cmd, args)
 					ct:AddText("[Flood] ", Color(132, 199, 29, 255))
 					ct:AddText("You have purchased a(n) "..Prop.Description..".")
 					ct:Send(ply)
+
+					undo.Create("prop")
+					undo.AddEntity(ent)
+					undo.SetPlayer(ply)
+					undo.AddFunction(function() ply:AddCash(Prop.Price) end)
+					undo.Finish()
 						
 					hook.Call("PlayerSpawnedProp", gmod.GetGamemode(), ply, ent:GetModel(), ent)
 					ply:AddCount("flood_props", ent)
