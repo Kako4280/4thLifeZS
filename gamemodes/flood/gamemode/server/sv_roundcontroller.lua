@@ -159,6 +159,12 @@ function GM:BuildPhase()
 end
 
 function GM:FloodPhase()
+	if SERVER then -- clears the undo table of all players so they cannot refund their props after the build phase.
+		local asdf = undo.GetTable()
+
+		table.Empty(asdf)
+	end
+	
 	if Flood_floodTime <= 0 then
 		-- Time to Kill
 		self:SetGameState(3)
