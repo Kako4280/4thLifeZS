@@ -144,6 +144,10 @@ function GM:BuildPhase()
 					phys:EnableMotion(true)
 					phys:Wake()
 				end
+
+				if v:GetClass() == "prop_base" then -- change prop collisions to default if they were no-collided with physgun.
+					v:SetCollisionGroup(COLLISION_GROUP_NONE)
+				end
 			end
 		end
 
