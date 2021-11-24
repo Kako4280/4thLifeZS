@@ -365,3 +365,12 @@ function GM:PurchaseWeapon(ply, cmd, args)
 	end
 end
 concommand.Add("FloodPurchaseWeapon", function(ply, cmd, args) hook.Call("PurchaseWeapon", GAMEMODE, ply, cmd, args) end)
+
+function GM:JoinTeam(pl, cmd, args)
+	if not IsValid(pl) or not args[1] then return end
+	args[1] = math.Round(args[1], 0)
+	if not table.HasValue(team.GetPlayers(args[1]), pl) and team.NumPlayers(args[1]) < 4 then
+		pl:SetTeam(args[1])
+	end
+end
+concommand.Add("JoinTeam", function(pl, cmd, args) hook.Call("JoinTeam", GAMEMODE, pl, cmd, args) end)

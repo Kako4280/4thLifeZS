@@ -236,7 +236,7 @@ function MakepTeamMenu()
 						joinButton:SetSize(80, 32)
 						joinButton:Center()
 						joinButton.DoClick = function()
-							--RunConsoleCommand
+							RunConsoleCommand("JoinTeam", k)
 						end
 					end
 				end
