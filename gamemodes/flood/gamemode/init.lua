@@ -108,24 +108,24 @@ function GM:EntityTakeDamage(ent, dmginfo)
 			if attacker:IsPlayer() then
 				if attacker:GetActiveWeapon() ~= NULL then
 					if attacker:GetActiveWeapon():GetClass() == "weapon_pistol" then
-						ent:SetNWFloat("CurrentPropHealth", ent:GetNWFloat("CurrentPropHealth") - 1)
+						ent:SetPropHealth(ent:GetPropHealth() - 1)
 					else
 						for _, Weapon in pairs(Weapons) do
 							if attacker:GetActiveWeapon():GetClass() == Weapon.Class then
-								ent:SetNWFloat("CurrentPropHealth", ent:GetNWFloat("CurrentPropHealth") - tonumber(Weapon.Damage))
+								ent:SetPropHealth(ent:GetPropHealth() - tonumber(Weapon.Damage))
 							end
 						end
 					end
 				end
 			else
 				if attacker:GetClass() == "entityflame" then
-					ent:SetNWFloat("CurrentPropHealth", ent:GetNWFloat("CurrentPropHealth") - 0.5)
+					ent:SetPropHealth(ent:GetPropHealth() - 0.5)
 				else
-					ent:SetNWFloat("CurrentPropHealth", ent:GetNWFloat("CurrentPropHealth") - 1)
+					ent:SetPropHealth(ent:GetPropHealth() - 1)
 				end
 			end
 			
-			if ent:GetNWFloat("CurrentPropHealth") <= 0 and IsValid(ent) then
+			if ent:GetPropHealth() <= 0 and IsValid(ent) then
 				ent:Remove()
 			end
 		end
