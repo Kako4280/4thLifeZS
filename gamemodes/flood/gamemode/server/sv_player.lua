@@ -374,3 +374,26 @@ function GM:JoinTeam(pl, cmd, args)
 	end
 end
 concommand.Add("JoinTeam", function(pl, cmd, args) hook.Call("JoinTeam", GAMEMODE, pl, cmd, args) end)
+
+function GM:CreateTeam(pl, cmd, args)
+	local teamname = args[1]
+	local teamcolor = Color(args[2], args[3], args[4], 255)
+	local teamowner = pl
+	local teamisjoinable = tobool(args[5])
+	
+	local allteams = team.GetAllTeams()
+	
+	local count = 0
+	for k, v in pairs(allteams) do
+		count = count + 1
+	end
+	
+	local teamnumber = count + 1
+	
+	team.SetUp(teamnumber, teamname, teamcolor, teamisjoinable)
+	
+	if teamowner:Team() ~= teamnumber then
+		teamowner:SetTeam(teamnumber)
+	end
+end
+concommand.Add("CreateTeam", function(pl, cmd, args) hook.Call("CreateTeam", GAMEMODE, pl, cmd, args) end)

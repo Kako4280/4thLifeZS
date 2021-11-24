@@ -51,7 +51,6 @@ end
 
 if SERVER then -- serverside team creation (MEN)
 	net.Receive("flood_customteamcreation", function()
-		print("e")
 		local teamname = net.ReadString()
 		local teamcolor = net.ReadColor()
 		local teamowner = net.ReadEntity()

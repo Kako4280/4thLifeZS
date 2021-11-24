@@ -93,18 +93,21 @@ function MakepTeamMenu()
 	end
 	teaminviteonly:SizeToContents()
 
+	local pl = LocalPlayer()
 	local createteambutton = vgui.Create("DButton", createteampanel)
 	createteambutton:SetText("CREATE TEAM")
 	createteambutton:SetSize(600 * screenscale, 25 * screenscale)
 	createteambutton:CenterVertical(0.85)
 	createteambutton.DoClick = function()
 		PlayerCreateTeam(TeamName, TeamColor, LocalPlayer(), TeamIsJoinable)
-		net.Start("flood_customteamcreation")
-		net.WriteString(TeamName)
-		net.WriteColor(TeamColor)
-		net.WriteEntity(LocalPlayer())
-		net.WriteBool(TeamIsJoinable)
-		net.SendToServer()
+		-- net.Start("flood_customteamcreation")
+		-- net.WriteString(TeamName)
+		-- net.WriteColor(TeamColor)
+		-- netWriteEntity(LocalPlayer())
+		-- net.WriteBool(TeamIsJoinable)
+		-- net.SendToServer()
+		
+		RunConsoleCommand("CreateTeam", TeamName, TeamColor.r, TeamColor.g, TeamColor.b, tostring(TeamIsJoinable))
 
 		createteamdframe:Close() -- this is used to update the join team panel without calling this function repeatedly
 		MakepTeamMenu()
