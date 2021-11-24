@@ -59,12 +59,11 @@ function ENT:SetPropName(str)
 	return self:SetDTString(2, str)
 end
 
-function ENT:Initialize()
+function ENT:Initialize() -- defining the model here was causing problems.
 	print(self.PropHealth or 1)
 	self:SetPropName(self.PropName)
 	self:SetPropHealth(self.PropHealth or 1)
 	self:SetPropMaxHealth(self.MaxPropHealth or 1)
-	self:SetModel(self.Model)
 	self:SetMaterial(self.Material or self:GetMaterial())
 	self:SetPropMass(self.Mass or 1)
 	self:SetPropScale(self.Scale or 1)
@@ -75,7 +74,7 @@ function ENT:Initialize()
 	
 	self:PhysicsInit(SOLID_VPHYSICS)
 	self:SetSolid(SOLID_VPHYSICS)
-	self:SetCollisionGroup(COLLISION_GROUP_DEBRIS_TRIGGER)
+	self:SetCollisionGroup(COLLISION_GROUP_NONE)
 	
 	local phys = self:GetPhysicsObject()
 	if phys:IsValid() then
