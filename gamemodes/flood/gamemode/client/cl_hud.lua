@@ -137,7 +137,10 @@ function GM:HUDPaint()
 		if tr.Entity:GetNWFloat("CurrentPropHealth") == "" or tr.Entity:GetNWFloat("CurrentPropHealth") == nil or tr.Entity:GetNWFloat("CurrentPropHealth") == NULL then
 			draw.SimpleText("Fetching Health", "Flood_HUD_Small", x * 0.5, y * 0.5 - 25, color_white, 1, 1)
 		else
-			draw.SimpleText("Health " .. tr.Entity:GetPropHealth() .. " / " .. tr.Entity:GetPropMaxHealth(), "Flood_HUD_Small", x * 0.5, y * 0.5 - 25, color_white, 1, 1)
+			if tr.Entity:GetClass() == "prop_base" then -- filters out errors if we're looking at something without these functions!
+				draw.SimpleText(tr.Entity:GetPropName(), "Flood_HUD_Small", x * 0.5, y * 0.5 - 50, color_white, 1, 1)
+				draw.SimpleText("Health " .. tr.Entity:GetPropHealth() .. " / " .. tr.Entity:GetPropMaxHealth(), "Flood_HUD_Small", x * 0.5, y * 0.5 - 25, color_white, 1, 1)
+			end
 		end
 	end
 
