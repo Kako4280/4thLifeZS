@@ -28,6 +28,15 @@ function GM:PlayerInitialSpawn(ply)
 	ply.SpawnTime = CurTime()
 	
 	PrintMessage(HUD_PRINTCENTER, ply:Nick().." has joined the server!")
+	
+	for k, _ in pairs(team.GetAllTeams()) do
+		net.Start("CreateTeam")
+			net.WriteInt(k, 32)
+			net.WriteString(team.GetName(k))
+			net.WriteColor(team.GetColor(k))
+			net.WriteBool(team.Joinable(k))
+		net.Broadcast()
+	end
 end
 
 function GM:PlayerSpawn( ply )
