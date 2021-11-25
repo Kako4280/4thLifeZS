@@ -35,4 +35,7 @@ end
 
 net.Receive("CreateTeam", function()
 	team.SetUp(net.ReadInt(32), net.ReadString(), net.ReadColor(), net.ReadBool())
+	if net.ReadBool() then
+		timer.Simple(math.Round((LocalPlayer():Ping() / 1000 + 0.03), 2), function() MakepTeamMenu() end)
+	end
 end)

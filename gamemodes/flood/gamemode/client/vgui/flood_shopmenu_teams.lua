@@ -100,17 +100,8 @@ function MakepTeamMenu()
 	createteambutton:CenterVertical(0.85)
 	createteambutton.DoClick = function()
 		PlayerCreateTeam(TeamName, TeamColor, LocalPlayer(), TeamIsJoinable)
-		-- net.Start("flood_customteamcreation")
-		-- net.WriteString(TeamName)
-		-- net.WriteColor(TeamColor)
-		-- netWriteEntity(LocalPlayer())
-		-- net.WriteBool(TeamIsJoinable)
-		-- net.SendToServer()
-		
 		RunConsoleCommand("CreateTeam", TeamName, TeamColor.r, TeamColor.g, TeamColor.b, tostring(TeamIsJoinable))
-
 		createteamdframe:Close() -- this is used to update the join team panel without calling this function repeatedly
-		MakepTeamMenu()
 	end
 
 	local jointeampanel = vgui.Create("DScrollPanel", createteamsheet)
@@ -139,7 +130,7 @@ function MakepTeamMenu()
 	for k, v in pairs(allteamtable) do
 		numPlayers = team.NumPlayers(k)
 		
-		if numPlayers > 0 then
+		if numPlayers > 0 and not k == LocalPlayer():Team() then
 			if team.Valid(k) and k > 2 and k < 1001 then -- simple way to filter out default teams like spectator.
 				local teambuttoncolor = team.GetColor(k)
 				
@@ -161,9 +152,9 @@ function MakepTeamMenu()
 					surface.DrawOutlinedRect(0, 0, w, h, 2)
 				end
 				
-				
 				local teamText = vgui.Create("DLabel", teamTitle)
 				teamText:SetText(team.GetName(k))
+				teamText:SetFont("OtherInfoFont")
 				teamText:SizeToContents()
 				teamText:Center()
 				teamText:SetTextColor(Color(0, 0, 0, 255))
@@ -250,12 +241,117 @@ function MakepTeamMenu()
 			end
 		end
 	end
-
-	local manageteampanel = vgui.Create("DPanel", createteamsheet)
-	manageteampanel:SetSize(587 * screenscale, 300 * screenscale)
-	manageteampanel.Paint = function(self, w, h) 
-		draw.RoundedBox(0, 0, 1, w, h, Color(0, 0, 0, 0)) 
-		draw.RoundedBox(0, 0, 0, w, h, Color(24, 24, 24, 255))
+	
+	local myteam = LocalPlayer():Team()
+	if team.Valid(myteam) and myteam > 2 and myteam < 1001 then
+		local manageteampanel = vgui.Create("DPanel", createteamsheet)
+		manageteampanel:SetSize(587 * screenscale, 300 * screenscale)
+		manageteampanel.Paint = function(self, w, h) 
+			draw.RoundedBox(0, 0, 1, w, h, Color(0, 0, 0, 0)) 
+			draw.RoundedBox(0, 0, 0, w, h, Color(24, 24, 24, 255))
+		end
+		createteamsheet:AddSheet("Manage Your Team", manageteampanel, "icon16/group_edit.png")
+		
+		local players = team.GetPlayers(myteam)
+		numPlayers = team.NumPlayers(myteam)
+		
+		local teamBox2 = vgui.Create("DPanel", manageteampanel)
+		teamBox2:SetSize((574 - 6) * screenscale, (40 * screenscale) + (78 * math.min(numPlayers, 2)))
+		teamBox2:SetPos(5, 7)
+		teamBox2.Paint = function(self, w, h)
+			surface.SetDrawColor(0, 0, 0, 0)
+			surface.DrawRect(0, 0, w, h)
+		end
+					
+		local teamTitle2 = vgui.Create("DPanel", teamBox2)
+		teamTitle2:SetSize((574 - 6) * screenscale, 40 * screenscale)
+		teamTitle2:SetPos(0, 0)
+		teamTitle2.Paint = function(self, w, h)
+			surface.SetDrawColor(team.GetColor(myteam))
+			surface.DrawRect(0, 0, w, h)
+			surface.SetDrawColor(255, 255, 255, 255)
+			surface.DrawOutlinedRect(0, 0, w, h, 2)
+		end
+						
+		local teamText2 = vgui.Create("DLabel", teamTitle2)
+		teamText2:SetText(team.GetName(myteam))
+		teamText2:SetFont("OtherInfoFont")
+		teamText2:SizeToContents()
+		teamText2:Center()
+		teamText2:SetTextColor(Color(0, 0, 0, 255))
+		local color = team.GetColor(myteam)
+		if ((color.r + color.g + color.b) / 3) < 127 then
+			teamText2:SetTextColor(Color(255, 255, 255, 255))
+		end
+		
+		for i = 1, numPlayers do
+			if i <= numPlayers then
+				local playerBox2 = vgui.Create("DPanel", teamBox2)
+				playerBox2:SetSize((574 - 4) * screenscale / 2, 80 * screenscale)
+				playerBox2:SetPos((1 - math.ceil((i / 2)-math.floor(i / 2))) * (572 - 6) * screenscale / 2, math.floor((i - 1) / 2) * 78 + 38)
+				playerBox2.Paint = function(self, w, h)
+					surface.SetDrawColor(200, 200, 200, 255)
+					surface.DrawRect(0, 0, w, h)
+					surface.SetDrawColor(255, 255, 255, 255)
+					surface.DrawOutlinedRect(0, 0, w, h, 2)
+				end
+							
+				if IsValid(players[i]) then
+					local avatarFrame2 = vgui.Create("DPanel", playerBox2)
+					avatarFrame2:SetSize(76 * screenscale, 76 * screenscale)
+					avatarFrame2:SetPos(2, 2)
+					avatarFrame2.Paint = function(self, w, h)
+						surface.SetDrawColor(0, 0, 0, 0)
+						surface.DrawRect(0, 0, w, h)
+					end	
+								
+					local infoFrame2 = vgui.Create("DPanel", playerBox2)
+					infoFrame2:SetSize(((574 - 4) * screenscale / 2) - (80 * screenscale), 76 * screenscale)
+					infoFrame2:SetPos(78 * screenscale, 2)
+					infoFrame2.Paint = function(self, w, h)
+						surface.SetDrawColor(0, 0, 0, 0)
+						surface.DrawRect(0, 0, w, h)
+					end	
+								
+					local avatar2 = vgui.Create("avatarImage", avatarFrame2)
+					avatar2:SetSize(76 * screenscale, 76 * screenscale)
+					avatar2:SetPos(0, 0)
+					avatar2:SetPlayer(players[i], 74)
+								
+					local name2 = vgui.Create("DLabel", infoFrame2)
+					name2:SetText(players[i]:GetName())
+					name2:SetFont("PlayerNameFont")
+					name2:SizeToContents()
+					name2:SetTextColor(Color(0, 0, 0, 255)) --Set this to blue (0, 0, 255) if person is party leader.
+					name2:SetPos((infoFrame2:GetWide() - name2:GetWide()) / 2, 12)
+							
+					local level2 = vgui.Create("DLabel", infoFrame2)
+					if not LocalPlayer():IsBot() then level2:SetText("Level " .. CalculateLevel(players[i])) end
+						level2:SetFont("OtherInfoFont")
+						level2:SizeToContents()
+						level2:SetTextColor(Color(0, 0, 0, 255))
+						level2:SetPos((infoFrame2:GetWide() - level2:GetWide()) / 2, name2:GetTall() + 8)
+					end
+				elseif team.Joinable(myteam) then
+					local joinBox2 = vgui.Create("DPanel", teamBox2)
+					joinBox2:SetSize((574 - 4) * screenscale / 2, 80 * screenscale)
+					joinBox2:SetPos((1 - math.ceil((i / 2)-math.floor(i / 2))) * (572 - 6) * screenscale / 2, math.floor((i - 1) / 2) * 78 + 38)
+					joinBox2.Paint = function(self, w, h)
+					surface.SetDrawColor(200, 225, 200, 255)
+					surface.DrawRect(0, 0, w, h)
+					surface.SetDrawColor(255, 255, 255, 255)
+					surface.DrawOutlinedRect(0, 0, w, h, 2)
+				end
+							
+				-- local joinButton2 = vgui.Create("DButton", joinBox2)
+				-- joinButton2:SetText("Join")
+				-- joinButton2:SetPos(0, 0)
+				-- joinButton2:SetSize(80, 32)
+				-- joinButton2:Center()
+				-- joinButton2.DoClick = function()
+				-- RunConsoleCommand("JoinTeam", myteam)
+				-- end
+			end
+		end
 	end
-	createteamsheet:AddSheet("Manage Your Team", manageteampanel, "icon16/group_edit.png")
 end

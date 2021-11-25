@@ -35,6 +35,7 @@ function GM:PlayerInitialSpawn(ply)
 			net.WriteString(team.GetName(k))
 			net.WriteColor(team.GetColor(k))
 			net.WriteBool(team.Joinable(k))
+			net.WriteBool(false)
 		net.Broadcast()
 	end
 end
@@ -383,6 +384,7 @@ function GM:JoinTeam(pl, cmd, args)
 	if not table.HasValue(team.GetPlayers(args[1]), pl) and team.NumPlayers(args[1]) < 4 then
 		pl:SetTeam(args[1])
 	end
+	DemoteTeamLeaderTeamLeader(pl)
 end
 concommand.Add("JoinTeam", function(pl, cmd, args) hook.Call("JoinTeam", GAMEMODE, pl, cmd, args) end)
 
@@ -391,30 +393,32 @@ function GM:CreateTeam(pl, cmd, args)
 	local teamcolor = Color(args[2], args[3], args[4], 255)
 	local teamowner = pl
 	local teamisjoinable = tobool(args[5])
-	
 	local allteams = team.GetAllTeams()
-	
-	-- local count = 0
-	-- for k, v in pairs(allteams) do
-		-- count = count + 1
-	-- end
-	
 	local teamnumber = #allteams + 1
 	
 	team.SetUp(teamnumber, teamname, teamcolor, teamisjoinable)
 	
-	if teamowner:Team() ~= teamnumber then
-		teamowner:SetTeam(teamnumber)
-	end
+	if teamowner:Team() ~= teamnumber then return end
+	teamowner:SetTeam(teamnumber)
+	MakeTeamLeader(pl)
 	
 	net.Start("CreateTeam")
 		net.WriteInt(teamnumber, 32)
 		net.WriteString(teamname)
 		net.WriteColor(teamcolor)
 		net.WriteBool(teamisjoinable)
+		net.WriteBool(true)
 	net.Broadcast()
 end
 concommand.Add("CreateTeam", function(pl, cmd, args) hook.Call("CreateTeam", GAMEMODE, pl, cmd, args) end)
+
+function MakeTeamLeader(pl)
+	pl:SetNWBool("TeamLeader", true)
+end
+
+function DemoteTeamLeader(pl)
+	pl:SetNWBool("TeamLeader", false)
+end
 
 hook.Add("OnPhysgunFreeze", "nocollidepropsthing", function(weapon, phys, ent, ply) -- nocollides a prop if the player is holding shift.
 	if ply:KeyDown(IN_SPEED) and ent:GetClass() == "prop_base" then
