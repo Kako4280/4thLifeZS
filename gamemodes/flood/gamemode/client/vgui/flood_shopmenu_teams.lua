@@ -344,24 +344,27 @@ function MakepTeamMenu()
 						leaveButton:SetImage("icon16/delete.png")
 						leaveButton:SetSize(16, 16)
 						leaveButton:SetPos(infoFrame2:GetWide() - (leaveButton:GetWide() + 4), 4)  
-						-- leaveButton.DoClick = function()
-						-- RunConsoleCommand("JoinTeam", myteam)
+						leaveButton.DoClick = function()
+							RunConsoleCommand("LeaveTeam", myteam)
+						end
 					elseif players[i]:GetNWBool("TeamLeader") then
 						local promoteButton = vgui.Create("DImageButton", infoFrame2)
 						promoteButton:SetTooltip("Promote to team leader.")
 						promoteButton:SetImage("icon16/shield_add.png")
 						promoteButton:SetSize(16, 16)
 						promoteButton:SetPos(infoFrame2:GetWide() - (promoteButton:GetWide() + 4), 4)  
-						-- promoteutton.DoClick = function()
-						-- RunConsoleCommand("JoinTeam", myteam)
+						promoteutton.DoClick = function()
+							RunConsoleCommand("PromoteTeamLeader", players[i])
+						end
 						
 						local kickButton = vgui.Create("DImageButton", infoFrame2)
 						kickButton:SetTooltip("Kick player from team.")
 						kickButton:SetImage("icon16/cross.png")
 						kickButton:SetSize(16, 16)
 						kickButton:SetPos(infoFrame2:GetWide() - (kickButton:GetWide() + 4), 8 + promoteButton:GetTall())  
-						-- promoteutton.DoClick = function()
-						-- RunConsoleCommand("JoinTeam", myteam)
+						promoteutton.DoClick = function()
+							RunConsoleCommand("KickFromTeam", players[i])
+						end
 					end
 				end
 			end

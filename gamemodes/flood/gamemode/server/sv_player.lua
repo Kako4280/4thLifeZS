@@ -422,6 +422,29 @@ function DemoteTeamLeader(pl)
 	pl:SetNWBool("TeamLeader", false)
 end
 
+--Used only for the teams menu.
+function GM:PromoteTeamLeader(pl, cmd, args)
+	local pl2 = args[1]
+	DemoteTeamLeader(pl)
+	MakeTeamLeader(pl2)
+end
+concommand.Add("PromoteTeamLeader", function(pl, cmd, args) hook.Call("PromoteTeamLeader", GAMEMODE, pl, cmd, args) end)
+
+--Used only for the teams menu.
+function GM:LeaveTeam(pl, cmd, args)
+	local pl:SetTeam(2)
+end
+concommand.Add("LeaveTeam", function(pl, cmd, args) hook.Call("LeaveTeam", GAMEMODE, pl, cmd, args) end)
+
+--Used only for the teams menu.
+function GM:KickFromTeam(pl, cmd, args)
+	local pl2 = args[1]
+	if pl:GetNWBool("TeamLeader") then
+		pl2:SetTeam(2)
+	end
+end
+concommand.Add("KickFromTeam", function(pl, cmd, args) hook.Call("KickFromTeam", GAMEMODE, pl, cmd, args) end)
+
 hook.Add("OnPhysgunFreeze", "nocollidepropsthing", function(weapon, phys, ent, ply) -- nocollides a prop if the player is holding shift.
 	if ply:KeyDown(IN_SPEED) and ent:GetClass() == "prop_base" then
 		ent:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
