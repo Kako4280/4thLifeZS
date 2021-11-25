@@ -32,3 +32,7 @@ end
 function GM:CanProperty(ply, property, ent)
 	return false
 end
+
+net.Receive("CreateTeam", function()
+	team.SetUp(net.ReadInt(32), net.ReadString(), net.ReadColor(), net.ReadBool())
+end)

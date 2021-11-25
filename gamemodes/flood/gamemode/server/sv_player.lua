@@ -1,5 +1,7 @@
 local PlayerMeta = FindMetaTable("Player")
 
+util.AddNetworkString("CreateTeam")
+
 function GM:PlayerInitialSpawn(ply)
 	ply.Allow = false
  
@@ -383,18 +385,25 @@ function GM:CreateTeam(pl, cmd, args)
 	
 	local allteams = team.GetAllTeams()
 	
-	local count = 0
-	for k, v in pairs(allteams) do
-		count = count + 1
-	end
+	-- local count = 0
+	-- for k, v in pairs(allteams) do
+		-- count = count + 1
+	-- end
 	
-	local teamnumber = count + 1
+	local teamnumber = #allteams + 1
 	
 	team.SetUp(teamnumber, teamname, teamcolor, teamisjoinable)
 	
 	if teamowner:Team() ~= teamnumber then
 		teamowner:SetTeam(teamnumber)
 	end
+	
+	net.Start("CreateTeam")
+		net.WriteInt(teamnumber, 32)
+		net.WriteString(teamname)
+		net.WriteColor(teamcolor)
+		net.WriteBool(teamisjoinable)
+	net.Broadcast()
 end
 concommand.Add("CreateTeam", function(pl, cmd, args) hook.Call("CreateTeam", GAMEMODE, pl, cmd, args) end)
 
