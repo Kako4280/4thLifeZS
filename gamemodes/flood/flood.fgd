@@ -1,0 +1,77 @@
+@include "base.fgd"
+@include "halflife2.fgd"
+@include "hl2mp.fgd"
+
+//////////////////////////////////////////////////////////////////////////////////
+// Gamemode - Brush Entities /////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+
+@SolidClass base(Targetname) = func_teamblocker : "Flood: Only the players team can pass through this brush."
+[
+	// Keys
+	enabled(choices) : "Enabled" : 0 : "Enable the brush entity." =
+	[
+		1 : "Yes"
+		0 : "No"
+	]
+
+	// Inputs
+	input enable(void)   : "Enable the entity."
+	input disable(void)  : "Disable the entity."
+	input seton(integer) : "Enable or Disable the entity."
+]
+
+@SolidClass base(Targetname) = trigger_teamblockertrigger : "Flood: Used to activate the team blocker brush."
+[
+	// Keys
+	enabled(choices) : "Enabled" : 0 : "Enable the brush entity." =
+	[
+		1 : "Yes"
+		0 : "No"
+	]
+
+	// Inputs
+	input enable(void)   : "Enable the entity."
+	input disable(void)  : "Disable the entity."
+	input seton(integer) : "Enable or Disable the entity."
+]
+
+@SolidClass base(Targetname) = func_buildblocker : "Flood: Players will not be able to build inside this brush."
+[
+	// Keys
+	enabled(choices) : "Enabled" : 0 : "Enable the brush entity." =
+	[
+		1 : "Yes"
+		0 : "No"
+	]
+
+	// Inputs
+	input enable(void)   : "Enable the entity."
+	input disable(void)  : "Disable the entity."
+	input seton(integer) : "Enable or Disable the entity."
+]
+
+///////////////////////////////////////////////////////////////////////////////////
+// Gamemode - Point Entities //////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+
+@PointClass base(Targetname) = logic_changebudget : "Flood: Adjusts the budget players will have."
+[
+	// Inputs
+	input setbudget(float)  : "Sets the budget that players will have."
+]
+
+@PointClass base(Targetname) = logic_difficulty : "Flood: Adjusts the difficulty of the map."
+[
+	// Inputs
+	input setdamagemultiplier(float)  : "Multiplies the damage players will deal."
+    input setprophealthmultiplier(float)  : "Multiplies the health props will have." 
+]
+
+@PointClass base(Targetname) = logic_floodtimers : "Flood: Adjusts the various timers of the gamemode."
+[
+	// Inputs
+	input setbuildtime(float)  : "The gamemodes build time will be set to this. (in seconds)"
+    input setfighttime(float)  : "The gamemodes fight time will be set to this. (in seconds)"
+    input setresettime(float)  : "The gamemodes reset time will be set to this. (in seconds)" 
+]
