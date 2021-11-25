@@ -333,30 +333,37 @@ function MakepTeamMenu()
 							
 					local level2 = vgui.Create("DLabel", infoFrame2)
 					if not LocalPlayer():IsBot() then level2:SetText("Level " .. CalculateLevel(players[i])) end
-						level2:SetFont("OtherInfoFont")
-						level2:SizeToContents()
-						level2:SetTextColor(Color(0, 0, 0, 255))
-						level2:SetPos((infoFrame2:GetWide() - level2:GetWide()) / 2, name2:GetTall() + 8)
+					level2:SetFont("OtherInfoFont")
+					level2:SizeToContents()
+					level2:SetTextColor(Color(0, 0, 0, 255))
+					level2:SetPos((infoFrame2:GetWide() - level2:GetWide()) / 2, name2:GetTall() + 8)
+					
+					if players[i] == LocalPlayer() then
+						local leaveButton = vgui.Create("DImageButton", infoFrame2)
+						leaveButton:SetTooltip("Leave the current team.")
+						leaveButton:SetImage("icon16/delete.png")
+						leaveButton:SetSize(16, 16)
+						leaveButton:SetPos(infoFrame2:GetWide() - (leaveButton:GetWide() + 4), 4)  
+						-- leaveButton.DoClick = function()
+						-- RunConsoleCommand("JoinTeam", myteam)
+					elseif players[i]:GetNWBool("TeamLeader") then
+						local promoteButton = vgui.Create("DImageButton", infoFrame2)
+						promoteButton:SetTooltip("Promote to team leader.")
+						promoteButton:SetImage("icon16/shield_add.png")
+						promoteButton:SetSize(16, 16)
+						promoteButton:SetPos(infoFrame2:GetWide() - (promoteButton:GetWide() + 4), 4)  
+						-- promoteutton.DoClick = function()
+						-- RunConsoleCommand("JoinTeam", myteam)
+						
+						local kickButton = vgui.Create("DImageButton", infoFrame2)
+						kickButton:SetTooltip("Kick player from team.")
+						kickButton:SetImage("icon16/cross.png")
+						kickButton:SetSize(16, 16)
+						kickButton:SetPos(infoFrame2:GetWide() - (kickButton:GetWide() + 4), 8 + promoteButton:GetTall())  
+						-- promoteutton.DoClick = function()
+						-- RunConsoleCommand("JoinTeam", myteam)
 					end
-				elseif team.Joinable(myteam) then
-					local joinBox2 = vgui.Create("DPanel", teamBox2)
-					joinBox2:SetSize((574 - 4) * screenscale / 2, 80 * screenscale)
-					joinBox2:SetPos((1 - math.ceil((i / 2)-math.floor(i / 2))) * (572 - 6) * screenscale / 2, math.floor((i - 1) / 2) * 78 + 38)
-					joinBox2.Paint = function(self, w, h)
-						surface.SetDrawColor(200, 225, 200, 255)
-						surface.DrawRect(0, 0, w, h)
-						surface.SetDrawColor(255, 255, 255, 255)
-						surface.DrawOutlinedRect(0, 0, w, h, 2)
-					end
-							
-				-- local joinButton2 = vgui.Create("DButton", joinBox2)
-				-- joinButton2:SetText("Join")
-				-- joinButton2:SetPos(0, 0)
-				-- joinButton2:SetSize(80, 32)
-				-- joinButton2:Center()
-				-- joinButton2.DoClick = function()
-				-- RunConsoleCommand("JoinTeam", myteam)
-				-- end
+				end
 			end
 		end
 	end
