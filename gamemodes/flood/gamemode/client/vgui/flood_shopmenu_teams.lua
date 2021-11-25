@@ -203,7 +203,10 @@ function MakepTeamMenu()
 							name:SetText(players[i]:GetName())
 							name:SetFont("PlayerNameFont")
 							name:SizeToContents()
-							name:SetTextColor(Color(0, 0, 0, 255)) --Set this to blue (0, 0, 255) if person is party leader.
+							name2:SetTextColor(Color(0, 0, 0, 255)) --Set this to blue (0, 0, 255) if person is party leader.
+							if LocalPlayer():GetNWBool("TeamLeader") then
+								name2:SetTextColor(Color(0, 0, 255, 255))
+							end
 							name:SetPos((infoFrame:GetWide() - name:GetWide()) / 2, 12)
 							
 							local level = vgui.Create("DLabel", infoFrame)
@@ -323,6 +326,9 @@ function MakepTeamMenu()
 					name2:SetFont("PlayerNameFont")
 					name2:SizeToContents()
 					name2:SetTextColor(Color(0, 0, 0, 255)) --Set this to blue (0, 0, 255) if person is party leader.
+					if LocalPlayer():GetNWBool("TeamLeader") then
+						name2:SetTextColor(Color(0, 0, 255, 255))
+					end
 					name2:SetPos((infoFrame2:GetWide() - name2:GetWide()) / 2, 12)
 							
 					local level2 = vgui.Create("DLabel", infoFrame2)
@@ -337,11 +343,11 @@ function MakepTeamMenu()
 					joinBox2:SetSize((574 - 4) * screenscale / 2, 80 * screenscale)
 					joinBox2:SetPos((1 - math.ceil((i / 2)-math.floor(i / 2))) * (572 - 6) * screenscale / 2, math.floor((i - 1) / 2) * 78 + 38)
 					joinBox2.Paint = function(self, w, h)
-					surface.SetDrawColor(200, 225, 200, 255)
-					surface.DrawRect(0, 0, w, h)
-					surface.SetDrawColor(255, 255, 255, 255)
-					surface.DrawOutlinedRect(0, 0, w, h, 2)
-				end
+						surface.SetDrawColor(200, 225, 200, 255)
+						surface.DrawRect(0, 0, w, h)
+						surface.SetDrawColor(255, 255, 255, 255)
+						surface.DrawOutlinedRect(0, 0, w, h, 2)
+					end
 							
 				-- local joinButton2 = vgui.Create("DButton", joinBox2)
 				-- joinButton2:SetText("Join")

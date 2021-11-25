@@ -38,6 +38,8 @@ function GM:PlayerInitialSpawn(ply)
 			net.WriteBool(false)
 		net.Broadcast()
 	end
+	
+	DemoteTeamLeader(ply)
 end
 
 function GM:PlayerSpawn( ply )
@@ -398,7 +400,7 @@ function GM:CreateTeam(pl, cmd, args)
 	
 	team.SetUp(teamnumber, teamname, teamcolor, teamisjoinable)
 	
-	if teamowner:Team() ~= teamnumber then return end
+	if teamowner:Team() == teamnumber then return end
 	teamowner:SetTeam(teamnumber)
 	MakeTeamLeader(pl)
 	
