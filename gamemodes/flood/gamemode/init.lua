@@ -48,7 +48,6 @@ CreateConVar("flood_max_admin_props", 40, FCVAR_NOTIFY, "How many props an admin
 
 function GM:Initialize()
 	self.ShouldHaltGamemode = false
-	self:InitializeRoundController()
 
 	-- Dont allow the players to noclip
 	RunConsoleCommand("sbox_noclip", "0")
@@ -72,6 +71,8 @@ end
 
 function GM:InitPostEntity()
 	self:CheckForWaterControllers()
+	self:InitializeRoundController() -- this is put here so mappers can override our timers with their own maps.
+
 	for k,v in pairs(ents.GetAll()) do 
 		if v:GetClass() == "trigger_hurt" then 
 			v:Remove() 
