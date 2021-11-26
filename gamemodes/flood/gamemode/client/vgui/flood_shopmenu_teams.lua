@@ -332,7 +332,7 @@ function MakepTeamMenu()
 					name2:SetPos((infoFrame2:GetWide() - name2:GetWide()) / 2, 12)
 							
 					local level2 = vgui.Create("DLabel", infoFrame2)
-					if not LocalPlayer():IsBot() then level2:SetText("Level " .. CalculateLevel(players[i])) end
+					level2:SetText("Level " .. (CalculateLevel(players[i]) or 0))
 					level2:SetFont("OtherInfoFont")
 					level2:SizeToContents()
 					level2:SetTextColor(Color(0, 0, 0, 255))
