@@ -101,31 +101,33 @@ function GM:CleanupMap()
 end
 
 function GM:EntityTakeDamage(ent, dmginfo)
-	local attacker = dmginfo:GetAttacker()
-	local inflictor = dmginfo:GetInflictor()
-	local baseDamage = dmginfo:GetDamage()
-	local teamDamageScale = TeamDamageScaling(attacker)
-	local health = ent:GetPropHealth()
-	local healthMax = ent:GetPropMaxHealth()
-	local primaryElement = ent.PrimaryElement
-	local secondaryElement = ent.SecondaryElement
-	local weaponElement = inflictor.Element
-	local elementalDamageScale = 1
-	
-	--Elemental scaling for bullet damage based on prop primaryElement
-	if not primaryElement == "Generic" then
-		elementalDamageScale = ElementalDamageScaling(primaryElement, weaponElement)
-	end
-	
-		local modDamage = baseDamage * elementalDamageScale * teamDamageScale
-	
-	--Route damage to custom prop health.
-	if ent.Prop then
-		ent:SetPropHealth(math.max(health - modDamage, 0))
-		if weaponElement == "Curse" then -- add here for secondary prop elements that resist or remove curse.
-			ent:SetPropMaxHealth(math.max(healthMax - modDamage * 0.6, 0))
-		else
-			ent:SetPropMaxHealth(math.max(healthMax - modDamage * 0.3, 0))
+	if ent:GetClass() == "prop_base" then
+		local attacker = dmginfo:GetAttacker()
+		local inflictor = dmginfo:GetInflictor()
+		local baseDamage = dmginfo:GetDamage()
+		local teamDamageScale = TeamDamageScaling(attacker)
+		local health = ent:GetPropHealth()
+		local healthMax = ent:GetPropMaxHealth()
+		local primaryElement = ent.PrimaryElement
+		local secondaryElement = ent.SecondaryElement
+		local weaponElement = inflictor.Element
+		local elementalDamageScale = 1
+		
+		--Elemental scaling for bullet damage based on prop primaryElement
+		if not primaryElement == "Generic" then
+			elementalDamageScale = ElementalDamageScaling(primaryElement, weaponElement)
+		end
+		
+			local modDamage = baseDamage * elementalDamageScale * teamDamageScale
+		
+		--Route damage to custom prop health.
+		if ent.Prop then
+			ent:SetPropHealth(math.max(health - modDamage, 0))
+			if weaponElement == "Curse" then -- add here for secondary prop elements that resist or remove curse.
+				ent:SetPropMaxHealth(math.max(healthMax - modDamage * 0.6, 0))
+			else
+				ent:SetPropMaxHealth(math.max(healthMax - modDamage * 0.3, 0))
+			end
 		end
 	end
 end
@@ -167,10 +169,12 @@ function ElementalDamageScaling(primaryElement, weaponElement)
 end
 
 function TeamDamageScaling(attacker)
-	local team = attacker:Team()
-	if team > 2 and not team == 1001 and not team) == 1002 then
-		local teamPlayers = team:NumPlayers()
-		return (1 + ((teamPlayers - 1) * 0.1)) / teamPlayers
+	if attacker:IsPlayer() and attacker:IsValid() then
+		local plyteam = attacker:Team()
+		if plyteam > 2 and plyteam ~= 1001 and plyteam ~= 1002 then
+			local teamPlayers = team.NumPlayers(plyteam)
+			return (1 + ((teamPlayers - 1) * 0.1)) / teamPlayers
+		end
 	end
 end
 
