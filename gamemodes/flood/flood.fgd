@@ -34,6 +34,9 @@
 	input enable(void)   : "Enable the entity."
 	input disable(void)  : "Disable the entity."
 	input seton(integer) : "Enable or Disable the entity."
+
+	// Outputs
+	output OnTouched(void)  : "Flood: Set this with func_teamblocker - this will toggle the teamblocker entity."
 ]
 
 @SolidClass base(Targetname) = func_buildblocker : "Flood: Players will not be able to build inside this brush."
@@ -72,6 +75,7 @@
 [
 	// Inputs
 	input setbuildtime(float)  : "The gamemodes build time will be set to this. (in seconds)"
+	input setfloodtime(float)  : "The gamemodes build time will be set to this. (in seconds)"
     input setfighttime(float)  : "The gamemodes fight time will be set to this. (in seconds)"
     input setresettime(float)  : "The gamemodes reset time will be set to this. (in seconds)" 
 ]
