@@ -101,34 +101,75 @@ end
 
 function GM:EntityTakeDamage(ent, dmginfo)
 	local attacker = dmginfo:GetAttacker()
-	if GAMEMODE:GetGameState() ~= 2 and GAMEMODE:GetGameState() ~= 3 then
-		return false
-	else
-		if not ent:IsPlayer() then
-			if attacker:IsPlayer() then
-				if attacker:GetActiveWeapon() ~= NULL then
-					if attacker:GetActiveWeapon():GetClass() == "weapon_pistol" then
-						ent:SetPropHealth(ent:GetPropHealth() - 1)
-					else
-						for _, Weapon in pairs(Weapons) do
-							if attacker:GetActiveWeapon():GetClass() == Weapon.Class then
-								ent:SetPropHealth(ent:GetPropHealth() - tonumber(Weapon.Damage))
-							end
-						end
-					end
-				end
-			else
-				if attacker:GetClass() == "entityflame" then
-					ent:SetPropHealth(ent:GetPropHealth() - 0.5)
-				else
-					ent:SetPropHealth(ent:GetPropHealth() - 1)
-				end
-			end
-			
-			if ent:GetPropHealth() <= 0 and IsValid(ent) then
-				ent:Remove()
-			end
+	local inflictor = dmginfo:GetInflictor()
+	local baseDamage = dmginfo:GetDamage()
+	local teamDamageScale = TeamDamageScaling(attacker)
+	local health = ent:GetPropHealth()
+	local healthMax = ent:GetPropMaxHealth()
+	local primaryElement = ent.PrimaryElement
+	local secondaryElement = ent.SecondaryElement
+	local weaponElement = inflictor.Element
+	local elementalDamageScale = 1
+	
+	--Elemental scaling for bullet damage based on prop primaryElement
+	if not primaryElement == "Generic" then
+		elementalDamageScale = ElementalDamageScaling(primaryElement, weaponElement)
+	end
+	
+		local modDamage = baseDamage * elementalDamageScale * teamDamageScale
+	
+	--Route damage to custom prop health.
+	if ent.Prop then
+		ent:SetPropHealth(math.max(health - modDamage, 0))
+		if weaponElement == "Curse" then -- add here for secondary prop elements that resist or remove curse.
+			ent:SetPropMaxHealth(math.max(healthMax - modDamage * 0.6, 0))
+		else
+			ent:SetPropMaxHealth(math.max(healthMax - modDamage * 0.3, 0))
 		end
+	end
+end
+
+-- Primary Prop Elements, half effect on bullets
+-- These would be implicit to props and all props would be assigned something.
+-- Metal: Fire -50% effect, Acid +100% effect
+-- Wood: Fire +50% effect
+-- Rubber: Electric -50% effect
+-- Plastic: Acid -50% effect
+-- Stone: Ice -50% effect, Curse +50% effect
+
+function ElementalDamageScaling(primaryElement, weaponElement)
+	if primaryElement == "Metal" then
+		if weaponElement == "Fire" then
+			return 0.75
+		elseif weaponElement == "Acid" then
+			return 1.5
+		end
+	elseif primaryElement == "Wood" then
+		if weaponElement == "Fire" then
+			return 1.5
+		end
+	elseif primaryElement == "Rubber" then
+		if weaponElement == "Electric" then
+			return 0.75
+		end
+	elseif primaryElement == "Plastic" then
+		if weaponElement == "Acid" then
+			return 0.75
+		end
+	elseif primaryElement == "Stone" then
+		if weaponElement == "Ice" then
+			return 0.75
+		end
+	else
+		return 1
+	end
+end
+
+function TeamDamageScaling(attacker)
+	local team = attacker:Team()
+	if team > 2 and not team == 1001 and not team) == 1002 then
+		local teamPlayers = team:NumPlayers()
+		return (1 + ((teamPlayers - 1) * 0.1)) / teamPlayers
 	end
 end
 

@@ -432,7 +432,7 @@ concommand.Add("PromoteTeamLeader", function(pl, cmd, args) hook.Call("PromoteTe
 
 --Used only for the teams menu.
 function GM:LeaveTeam(pl, cmd, args)
-	local pl:SetTeam(2)
+	pl:SetTeam(2)
 end
 concommand.Add("LeaveTeam", function(pl, cmd, args) hook.Call("LeaveTeam", GAMEMODE, pl, cmd, args) end)
 

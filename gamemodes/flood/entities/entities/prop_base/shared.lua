@@ -11,6 +11,7 @@ ENT.Buoyancy = nil
 ENT.Luck = nil
 ENT.PrimaryElement = nil
 ENT.SecondaryElement = nil
+ENT.Prop = true
 
 --Owner of the prop.
 function ENT:GetPropOwner()
