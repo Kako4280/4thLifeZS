@@ -42,6 +42,10 @@ function ENT:SetLuck(num)
 	self:SetDTFloat(5, math.Clamp(num, 0, 1))
 end
 
+function ENT:SetPropCost(num)
+	self:SetDTFloat(6, math.max(num, 0))
+end
+
 --Standard type of prop: Generic(Typeless), Metal, Wood, Plastic, Rubber, or Stone.
 function ENT:SetPrimaryElement(str)
 	self:SetDTString(0, str)

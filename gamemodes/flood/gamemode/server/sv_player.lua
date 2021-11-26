@@ -304,6 +304,8 @@ function GM:PurchaseProp(ply, cmd, args)
 					ent:SetPropHealth(math.floor(Prop.Health))
 					ent:SetPropMaxHealth(math.floor(Prop.Health))
 					ent:SetPropName(Prop.Description)
+					ent:SetPropOwner(ply)
+					ent:SetPropCost(Prop.Price)
 
 					ct:AddText("[Flood] ", Color(132, 199, 29, 255))
 					ct:AddText("You have purchased a(n) "..Prop.Description..".")

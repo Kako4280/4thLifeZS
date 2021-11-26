@@ -53,6 +53,10 @@ function ENT:GetLuck(num)
 	return self:GetDTFloat(5)
 end
 
+function ENT:GetPropCost(num)
+	return self:GetDTFloat(6)
+end
+
 --Standard type of prop: Generic(Typeless), Metal, Wood, Plastic, Rubber, or Stone.
 function ENT:GetPrimaryElement()
 	return self:GetDTString(0)
