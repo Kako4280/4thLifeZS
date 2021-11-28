@@ -68,7 +68,7 @@ function ENT:StartTouch(ent)
 			ct:Send(ent)
 			self.IsClaimed = true
 
-			self:SetMaterial("dev/dev_measuregeneric01b")
+			--self:SetMaterial("dev/dev_measuregeneric01b")
 			--self:SetMaterial("effects/combine_binocoverlay")
 
 			if self.Claimer == nil then -- prevent this from being overriden (???? idk how it was getting overriden before)
