@@ -119,6 +119,8 @@ function GM:BuildPhase()
 		for _, v in pairs(player.GetAll()) do
 			if IsValid(v) then
 				v:SetCanRespawn(false)
+
+				v.ClaimedARoom = false -- for func_teamblocker
 			end
 		end
 
@@ -128,6 +130,13 @@ function GM:BuildPhase()
 			v:RemoveAllAmmo()
 			v:SetHealth(100)
 			v:SetArmor(0)
+		end
+	
+		for k, v in pairs(ents.FindByClass("func_teamblocker")) do
+			v.Claimer = nil
+			v.ClaimerTeamMembers = nil
+			v.IsClaimed = false
+			v.On = false
 		end
 
 		-- Remove teh shitty windows that are above players.
@@ -199,6 +208,10 @@ function GM:ResetPhase()
 
 		-- Give people their money
 		self:RefundAllProps()
+
+		for k, v in pairs(ents.FindByClass("func_teamblocker")) do -- prevent people from claiming rooms again mid round
+			v.On = true
+		end
 
 		-- Game is over, lets tidy up the players
 		for _, v in pairs(player.GetAll()) do
