@@ -21,24 +21,6 @@
 	input seton(integer) : "Enable or Disable the entity."
 ]
 
-@SolidClass base(Targetname) = trigger_teamblockertrigger : "Flood: Used to activate the team blocker brush."
-[
-	// Keys
-	enabled(choices) : "Enabled" : 0 : "Enable the brush entity." =
-	[
-		1 : "Yes"
-		0 : "No"
-	]
-
-	// Inputs
-	input enable(void)   : "Enable the entity."
-	input disable(void)  : "Disable the entity."
-	input seton(integer) : "Enable or Disable the entity."
-
-	// Outputs
-	output OnTouched(void)  : "Flood: Set this with func_teamblocker - this will toggle the teamblocker entity."
-]
-
 @SolidClass base(Targetname) = func_buildblocker : "Flood: Players will not be able to build inside this brush."
 [
 	// Keys
