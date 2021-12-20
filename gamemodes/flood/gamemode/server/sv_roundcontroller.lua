@@ -139,6 +139,10 @@ function GM:BuildPhase()
 			v.On = false
 		end
 
+		for k, v in pairs(ents.FindByClass("trigger_teleport")) do
+			v:Fire("disable")
+		end
+
 		-- Remove teh shitty windows that are above players.
 		for _, v in pairs(ents.FindByClass("func_breakable")) do
 			v:Fire("Break", "", 0)
@@ -209,10 +213,6 @@ function GM:ResetPhase()
 		-- Give people their money
 		self:RefundAllProps()
 
-		for k, v in pairs(ents.FindByClass("func_teamblocker")) do -- prevent people from claiming rooms again mid round
-			v.On = true
-		end
-
 		-- Game is over, lets tidy up the players
 		for _, v in pairs(player.GetAll()) do
 			if IsValid(v) then
@@ -235,9 +235,16 @@ function GM:ResetPhase()
 				end)
 			end
 		end
+	
+		for k, v in pairs(ents.FindByClass("func_teamblocker")) do -- prevent people from claiming rooms again mid round
+			v.On = true
+		end
 
-		-- Reset all the round timers
-		self:ResetAllTimers()
+		for k, v in pairs(ents.FindByClass("trigger_teleport")) do
+			v:Fire("enable")
+		end
+
+		self:ResetAllTimers() -- Reset all the round timers
 	else  
 		Flood_resetTime = Flood_resetTime - 1
 	end	
