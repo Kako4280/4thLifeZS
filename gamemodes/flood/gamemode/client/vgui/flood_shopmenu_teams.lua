@@ -15,7 +15,7 @@ surface.CreateFont( "OtherInfoFont", {
 })
 
 local PANEL = {}
-function MakepTeamMenu()
+function MakepTeamMenu(sheet)
 	local screenscale = BetterScreenScale()
 
 	local TeamName = "nil"
@@ -371,5 +371,9 @@ function MakepTeamMenu()
 				end
 			end
 		end
+	end
+	
+	if sheet then
+		createteamsheet:SetActiveTab(createteamsheet:GetItems()[sheet].Tab)
 	end
 end

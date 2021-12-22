@@ -63,7 +63,7 @@ function RefreshTeamMenu()
 	if waiting then
 		if LocalPlayer():Team() == index then
 			waiting = false
-			MakepTeamMenu()
+			MakepTeamMenu(3)
 		end
 	end
 end
