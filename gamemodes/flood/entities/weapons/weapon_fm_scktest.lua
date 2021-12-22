@@ -59,11 +59,11 @@ SWEP.ViewModel = "models/weapons/c_physcannon.mdl"
 SWEP.WorldModel = "models/weapons/w_physics.mdl"
 SWEP.UseHands = true
 
-SWEP.Primary.Sound = Sound("Weapon_AR2.Single")
+SWEP.Primary.FireSound = Sound("Weapon_MP5Navy.Single")
 SWEP.Primary.Damage = 29
 SWEP.Primary.NumShots = 1
-SWEP.Primary.Delay = 0.095
+SWEP.Primary.Delay = 1
 
 SWEP.Primary.ClipSize = 320
-SWEP.Primary.Automatic = true
+SWEP.Primary.Automatic = false
 SWEP.Primary.Ammo = "ar2"

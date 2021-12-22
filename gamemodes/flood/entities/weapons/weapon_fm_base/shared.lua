@@ -27,6 +27,7 @@ SWEP.Secondary.Pierce = 1
 SWEP.Secondary.NumShot = 1
 
 SWEP.HoldType = "pistol"
+SWEP.Primary.FireSound = "Weapon_AR2.Single"
 
 SWEP.Primary.Fire = false
 SWEP.Secondary.Fire = false
@@ -59,7 +60,7 @@ end
 
 function SWEP:PrimaryAttack()
 	if ( !self:CanPrimaryAttack() ) then return end
-	self.Weapon:EmitSound("Weapon_AR2.Single")
+	self.Weapon:EmitSound(self.Primary.FireSound)
 	self:ShootBullet( 150, 1, 0.01 )
 	self:TakePrimaryAmmo( 1 )
 	self.Owner:ViewPunch( Angle( -1, 0, 0 ) )
