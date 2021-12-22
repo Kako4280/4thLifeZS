@@ -96,4 +96,22 @@ function ENT:StartTouch(ent)
 			end
 		end
     end
+	--[[if self.On and ent:GetClass() == "prop_base" then
+		local propowner = ent:GetPropOwner()
+		if self.ClaimerTeamMembers ~= nil then
+			if propowner == self.ClaimerTeamMembers[1] or propowner == self.ClaimerTeamMembers[2] or propowner == self.ClaimerTeamMembers[3] or propowner == self.ClaimerTeamMembers[4] then
+			   return
+			end
+		else 
+			if propowner == self.Claimer then
+			   return
+		    end
+		end
+		local ct = ChatText()
+		ct:AddText("You cannot build here!", Color(158, 49, 49, 255))
+		ct:Send(propowner)
+		
+		propowner:AddCash(ent:GetPropCost())
+		ent:Remove()
+	end]]
 end

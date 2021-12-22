@@ -468,7 +468,7 @@ concommand.Add("KickFromTeam", function(pl, cmd, args) hook.Call("KickFromTeam",
 
 hook.Add("OnPhysgunFreeze", "nocollidepropsthing", function(weapon, phys, ent, ply) -- nocollides a prop if the player is holding shift.
 	if ply:KeyDown(IN_SPEED) and ent:GetClass() == "prop_base" then
-		ent:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
+		ent:SetCollisionGroup(COLLISION_GROUP_DEBRIS_TRIGGER)
 	elseif !ply:KeyDown(IN_SPEED) and ent:GetClass() == "prop_base" then
 		ent:SetCollisionGroup(COLLISION_GROUP_NONE)
 	end
