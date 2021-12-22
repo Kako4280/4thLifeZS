@@ -48,9 +48,23 @@ function GM:PostDrawViewModel(vm, pl, wep)
 	end
 end
 
+local waiting = false
+local index
+
 net.Receive("CreateTeam", function()
-	team.SetUp(net.ReadInt(32), net.ReadString(), net.ReadColor(), net.ReadBool())
+	index = net.ReadInt(32)
+	team.SetUp(index, net.ReadString(), net.ReadColor(), net.ReadBool())
 	if net.ReadBool() then
-		timer.Simple(math.Round((LocalPlayer():Ping() / 1000 + 0.03), 2), function() MakepTeamMenu() end)
+		waiting = true
 	end
 end)
+
+function RefreshTeamMenu()
+	if waiting then
+		if LocalPlayer():Team() == index then
+			waiting = false
+			MakepTeamMenu()
+		end
+	end
+end
+hook.Add("Think", "RefreshTeamMenu", RefreshTeamMenu)

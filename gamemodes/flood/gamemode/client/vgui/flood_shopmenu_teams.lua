@@ -18,7 +18,7 @@ local PANEL = {}
 function MakepTeamMenu()
 	local screenscale = BetterScreenScale()
 
-	local TeamName = "Default"
+	local TeamName = "nil"
 	local TeamColor = Color(255, 0, 0, 255)
 	local TeamIsJoinable = true
 
@@ -99,7 +99,9 @@ function MakepTeamMenu()
 	createteambutton:SetSize(600 * screenscale, 25 * screenscale)
 	createteambutton:CenterVertical(0.85)
 	createteambutton.DoClick = function()
-		PlayerCreateTeam(TeamName, TeamColor, LocalPlayer(), TeamIsJoinable)
+		if string.len(TeamName) < 1 then
+			TeamName = "nil"
+		end
 		RunConsoleCommand("CreateTeam", TeamName, TeamColor.r, TeamColor.g, TeamColor.b, tostring(TeamIsJoinable))
 		createteamdframe:Close() -- this is used to update the join team panel without calling this function repeatedly
 	end
