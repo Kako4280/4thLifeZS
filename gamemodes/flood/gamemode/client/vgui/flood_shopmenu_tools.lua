@@ -29,11 +29,14 @@ function PANEL:Init()
 	if self.GmodTools then
 		for k, v in pairs(self.GmodTools[1].Items) do
 			if type(v) == "table" then
-				local Name = v.ItemName
-				local Label = v.Text
+				local CategoryName = v.ItemName
+				local CategoryLabel = v.Text
 				v.ItemName = nil
 				v.Text = nil
-				self:AddCategory(Name, Label, v ) 
+
+				if CategoryName ~= "Poser" then
+				   self:AddCategory(CategoryName, CategoryLabel, v )
+				end
 			end
 		end
 	else
@@ -48,13 +51,31 @@ function PANEL:AddCategory(Name, Label, tItems)
 		draw.RoundedBoxEx(4, 0, 0, w, self.Header:GetTall(), Color(24, 24, 24, 255), true, true, false, false)
 	end
 	Category:SetCookieName("ToolMenu." .. tostring(Name))
+
+	-- add tools here to blacklist them from showing up in the menu.
+	local toolfiltertable = {
+		"muscle",
+		"wheel",
+		"nocollide",
+		"hoverball",
+		"duplicator",
+		"balloon",
+		"inflator",
+		"eyeposer",
+		"faceposer",
+		"finger",
+		"physprop",
+		"lamp",
+		"dynamite"
+	}
+
 	for k, v in pairs(tItems) do
 		for _, tools in pairs(self.ToolTable) do
-			if tostring(v.ItemName) == tostring(tools[1]) then
+			if tostring(v.ItemName) == tostring(tools[1]) and table.HasValue(toolfiltertable, tostring(tools[1])) ~= true then
 				if tobool(tools[3]) == true then
 					local item = Category:Add(v.Text)
 					item.DoClick = function(button)
-						self:CreateCP(button)
+						timer.Simple(0.15, function() self:CreateCP(button) end)
 						LocalPlayer():ConCommand(v.Command)
 					end
 
