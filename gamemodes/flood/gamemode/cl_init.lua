@@ -33,6 +33,21 @@ function GM:CanProperty(ply, property, ent)
 	return false
 end
 
+function GM:PostDrawViewModel(vm, pl, wep)
+	if wep and wep:IsValid() then
+		if wep.UseHands or not wep:IsScripted() then
+			local hands = pl:GetHands()
+			if hands and hands:IsValid() then
+				hands:DrawModel()
+			end
+		end
+
+		if wep.PostDrawViewModel then
+			wep:PostDrawViewModel(vm)
+		end
+	end
+end
+
 net.Receive("CreateTeam", function()
 	team.SetUp(net.ReadInt(32), net.ReadString(), net.ReadColor(), net.ReadBool())
 	if net.ReadBool() then

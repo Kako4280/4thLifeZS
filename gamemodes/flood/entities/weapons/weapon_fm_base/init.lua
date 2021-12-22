@@ -1,6 +1,5 @@
-AddCSLuaFile("cl_init.lua")
-AddCSLuaFile("shared.lua")
-include("shared.lua")
+INC_SERVER()
+AddCSLuaFile("animations.lua")
 
 function SWEP:ApplyFire()
 

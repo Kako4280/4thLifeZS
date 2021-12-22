@@ -50,8 +50,13 @@ function GM:PlayerSpawn( ply )
 
 	--our F1 menu allows changing of playermodels, so we're going to do it this way now.
 	local desiredname = ply:GetInfo("flood_playermodel")
+	local desiredskin = ply:GetInfo("flood_playerskin")
 	local modelname = player_manager.TranslatePlayerModel(desiredname)
 	ply:SetModel(modelname)
+
+	if tonumber(desiredskin) then
+		ply:SetSkin(desiredskin)
+	end
 
     -- Get playermodel color and apply it
 	local pcol = Vector(ply:GetInfo("cl_playercolor"))
@@ -66,6 +71,20 @@ function GM:PlayerSpawn( ply )
 	wcol.y = math.Clamp(wcol.y, 0, 2.5)
 	wcol.z = math.Clamp(wcol.z, 0, 2.5)
 	ply:SetWeaponColor(wcol)
+
+	local oldhands = ply:GetHands()
+	if IsValid(oldhands) then
+		oldhands:Remove()
+	end
+
+	local hands = ents.Create("fm_hands")
+	if hands:IsValid() then
+		hands:DoSetup(ply)
+		hands:Spawn()
+		if tonumber(desiredskin) and tonumber(desiredskin) <= (hands:SkinCount() - 1) then
+			hands:SetSkin(desiredskin)
+		end
+	end
 end
 
 function GM:ForcePlayerSpawn()

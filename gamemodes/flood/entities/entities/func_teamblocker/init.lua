@@ -33,7 +33,7 @@ function ENT:StartTouch(ent)
     if GAMEMODE:GetGameState() <= 1 then
         if self.On and ent:IsPlayer() and self.IsClaimed == false then
 			local ct = ChatText()
-	        local plyteam = ent:Team()
+			local plyteam = ent:Team()
 
 			if plyteam > 2 and plyteam ~= 1001 and plyteam ~= 1002 then -- check if the player has already claimed a room first.
 				for k, v in pairs(team.GetPlayers(plyteam)) do
@@ -43,6 +43,8 @@ function ENT:StartTouch(ent)
 			
 						ent:Spawn()
 						return
+					else
+						v.ClaimedARoom = true
 					end
 				end
 			else
@@ -52,24 +54,14 @@ function ENT:StartTouch(ent)
 	
 					ent:Spawn()
 					return
+				else
+					ent.ClaimedARoom = true
 				end
 			end
 
-			if plyteam > 2 and plyteam ~= 1001 and plyteam ~= 1002 then -- give everyone on the team claimedaroom = true
-				for k, v in pairs(team.GetPlayers(plyteam)) do
-					v.ClaimedARoom = true
-				end
-			else
-				ent.ClaimedARoom = true
-			end
-
-			ent.ClaimedARoom = true
 			ct:AddText("You have claimed this room.", Color(49, 158, 49))
 			ct:Send(ent)
 			self.IsClaimed = true
-
-			--self:SetMaterial("dev/dev_measuregeneric01b")
-			--self:SetMaterial("effects/combine_binocoverlay")
 
 			if self.Claimer == nil then -- prevent this from being overriden (???? idk how it was getting overriden before)
 				self.Claimer = ent
@@ -81,7 +73,7 @@ function ENT:StartTouch(ent)
         end
 		if self.On and ent:IsPlayer() and self.IsClaimed == true then
 			local ct = ChatText()
-	        local plyteam = ent:Team()
+			local plyteam = ent:Team()
 
 			if self.ClaimerTeamMembers ~= nil then
 				if ent == self.ClaimerTeamMembers[1] or ent == self.ClaimerTeamMembers[2] or ent == self.ClaimerTeamMembers[3] or ent == self.ClaimerTeamMembers[4] then
