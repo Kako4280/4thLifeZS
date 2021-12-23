@@ -122,7 +122,14 @@ function GM:EntityTakeDamage(ent, dmginfo)
 		
 		--Route damage to custom prop health.
 		if ent.Prop then
-			ent:SetPropHealth(math.max(health - modDamage, 0))
+			print(ent.Frozen)
+			print(ent.FrozenDuration - CurTime())
+			if ent.Frozen == true and ent.FrozenDuration - CurTime() >= 0.1 then
+				print("e")
+				ent:SetPropHealth(math.max(health - modDamage * 5, 0))
+			else
+			    ent:SetPropHealth(math.max(health - modDamage, 0))
+			end
 			if weaponElement == "Curse" then -- add here for secondary prop elements that resist or remove curse.
 				ent:SetPropMaxHealth(math.max(healthMax - modDamage * 0.6, 0))
 			else
@@ -174,6 +181,8 @@ function TeamDamageScaling(attacker)
 		if plyteam > 2 and plyteam ~= 1001 and plyteam ~= 1002 then
 			local teamPlayers = team.NumPlayers(plyteam)
 			return (1 + ((teamPlayers - 1) * 0.1)) / teamPlayers
+		else
+			return 1
 		end
 	end
 end

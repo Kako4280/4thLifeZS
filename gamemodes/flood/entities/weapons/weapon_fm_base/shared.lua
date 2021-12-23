@@ -44,6 +44,9 @@ SWEP.Secondary.Acid = false
 SWEP.Primary.Curse = false
 SWEP.Secondary.Curse = false
 
+SWEP.Primary.Pierce = false
+SWEP.Secondary.Pierce = false
+
 SWEP.ElementColorFire = Color(245, 25, 0, 255)
 SWEP.ElementColorElectric = Color(200, 225, 0, 255)
 SWEP.ElementColorIce = Color(0, 220, 255, 255)
@@ -61,7 +64,7 @@ end
 function SWEP:PrimaryAttack()
 	if ( !self:CanPrimaryAttack() ) then return end
 	self.Weapon:EmitSound(self.Primary.FireSound)
-	self:ShootBullet( 150, 1, 0.01 )
+	self:ShootBullets()
 	self:TakePrimaryAmmo( 1 )
 	self.Owner:ViewPunch( Angle( -1, 0, 0 ) )
 end
@@ -72,11 +75,23 @@ end
 function SWEP:Reload()
 end
 
+function SWEP:ShootBullets() -- lag compensation + other shit later on, reminder that the 3rd value in firebulletslua is for the cone
+	local owner = self:GetOwner()
+	
+	owner:LagCompensation(true)
+	owner:FireBulletsLua(owner:GetShootPos(), owner:GetAimVector(), 1.5, self.Primary.NumShots, self.Primary.Damage, nil, self.Primary.KnockbackScale, self.TracerName, self.BulletCallback, self.Primary.HullSize, nil, self.Primary.MaxDistance, nil, self)
+	owner:LagCompensation(false)
+end
+
 --Firemode will usually be primary, but this is needed to know if it was a secondary for weapons that fire different elements.
 function SWEP.BulletCallback(attacker, tr, dmginfo, inf, firemode)
 
 	if SERVER then
-		if firemode == "Primary" then
+
+		print(inf)
+
+		local hitent = tr.Entity
+		--if firemode == "Primary" then
 			if inf.Primary.Fire then
 				inf:ApplyFire()
 			end
@@ -86,7 +101,7 @@ function SWEP.BulletCallback(attacker, tr, dmginfo, inf, firemode)
 			end
 
 			if inf.Primary.Ice then
-				inf:ApplyIce()
+				inf:ApplyIce(hitent)
 			end
 			
 			if inf.Primary.Acid then
@@ -100,7 +115,8 @@ function SWEP.BulletCallback(attacker, tr, dmginfo, inf, firemode)
 			if inf.Primary.Pierce then
 				inf:ApplyPierce()
 			end
-		elseif firemode == "Secondary" then
+
+		if firemode == "Secondary" then
 			if inf.Seconday.Fire then
 				inf:ApplyFire()
 			end

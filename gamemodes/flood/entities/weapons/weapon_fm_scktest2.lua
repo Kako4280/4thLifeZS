@@ -64,8 +64,7 @@ SWEP.Primary.Damage = 29
 SWEP.Primary.NumShots = 1
 SWEP.Primary.Delay = 1
 
-SWEP.Primary.Ice = true
-SWEP.TracerName = "tracer_icebullet"
+SWEP.Primary.Ice = false
 
 SWEP.Primary.ClipSize = 320
 SWEP.Primary.Automatic = false
