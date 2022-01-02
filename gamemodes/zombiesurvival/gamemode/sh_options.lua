@@ -250,6 +250,7 @@ GM:AddStartingItem("vitpackagei",		ITEMCAT_TRINKETS,		15,				"trinket_vitpackage
 GM:AddStartingItem("bloodpack",			ITEMCAT_TRINKETS,		15,				"trinket_bloodpack").SubCategory =				ITEMSUBCAT_TRINKETS_DEFENSIVE
 GM:AddStartingItem("pulseampi",			ITEMCAT_TRINKETS,		15,				"trinket_pulseampi").SubCategory =				ITEMSUBCAT_TRINKETS_OFFENSIVE
 GM:AddStartingItem("hemoadrenali",		ITEMCAT_TRINKETS,		15,				"trinket_hemoadrenali").SubCategory =			ITEMSUBCAT_TRINKETS_MELEE
+GM:AddStartingItem("portablehole",		ITEMCAT_TRINKETS,		15,				"trinket_portablehole").SubCategory =			ITEMSUBCAT_TRINKETS_PERFORMANCE
 GM:AddStartingItem("sharpstone",		ITEMCAT_TRINKETS,		20,				"trinket_sharpstone").SubCategory =				ITEMSUBCAT_TRINKETS_MELEE
 GM:AddStartingItem("scanres1",			ITEMCAT_TRINKETS,		20,				"trinket_scanres1").SubCategory=				ITEMSUBCAT_TRINKETS_PERFORMANCE
 GM:AddStartingItem("vertinhib",			ITEMCAT_TRINKETS,		20,				"trinket_vertinhib").SubCategory=				ITEMSUBCAT_TRINKETS_PERFORMANCE
