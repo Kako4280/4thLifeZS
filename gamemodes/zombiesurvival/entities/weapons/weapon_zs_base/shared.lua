@@ -364,7 +364,7 @@ function SWEP:ShootBullets(dmg, numbul, cone)
 		POINTSMULTIPLIER = self.PointsMultiplier
 	end
 
-	local dmgM = dmg * (owner.BulletDamageMultiplier or 1)
+	local dmgM = dmg * (owner.BulletDamageMultiplier or 1) * (owner.TachyonicBulletDamage[(self.Tier or 1)] or 1)
 	
 	owner:LagCompensation(true)
 	owner:FireBulletsLua(owner:GetShootPos(), owner:GetAimVector(), cone, numbul, dmgM, nil, self.Primary.KnockbackScale, self.TracerName, self.BulletCallback, self.Primary.HullSize, nil, self.Primary.MaxDistance, nil, self)

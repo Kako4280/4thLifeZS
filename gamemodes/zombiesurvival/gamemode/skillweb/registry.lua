@@ -449,6 +449,8 @@ SKILLMOD_EXP_MUL = 128
 SKILLMOD_HEALTH_MUL = 129
 SKILLMOD_WELFARE_MUL = 130
 SKILLMOD_HEALTH_REGEN = 131
+SKILLMOD_TACHYONIC_MELEE_DAMAGE = 132
+SKILLMOD_TACHYONIC_GUN_DAMAGE = 133
 
 local GOOD = "^"..COLORID_GREEN
 local BAD = "^"..COLORID_RED
@@ -1256,6 +1258,26 @@ end)
 
 GM:SetSkillModifierFunction(SKILLMOD_HEALTH_REGEN, function(pl, amount)
 	pl.HealthRegen = math.Clamp(amount + 1.00, 0, 1000.0)
+end)
+
+GM:SetSkillModifierFunction(SKILLMOD_TACHYONIC_MELEE_DAMAGE, function(pl, amount)
+	pl.TachyonicRazorDamage = {
+		[1] = math.Clamp((amount * 0.75) + 1.00, 0, 1000.0),
+		[2] = math.Clamp((amount * 0.50) + 1.00, 0, 1000.0),
+		[3] = math.Clamp((amount * 0.35) + 1.00, 0, 1000.0),
+		[4] = math.Clamp((amount * 0.20) + 1.00, 0, 1000.0),
+		[5] = math.Clamp((amount * 0.10) + 1.00, 0, 1000.0),
+		[6] = math.Clamp((amount * 0.05) + 1.00, 0, 1000.0)}
+end)
+
+GM:SetSkillModifierFunction(SKILLMOD_TACHYONIC_GUN_DAMAGE, function(pl, amount)
+	pl.TachyonicBulletDamage = {
+		[1] = math.Clamp((amount * 0.75) + 1.00, 0, 1000.0),
+		[2] = math.Clamp((amount * 0.50) + 1.00, 0, 1000.0),
+		[3] = math.Clamp((amount * 0.35) + 1.00, 0, 1000.0),
+		[4] = math.Clamp((amount * 0.20) + 1.00, 0, 1000.0),
+		[5] = math.Clamp((amount * 0.10) + 1.00, 0, 1000.0),
+		[6] = math.Clamp((amount * 0.05) + 1.00, 0, 1000.0)}
 end)
 
 GM:SetSkillModifierFunction(SKILLMOD_BLOODARMOR_MUL, function(pl, amount)

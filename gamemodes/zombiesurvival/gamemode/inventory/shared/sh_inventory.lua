@@ -116,7 +116,7 @@ GM.Assemblies["trinket_phantom_iridium"]				= {"comp_iridium",			"trinket_phanto
 GM.Assemblies["comp_electrum"]							= {"comp_silver",			"comp_gold"}
 GM.Assemblies["trinket_heartsilver"]					= {"trinket_vitpackagei",			"comp_silver"}
 GM.Assemblies["trinket_heartgold"]						= {"trinket_vitpackageii",			"comp_gold"}
-GM.Assemblies["weapon_zs_medicalrifle_adv"]				= {"comp_sparking_lodestone",		"weapon_zs_medicrifle_q3", "weapon_zs_medicrifle_r3"}
+GM.Assemblies["weapon_zs_medicrifle_adv"]				= {"comp_sparking_lodestone",		"weapon_zs_medicrifle_q3", "weapon_zs_medicrifle_r3"}
 GM.Assemblies["weapon_zs_tempering_hammer"]				= {"comp_sparking_lodestone",		"weapon_zs_electrohammer_q3"}
 GM.Assemblies["trinket_regenimplant3"]					= {"trinket_regenimplant2",			"comp_gold"}
 
@@ -559,6 +559,29 @@ trinket = GM:AddTrinket("Welfare Pearl", "welfarepearl", false, nil, {
 	["black_core"] = { type = "Model", model = "models/dav0r/hoverball.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4, 2, 0), angle = Angle(0, 0, 0), size = Vector(0.2, 0.2, 0.2), color = Color(100, 100, 100, 80), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
 }, 3, "Free shit from Bernie Sanders.")
 GM:AddSkillModifier(trinket, SKILLMOD_WELFARE_MUL, -0.50)
+
+trinket = GM:AddTrinket("Tachyonic Bullet", "tachbullet", false, nil, {
+	["black_core_2"] = { type = "Model", model = "models/props_phx/construct/metal_wire1x1x1.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(1.1, 0, 0), angle = Angle(0, 0, 0), size = Vector(0.05, 0.05, 0.05), color = Color(0, 0, 0, 200), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} },
+	["black_core"] = { type = "Model", model = "models/dav0r/hoverball.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(-0.1, 0, 0), angle = Angle(0, 0, 0), size = Vector(0.1, 0.1, 0.1), color = Color(0, 255, 255, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
+}, 3, "X")
+GM:AddSkillModifier(trinket, SKILLMOD_TACHYONIC_GUN_DAMAGE, 1.00)
+
+trinket = GM:AddTrinket("Tachyonic Razor", "tachrazor", false, nil, {
+	["black_core_2"] = { type = "Model", model = "models/props_phx/construct/metal_wire1x1x1.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(1.1, 0, 0), angle = Angle(0, 0, 0), size = Vector(0.05, 0.05, 0.05), color = Color(0, 0, 0, 200), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} },
+	["black_core"] = { type = "Model", model = "models/dav0r/hoverball.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(-0.1, 0, 0), angle = Angle(0, 0, 0), size = Vector(0.1, 0.1, 0.1), color = Color(255, 0, 0, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
+}, 3, "X")
+GM:AddSkillModifier(trinket, SKILLMOD_TACHYONIC_MELEE_DAMAGE, 1.00)
+
+trinket = GM:AddTrinket("Stable Tachyon", "tachstable", false, nil, {
+	["black_core_2"] = { type = "Model", model = "models/props_phx/construct/metal_wire1x1x1.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(1.1, 0, 0), angle = Angle(0, 0, 0), size = Vector(0.05, 0.05, 0.05), color = Color(0, 0, 0, 200), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} },
+	["black_core"] = { type = "Model", model = "models/dav0r/hoverball.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(-0.1, 0, 0), angle = Angle(0, 0, 0), size = Vector(0.1, 0.1, 0.1), color = Color(0, 255, 0, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
+}, 3, "X")
+GM:AddSkillModifier(trinket, SKILLMOD_HEALTH_REGEN, 5.0)
+GM:AddSkillModifier(trinket, SKILLMOD_HEALTH_MUL, 0.20)
+GM:AddSkillModifier(trinket, SKILLMOD_HEALTH, 20)
+GM:AddSkillModifier(trinket, SKILLMOD_BARRICADE_PHASE_SPEED_MUL, 0.25)
+GM:AddSkillModifier(trinket, SKILLMOD_SPEED, 10)
+GM:AddSkillModifier(trinket, SKILLMOD_WELFARE_MUL, -0.15)
 
 trinket = GM:AddTrinket("White Opal", "opalwhite", false, nil, {
 	["black_core_2"] = { type = "Sprite", sprite = "effects/splashwake3", bone = "ValveBiped.Bip01_R_Hand", rel = "black_core", pos = Vector(0, 0.1, -0.201), size = { x = 7.697, y = 7.697 }, color = Color(255, 225, 160, 150), nocull = false, additive = true, vertexalpha = true, vertexcolor = true, ignorez = false},

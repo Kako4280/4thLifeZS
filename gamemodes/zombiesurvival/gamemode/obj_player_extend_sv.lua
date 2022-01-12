@@ -224,7 +224,7 @@ function meta:ProcessDamage(dmginfo)
 
 	if self:GetBloodArmor() > 0 then
 		local damage = dmginfo:GetDamage()
-		if damage > 0 then
+		if damage > 0 and not dmginfo.Virulence then
 			--if damage >= self:GetBloodArmor() and self:IsSkillActive(SKILL_BLOODLETTER) then
 			--	local bleed = self:GiveStatus("bleed")
 			--	if bleed and bleed:IsValid() then
@@ -266,6 +266,14 @@ function meta:ProcessDamage(dmginfo)
 
 		self.ShouldFlinch = true
 	end
+	
+	local NoVirulence = {}
+	local virulenceApplied = 0
+	-- if attacker:IsValid()
+		-- if dmginfo:GetDamage() > 1 and attacker:Team() == TEAM_UNDEAD and not table.HasValue(NoVirulence) then
+			-- self.Virulence = self.Virulence + (dmginfo:GetDamage() / 5)
+		-- end
+	-- end
 end
 
 GM.TrinketRecharges = {
@@ -946,7 +954,7 @@ function meta:Resupply(owner, obj)
 	end
 
 	if stowage == false then
-		self.NextResupplyUse = CurTime() + GAMEMODE.ResupplyBoxCooldown * (self.ResupplyDelayMul or 1)
+		self.NextResupplyUse = CurTime() + GAMEMODE.ResupplyBoxCooldown * (self.ResupplyDelayMul or 1) * (self.WelfareMul or 1)
 
 		net.Start("zs_nextresupplyuse")
 			net.WriteFloat(self.NextResupplyUse)

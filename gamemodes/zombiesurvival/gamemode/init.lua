@@ -1275,6 +1275,19 @@ function GM:Think()
 					pl.NextRegenerate = time + (15 / pl.HealthRegen)
 					pl:SetHealth(math.min(healmax, pl:Health() + 1))
 				end
+				
+				if time >= pl.NextVirulence and pl:Team() == TEAM_HUMAN then
+					--pl.NextVirulence = time + 5
+					print(tostring(pl.Virulence) .. "     " .. tostring(2250 / (14 + (pl.Virulence ^ 1.972))))
+					if pl.Virulence >= 1 then
+						pl.NextVirulence = time + (2250 / (14 + (pl.Virulence ^ 1.972)))
+					
+						local e = DamageInfo()
+						e:SetDamage(1)
+						e:SetAttacker(pl)
+						pl:TakeDamageInfo(e)
+					end
+				end
 
 				if pl:IsSkillActive(SKILL_BLOODARMOR) and pl.MaxBloodArmor > 0 and time >= pl.NextBloodArmorRegen and pl:GetBloodArmor() < pl.MaxBloodArmor then
 					pl.NextBloodArmorRegen = time + 2
@@ -2252,6 +2265,8 @@ function GM:PlayerInitialSpawnRound(pl)
 	pl.HealedThisRound = 0
 	pl.RepairedThisRound = 0
 	pl.NextRegenerate = 0
+	pl.NextVirulence = 15
+	pl.Virulence = 0
 	pl.NextBloodArmorRegen = 0
 	pl.NextRegenTrinket = 0
 	pl.LateBuyerMessage = nil
@@ -2745,8 +2760,10 @@ function GM:EntityTakeDamage(ent, dmginfo)
 	end
 	
 	local ZombieProjectiles = {"projectile_shaderock", "projectile_wraith", "projectile_shadeice"}
-	if table.HasValue(ZombieProjectiles, dmginfo:GetInflictor():GetClass()) and dmginfo:IsDamageType(DMG_CRUSH) then
-		dmginfo:SetDamage(0)
+	if dmginfo:GetInflictor():IsValid() then
+		if table.HasValue(ZombieProjectiles, dmginfo:GetInflictor():GetClass()) and dmginfo:IsDamageType(DMG_CRUSH) then
+			dmginfo:SetDamage(0)
+		end
 	end
 
 	-- Props about to be broken props take 3x damage from anything except zombies
@@ -2775,15 +2792,14 @@ function GM:EntityTakeDamage(ent, dmginfo)
 
 	if ent:IsValid() and ent:GetClass() == "prop_physics" then -- my solution to make metal junk pack props breakable for now, might find a better way later
 		if ent:GetMaxHealth() == 94821 then
-			if !ent:IsNailed() then -- oops .. check if the prop is not nailed.. otherwise nailed props can be destroyed by humans
-				local junkpackprophp = ent:Health()
-				junkpackprophp = junkpackprophp - dmginfo:GetDamage()
+			local junkpackprophp = ent:Health()
 
-				ent:SetHealth(junkpackprophp)
-	
-				ent.PropHealth = junkpackprophp
-				ent.TotalHealth = 350
-			end
+			junkpackprophp = junkpackprophp - dmginfo:GetDamage()
+
+			ent:SetHealth(junkpackprophp)
+
+			ent.PropHealth = junkpackprophp
+			ent.TotalHealth = 350
 		end
 	end
 	
@@ -2804,14 +2820,6 @@ function GM:EntityTakeDamage(ent, dmginfo)
 		elseif inflictor:GetClass() == "weapon_zs_electrohammer_q2" then
 			doordamage = 180
 		elseif inflictor:GetClass() == "weapon_zs_electrohammer_q3" then
-			doordamage = 200
-		elseif inflictor:GetClass() == "weapon_zs_tempering_hammer" then
-			doordamage = 200
-		elseif inflictor:GetClass() == "weapon_zs_tempering_hammer_q1" then
-			doordamage = 200
-		elseif inflictor:GetClass() == "weapon_zs_tempering_hammer_q2" then
-			doordamage = 200
-		elseif inflictor:GetClass() == "weapon_zs_tempering_hammer_q3" then
 			doordamage = 200
 		end
 		

@@ -198,7 +198,7 @@ function SWEP:MeleeSwing()
 		return
 	end
 
-	local damagemultiplier = owner:Team() == TEAM_HUMAN and owner.MeleeDamageMultiplier or 1 --(owner.BuffMuscular and owner:Team()==TEAM_HUMAN) and 1.2 or 1
+	local damagemultiplier = owner:Team() == TEAM_HUMAN and ((owner.MeleeDamageMultiplier or 1) * (owner.TachyonicRazorDamage[(self.Tier or 6)] or 1)) --(owner.BuffMuscular and owner:Team()==TEAM_HUMAN) and 1.2 or 1
 	if owner:IsSkillActive(SKILL_LASTSTAND) then
 		if owner:Health() <= owner:GetMaxHealth() * 0.25 then
 			damagemultiplier = damagemultiplier * 2

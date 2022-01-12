@@ -27,7 +27,7 @@ SWEP.UseHands = true
 
 SWEP.CSMuzzleFlashes = false
 
-SWEP.Primary.Damage = 75
+SWEP.Primary.Damage = 80
 SWEP.Primary.Delay = 0.3
 SWEP.Primary.Automatic = true
 SWEP.Primary.Ammo = "pulse"

@@ -98,6 +98,10 @@ GM:SetSkillModifierFunction(SKILLMOD_RESUPPLY_DELAY_MUL, function(pl, amount)
 	pl.ResupplyDelayMul = math.Clamp(amount + 1.0, 0.01, 10.0)
 end)
 
+GM:SetSkillModifierFunction(SKILLMOD_WELFARE_MUL, function(pl, amount)
+	pl.WelfareMul = math.Clamp(amount + 1.0, 0.01, 10.0)
+end)
+
 GM:SetSkillModifierFunction(SKILLMOD_FIELD_RANGE_MUL, function(pl, amount)
 	pl.FieldRangeMul = math.Clamp(amount + 1.0, 0.01, 10.0)
 end)

@@ -29,7 +29,7 @@ function SWEP:ShootBullets(damage, numshots, cone)
 			ent:SetPos(owner:GetShootPos())
 			ent:SetAngles(owner:EyeAngles())
 			ent:SetOwner(owner)
-			ent.ProjDamage = self.Primary.Damage * (owner.ProjectileDamageMul or 1)
+			ent.ProjDamage = self.Primary.Damage * ((owner.ProjectileDamageMul or 1) + ((((owner.BulletDamageMultiplier or 1) - 1) / 2)) * ((owner.TachyonicBulletDamage[(self.Tier or 1)] or 1) / 2) + 0.5)
 			ent.ProjSource = self
 			ent.ShotMarker = i
 			ent.Team = owner:Team()

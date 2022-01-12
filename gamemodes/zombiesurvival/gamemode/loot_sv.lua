@@ -566,23 +566,26 @@ local drops_regular_trinket = {
 	-- [8] = {"trinket_chromiumfragment", 1},
 	-- [9] = {"trinket_redruby", 1},
 	
-	[1] = {"trinket_redruby", 20},
-	[2] = {"trinket_chromiumfragment", 20},
-	[3] = {"trinket_bloodstonesplinter", 20},
-	[4] = {"trinket_scavcore", 20},
-	[5] = {"trinket_rubysplinter", 20},
-	[6] = {"trinket_pinkruby", 20},
-	[7] = {"trinket_welfarepearl", 20},
-	[8] = {"trinket_opalwhite", 18},
-	[9] = {"trinket_opalblack", 2},
-	[10] = {"trinket_opalpink", 20}
+	[1] = {"trinket_redruby", 200},
+	[2] = {"trinket_chromiumfragment", 200},
+	[3] = {"trinket_bloodstonesplinter", 200},
+	[4] = {"trinket_scavcore", 200},
+	[5] = {"trinket_rubysplinter", 200},
+	[6] = {"trinket_pinkruby", 200},
+	[7] = {"trinket_welfarepearl", 200},
+	[8] = {"trinket_opalwhite", 90},
+	[9] = {"trinket_opalblack", 10},
+	[10] = {"trinket_opalpink", 100},
+	[11] = {"trinket_tachbullet", 100000},
+	[12] = {"trinket_tachrazor", 1},
+	[13] = {"trinket_tachstable", 1}
 }
 
 --Item, Weight
 local drops_components_lodestones = {
 	[1] = {"comp_tachyonic_lodestone", 1},
-	[2] = {"comp_chromatic_lodestone", 1},
-	[3] = {"comp_sparking_lodestone", 10}
+	--[2] = {"comp_chromatic_lodestone", 1},
+	[2] = {"comp_sparking_lodestone", 10}
 }
 
 --Item, Weight
@@ -784,7 +787,7 @@ normalDrops = {
 [1] = {drops_regular_consumables, 10},
 [2] = {drops_regular_ammo, 8},
 [3] = {"weapon", 2},
-[4] = {drops_regular_trinket, 2},
+[4] = {drops_regular_trinket, 100}, --2
 [5] = {drops_components_lodestones, 0.1},
 [6] = {drops_components_metallic, 2.5},
 [7] = {drops_trinket_phantom, 0.1},
