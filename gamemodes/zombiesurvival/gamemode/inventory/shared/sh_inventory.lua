@@ -71,7 +71,6 @@ GM:AddWeaponBreakdownRecipe("weapon_zs_fracture",							"comp_linearactuator")
 -- GM:AddWeaponBreakdownRecipe("trinket_phantom_iridium",						"trinket_phantom_base")
 
 -- Assemblies (Assembly, Component, Weapon)
-GM.Assemblies["weapon_zs_gluon"] 								= {"comp_basicecore", 		"comp_modbarrel"}
 GM.Assemblies["weapon_zs_waraxe"] 								= {"comp_modbarrel", 		"weapon_zs_glock3"}
 GM.Assemblies["weapon_zs_bust"] 								= {"comp_busthead", 		"weapon_zs_plank"}
 GM.Assemblies["weapon_zs_sawhack"] 								= {"comp_sawblade", 		"weapon_zs_axe"}
@@ -119,6 +118,9 @@ GM.Assemblies["trinket_heartgold"]						= {"trinket_vitpackageii",			"comp_gold"
 GM.Assemblies["weapon_zs_medicalrifle_adv"]				= {"comp_sparking_lodestone",		"weapon_zs_medicrifle_q3", "weapon_zs_medicrifle_r3"}
 GM.Assemblies["weapon_zs_tempering_hammer"]				= {"comp_sparking_lodestone",		"weapon_zs_electrohammer_q3"}
 GM.Assemblies["trinket_regenimplant3"]					= {"trinket_regenimplant2",			"comp_gold"}
+GM.Assemblies["trinket_tachbullet"]						= {"comp_chromatic_lodestone",		"trinket_enhancedbullet"}
+GM.Assemblies["trinket_tachrazor"]						= {"comp_chromatic_lodestone", 		"trinket_razorblade"}
+GM.Assemblies["trinket_tachstable"]						= {"comp_chromatic_lodestone", 		"comp_electrum"}
 
 GM:AddInventoryItemData("comp_modbarrel",		"Modular Barrel",			"A modular barrel suited for pairing up with another gun barrel.",								"models/props_c17/trappropeller_lever.mdl")
 GM:AddInventoryItemData("comp_burstmech",		"Burst Fire Mechanism",		"A mechanism that could be used to make a gun burst fire.",										"models/props_c17/trappropeller_lever.mdl")
@@ -268,7 +270,9 @@ GM:AddSkillModifier(GM:AddTrinket("Power Gauntlet", "powergauntlet", false, mvel
 
 GM:AddTrinket("Finesse Kit", "sharpkit", false, mveles, mweles, 2, "Deal up to +32% melee damage to slowed zombies")
 
-GM:AddTrinket("Sharp Stone", "sharpstone", false, mveles, mweles, 3, "+5% melee damage")
+GM:AddSkillModifier(GM:AddTrinket("Sharp Stone", "sharpstone", false, oveles, oweles, 3, "+5 Melee Damage."), SKILLMOD_MELEE_DAMAGE_MUL, 0.05)
+
+GM:AddSkillModifier(GM:AddTrinket("Razor Blade", "razorblade", false, oveles, oweles, 5, "+5 Melee Damage."), SKILLMOD_MELEE_DAMAGE_MUL, 0.05)
 
 -- Performance Trinkets
 GM:AddTrinket("Oxygen Tank", "oxygentank", true, nil, {
@@ -320,6 +324,8 @@ GM:AddTrinket("Automated Reloader", "autoreload", false, ammoveles, ammoweles, 2
 GM:AddSkillModifier(GM:AddTrinket("Targeting Visor", "targetingvisori", false, oveles, oweles, nil, "+5% tighter aiming reticule."), SKILLMOD_AIMSPREAD_MUL, -0.05)
 
 GM:AddSkillModifier(GM:AddTrinket("Targeting Unifier", "targetingvisoriii", false, oveles, oweles, 4, "+11% tighter aiming reticule."), SKILLMOD_AIMSPREAD_MUL, -0.11)
+
+GM:AddSkillModifier(GM:AddTrinket("Enhanced Bullet", "enhancedbullet", false, oveles, oweles, 5, "+5% Gun Damage, +2.5% Projectile Damage."), SKILLMOD_BULLET_DAMAGE_MUL, 0.05)
 
 GM:AddTrinket("Refined Subscope", "refinedsub", false, oveles, oweles, 4, "+27% tighter aiming reticule with tier 3 or lower weapons")
 
@@ -563,19 +569,19 @@ GM:AddSkillModifier(trinket, SKILLMOD_WELFARE_MUL, -0.50)
 trinket = GM:AddTrinket("Tachyonic Bullet", "tachbullet", false, nil, {
 	["black_core_2"] = { type = "Model", model = "models/props_phx/construct/metal_wire1x1x1.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(1.1, 0, 0), angle = Angle(0, 0, 0), size = Vector(0.05, 0.05, 0.05), color = Color(0, 0, 0, 200), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} },
 	["black_core"] = { type = "Model", model = "models/dav0r/hoverball.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(-0.1, 0, 0), angle = Angle(0, 0, 0), size = Vector(0.1, 0.1, 0.1), color = Color(0, 255, 255, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 3, "X")
+}, 3, "Increases damage of ranged weapons, more for lower tiers.")
 GM:AddSkillModifier(trinket, SKILLMOD_TACHYONIC_GUN_DAMAGE, 1.00)
 
 trinket = GM:AddTrinket("Tachyonic Razor", "tachrazor", false, nil, {
 	["black_core_2"] = { type = "Model", model = "models/props_phx/construct/metal_wire1x1x1.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(1.1, 0, 0), angle = Angle(0, 0, 0), size = Vector(0.05, 0.05, 0.05), color = Color(0, 0, 0, 200), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} },
 	["black_core"] = { type = "Model", model = "models/dav0r/hoverball.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(-0.1, 0, 0), angle = Angle(0, 0, 0), size = Vector(0.1, 0.1, 0.1), color = Color(255, 0, 0, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 3, "X")
+}, 3, "Increases damage of melee weapons, more for lower tiers.")
 GM:AddSkillModifier(trinket, SKILLMOD_TACHYONIC_MELEE_DAMAGE, 1.00)
 
 trinket = GM:AddTrinket("Stable Tachyon", "tachstable", false, nil, {
 	["black_core_2"] = { type = "Model", model = "models/props_phx/construct/metal_wire1x1x1.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(1.1, 0, 0), angle = Angle(0, 0, 0), size = Vector(0.05, 0.05, 0.05), color = Color(0, 0, 0, 200), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} },
 	["black_core"] = { type = "Model", model = "models/dav0r/hoverball.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(-0.1, 0, 0), angle = Angle(0, 0, 0), size = Vector(0.1, 0.1, 0.1), color = Color(0, 255, 0, 255), surpresslightning = true, material = "models/shiny", skin = 0, bodygroup = {} }
-}, 3, "X")
+}, 3, "+5 Health Regeneration,  +20% Health, +20 Health, +25% Phasing Speed, +10 Movement Speed, and -15% Resupply Cooldown.")
 GM:AddSkillModifier(trinket, SKILLMOD_HEALTH_REGEN, 5.0)
 GM:AddSkillModifier(trinket, SKILLMOD_HEALTH_MUL, 0.20)
 GM:AddSkillModifier(trinket, SKILLMOD_HEALTH, 20)

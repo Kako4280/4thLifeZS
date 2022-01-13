@@ -556,16 +556,6 @@ local drops_regular_weapon_tier5 = {
 
 --Item, Weight
 local drops_regular_trinket = {
-	-- [1] = {"trinket_glimmeringcore", 1},
-	-- [2] = {"trinket_scavcore", 1},
-	-- [3] = {"trinket_rubysplinter", 1},
-	-- [4] = {"trinket_gleamingcore", 1},
-	-- [5] = {"trinket_shimmeringcore", 1},
-	-- [6] = {"trinket_magneticcore", 1},
-	-- [7] = {"trinket_bloodstonesplinter", 1},
-	-- [8] = {"trinket_chromiumfragment", 1},
-	-- [9] = {"trinket_redruby", 1},
-	
 	[1] = {"trinket_redruby", 200},
 	[2] = {"trinket_chromiumfragment", 200},
 	[3] = {"trinket_bloodstonesplinter", 200},
@@ -576,16 +566,16 @@ local drops_regular_trinket = {
 	[8] = {"trinket_opalwhite", 90},
 	[9] = {"trinket_opalblack", 10},
 	[10] = {"trinket_opalpink", 100},
-	[11] = {"trinket_tachbullet", 100000},
+	[11] = {"trinket_tachbullet", 1},
 	[12] = {"trinket_tachrazor", 1},
 	[13] = {"trinket_tachstable", 1}
 }
 
 --Item, Weight
 local drops_components_lodestones = {
-	[1] = {"comp_tachyonic_lodestone", 1},
-	--[2] = {"comp_chromatic_lodestone", 1},
-	[2] = {"comp_sparking_lodestone", 10}
+	[1] = {"comp_tachyonic_lodestone", 6},
+	[2] = {"comp_chromatic_lodestone", 3},
+	[3] = {"comp_sparking_lodestone", 41}
 }
 
 --Item, Weight
@@ -787,8 +777,8 @@ normalDrops = {
 [1] = {drops_regular_consumables, 10},
 [2] = {drops_regular_ammo, 8},
 [3] = {"weapon", 2},
-[4] = {drops_regular_trinket, 100}, --2
-[5] = {drops_components_lodestones, 0.1},
+[4] = {drops_regular_trinket, 2},
+[5] = {drops_components_lodestones, 0.11},
 [6] = {drops_components_metallic, 2.5},
 [7] = {drops_trinket_phantom, 0.1},
 [8] = {drops_regular_other, 2}
@@ -797,7 +787,7 @@ normalDrops = {
 bossDrops = {
 [1] = {"weapon", 100},
 [2] = {drops_regular_trinket, 50},
-[3] = {drops_components_lodestones, 10},
+[3] = {drops_components_lodestones, 11},
 [4] = {drops_components_metallic, 80},
 [5] = {drops_trinket_phantom, 100},
 [6] = {drops_regular_other, 50}

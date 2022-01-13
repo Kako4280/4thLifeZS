@@ -572,6 +572,7 @@ GM:AddPointShopItem("promanifest",		ITEMCAT_TRINKETS,		50,				"trinket_promanife
 GM:AddPointShopItem("opsmatrix",		ITEMCAT_TRINKETS,		50,				"trinket_opsmatrix").SubCategory =								ITEMSUBCAT_TRINKETS_SUPPORT
 GM:AddPointShopItem("pulseimpedance",	ITEMCAT_TRINKETS,		50,				"trinket_pulseimpedance").SubCategory =							ITEMSUBCAT_TRINKETS_OFFENSIVE
 GM:AddPointShopItem("regenimplant2",	ITEMCAT_TRINKETS,		50,				"trinket_regenimplant2").SubCategory =							ITEMSUBCAT_TRINKETS_DEFENSIVE
+
 -- Tier 5
 --GM:AddPointShopItem("supasm",			ITEMCAT_TRINKETS,		70,				"trinket_supasm").SubCategory =									ITEMSUBCAT_TRINKETS_OFFENSIVE
 GM:AddPointShopItem("charm_rat",		ITEMCAT_TRINKETS,		100,			"trinket_charm_rat").SubCategory =								ITEMSUBCAT_TRINKETS_SPECIAL
@@ -580,6 +581,8 @@ GM:AddPointShopItem("charm_cat",		ITEMCAT_TRINKETS,		300,			"trinket_charm_cat")
 GM:AddPointShopItem("charm_bee",		ITEMCAT_TRINKETS,		400,			"trinket_charm_bee").SubCategory =								ITEMSUBCAT_TRINKETS_SPECIAL
 GM:AddPointShopItem("charm_fox",		ITEMCAT_TRINKETS,		500,			"trinket_charm_fox").SubCategory =								ITEMSUBCAT_TRINKETS_SPECIAL
 GM:AddPointShopItem("nailfab",			ITEMCAT_TRINKETS,		100,			"trinket_nailfab").SubCategory =								ITEMSUBCAT_TRINKETS_SUPPORT
+GM:AddPointShopItem("enhancedbullet",	ITEMCAT_TRINKETS,		100,			"trinket_enhancedbullet").SubCategory =							ITEMSUBCAT_TRINKETS_OFFENSIVE
+GM:AddPointShopItem("razorblade",		ITEMCAT_TRINKETS,		100,			"trinket_razorblade").SubCategory =								ITEMSUBCAT_TRINKETS_DEFENSIVE
 
 
 GM:AddPointShopItem("flashbomb",		ITEMCAT_OTHER,			25,				"weapon_zs_flashbomb")
