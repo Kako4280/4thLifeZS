@@ -200,11 +200,18 @@ function SWEP:MeleeSwing()
 
 	local damagemultiplier = owner:Team() == TEAM_HUMAN and ((owner.MeleeDamageMultiplier or 1) * (owner.TachyonicRazorDamage[(self.Tier or 6)] or 1)) --(owner.BuffMuscular and owner:Team()==TEAM_HUMAN) and 1.2 or 1
 	if owner:IsSkillActive(SKILL_LASTSTAND) then
-		if owner:Health() <= owner:GetMaxHealth() * 0.25 then
-			damagemultiplier = damagemultiplier * 2
-		else
-			damagemultiplier = damagemultiplier * 0.85
-		end
+		local hp = owner:Health()
+		local mhp = owner:GetMaxHealth()
+		--This is the point at which the player begins to gain bonus damage. (% of max health)
+		local hpThreshold = mhp * 0.75
+		--Used when hp < threshold
+		local damageFactorLoss = 0.1
+		--Used when hp > threshold
+		local damageFactorGain = 1.5
+		--Final calculaion
+		local damageMulLastStand = 1 - (damageFactorLoss * (((math.min(math.max(hpThreshold, hp), mhp) - (hpThreshold))) / (mhp - (hpThreshold)))) + (damageFactorGain * ((hpThreshold) - (math.min(math.max(hp, 0), hpThreshold))) / (hpThreshold))
+	
+		damagemultiplier = damagemultiplier * damageMulLastStand
 	end
 
 	local hitent = tr.Entity
