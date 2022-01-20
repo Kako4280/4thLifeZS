@@ -21,8 +21,10 @@ end
 
 SWEP.Base = "weapon_zs_hammer"
 
-SWEP.MeleeDamage = 45 --35
+SWEP.MeleeDamage = 35 --35
 SWEP.HealStrength = 1.4
+
+SWEP.DoorDamage = 140
 
 SWEP.Tier = 2
 

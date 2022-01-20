@@ -2806,32 +2806,9 @@ function GM:EntityTakeDamage(ent, dmginfo)
 	
 	if ent:IsValid() and ent:GetClass() == "prop_door_rotating" then
 		local doordamage = dmginfo:GetDamage()
-		if inflictor:GetClass() == "weapon_zs_hammer" then
-			doordamage = 100
-		elseif inflictor:GetClass() == "weapon_zs_hammer_q1" then
-			doordamage = 110
-		elseif inflictor:GetClass() == "weapon_zs_hammer_q2" then
-			doordamage = 120
-		elseif inflictor:GetClass() == "weapon_zs_hammer_q3" then
-			doordamage = 130
-		elseif inflictor:GetClass() == "weapon_zs_electrohammer" then
-			doordamage = 140
-		elseif inflictor:GetClass() == "weapon_zs_electrohammer_q1" then
-			doordamage = 160
-		elseif inflictor:GetClass() == "weapon_zs_electrohammer_q2" then
-			doordamage = 180
-		elseif inflictor:GetClass() == "weapon_zs_electrohammer_q3" then
-			doordamage = 200
-		elseif inflictor:GetClass() == "weapon_zs_tempering_hammer" then
-			doordamage = 200
-		elseif inflictor:GetClass() == "weapon_zs_tempering_hammer_q1" then
-			doordamage = 200
-		elseif inflictor:GetClass() == "weapon_zs_tempering_hammer_q2" then
-			doordamage = 200
-		elseif inflictor:GetClass() == "weapon_zs_tempering_hammer_q3" then
-			doordamage = 200
+		if inflictor.DoorDamage then
+			doordamage = inflictor.DoorDamage + ((inflictor.QualityTier or 0) * (inflictor.Tier or 1) * 10) -- remantler scaling for door damage without giving hammers increased damage on remantle.
 		end
-		
 		dmginfo:SetDamage(doordamage * (attacker.IncreasedDoorDamage or 1))
 	end
 

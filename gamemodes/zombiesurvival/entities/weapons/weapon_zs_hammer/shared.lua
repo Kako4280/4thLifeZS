@@ -32,6 +32,8 @@ SWEP.MeleeDamage = 15
 SWEP.MeleeRange = 50
 SWEP.MeleeSize = 0.875
 
+SWEP.DoorDamage = 100
+
 --SWEP.MaxStock = 5
 
 SWEP.UseMelee1 = true

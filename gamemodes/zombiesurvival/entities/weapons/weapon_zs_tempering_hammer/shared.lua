@@ -22,9 +22,11 @@ SWEP.WorldModel = "models/weapons/w_crowbar.mdl"
 SWEP.ShowViewModel = false
 SWEP.ShowWorldModel = false
 
-SWEP.MeleeDamage = 35
+SWEP.MeleeDamage = 45
 SWEP.MeleeRange = 65
 SWEP.MeleeSize = 0.875
+
+SWEP.DoorDamage = 160
 
 SWEP.UseMelee1 = true
 
