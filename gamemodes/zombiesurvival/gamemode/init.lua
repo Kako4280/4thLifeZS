@@ -1276,18 +1276,18 @@ function GM:Think()
 					pl:SetHealth(math.min(healmax, pl:Health() + 1))
 				end
 				
-				if time >= pl.NextVirulence and pl:Team() == TEAM_HUMAN then
-					--pl.NextVirulence = time + 5
-					print(tostring(pl.Virulence) .. "     " .. tostring(2250 / (14 + (pl.Virulence ^ 1.972))))
-					if pl.Virulence >= 1 then
-						pl.NextVirulence = time + (2250 / (14 + (pl.Virulence ^ 1.972)))
+				-- if time >= pl.NextVirulence and pl:Team() == TEAM_HUMAN then
+					-- pl.NextVirulence = time + 5
+					-- print(tostring(pl.Virulence) .. "     " .. tostring(2250 / (14 + (pl.Virulence ^ 1.972))))
+					-- if pl.Virulence >= 1 then
+						-- pl.NextVirulence = time + (2250 / (14 + (pl.Virulence ^ 1.972)))
 					
-						local e = DamageInfo()
-						e:SetDamage(1)
-						e:SetAttacker(pl)
-						pl:TakeDamageInfo(e)
-					end
-				end
+						-- local e = DamageInfo()
+						-- e:SetDamage(1)
+						-- e:SetAttacker(pl)
+						-- pl:TakeDamageInfo(e)
+					-- end
+				-- end
 
 				if pl:IsSkillActive(SKILL_BLOODARMOR) and pl.MaxBloodArmor > 0 and time >= pl.NextBloodArmorRegen and pl:GetBloodArmor() < pl.MaxBloodArmor then
 					pl.NextBloodArmorRegen = time + 2
