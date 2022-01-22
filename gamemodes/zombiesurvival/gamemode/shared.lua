@@ -393,13 +393,21 @@ function GM:DynamicSpawnIsValid(ent, humans, allplayers)
 
 	local pos = ent:GetPos() + Vector(0, 0, 1)
 	local is_nest = ent:GetClass() == "prop_creepernest"
+	local is_sigil = ent:GetClass() == "prop_obj_sigil"
 	local required_distance = is_nest and self.CreeperNestDist or self.DynamicSpawnDist -- Nests have a shorter distance and no visibility requirement.
 
 	--if ent.GetNestBuilt and ent:GetNestBuilt() and not util.TraceHull({start = pos, endpos = pos + playerheight, mins = playermins, maxs = playermaxs, mask = MASK_SOLID_BRUSHONLY}).Hit then
 	if is_nest and not ent:GetNestBuilt() then
 		return false
 	end
-
+	
+	if is_sigil and not ent:GetSigilCorrupted() then
+		return false
+	end
+	
+	if ent:IsPlayer() and not ent:GetZombieClassTable().Boss then
+		return false
+	end
 	-- Check if not enough room.
 	trace_dynspawn.start = pos
 	trace_dynspawn.endpos = pos + playerheight
@@ -442,11 +450,11 @@ function GM:DynamicSpawnIsValid(ent, humans, allplayers)
 		end
 
 		-- Check if visible by any human.
-		if not is_nest and dist <= self.DynamicSpawnDistVis and WorldVisible(nearest, pos) then
+		if not (is_nest or is_sigil) and dist <= self.DynamicSpawnDistVis and WorldVisible(nearest, pos) then
 			return false
 		end
 	end
-
+	
 	return true
 end
 
@@ -469,9 +477,11 @@ function GM:GetDynamicSpawns(pl)
 	local tab = {}
 
 	local humans = team.GetPlayers(TEAM_HUMAN)
-	for _, nest in pairs(ents.FindByClass("prop_creepernest")) do
-		if self:DynamicSpawnIsValid(nest, humans) then
-			table.insert(tab, nest)
+	for _, spawn in pairs(ents.GetAll()) do
+		if spawn:GetClass() == "prop_obj_sigil" or spawn:GetClass() == "prop_creepernest" or (spawn:IsPlayer() and spawn:GetZombieClassTable().Boss) then
+			if self:DynamicSpawnIsValid(spawn, humans) then
+				table.insert(tab, spawn)
+			end
 		end
 	end
 

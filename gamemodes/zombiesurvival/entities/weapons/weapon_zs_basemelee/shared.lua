@@ -331,7 +331,7 @@ function SWEP:MeleeHitEntity(tr, hitent, damagemultiplier)
 		owner.GlassWeaponShouldBreak = not owner.GlassWeaponShouldBreak
 	end
 
-	local damage = self.MeleeDamage * damagemultiplier
+	local damage = self.MeleeDamage * (damagemultiplier or 1)
 
 	local dmginfo = DamageInfo()
 	dmginfo:SetDamagePosition(tr.HitPos)

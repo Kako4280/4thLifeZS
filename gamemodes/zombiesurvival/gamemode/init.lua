@@ -2784,11 +2784,6 @@ function GM:EntityTakeDamage(ent, dmginfo)
 		dmginfo:SetDamageType(DMG_ALWAYSGIB)
 		return
 	end
-	
-	if ent:IsValid() and ent:GetClass() == "prop_obj_sigil" and attacker:Team() == TEAM_UNDEAD and not ent:GetSigilCorrupted() then
-		local ZScore = math.Round(dmginfo:GetDamage() / 11, 1)
-		attacker:SetNWFloat("zscore", attacker:GetNWFloat("zscore") + ZScore)
-	end
 
 	if ent:IsValid() and ent:GetClass() == "prop_physics" then -- my solution to make metal junk pack props breakable for now, might find a better way later
 		if ent:GetMaxHealth() == 94821 then

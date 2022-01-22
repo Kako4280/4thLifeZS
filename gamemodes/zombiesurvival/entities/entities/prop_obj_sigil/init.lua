@@ -9,6 +9,7 @@ function ENT:Initialize()
 	self:SetModel("models/props_wasteland/medbridge_post01.mdl")
 	self:PhysicsInitBox(Vector(-16.285, -16.285, -0.29) * self.ModelScale, Vector(16.285, 16.285, 104.29) * self.ModelScale)
 	self:SetUseType(SIMPLE_USE)
+	self.AreaCheck = 5
 
 	self:CollisionRulesChanged()
 
@@ -55,44 +56,78 @@ end
 function ENT:OnTakeDamage(dmginfo)
 	if self:GetSigilHealth() <= 0 or dmginfo:GetDamage() <= 0 then return end
 
-	local attacker = dmginfo:GetAttacker()
-	if attacker:IsValid() and attacker:IsPlayer() and dmginfo:GetDamage() > 2 and CurTime() >= self.HealthLock then
-		if self:CanBeDamagedByTeam(attacker:Team()) then
-			if attacker:Team() == TEAM_HUMAN then
-				local dmgtype = dmginfo:GetDamageType()
-				if bit.band(dmgtype, DMG_SLASH) ~= 0 or bit.band(dmgtype, DMG_CLUB) ~= 0 then
-					dmginfo:SetDamage(dmginfo:GetDamage() * 1.6)
-				else
-					dmginfo:SetDamage(0)
-					return
-				end
-			end
+	if dmginfo:GetAttacker() == self then
+		local oldhealth = self:GetSigilHealth()
+		self:SetSigilLastDamaged(CurTime())
+		self:SetSigilHealthBase(oldhealth - dmginfo:GetDamage())
 
-			local oldhealth = self:GetSigilHealth()
-			self:SetSigilLastDamaged(CurTime())
-			self:SetSigilHealthBase(oldhealth - dmginfo:GetDamage())
-
-			if self:GetSigilHealth() <= 0 then
-				if self:GetSigilCorrupted() then
-					gamemode.Call("PreOnSigilUncorrupted", self, dmginfo)
-					self:SetSigilCorrupted(false)
-					self:SetSigilHealthBase(self.MaxHealth)
-					self:SetSigilLastDamaged(0)
-					gamemode.Call("OnSigilUncorrupted", self, dmginfo)
-				else
-					gamemode.Call("PreOnSigilCorrupted", self, dmginfo)
-					self:SetSigilCorrupted(true)
-					self:SetSigilHealthBase(self.MaxHealth)
-					self:SetSigilLastDamaged(0)
-					gamemode.Call("OnSigilCorrupted", self, dmginfo)
-				end
+		if self:GetSigilHealth() <= 0 then
+			if self:GetSigilCorrupted() then
+				gamemode.Call("PreOnSigilUncorrupted", self, dmginfo)
+				self:SetSigilCorrupted(false)
+				self:SetSigilHealthBase(self.MaxHealth)
+				self:SetSigilLastDamaged(0)
+				gamemode.Call("OnSigilUncorrupted", self, dmginfo)
+			else
+				gamemode.Call("PreOnSigilCorrupted", self, dmginfo)
+				self:SetSigilCorrupted(true)
+				self:SetSigilHealthBase(self.MaxHealth)
+				self:SetSigilLastDamaged(0)
+				gamemode.Call("OnSigilCorrupted", self, dmginfo)
 			end
-		elseif attacker:Team() == TEAM_UNDEAD then
-			self.HealthLock = CurTime() + 1
 		end
 	end
 end
 
 function ENT:UpdateTransmitState()
 	return TRANSMIT_ALWAYS
+end
+
+function ENT:Think()
+	local x = CurTime()
+	
+	if self.AreaCheck < x then
+		local plCount = 0
+		local plTable = {}
+		for k, v in pairs(ents.FindInSphere(self:GetPos(), 100)) do
+			if v:IsPlayer() then
+				if self:GetSigilCorrupted() then
+					if v:Team() == TEAM_HUMAN then
+						plCount = plCount + 1
+						table.insert(plTable, v)
+					elseif v:Team() == TEAM_UNDEAD then
+						plCount = plCount - 1
+					end
+				else
+					if v:Team() == TEAM_HUMAN then
+						plCount = plCount - 1
+					elseif v:Team() == TEAM_UNDEAD then
+						plCount = plCount + 1
+						table.insert(plTable, v)
+					end
+				end
+			end
+		end
+		
+		if plCount > 0 then
+			self:TakeDamage(40 * plCount, self)
+			
+			for _, v in pairs(plTable) do
+				if v:Team() == TEAM_HUMAN then
+					v:AddPoints(0.2 * plCount, self)
+				elseif v:Team() == TEAM_UNDEAD then
+					v:SetNWFloat("zscore", v:GetNWFloat("zscore") + (2 * plCount))
+				end
+			end
+		end
+		
+		self.AreaCheck = x + 1
+	end
+	
+		-- if attacker:IsPlayer() then
+		-- if ent:IsValid() and ent:GetClass() == "prop_obj_sigil" and attacker:Team() == TEAM_UNDEAD and not ent:GetSigilCorrupted() then
+			-- local ZScore = math.Round(dmginfo:GetDamage() / 11, 1)
+			-- attacker:SetNWFloat("zscore", attacker:GetNWFloat("zscore") + ZScore)
+		-- end
+	-- end
 end

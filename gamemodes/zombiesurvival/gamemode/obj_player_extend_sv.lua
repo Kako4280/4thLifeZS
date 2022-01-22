@@ -233,10 +233,7 @@ function meta:ProcessDamage(dmginfo)
 			--	end
 			--end
 
-			local ratio = 0.5 + self.BloodArmorDamageReductionAdd
-			if self:IsSkillActive(SKILL_IRONBLOOD) then
-				ratio = 1
-			end
+			local ratio = math.min(0.5 + self.BloodArmorDamageReductionAdd, 0.70)
 			local absorb = math.min(self:GetBloodArmor(), damage * ratio)
 			dmginfo:SetDamage(damage - absorb)
 			self:SetBloodArmor(self:GetBloodArmor() - absorb)
@@ -594,7 +591,7 @@ function meta:RefreshDynamicSpawnPoint()
 	local target = self:GetObserverTarget()
 	if (GAMEMODE:GetDynamicSpawning() and self:GetObserverMode() == OBS_MODE_CHASE and target and target:IsValid()) and
 			(self.ZombieEscape and target:IsPlayer() and target:Team() == TEAM_UNDEAD
-			or not self.ZombieEscape and (target.IsCreeperNest and target:GetNestBuilt() or target.MinionSpawn and target:GetSettled())
+			or not self.ZombieEscape and (target:GetClass() == "prop_obj_sigil" and target:GetSigilCorrupted() or target.MinionSpawn and target:GetSettled() or target:GetClass() == "prop_creepernest" and target:GetNestBuilt() or target:IsPlayer() and target:GetZombieClassTable().Boss)
 			or string.sub(target:GetClass(), 1, 12) == "info_player_") then
 		self.ForceDynamicSpawn = target
 		self.ForceSpawnAngles = self:EyeAngles()

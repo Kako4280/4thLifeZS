@@ -263,7 +263,7 @@ SKILL_U_CRYGASGREN = 136
 SKILL_SOFTDET = 137
 SKILL_RECLAIMSOL = 138
 SKILL_ORPHICFOCUS = 139
-SKILL_IRONBLOOD = 140
+SKILL_IRONBLOOD1 = 140
 SKILL_BLOODLETTER = 141
 SKILL_HAEMOSTASIS = 142
 SKILL_SLEIGHTOFHAND = 143
@@ -288,8 +288,8 @@ SKILL_MOTIONIII = 161
 SKILL_D_SLOW = 162
 SKILL_BRASH = 163
 SKILL_CONEFFECT = 164
-SKILL_CIRCULATION = 165
-SKILL_SANGUINE = 166
+SKILL_SANGUINE1 = 165
+SKILL_SANGUINE2 = 166
 SKILL_ANTIGEN = 167
 SKILL_BIOLOGYIV = 168
 SKILL_SURGEONIV = 169
@@ -318,6 +318,7 @@ SKILL_BRUTE2 = 191
 SKILL_BATTLER6 = 192
 SKILL_BATTLER7 = 193
 SKILL_BATTLER8 = 194
+SKILL_IRONBLOOD2 = 195
 
 SKILLMOD_HEALTH = 1
 SKILLMOD_SPEED = 2
@@ -657,9 +658,11 @@ GM:AddSkill(SKILL_REGENERATOR, "Regenerator", GOOD.."Regenerate 1 health every 3
 																-5,			-2,					{}, TREE_HEALTHTREE)
 GM:AddSkillModifier(SKILL_REGENERATOR, SKILLMOD_HEALTH_REGEN, 2)
 GM:AddSkill(SKILL_BLOODARMOR, "Blood Armor", GOOD.."Regenerate 20% of max blood armor every 2 seconds\nBase blood armor maximum is 8\nBase blood armor damage absorption is 50%\n",
-																2,			2,					{SKILL_IRONBLOOD, SKILL_BLOODLETTER}, TREE_HEALTHTREE)
-GM:AddSkill(SKILL_IRONBLOOD, "Iron Blood", GOOD.."+40% damage reduction from blood armor\n"..GOOD.."Bonus increased by 10% when health is 50% or less\n"..BAD.."-25% maximum blood armor\n"..BAD.."-10 movement speed",
-																2,			4,					{SKILL_HAEMOSTASIS, SKILL_CIRCULATION}, TREE_HEALTHTREE)
+																2,			2,					{SKILL_IRONBLOOD1, SKILL_BLOODLETTER}, TREE_HEALTHTREE)
+GM:AddSkill(SKILL_IRONBLOOD1, "Iron Blood", GOOD.."+5% blood armor damage absorption.\n"..GOOD.."+2 maximum blood armor.\n"..BAD.."-2 movement speed",
+																2,			4,					{SKILL_HAEMOSTASIS, SKILL_SANGUINE1}, TREE_HEALTHTREE)
+GM:AddSkill(SKILL_IRONBLOOD2, "Iron Blood", GOOD.."+5% blood armor damage absorption.\n"..GOOD.."+2 maximum blood armor.\n"..BAD.."-2 movement speed",
+																0,			6,					{SKILL_IRONBLOOD1}, TREE_HEALTHTREE)
 --GM:AddSkill(SKILL_D_WEAKNESS, "Debuff: Weakness", GOOD.."+10 starting Worth\n"..GOOD.."+1 end of wave points\n"..BAD.."-35 maximum health",
 --																1,			-1,					{}, TREE_HEALTHTREE)
 GM:AddSkill(SKILL_VITALITY1, "Vitality I", GOOD.."+8 maximum health",
@@ -671,18 +674,18 @@ GM:AddSkill(SKILL_VITALITY2, "Vitality II", GOOD.."+8 maximum health",
 																0,			-2,					{SKILL_VITALITY3}, TREE_HEALTHTREE)
 GM:AddSkill(SKILL_VITALITY3, "Vitality III", GOOD.."+14 maximum health",
 																0,			-0,					{}, TREE_HEALTHTREE)
-GM:AddSkill(SKILL_TANKER, "Tanker", GOOD.."+25 maximum health\n"..GOOD.."+4 Blood Armor\n",
+GM:AddSkill(SKILL_TANKER, "Tanker", GOOD.."+25 maximum health\n"..GOOD.."+2 Blood Armor\n",
 																-5,			4,					{}, TREE_HEALTHTREE)
 GM:AddSkill(SKILL_FORAGER, "Forager", GOOD.."15% chance to collect food from resupply boxes\n"..GOOD.."-5% resupply box delay",
 																5,			-2,					{SKILL_GOURMET}, TREE_HEALTHTREE)
 GM:AddSkillModifier(SKILL_FORAGER, SKILLMOD_RESUPPLY_DELAY_MUL, -0.05)
 GM:AddSkill(SKILL_SUGARRUSH, "Sugar Rush", GOOD.."+35 speed boost from food for 14 seconds\n"..BAD.."-35% recovery from food\n",
 																4,			0,					{SKILL_GOURMET}, TREE_HEALTHTREE)
-GM:AddSkill(SKILL_CIRCULATION, "Circulation", GOOD.."+2 maximum blood armor",
-																4,			4,					{SKILL_SANGUINE}, TREE_HEALTHTREE)
-GM:AddSkill(SKILL_SANGUINE, "Sanguine", GOOD.."+5 maximum blood armor\n"..BAD.."-10 maximum health",
+GM:AddSkill(SKILL_SANGUINE1, "Sanguine", GOOD.."+4 maximum blood armor\n"..BAD.."-10 maximum health",
+																4,			4,					{SKILL_SANGUINE2}, TREE_HEALTHTREE)
+GM:AddSkill(SKILL_SANGUINE2, "Sanguine", GOOD.."+4 maximum blood armor\n"..BAD.."-10 maximum health",
 																6,			2,					{}, TREE_HEALTHTREE)
-GM:AddSkill(SKILL_ANTIGEN, "Antigen", GOOD.."+5% blood armor damage absorption\n",
+GM:AddSkill(SKILL_ANTIGEN, "Antigen", GOOD.."+5% blood armor damage absorption.",
 																-2,			4,					{}, TREE_HEALTHTREE)
 -- Speed Tree
 GM:AddSkill(SKILL_SPEED1, "Speed I", GOOD.."+0.5 movement speed\n",
@@ -863,7 +866,7 @@ GM:AddSkill(SKILL_BATTLER7, "Battler VII", GOOD.."+3% Melee Damage\n"..GOOD.."+5
 																0,			-4,					{SKILL_BATTLER4}, TREE_MELEETREE)
 GM:AddSkill(SKILL_BATTLER8, "Battler VIII", GOOD.."+3% Melee Damage\n"..GOOD.."+5 Maximum Health",
 																0,			4,					{SKILL_BATTLER4}, TREE_MELEETREE)																
-GM:AddSkill(SKILL_LASTSTAND, "Last Stand", GOOD.."Double melee damage when below 25% health\n"..BAD.."0.85x melee weapon damage at any other time",
+GM:AddSkill(SKILL_LASTSTAND, "Last Stand", GOOD.."Increased melee damage the lower the health is."..BAD.."-10% melee damage at full health.",
 																2,			-2,					{SKILL_BATTLER5}, TREE_MELEETREE)
 --GM:AddSkill(SKILL_D_CLUMSY, "Debuff: Clumsy", GOOD.."+15 starting Worth\n"..GOOD.."+5 starting points\n"..BAD.."Very easy to be knocked down",
 --																-2,			2,					{}, TREE_MELEETREE)
@@ -1371,7 +1374,7 @@ GM:AddSkillModifier(SKILL_WOOISM, SKILLMOD_IRONSIGHT_EFF_MUL, -0.25)
 GM:AddSkillModifier(SKILL_GLUTTON, SKILLMOD_HEALTH, -5)
 
 GM:AddSkillModifier(SKILL_TANKER, SKILLMOD_HEALTH, 25)
-GM:AddSkillModifier(SKILL_TANKER, SKILLMOD_BLOODARMOR, 4)
+GM:AddSkillModifier(SKILL_TANKER, SKILLMOD_BLOODARMOR, 2)
 
 GM:AddSkillModifier(SKILL_ULTRANIMBLE, SKILLMOD_HEALTH, -10)
 GM:AddSkillModifier(SKILL_ULTRANIMBLE, SKILLMOD_SPEED, 7)
@@ -1541,9 +1544,6 @@ GM:AddSkillModifier(SKILL_AGILEIII, SKILLMOD_SPEED, -4)
 GM:AddSkillModifier(SKILL_SOFTDET, SKILLMOD_EXP_DAMAGE_RADIUS, -0.10)
 GM:AddSkillModifier(SKILL_SOFTDET, SKILLMOD_EXP_DAMAGE_TAKEN_MUL, -0.4)
 
---GM:AddSkillModifier(SKILL_IRONBLOOD, SKILLMOD_BLOODARMOR_DMG_REDUCTION, 0.50)
---GM:AddSkillModifier(SKILL_IRONBLOOD, SKILLMOD_SPEED, -10)
-
 GM:AddSkillModifier(SKILL_BLOODLETTER, SKILLMOD_BLOODARMOR_REGENERATION_MUL, 0.2)
 
 GM:AddSkillModifier(SKILL_SURESTEP, SKILLMOD_SPEED, -4)
@@ -1576,10 +1576,19 @@ GM:AddSkillModifier(SKILL_DISPERSION, SKILLMOD_CLOUD_RADIUS, 0.15)
 GM:AddSkillModifier(SKILL_BRASH, SKILLMOD_MELEE_SWING_DELAY_MUL, -0.16)
 GM:AddSkillModifier(SKILL_BRASH, SKILLMOD_MELEE_MOVEMENTSPEED_ON_KILL, -15)
 
-GM:AddSkillModifier(SKILL_CIRCULATION, SKILLMOD_BLOODARMOR, 2)
+GM:AddSkillModifier(SKILL_SANGUINE1, SKILLMOD_BLOODARMOR, 5)
+GM:AddSkillModifier(SKILL_SANGUINE1, SKILLMOD_HEALTH, -10)
 
-GM:AddSkillModifier(SKILL_SANGUINE, SKILLMOD_BLOODARMOR, 5)
-GM:AddSkillModifier(SKILL_SANGUINE, SKILLMOD_HEALTH, -10)
+GM:AddSkillModifier(SKILL_SANGUINE2, SKILLMOD_BLOODARMOR, 5)
+GM:AddSkillModifier(SKILL_SANGUINE2, SKILLMOD_HEALTH, -10)
+
+GM:AddSkillModifier(SKILL_IRONBLOOD1, SKILLMOD_BLOODARMOR_DMG_REDUCTION, 0.05)
+GM:AddSkillModifier(SKILL_IRONBLOOD1, SKILLMOD_BLOODARMOR, 2)
+GM:AddSkillModifier(SKILL_IRONBLOOD1, SKILLMOD_SPEED, -2)
+
+GM:AddSkillModifier(SKILL_IRONBLOOD2, SKILLMOD_BLOODARMOR_DMG_REDUCTION, 0.05)
+GM:AddSkillModifier(SKILL_IRONBLOOD2, SKILLMOD_BLOODARMOR, 2)
+GM:AddSkillModifier(SKILL_IRONBLOOD2, SKILLMOD_SPEED, -2)
 
 GM:AddSkillModifier(SKILL_ANTIGEN, SKILLMOD_BLOODARMOR_DMG_REDUCTION, 0.05)
 
