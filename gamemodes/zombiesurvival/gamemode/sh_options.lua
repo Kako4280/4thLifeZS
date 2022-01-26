@@ -582,7 +582,7 @@ GM:AddPointShopItem("charm_bee",		ITEMCAT_TRINKETS,		400,			"trinket_charm_bee")
 GM:AddPointShopItem("charm_fox",		ITEMCAT_TRINKETS,		500,			"trinket_charm_fox").SubCategory =								ITEMSUBCAT_TRINKETS_SPECIAL
 GM:AddPointShopItem("nailfab",			ITEMCAT_TRINKETS,		100,			"trinket_nailfab").SubCategory =								ITEMSUBCAT_TRINKETS_SUPPORT
 GM:AddPointShopItem("enhancedbullet",	ITEMCAT_TRINKETS,		100,			"trinket_enhancedbullet").SubCategory =							ITEMSUBCAT_TRINKETS_OFFENSIVE
-GM:AddPointShopItem("razorblade",		ITEMCAT_TRINKETS,		100,			"trinket_razorblade").SubCategory =								ITEMSUBCAT_TRINKETS_DEFENSIVE
+GM:AddPointShopItem("razorblade",		ITEMCAT_TRINKETS,		100,			"trinket_razorblade").SubCategory =								ITEMSUBCAT_TRINKETS_MELEE
 
 
 GM:AddPointShopItem("flashbomb",		ITEMCAT_OTHER,			25,				"weapon_zs_flashbomb")

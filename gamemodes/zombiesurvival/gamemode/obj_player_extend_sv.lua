@@ -233,7 +233,23 @@ function meta:ProcessDamage(dmginfo)
 			--	end
 			--end
 
-			local ratio = math.min(0.5 + self.BloodArmorDamageReductionAdd, 0.70)
+			local ratio = math.min(0.5 + self.BloodArmorDamageReductionAdd, 0.75)
+			local activeWep
+			
+			if self:GetWeapons() then
+				activeWep = self:GetActiveWeapon()
+			end
+			
+			if activeWep.IsMelee then
+				ratio = ratio + 0.10
+				local meleeRange = activeWep.MeleeRange or false
+				if meleeRange and meleeRange < 50 then
+					ratio = ratio + 0.05
+				end
+			end
+			
+			print(ratio)
+			
 			local absorb = math.min(self:GetBloodArmor(), damage * ratio)
 			dmginfo:SetDamage(damage - absorb)
 			self:SetBloodArmor(self:GetBloodArmor() - absorb)
