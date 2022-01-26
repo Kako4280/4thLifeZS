@@ -248,8 +248,6 @@ function meta:ProcessDamage(dmginfo)
 				end
 			end
 			
-			print(ratio)
-			
 			local absorb = math.min(self:GetBloodArmor(), damage * ratio)
 			dmginfo:SetDamage(damage - absorb)
 			self:SetBloodArmor(self:GetBloodArmor() - absorb)
