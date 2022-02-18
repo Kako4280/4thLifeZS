@@ -868,6 +868,9 @@ function meta:DropWeaponByType(class)
 		if ent:IsValid() then
 			ent:SetWeaponType(class)
 			ent:Spawn()
+			if wep.MapSpawn then
+				ent.MapSpawn = true
+			end
 
 			if wep.AmmoIfHas then
 				local ammocount = wep:GetPrimaryAmmoCount()
@@ -1471,12 +1474,17 @@ function meta:GiveWeaponByType(weapon, plyr, ammo)
 		self:GiveAmmo(wep:Clip2(), secondary, true)
 		wep:SetClip2(0)
 	end
-
+	
+	local MapSpawnCheck = wep.MapSpawn or false
+	
 	self:StripWeapon(weapon:GetClass())
 	self:UpdateAltSelectedWeapon()
 
 	local wep2 = plyr:Give(weapon:GetClass())
 	if wep2 and wep2:IsValid() then
+		if MapSpawnCheck then
+			wep2.MapSpawn = true
+		end
 		if wep2.Primary then
 			primary = wep2:ValidPrimaryAmmo()
 			if primary then

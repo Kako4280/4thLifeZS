@@ -53,6 +53,21 @@ local function ContentsPaint(self, w, h)
 
 		if lp:Team() == TEAM_HUMAN then
 			local bloodarmor = lp:GetBloodArmor()
+			local bloodarmorRes = math.min(0.5 + lp.BloodArmorDamageReductionAdd, 0.75)
+			local activeWep
+			
+			if lp:GetWeapons() then
+				activeWep = lp:GetActiveWeapon()
+			end
+			
+			if activeWep.IsMelee then
+				bloodarmorRes = bloodarmorRes + 0.10
+				local meleeRange = activeWep.MeleeRange or false
+				if meleeRange and meleeRange < 50 then
+					bloodarmorRes = bloodarmorRes + 0.05
+				end
+			end
+			
 			if bloodarmor >= 1 then
 				x = 78 * screenscale
 				y = 142 * screenscale
@@ -65,7 +80,7 @@ local function ContentsPaint(self, w, h)
 
 				subwidth = healthperc * wid
 
-				draw.SimpleTextBlurry(math.floor(bloodarmor), "ZSHUDFontSmall", x + wid + 12 * screenscale, y + 8 * screenscale, colHealth, TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
+				draw.SimpleTextBlurry(math.floor(bloodarmor) .. " (" .. math.Round(bloodarmorRes * 100, 0) .. "%)" , "ZSHUDFontSmall", x + wid + 12 * screenscale, y + 8 * screenscale, colHealth, TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
 
 				surface.SetDrawColor(0, 0, 0, 230)
 				surface.DrawRect(x, y, wid, hei)

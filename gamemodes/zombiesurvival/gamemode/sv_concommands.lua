@@ -173,6 +173,8 @@ concommand.Add("zs_dismantle", function(sender, command, arguments)
 	local contents, wtbl = active:GetClass()
 	if not invitem then
 		wtbl = weapons.Get(contents)
+		print(tostring(active.MapSpawn))
+		if active.MapSpawn then return end
 		if wtbl.NoDismantle or not (wtbl.AllowQualityWeapons or wtbl.PermitDismantle) then
 			GAMEMODE:ConCommandErrorMessage(sender, translate.ClientGet(sender, "cannot_dismantle"))
 			return
@@ -232,6 +234,8 @@ concommand.Add("zs_upgrade", function(sender, command, arguments)
 		GAMEMODE:ConCommandErrorMessage(sender, translate.ClientGet(sender, "need_to_be_near_remantler"))
 		return
 	end
+	
+	if sender:GetActiveWeapon().MapSpawn then return end
 
 	local nearest = sender:NearestRemantler()
 	local contents = sender:GetActiveWeapon():GetClass()

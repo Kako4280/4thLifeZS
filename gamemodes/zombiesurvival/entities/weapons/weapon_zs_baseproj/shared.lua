@@ -10,3 +10,5 @@ SWEP.ConeMax = 2
 SWEP.ConeMin = 1
 
 SWEP.Primary.ProjVelocity = 1400
+
+SWEP.MapSpawn = false

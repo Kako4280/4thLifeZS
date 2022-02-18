@@ -9,6 +9,8 @@ SWEP.ConeMax = 1.5
 SWEP.ConeMin = 0.5
 SWEP.ConeRamp = 2
 
+SWEP.MapSpawn = false
+
 SWEP.CSMuzzleFlashes = true
 
 SWEP.Primary.ClipSize = 8

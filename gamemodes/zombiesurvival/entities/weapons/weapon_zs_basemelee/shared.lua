@@ -31,6 +31,8 @@ SWEP.BurnDurationMax = 0
 SWEP.Cold = false
 SWEP.ColdStrength = 0
 
+SWEP.MapSpawn = false
+
 SWEP.WalkSpeed = SPEED_FAST
 
 SWEP.IsMelee = true

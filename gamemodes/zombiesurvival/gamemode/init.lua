@@ -4686,3 +4686,18 @@ function MapTracker()
 	end	
 end
 hook.Add("Initialize", "MapTracker", MapTracker)
+
+function DisableRemantling()
+	timer.Simple(3, function()
+		local entsList = ents.GetAll()
+
+		for k, v in pairs(entsList) do
+			if v:GetClass() == "prop_weapon" then
+				v.MapSpawn = true
+			end
+			
+			print(v:GetClass() .. " " .. tostring(v.MapSpawn))
+		end
+	end)
+end
+hook.Add("Initialize", "DisableRemantling", DisableRemantling)

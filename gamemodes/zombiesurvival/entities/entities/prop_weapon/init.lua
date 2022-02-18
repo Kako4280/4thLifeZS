@@ -100,6 +100,18 @@ function ENT:GiveToActivator(activator, caller)
 		self:Input("OnPickupFailed", activator)
 		return
 	end
+	
+	local MSCount = 0
+	
+	for k, v in pairs(activator:GetWeapons()) do
+		if v.MapSpawn then
+			MSCount = MSCount + 1
+		end
+	end
+	
+	if MSCount >= 2 then
+		return
+	end
 
 	if activator:HasWeapon(weptype) and (self.Forced or not GAMEMODE.MaxWeaponPickups) then
 		local weptab = weapons.Get(weptype)
@@ -128,6 +140,9 @@ function ENT:GiveToActivator(activator, caller)
 
 	if not self.PlacedInMap or not GAMEMODE.MaxWeaponPickups or (activator.WeaponPickups or 0) < GAMEMODE.MaxWeaponPickups or team.NumPlayers(TEAM_HUMAN) <= 1 then
 		local wep = (self.PlacedInMap and not self.Empty) and activator:Give(weptype) or activator:GiveEmptyWeapon(weptype)
+		if self.MapSpawn then
+			wep.MapSpawn = true
+		end
 		if wep and wep:IsValid() and wep:GetOwner():IsValid() then
 			if self:GetShouldRemoveAmmo() then
 				wep:SetClip1(self:GetClip1())
