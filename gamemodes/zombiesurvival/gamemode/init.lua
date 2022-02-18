@@ -710,6 +710,7 @@ function GM:SetupProps()
 					wep:SetWeaponType(weaponmodelstoweapon[mdl])
 					wep:SetShouldRemoveAmmo(false)
 					wep:Spawn()
+					wep.MapSpawn = true
 
 					ent:Remove()
 				end
@@ -782,6 +783,7 @@ function GM:ReplaceMapWeapons()
 					wep:SetShouldRemoveAmmo(false)
 					wep:Spawn()
 					wep.IsPreplaced = true
+					wep.MapSpawn = true
 				end
 			end
 			ent:Remove()
