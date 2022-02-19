@@ -51,6 +51,7 @@ GM.WeaponStatBarVals = {
 	{"MeleeDamage", "Damage", 2, 140, false},
 	{"MeleeRange", "Range", 30, 100, false},
 	{"MeleeSize", "Size", 0.2, 3, false},
+	{"MeleeKnockBack", "Knockback", 10, 250, false},
 
 	{"Damage", "Damage", 1, 105, false, "Primary"},
 	{"Delay", "Attack Delay", 0.05, 2, true, "Primary"},
