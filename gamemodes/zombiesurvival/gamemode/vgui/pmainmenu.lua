@@ -9,6 +9,7 @@ local pPlayerModel
 local function SwitchPlayerModel(self)
 	surface.PlaySound("buttons/button14.wav")
 	RunConsoleCommand("zs_playermodel", self.m_ModelName)
+	RunConsoleCommand("zs_playerskin", self:GetEntity():GetSkin())
 	chat.AddText(COLOR_LIMEGREEN, "You've changed your desired player model to "..tostring(self.m_ModelName))
 
 	pPlayerModel:Close()
@@ -18,8 +19,8 @@ function MakepPlayerModel()
 
 	PlayMenuOpenSound()
 
-	local numcols = 8
-	local wid = numcols * 68 + 24
+	local numcols = 4
+	local wid = numcols * 2 * 68 + 24
 	local hei = 400
 
 	pPlayerModel = vgui.Create("DFrame")
@@ -35,16 +36,25 @@ function MakepPlayerModel()
 
 	local grid = vgui.Create("DGrid", pPlayerModel)
 	grid:SetCols(numcols)
-	grid:SetColWide(68)
-	grid:SetRowHeight(68)
-
+	grid:SetColWide(68 * 2)
+	grid:SetRowHeight(68 * 2)
+	
+	local gridCount = 0
 	for name, mdl in pairs(player_manager.AllValidModels()) do
-		local button = vgui.Create("SpawnIcon", grid)
-		button:SetPos(0, 0)
-		button:SetModel(mdl)
-		button.m_ModelName = name
-		button.OnMousePressed = SwitchPlayerModel
-		grid:AddItem(button)
+		for i = 1, NumModelSkins(mdl) do
+			local button = vgui.Create("DModelPanel", grid)
+			button:SetSize(136, 136)
+			button:SetPos(0, 0)
+			button:SetModel(mdl)
+			button:GetEntity():SetSkin(i - 1)
+			local r, g, b = string.match(GetConVar("cl_playercolor"):GetString(), "(%g+) (%g+) (%g+)")
+			function button.Entity:GetPlayerColor() return Vector(r, g, b) end
+			button.m_ModelName = name
+			button.OnMousePressed = SwitchPlayerModel
+			grid:AddItem(button)
+			
+			gridCount = gridCount + 1
+		end
 	end
 	grid:SetSize(wid - 16, math.ceil(table.Count(player_manager.AllValidModels()) / numcols) * grid:GetRowHeight())
 
