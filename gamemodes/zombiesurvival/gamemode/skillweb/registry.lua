@@ -458,19 +458,19 @@ local BAD = "^"..COLORID_RED
 
 GM:AddSkill(SKILL_TECH_START, "Technician", GOOD .. "Allows seeing resupply crates, remantlers, etc.\n" .. GOOD .. "Start with a random item or scrap.",
 																0,			0,					{SKILL_NONE}, TREE_TECHNICIAN)
-GM:AddSkill(SKILL_TECH_CADE_REPAIR1, "Repair 1", GOOD .. "+10% Repair Rate",
+GM:AddSkill(SKILL_TECH_CADE_REPAIR1, "Repair", GOOD .. "+10% Repair Rate",
 																2,			2,					{SKILL_TECH_START}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_REPAIR1, SKILLMOD_REPAIRRATE_MUL, 0.10)
-GM:AddSkill(SKILL_TECH_CADE_REPAIR2, "Repair 2", GOOD .. "+10% Repair Rate",
+GM:AddSkill(SKILL_TECH_CADE_REPAIR2, "Repair", GOOD .. "+10% Repair Rate",
 																4,			2,					{SKILL_TECH_CADE_REPAIR1}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_REPAIR2, SKILLMOD_REPAIRRATE_MUL, 0.10)																
-GM:AddSkill(SKILL_TECH_CADE_REPAIR3, "Repair 3", GOOD .. "+10% Repair Rate",
+GM:AddSkill(SKILL_TECH_CADE_REPAIR3, "Repair", GOOD .. "+10% Repair Rate",
 																6,			2,					{SKILL_TECH_CADE_REPAIR2}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_REPAIR3, SKILLMOD_REPAIRRATE_MUL, 0.10)
-GM:AddSkill(SKILL_TECH_CADE_REPAIR4, "Repair 4", GOOD .. "+10% Repair Rate",
+GM:AddSkill(SKILL_TECH_CADE_REPAIR4, "Repair", GOOD .. "+10% Repair Rate",
 																8,			2,					{SKILL_TECH_CADE_REPAIR3}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_REPAIR4, SKILLMOD_REPAIRRATE_MUL, 0.10)
-GM:AddSkill(SKILL_TECH_CADE_REPAIR5, "Repair 5", GOOD .. "+10% Repair Rate",
+GM:AddSkill(SKILL_TECH_CADE_REPAIR5, "Repair", GOOD .. "+10% Repair Rate",
 																10,			2,					{SKILL_TECH_CADE_REPAIR4}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_REPAIR5, SKILLMOD_REPAIRRATE_MUL, 0.10)
 GM:AddSkill(SKILL_TECH_CADE_TAUT, "Taut", GOOD .. "Props are not dropped when hit by a zombie.",
@@ -481,59 +481,59 @@ end)
 GM:AddSkill(SKILL_TECH_CADE_DMGTODOORS, "Damage To Doors", "Increases damage to doors by 300%.",
 																0,			4,					{SKILL_TECH_CADE_REPAIR1}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_DMGTODOORS, SKILLMOD_CADE_DOOR_DAMAGE, 3.0)
-GM:AddSkill(SKILL_TECH_CADE_RFE_AMMOSAVE1, "Efficiency 1", GOOD .. "Repair field emitters consume 10% less ammo.",
+GM:AddSkill(SKILL_TECH_CADE_RFE_AMMOSAVE1, "Efficiency", GOOD .. "Repair field emitters consume 10% less ammo.",
 																6,			4,					{SKILL_TECH_CADE_REPAIR3}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_RFE_AMMOSAVE1, SKILLMOD_CADE_RFE_EFFICIENCY, -0.10)												
-GM:AddSkill(SKILL_TECH_CADE_RFE_AMMOSAVE2, "Efficiency 2", GOOD .. "Repair field emitters consume 10% less ammo.",
+GM:AddSkill(SKILL_TECH_CADE_RFE_AMMOSAVE2, "Efficiency", GOOD .. "Repair field emitters consume 10% less ammo.",
 																8,			5,					{SKILL_TECH_CADE_RFE_AMMOSAVE1}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_RFE_AMMOSAVE2, SKILLMOD_CADE_RFE_EFFICIENCY, -0.10)		
-GM:AddSkill(SKILL_TECH_CADE_RFE_AMMOSAVE3, "Efficiency 3", GOOD .. "Repair field emitters consume 10% less ammo.",
+GM:AddSkill(SKILL_TECH_CADE_RFE_AMMOSAVE3, "Efficiency", GOOD .. "Repair field emitters consume 10% less ammo.",
 																10,			6,					{SKILL_TECH_CADE_RFE_AMMOSAVE2}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_RFE_AMMOSAVE3, SKILLMOD_CADE_RFE_EFFICIENCY, -0.10)		
-GM:AddSkill(SKILL_TECH_CADE_RFE_DELAY1, "Repair Field Delay 1", GOOD .. "Reduces repair field emitter delay by 10%.",
+GM:AddSkill(SKILL_TECH_CADE_RFE_DELAY1, "Repair Field Delay", GOOD .. "Reduces repair field emitter delay by 10%.",
 																4,			5,					{SKILL_TECH_CADE_RFE_AMMOSAVE1}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_RFE_DELAY1, SKILLMOD_FIELD_DELAY_MUL, -0.10)		
-GM:AddSkill(SKILL_TECH_CADE_RFE_DELAY2, "Repair Field Delay 2", GOOD .. "Reduces repair field emitter delay by 10%.",
+GM:AddSkill(SKILL_TECH_CADE_RFE_DELAY2, "Repair Field Delay", GOOD .. "Reduces repair field emitter delay by 10%.",
 																2,			6,					{SKILL_TECH_CADE_RFE_DELAY1}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_RFE_DELAY2, SKILLMOD_FIELD_DELAY_MUL, -0.10)	
-GM:AddSkill(SKILL_TECH_CADE_RFE_RANGE1, "Repair Field Range 1", GOOD .. "Increases repair field emitter range by 15%.",
+GM:AddSkill(SKILL_TECH_CADE_RFE_RANGE1, "Repair Field Range", GOOD .. "Increases repair field emitter range by 15%.",
 																6,			6,					{SKILL_TECH_CADE_RFE_AMMOSAVE1}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_RFE_RANGE1, SKILLMOD_FIELD_RANGE_MUL, 0.15)	
-GM:AddSkill(SKILL_TECH_CADE_RFE_RANGE2, "Repair Field Range 2", GOOD .. "Increases repair field emitter range by 15%.",
+GM:AddSkill(SKILL_TECH_CADE_RFE_RANGE2, "Repair Field Range", GOOD .. "Increases repair field emitter range by 15%.",
 																6,			8,					{SKILL_TECH_CADE_RFE_RANGE1}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_RFE_RANGE1, SKILLMOD_FIELD_RANGE_MUL, 0.15)	
-GM:AddSkill(SKILL_TECH_CADE_HAMMER_DELAY1, "Hammer Delay 1", GOOD .. "Hammer swing delay reduced by 10%",
+GM:AddSkill(SKILL_TECH_CADE_HAMMER_DELAY1, "Hammer Delay", GOOD .. "Hammer swing delay reduced by 10%",
 																6,			-0,					{SKILL_TECH_CADE_REPAIR3}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_HAMMER_DELAY1, SKILLMOD_HAMMER_SWING_DELAY_MUL, -0.10)
-GM:AddSkill(SKILL_TECH_CADE_HAMMER_DELAY2, "Hammer Delay 2", GOOD .. "Hammer swing delay reduced by 10%",
+GM:AddSkill(SKILL_TECH_CADE_HAMMER_DELAY2, "Hammer Delay", GOOD .. "Hammer swing delay reduced by 10%",
 																6,			-2,					{SKILL_TECH_CADE_HAMMER_DELAY1}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_HAMMER_DELAY2, SKILLMOD_HAMMER_SWING_DELAY_MUL, -0.10)
-GM:AddSkill(SKILL_TECH_CADE_HAMMER_DELAY3, "Hammer Delay 3", GOOD .. "Hammer swing delay reduced by 10%\n" .. GOOD .. "Applies reinforcer to props for 10 seconds, reduces damage taken while active.",
+GM:AddSkill(SKILL_TECH_CADE_HAMMER_DELAY3, "Hammer Delay", GOOD .. "Hammer swing delay reduced by 10%\n" .. GOOD .. "Applies reinforcer to props for 10 seconds, reduces damage taken while active.",
 																6,			-4,					{SKILL_TECH_CADE_HAMMER_DELAY2}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_HAMMER_DELAY3, SKILLMOD_HAMMER_SWING_DELAY_MUL, -0.10)
-GM:AddSkill(SKILL_TECH_CADE_CAPACITY_REPAIR1, "Repair Capacity 1", GOOD .. "Repair capacity of props increased by 10%",
+GM:AddSkill(SKILL_TECH_CADE_CAPACITY_REPAIR1, "Repair Capacity", GOOD .. "Repair capacity of props increased by 10%",
 																8,			0,					{SKILL_TECH_CADE_REPAIR4}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_CAPACITY_REPAIR1, SKILLMOD_CADE_REPAIR_CAPACITY, 0.10)
-GM:AddSkill(SKILL_TECH_CADE_CAPACITY_REPAIR2, "Repair Capacity 2", GOOD .. "Repair capacity of props increased by 10%" ,
+GM:AddSkill(SKILL_TECH_CADE_CAPACITY_REPAIR2, "Repair Capacity", GOOD .. "Repair capacity of props increased by 10%" ,
 																8,			-2,					{SKILL_TECH_CADE_CAPACITY_REPAIR1}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_CAPACITY_REPAIR2, SKILLMOD_CADE_REPAIR_CAPACITY, 0.10)
-GM:AddSkill(SKILL_TECH_CADE_CAPACITY_REPAIR3, "Repair Capacity 3", GOOD .. "Repair capacity of props increased by 10%",
+GM:AddSkill(SKILL_TECH_CADE_CAPACITY_REPAIR3, "Repair Capacity", GOOD .. "Repair capacity of props increased by 10%",
 																8,			-4,					{SKILL_TECH_CADE_CAPACITY_REPAIR2}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_CAPACITY_REPAIR3, SKILLMOD_CADE_REPAIR_CAPACITY, 0.10)
-GM:AddSkill(SKILL_TECH_CADE_CAPACITY_REPAIR4, "Repair Capacity 4", GOOD .. "Repair capacity of props increased by 10%",
+GM:AddSkill(SKILL_TECH_CADE_CAPACITY_REPAIR4, "Repair Capacity", GOOD .. "Repair capacity of props increased by 10%",
 																10,			-2,					{SKILL_TECH_CADE_CAPACITY_REPAIR2}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_CAPACITY_REPAIR4, SKILLMOD_CADE_REPAIR_CAPACITY, 0.10)
 GM:AddSkill(SKILL_TECH_CADE_REFLECT, "Reflection", GOOD .. "Applies reflection to props for 10 seconds, reflects damage taken while active.",
 																10,			0,					{SKILL_TECH_CADE_REPAIR5}, TREE_TECHNICIAN)
 GM:AddSkill(SKILL_TECH_CADE_JUNKPACK_ADVANCED, "Advanced Junkpack", GOOD .."Upgrades the Junkpack.",
 																10,			4,					{SKILL_TECH_CADE_REPAIR5}, TREE_TECHNICIAN)
-GM:AddSkill(SKILL_TECH_RESUPPLY_CD1, "Resupply Cooldown 1", GOOD .. "Reduces resupply cooldown by 13%.",
+GM:AddSkill(SKILL_TECH_RESUPPLY_CD1, "Resupply Cooldown", GOOD .. "Reduces resupply cooldown by 13%.",
 																2,			-2,					{SKILL_TECH_START}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_RESUPPLY_CD1, SKILLMOD_RESUPPLY_DELAY_MUL, -0.13)
-GM:AddSkill(SKILL_TECH_RESUPPLY_CD2, "Resupply Cooldown 2", GOOD .. "Reduces resupply cooldown by 13%.",
+GM:AddSkill(SKILL_TECH_RESUPPLY_CD2, "Resupply Cooldown", GOOD .. "Reduces resupply cooldown by 13%.",
 																4,			-4,					{SKILL_TECH_RESUPPLY_CD1}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_RESUPPLY_CD2, SKILLMOD_RESUPPLY_DELAY_MUL, -0.13)
-GM:AddSkill(SKILL_TECH_RESUPPLY_CD3, "Resupply Cooldown 3", GOOD .. "Reduces resupply cooldown by 13%.",
+GM:AddSkill(SKILL_TECH_RESUPPLY_CD3, "Resupply Cooldown", GOOD .. "Reduces resupply cooldown by 13%.",
 																0,			-4,					{SKILL_TECH_RESUPPLY_CD1}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_RESUPPLY_CD3, SKILLMOD_RESUPPLY_DELAY_MUL, -0.13)																
 GM:AddSkill(SKILL_TECH_RESUPPLY_BONUS_AMMO, "Bonus Ammo", GOOD .. "Increases ammo yields from the resupplybox by 30%.\n" .. BAD .. "Does not apply to scrap.",
@@ -543,50 +543,50 @@ GM:AddSkill(SKILL_TECH_RESUPPLY_BONUS_SCRAP, "Bonus Scrap", GOOD .. "Each resupp
 																0,			-6,					{SKILL_TECH_RESUPPLY_CD3}, TREE_TECHNICIAN)
 GM:AddSkill(SKILL_TECH_RESUPPLY_BONUS_CADE, "Bonus Supplies", GOOD .. "Each resupply use has a chance to give nails or junkpack ammo.",
 																-2,			-6,					{SKILL_TECH_RESUPPLY_CD3}, TREE_TECHNICIAN)
-GM:AddSkill(SKILL_TECH_OFFENSE_DEP_DAM1, "Deployable Damage 1", GOOD .. "Increases deployable damage by 3%",
+GM:AddSkill(SKILL_TECH_OFFENSE_DEP_DAM1, "Deployable Damage", GOOD .. "Increases deployable damage by 3%",
 																-2,			0,					{SKILL_TECH_START}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_OFFENSE_DEP_DAM1, SKILLMOD_DEP_DAMAGE_MUL, 0.03)	
-GM:AddSkill(SKILL_TECH_OFFENSE_DEP_DAM2, "Deployable Damage 2", GOOD .. "Increases deployable damage by 3%",
+GM:AddSkill(SKILL_TECH_OFFENSE_DEP_DAM2, "Deployable Damage", GOOD .. "Increases deployable damage by 3%",
 																-4,			0,					{SKILL_TECH_OFFENSE_DEP_DAM1}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_OFFENSE_DEP_DAM2, SKILLMOD_DEP_DAMAGE_MUL, 0.03)	
-GM:AddSkill(SKILL_TECH_OFFENSE_DEP_DAM3, "Deployable Damage 3", GOOD .. "Increases deployable damage by 3%",
+GM:AddSkill(SKILL_TECH_OFFENSE_DEP_DAM3, "Deployable Damage", GOOD .. "Increases deployable damage by 3%",
 																-6,			0,					{SKILL_TECH_OFFENSE_DEP_DAM2}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_OFFENSE_DEP_DAM3, SKILLMOD_DEP_DAMAGE_MUL, 0.03)	
-GM:AddSkill(SKILL_TECH_OFFENSE_DEP_DAM4, "Deployable Damage 4", GOOD .. "Increases deployable damage by 3%",
+GM:AddSkill(SKILL_TECH_OFFENSE_DEP_DAM4, "Deployable Damage", GOOD .. "Increases deployable damage by 3%",
 																-8,			0,					{SKILL_TECH_OFFENSE_DEP_DAM3}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_OFFENSE_DEP_DAM4, SKILLMOD_DEP_DAMAGE_MUL, 0.03)	
-GM:AddSkill(SKILL_TECH_OFFENSE_DEP_DAM5, "Deployable Damage 5", GOOD .. "Increases deployable damage by 3%",
+GM:AddSkill(SKILL_TECH_OFFENSE_DEP_DAM5, "Deployable Damage", GOOD .. "Increases deployable damage by 3%",
 																-10,		0,					{SKILL_TECH_OFFENSE_DEP_DAM4}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_OFFENSE_DEP_DAM5, SKILLMOD_DEP_DAMAGE_MUL, 0.03)	
-GM:AddSkill(SKILL_TECH_OFFENSE_DEP_ROF1, "Deployable RoF 1", GOOD .. "Decreases deployable fire delay by 3%",
+GM:AddSkill(SKILL_TECH_OFFENSE_DEP_ROF1, "Deployable RoF", GOOD .. "Decreases deployable fire delay by 3%",
 																-6,			2,					{SKILL_TECH_OFFENSE_DEP_DAM3}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_OFFENSE_DEP_ROF1, SKILLMOD_DEP_DELAY_MUL, -0.03)																	
-GM:AddSkill(SKILL_TECH_OFFENSE_DEP_ROF2, "Deployable RoF 2", GOOD .. "Decreases deployable fire delay by 3%",
+GM:AddSkill(SKILL_TECH_OFFENSE_DEP_ROF2, "Deployable RoF", GOOD .. "Decreases deployable fire delay by 3%",
 																-8,			2,					{SKILL_TECH_OFFENSE_DEP_ROF1}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_OFFENSE_DEP_ROF2, SKILLMOD_DEP_DELAY_MUL, -0.03)																	
-GM:AddSkill(SKILL_TECH_OFFENSE_DEP_ROF3, "Deployable RoF 3", GOOD .. "Decreases deployable fire delay by 3%",
+GM:AddSkill(SKILL_TECH_OFFENSE_DEP_ROF3, "Deployable RoF", GOOD .. "Decreases deployable fire delay by 3%",
 																-6,			4,					{SKILL_TECH_OFFENSE_DEP_ROF1}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_OFFENSE_DEP_ROF3, SKILLMOD_DEP_DELAY_MUL, -0.03)																	
-GM:AddSkill(SKILL_TECH_OFFENSE_DEP_ROF4, "Deployable RoF 4", GOOD .. "Decreases deployable fire delay by 3%",
+GM:AddSkill(SKILL_TECH_OFFENSE_DEP_ROF4, "Deployable RoF", GOOD .. "Decreases deployable fire delay by 3%",
 																-4,			4,					{SKILL_TECH_OFFENSE_DEP_ROF1}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_OFFENSE_DEP_ROF4, SKILLMOD_DEP_DELAY_MUL, -0.03)																	
-GM:AddSkill(SKILL_TECH_OFFENSE_DEP_ROF5, "Deployable RoF 5", GOOD .. "Decreases deployable fire delay by 3%",
+GM:AddSkill(SKILL_TECH_OFFENSE_DEP_ROF5, "Deployable RoF", GOOD .. "Decreases deployable fire delay by 3%",
 																-4,			2,					{SKILL_TECH_OFFENSE_DEP_ROF1}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_OFFENSE_DEP_ROF5, SKILLMOD_DEP_DELAY_MUL, -0.03)																	
-GM:AddSkill(SKILL_TECH_OFFENSE_DEP_AMMOSAVE1, "Efficiency 1", GOOD .. "Turrets and zappers consume 10% less ammo.",
+GM:AddSkill(SKILL_TECH_OFFENSE_DEP_AMMOSAVE1, "Efficiency", GOOD .. "Turrets and zappers consume 10% less ammo.",
 																-6,			-2,					{SKILL_TECH_OFFENSE_DEP_DAM3}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_OFFENSE_DEP_AMMOSAVE1, SKILLMOD_CADE_OFFENSE_EFFICIENCY, -0.10)													
-GM:AddSkill(SKILL_TECH_OFFENSE_DEP_AMMOSAVE2, "Efficiency 2", GOOD .. "Turrets and zappers consume 10% less ammo.",
+GM:AddSkill(SKILL_TECH_OFFENSE_DEP_AMMOSAVE2, "Efficiency", GOOD .. "Turrets and zappers consume 10% less ammo.",
 																-6,			-4,					{SKILL_TECH_OFFENSE_DEP_AMMOSAVE1}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_OFFENSE_DEP_AMMOSAVE2, SKILLMOD_CADE_OFFENSE_EFFICIENCY, -0.10)	
 GM:AddSkill(SKILL_TECH_OFFENSE_DEP_OVERDRIVE, "Overdrive", GOOD .. "Turrets and zappers have +33% rate of fire.\n" .. BAD .. "Turrets and Zappers consume 30% more ammo.",
 																-12,		0,					{SKILL_TECH_OFFENSE_DEP_DAM5}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_OFFENSE_DEP_OVERDRIVE, SKILLMOD_CADE_OFFENSE_EFFICIENCY, 0.30)		
 GM:AddSkillModifier(SKILL_TECH_OFFENSE_DEP_OVERDRIVE, SKILLMOD_DEP_DELAY_MUL, -0.33)		
-GM:AddSkill(SKILL_TECH_OFFENSE_DEP_RANGE1, "Deployable Range 1", GOOD .. "Increases deployable range by 15%",
+GM:AddSkill(SKILL_TECH_OFFENSE_DEP_RANGE1, "Deployable Range", GOOD .. "Increases deployable range by 15%",
 																-10,		2,					{SKILL_TECH_OFFENSE_DEP_DAM5}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_OFFENSE_DEP_RANGE1, SKILLMOD_DEP_RANGE_MUL, 0.15)																	
-GM:AddSkill(SKILL_TECH_OFFENSE_DEP_RANGE2, "Deployable Range 2", GOOD .. "Increases deployable range by 15%",
+GM:AddSkill(SKILL_TECH_OFFENSE_DEP_RANGE2, "Deployable Range", GOOD .. "Increases deployable range by 15%",
 																-10,		-2,					{SKILL_TECH_OFFENSE_DEP_DAM5}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_OFFENSE_DEP_RANGE2, SKILLMOD_DEP_RANGE_MUL, 0.15)
 GM:AddSkill(SKILL_TECH_OFFENSE_DEP_TURRET_ROCKET, "Unlock Rocket Turret", GOOD .. "Unlocks ability to purchase Rocket Turrets.",
@@ -615,15 +615,15 @@ GM:AddSkillModifier(SKILL_TECH_OFFENSE_FIRE_DAM, SKILLMOD_FIRE_ADDED_DAMAGE, 1.0
 GM:AddSkill(SKILL_TECH_OFFENSE_FIRE_DUR, "Added Fire Duration", GOOD .. "Applies 1 extra stacks per application of fire.",
 																-8,			4,					{SKILL_TECH_OFFENSE_FIRE_TURRET_ENABLE}, TREE_TECHNICIAN)	
 GM:AddSkillModifier(SKILL_TECH_OFFENSE_FIRE_DUR, SKILLMOD_FIRE_ADDED_DURATION, 1.0)		
-GM:AddSkill(SKILL_TECH_DEP_AMMOCAP, "Deployable Capacity", GOOD .. "Increases deployable ammo capacity by 25%.",
-																0,			2,					{SKILL_TECH_START}, TREE_TECHNICIAN)
-GM:AddSkillModifier(SKILL_TECH_DEP_AMMOCAP, SKILLMOD_DEPLOYABLE_MAXAMMO, 0.25)		
-GM:AddSkill(SKILL_TECH_CADE_DEP_AMMOCAP, "Deployable Capacity", GOOD .. "Increases deployable ammo capacity by 25%.",
-																8,			7,					{SKILL_TECH_CADE_RFE_AMMOSAVE2}, TREE_TECHNICIAN)
-GM:AddSkillModifier(SKILL_TECH_CADE_DEP_AMMOCAP, SKILLMOD_DEPLOYABLE_MAXAMMO, 0.25)	
-GM:AddSkill(SKILL_TECH_OFFENSE_DEP_AMMOCAP, "Deployable Capacity", GOOD .. "Increases deployable ammo capacity by 25%.",
-																-6,			-6,					{SKILL_TECH_OFFENSE_DEP_AMMOSAVE2}, TREE_TECHNICIAN)
-GM:AddSkillModifier(SKILL_TECH_OFFENSE_DEP_AMMOCAP, SKILLMOD_DEPLOYABLE_MAXAMMO, 0.25)	
+-- GM:AddSkill(SKILL_TECH_DEP_AMMOCAP, "Deployable Capacity", GOOD .. "Increases deployable ammo capacity by 25%.",
+																-- 0,			2,					{SKILL_TECH_START}, TREE_TECHNICIAN)
+-- GM:AddSkillModifier(SKILL_TECH_DEP_AMMOCAP, SKILLMOD_DEPLOYABLE_MAXAMMO, 0.25)		
+-- GM:AddSkill(SKILL_TECH_CADE_DEP_AMMOCAP, "Deployable Capacity", GOOD .. "Increases deployable ammo capacity by 25%.",
+																-- 8,			7,					{SKILL_TECH_CADE_RFE_AMMOSAVE2}, TREE_TECHNICIAN)
+-- GM:AddSkillModifier(SKILL_TECH_CADE_DEP_AMMOCAP, SKILLMOD_DEPLOYABLE_MAXAMMO, 0.25)	
+-- GM:AddSkill(SKILL_TECH_OFFENSE_DEP_AMMOCAP, "Deployable Capacity", GOOD .. "Increases deployable ammo capacity by 25%.",
+																-- -6,			-6,					{SKILL_TECH_OFFENSE_DEP_AMMOSAVE2}, TREE_TECHNICIAN)
+-- GM:AddSkillModifier(SKILL_TECH_OFFENSE_DEP_AMMOCAP, SKILLMOD_DEPLOYABLE_MAXAMMO, 0.25)	
 GM:AddSkill(SKILL_TECH_CADE_GRENADE_TICKS_ADDED1, "Grenade Ticks", GOOD .. "Provides grenades 1 additional tick.",
 																4,			0,					{SKILL_TECH_CADE_REPAIR2}, TREE_TECHNICIAN)
 GM:AddSkillModifier(SKILL_TECH_CADE_GRENADE_TICKS_ADDED1, SKILLMOD_GRENADE_MAX_TICKS, 1.0)		

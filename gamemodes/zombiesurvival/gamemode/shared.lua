@@ -124,6 +124,24 @@ local HITGROUP_LEFTLEG = HITGROUP_LEFTLEG
 local HITGROUP_RIGHTLEG = HITGROUP_RIGHTLEG
 local PTeam = FindMetaTable("Player").Team
 
+damageScaledModels = {
+			[1] = {"models/bumpattack/foxfires/fox.mdl", 1.25},
+			[2] = {"models/doge_player/doge_player.mdl", 1.25},
+			[3] = {"models/player_Chibiterasu.mdl", 1.25},
+			[4] = {"models/player_amaterasu.mdl", 1.25},
+			[5] = {"models/player_amaterasuclosedmouth.mdl", 1.25},
+			[6] = {"models/player_eevee.mdl", 1.25},
+			[7] = {"models/player_espeon.mdl", 1.25},
+			[8] = {"models/player_umbreon.mdl", 1.25},
+			[9] = {"models/player_flareon.mdl", 1.25},
+			[10] = {"models/player_glaceon.mdl", 1.25},
+			[11] = {"models/player_leafeon.mdl", 1.25},
+			[12] = {"models/player_jolteon.mdl", 1.25},
+			[13] = {"models/player_vaporeon.mdl", 1.25},
+			[14] = {"models/player_sylveon.mdl", 1.25},
+			[15] = {"models/player_shinysylveon.mdl", 1.25}
+}
+
 function GM:AddCustomAmmo()
 	game.AddAmmoType({name = "dummy"})
 	game.AddAmmoType({name = "pulse"})
@@ -864,8 +882,13 @@ function GM:IsSpecialPerson(pl, image)
 		img = "icons/flame.png"
 		tooltip = "Manager"
 	elseif pl:IsUserGroup("owner") then
-		img = "icons/galaxy.png"
+		img = "icons/flame.png"
 		tooltip = "Owner"
+	end
+	
+	if pl:SteamID() == "STEAM_0:1:17433654" then
+		img = "icons/galaxy.png"
+		tooltip = "Fox"
 	end
 
 	if img then

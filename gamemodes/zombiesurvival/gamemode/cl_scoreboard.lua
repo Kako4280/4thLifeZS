@@ -427,6 +427,10 @@ function PANEL:RefreshPlayer()
 		lvlRed = 0
 		lvlGre = 250 - math.floor(2.5 * colLvl)
 		lvlBlu = 250
+	elseif colLvl > 200 then
+		lvlRed = 0
+		lvlGre = 100
+		lvlBlu = 255
 	end
 	--elseif colLvl > 125 and colLvl <= 150 then
 	--	colLvl = colLvl - 125

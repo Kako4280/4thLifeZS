@@ -100,6 +100,10 @@ function meta:ProcessDamage(dmginfo)
 
 		return not dmgbypass and self:CallZombieFunction1("ProcessDamage", dmginfo)
 	end
+	
+	if P_Team(self) == TEAM_HUMAN then
+		dmginfo:SetDamage(dmginfo:GetDamage() * (self.ModelSpecificDamageMul or 1))
+	end
 
 	-- Opted for multiplicative.
 	if attacker == self and dmgtype ~= DMG_CRUSH and dmgtype ~= DMG_FALL and self.SelfDamageMul then
@@ -277,14 +281,6 @@ function meta:ProcessDamage(dmginfo)
 
 		self.ShouldFlinch = true
 	end
-	
-	local NoVirulence = {}
-	local virulenceApplied = 0
-	-- if attacker:IsValid()
-		-- if dmginfo:GetDamage() > 1 and attacker:Team() == TEAM_UNDEAD and not table.HasValue(NoVirulence) then
-			-- self.Virulence = self.Virulence + (dmginfo:GetDamage() / 5)
-		-- end
-	-- end
 end
 
 GM.TrinketRecharges = {

@@ -50,6 +50,14 @@ function MakepPlayerModel()
 			local r, g, b = string.match(GetConVar("cl_playercolor"):GetString(), "(%g+) (%g+) (%g+)")
 			function button.Entity:GetPlayerColor() return Vector(r, g, b) end
 			button.m_ModelName = name
+			local dmgMul = 1
+			for x, y in pairs(damageScaledModels) do
+				if y[1] == mdl then
+					dmgMul = y[2]
+					break	
+				end
+			end
+			button:SetTooltip("This model takes " .. math.Round(dmgMul * 100) .. "% damage.")
 			button.OnMousePressed = SwitchPlayerModel
 			grid:AddItem(button)
 			

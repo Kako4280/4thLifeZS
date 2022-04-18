@@ -2275,6 +2275,7 @@ function GM:PlayerInitialSpawnRound(pl)
 	pl.NestsDestroyed = 0
 	pl.NestSpawns = 0
 	pl.LastRevive = 0
+	pl.ModelSpecificDamageMul = 1
 
 	pl.ZSInventory = {}
 
@@ -4239,6 +4240,14 @@ function GM:PlayerSpawn(pl)
 		
 		if tonumber(desiredskin) then
 			pl:SetSkin(desiredskin)
+		end
+		
+		pl.ModelSpecificDamageMul = 1
+		for x, y in pairs(damageScaledModels) do
+			if y[1] == modelname then
+				pl.ModelSpecificDamageMul = y[2]
+				break	
+			end
 		end
 
 		-- Cache the voice set.

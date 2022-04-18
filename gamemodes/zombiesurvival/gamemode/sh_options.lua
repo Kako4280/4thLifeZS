@@ -214,19 +214,6 @@ item =
 GM:AddStartingItem("repairfield",		ITEMCAT_DEPLOYABLES,			50,				"weapon_zs_repairfield",		nil,							nil,									nil,											function(pl) pl:GiveEmptyWeapon("weapon_zs_repairfield") pl:GiveAmmo(1, "repairfield") pl:GiveAmmo(50, "pulse") end)
 item.Countables = "prop_repairfield"
 item.NoClassicMode = true
-GM:AddStartingItem("manhack",			ITEMCAT_DEPLOYABLES,			35,				"weapon_zs_manhack").Countables = "prop_manhack"
-item =
-GM:AddStartingItem("drone",				ITEMCAT_DEPLOYABLES,			35,				"weapon_zs_drone",				nil,							nil,									nil,											function(pl) pl:GiveEmptyWeapon("weapon_zs_drone") pl:GiveAmmo(1, "drone") pl:GiveAmmo(60, "smg1") end)
-item.Countables = "prop_drone"
-item =
-GM:AddStartingItem("pulsedrone",		ITEMCAT_DEPLOYABLES,			35,				"weapon_zs_drone_pulse",		nil,							nil,									nil,											function(pl) pl:GiveEmptyWeapon("weapon_zs_drone_pulse") pl:GiveAmmo(1, "pulse_cutter") pl:GiveAmmo(60, "pulse") end)
-item.Countables = "prop_drone_pulse"
-item =
-GM:AddStartingItem("hauldrone",			ITEMCAT_DEPLOYABLES,			25,				"weapon_zs_drone_hauler",		nil,							nil,									nil,											function(pl) pl:GiveEmptyWeapon("weapon_zs_drone_hauler") pl:GiveAmmo(1, "drone_hauler") end)
-item.Countables = "prop_drone_hauler"
-item =
-GM:AddStartingItem("rollermine",		ITEMCAT_DEPLOYABLES,			50,				"weapon_zs_rollermine",			nil,							nil,									nil,											function(pl) pl:GiveEmptyWeapon("weapon_zs_rollermine") pl:GiveAmmo(1, "rollermine") end)
-item.Countables = "prop_rollermine"
 
 GM:AddStartingItem("wrench",			ITEMCAT_TOOLS,			20,				"weapon_zs_wrench").NoClassicMode = true
 GM:AddStartingItem("crphmr",			ITEMCAT_TOOLS,			30,				"weapon_zs_hammer").NoClassicMode = true
@@ -458,20 +445,6 @@ GM:AddPointShopItem("rocketturret",		ITEMCAT_DEPLOYABLES,			320,			"weapon_zs_tu
 item.Countables = "prop_turret_rocket"
 item.NoClassicMode = true
 item.SkillRequirement = SKILL_TECH_OFFENSE_DEP_TURRET_ROCKET
-GM:AddPointShopItem("manhack",			ITEMCAT_DEPLOYABLES,			30,				"weapon_zs_manhack").Countables = "prop_manhack"
-item =
-GM:AddPointShopItem("drone",			ITEMCAT_DEPLOYABLES,			40,				"weapon_zs_drone")
-item.Countables = "prop_drone"
-item =
-GM:AddPointShopItem("pulsedrone",		ITEMCAT_DEPLOYABLES,			40,				"weapon_zs_drone_pulse")
-item.Countables = "prop_drone_pulse"
-item =
-GM:AddPointShopItem("hauldrone",		ITEMCAT_DEPLOYABLES,			15,				"weapon_zs_drone_hauler")
-item.Countables = "prop_drone_hauler"
-item =
-GM:AddPointShopItem("rollermine",		ITEMCAT_DEPLOYABLES,			35,				"weapon_zs_rollermine")
-item.Countables = "prop_rollermine"
-
 item =
 GM:AddPointShopItem("repairfield",		ITEMCAT_DEPLOYABLES,			50,				"weapon_zs_repairfield",		nil,							nil,									nil,											function(pl) pl:GiveEmptyWeapon("weapon_zs_repairfield") pl:GiveAmmo(1, "repairfield") pl:GiveAmmo(30, "pulse") end)
 item.Countables = "prop_repairfield"
