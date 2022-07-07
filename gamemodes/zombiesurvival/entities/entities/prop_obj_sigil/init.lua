@@ -90,6 +90,7 @@ function ENT:Think()
 		local plCount = 0
 		local plTable = {}
 		for k, v in pairs(ents.FindInSphere(self:GetPos(), 100)) do
+			if GAMEMODE:GetWave() <= 0 then break end
 			if v:IsPlayer() then
 				if self:GetSigilCorrupted() then
 					if v:Team() == TEAM_HUMAN then
