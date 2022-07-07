@@ -5,7 +5,7 @@ SWEP.Base = "weapon_zs_butcherknife"
 SWEP.ZombieOnly = true
 SWEP.MeleeDamage = 30
 SWEP.OriginalMeleeDamage = SWEP.MeleeDamage
-SWEP.Primary.Delay = 0.45
+SWEP.Primary.Delay = 0.32
 
 function SWEP:OnMeleeHit(hitent, hitflesh, tr)
 	if not hitent:IsPlayer() then
