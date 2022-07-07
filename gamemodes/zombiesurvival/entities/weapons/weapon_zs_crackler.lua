@@ -34,6 +34,10 @@ SWEP.Primary.Automatic = true
 SWEP.Primary.Ammo = "ar2"
 GAMEMODE:SetupDefaultClip(SWEP.Primary)
 
+SWEP.Electric = true
+SWEP.ElectricStrength = 1.5
+SWEP.ElectricChance = 0.1
+
 SWEP.ConeMax = 3.0 --0.045
 SWEP.ConeMin = 1.6 --0.019
 

@@ -3567,11 +3567,12 @@ end
 function GM:PlayerDeath(pl, inflictor, attacker)
 	if pl:IsBot() then
 		local wave = self:GetWave()
-		local threshold = 100 --math.Round(1/(4 * wave) * 1000, 0)
+		local threshold = 1000 --math.Round(1/(4 * wave) * 1000, 0)
 		local rng = math.random(1,1000)
 		local sound = table.Random(file.Find("sound/emotes/*.wav", "GAME"))
 		if rng <= threshold and file.Exists(sound, "garrysmod/emotes/") then
 			pl:EmitSound("emotes/" .. sound, 150, 100, 1, CHAN_REPLACE)
+			print(tostring(sound))
 		end
 	else
 		if pl:IsValid() and pl:IsHuman() and pl:Team() == TEAM_HUMAN then
@@ -4175,7 +4176,15 @@ function GM:PlayerSpawn(pl)
 			local lowundead = team.NumPlayers(TEAM_UNDEAD) < 8
 
 			local healthmulti = (self.ObjectiveMap or self.ZombieEscape) and 1 or lowundead and 1 or 1
-			pl:SetHealth(classtab.Health * healthmulti)
+			local zHealth = classtab.Health
+			-- if istable(ZombieStatsTable[classtab.Global]["Health"]) then
+				-- zHealth = ZombieStatsTable[classtab.Global]["Health"][self:GetWave() or 1]
+			-- else
+				-- zHealth = ZombieStatsTable[classtab.Global]["Health"] or ZombieStatsTable[classtab.Global]["Health"][1]
+			-- end
+			-- print(zHealth)
+			local healthmulti = (self.ObjectiveMap or self.ZombieEscape) and 1 or lowundead and 1 or 1
+			pl:SetHealth(zHealth * healthmulti)
 		end
 
 		if classtab.SWEP then

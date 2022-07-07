@@ -2,8 +2,9 @@ CLASS.Name = "Shadow Walker"
 CLASS.TranslationName = "class_shadow_walker"
 CLASS.Description = "description_shadow_walker"
 CLASS.Help = "controls_shadow_lurker"
+CLASS.Global = "ShadowWalker"
 
-CLASS.BetterVersion = "Frigid Revenant"
+-- CLASS.BetterVersion = "Frigid Revenant"
 
 CLASS.Model = Model("models/player/corpse1.mdl")
 CLASS.OverrideModel = Model("models/player/skeleton.mdl")
@@ -12,12 +13,50 @@ CLASS.CanTaunt = true
 
 CLASS.SWEP = "weapon_zs_shadowwalker"
 
-CLASS.Wave = 3 / 6
+CLASS.Wave = 1 / 6
 
 CLASS.Health = 200
 CLASS.Speed = 180
 
 CLASS.Points = CLASS.Health/GM.HumanoidZombiePointRatio
+
+-- CLASS.Speed = {
+	-- [1] = 100,
+	-- [2] = 100,
+	-- [3] = 100,
+	-- [4] = 100,
+	-- [5] = 100,
+	-- [6] = 100
+-- }
+
+-- CLASS.Points = {
+	-- [1] = 10,
+	-- [2] = 10,
+	-- [3] = 10,
+	-- [4] = 10,
+	-- [5] = 10,
+	-- [6] = 10
+-- }
+
+-- CLASS.PrimaryDamage = {
+	-- [1] = 30,
+	-- [2] = 30,
+	-- [3] = 30,
+	-- [4] = 30,
+	-- [5] = 30,
+	-- [6] = 30
+-- }
+
+-- CLASS.SecondaryDamage = {
+	-- [1] = ,
+	-- [2] = ,
+	-- [3] = ,
+	-- [4] = ,
+	-- [5] = ,
+	-- [6] = 
+-- }
+
+CLASS.DamageToPropsMul = 1
 
 CLASS.VoicePitch = 0.55
 

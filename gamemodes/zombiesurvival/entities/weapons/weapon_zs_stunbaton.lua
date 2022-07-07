@@ -15,16 +15,20 @@ SWEP.UseHands = true
 
 SWEP.HoldType = "melee"
 
-SWEP.MeleeDamage = 32
+SWEP.MeleeDamage = 27
 SWEP.LegDamage = 8
 SWEP.MeleeRange = 49
 SWEP.MeleeSize = 1.5
-SWEP.Primary.Delay = 0.9
+SWEP.Primary.Delay = 0.75
 
 SWEP.SwingTime = 0.25
 SWEP.SwingRotation = Angle(60, 0, 0)
 SWEP.SwingOffset = Vector(0, -50, 0)
 SWEP.SwingHoldType = "grenade"
+
+-- SWEP.Electric = true
+-- SWEP.ElectricStrength = 0.8
+-- SWEP.ElectricChance = 0.5
 
 SWEP.AllowQualityWeapons = true
 

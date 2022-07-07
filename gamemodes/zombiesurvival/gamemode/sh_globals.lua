@@ -336,3 +336,72 @@ GM.ValidBeaconMessages = {
 	"message_beacon_24",
 	"message_beacon_25"
 }
+
+-- ZombieStatsTable = {
+	-- ["ShadowWalker"] = {
+		-- ["Health"] = {
+			-- [1] = 100,
+			-- [2] = 200,
+			-- [3] = 300,
+			-- [4] = 400,
+			-- [5] = 500,
+			-- [6] = 600
+		-- }
+		
+		-- ["Speed"] = {
+			-- [1] = 100,
+			-- [2] = 200,
+			-- [3] = 300,
+			-- [4] = 400,
+			-- [5] = 500,
+			-- [6] = 600
+		-- }
+		
+		-- ["Points"] = {
+			-- [1] = 100,
+			-- [2] = 200,
+			-- [3] = 300,
+			-- [4] = 400,
+			-- [5] = 500,
+			-- [6] = 600
+		-- }
+		
+		-- ["PrimaryDamage"] = {
+		
+		-- }
+		
+		-- --Percentage of primary damage converted to elemental damage.
+		-- ["PrimaryDamageBleed"] = 0
+		-- ["PrimaryDamagePoison"] = 0
+		
+		-- ["SecondaryDamage"] = {
+		
+		-- }
+		
+		-- --Percentage of secondary damage converted to elemental damage.
+		-- ["SecondaryDamageBleed"] = 0
+		-- ["SecondaryDamagePoison"] = 0
+		
+		-- --Multiplies attack damage to props by this value.
+		-- ["DamageToPropMul"] = 1
+		
+		-- --Used as a percentage of damage (n * 100) that bypasses blood armor.
+		-- ["DamageIgnoresBloodArmorMul"] = 0
+		
+		-- --Regular Resistance, Resist is a percent reduction, Reduced subtracts from the damage value.
+		-- ["ResistDamageAll"] = 0
+		-- ["ResistDamageBullet"] = 0
+		-- ["ReducedDamageBullet"] = 0
+		-- ["ResistDamageMelee"] = 0
+		-- ["ReducedDamageMelee"] = 0
+		-- ["ResistDamageExplosion"] = 0
+		-- ["ReducedDamageExplosion"] = 0
+		
+		-- --Elemental Resistance, 0 = No resistance, 1 = Complete resistance.
+		-- ["ResistDamageFire"] = 0
+		-- ["ResistDamageBleed"] = 0
+		-- ["ResistDamageElectric"] = 0
+		-- ["ResistDamageSlow"] = 0
+		-- ["ResistDamageIce"] = 0
+	-- }
+-- }
