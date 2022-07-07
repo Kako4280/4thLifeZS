@@ -52,7 +52,9 @@ end
 
 function SWEP:ServerHitFleshEffects(hitent, tr, damagemultiplier)
 	local owner = self:GetOwner()
-	local damage = self.MeleeDamage * damagemultiplier
+	local damage = self.MeleeDamage
+
+	if isnumber(damagemultiplier) then damage = damage * damagemultiplier end
 
 	if hitent:IsValid() and hitent:IsPlayer() and hitent:Team() == owner:Team() then return end
 
@@ -80,8 +82,49 @@ function SWEP:ApplyPulse(hitent)
 	end
 end
 
-function SWEP:ApplyElectric(hitent)
-end
+-- function SWEP:ApplyElectric(hitent, attacker, dmginfo)	
+	-- if hitent:IsPlayer() then
+		-- if math.random(1,10000) < (self.ElectricChance * 10000) then
+			-- local target = hitent
+			-- local shocked = {}
+			
+			-- if target then
+				-- shocked[target] = true
+				-- for i = 1,3 do
+					-- local tpos = target:WorldSpaceCenter()
+
+					-- for k, ent in pairs(ents.FindInSphere(tpos, 105)) do
+						-- if not shocked[ent] and ent:IsValidLivingZombie() and not ent:GetZombieClassTable().NeverAlive then
+							-- if WorldVisible(tpos, ent:NearestPoint(tpos)) then
+								-- shocked[ent] = true
+								-- target = ent
+
+								-- timer.Simple(i * 0.15, function()
+								-- if not ent:IsValid() or not ent:IsValidLivingZombie() or not WorldVisible(tpos, ent:NearestPoint(tpos)) then return end
+
+									-- target:TakeSpecialDamage(dmginfo:GetDamage() / ((i * 0.5) + 1) * self.ElectricStrength, DMG_DISSOLVE, attacker, attacker:GetActiveWeapon())
+
+									-- local worldspace = ent:WorldSpaceCenter()
+									-- effectdata = EffectData()
+										-- effectdata:SetOrigin(worldspace)
+										-- effectdata:SetStart(tpos)
+										-- effectdata:SetEntity(target)
+									-- util.Effect("tracer_zapper", effectdata)
+								-- end)
+
+								-- break
+							-- end
+						-- end
+					-- end
+							
+					-- if math.random(1,10) <= 3 then
+						-- break
+					-- end
+				-- end
+			-- end
+		-- end
+	-- end
+-- end
 
 function SWEP:ApplyBurn(hitent, attacker)
 	if self.BurnChance * 10000 > math.random(1, 10000) then
