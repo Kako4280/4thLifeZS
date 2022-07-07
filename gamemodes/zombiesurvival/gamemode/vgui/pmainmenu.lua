@@ -57,7 +57,7 @@ function MakepPlayerModel()
 					break	
 				end
 			end
-			button:SetTooltip("This model takes " .. math.Round(dmgMul * 100) .. "% damage.")
+			button:SetTooltip(player_manager.TranslatePlayerModel(name) .. "\nDamage Multiplier: " .. math.Round(dmgMul * 100) .. "%")
 			button.OnMousePressed = SwitchPlayerModel
 			grid:AddItem(button)
 			
