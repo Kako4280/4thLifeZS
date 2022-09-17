@@ -1,0 +1,17 @@
+1:AimTo=Straight,AreaXMax=-64,AreaXMin=-768,AreaYMax=-416,AreaYMin=-960,X=-711,Y=-665.9,Z=0
+1-2:
+2:AimTo=Straight,AreaXMax=-768,AreaXMin=-1024,AreaYMax=-624,AreaYMin=-720,X=-876.1,Y=-670.2,Z=0
+2-3:
+3:AimTo=Straight,AreaXMax=-1024,AreaXMin=-1664,AreaYMax=-416,AreaYMin=-960,X=-1107.7,Y=-672.4,Z=0
+4:AimTo=Straight,AreaXMax=-64,AreaXMin=-768,AreaYMax=352,AreaYMin=-416,X=-691.8,Y=-28.1,Z=0
+4-1:
+4-5:
+5:AimTo=Straight,AreaXMax=-768,AreaXMin=-1024,AreaYMax=16,AreaYMin=-80,X=-870.3,Y=-30.8,Z=0
+5-6:
+6:AimTo=Straight,AreaXMax=-1024,AreaXMin=-1664,AreaYMax=288,AreaYMin=-352,X=-1181.4,Y=-41.5,Z=0
+7:AimTo=Straight,AreaXMax=-64,AreaXMin=-768,AreaYMax=960,AreaYMin=352,X=-691.9,Y=588.2,Z=0
+7-4:
+8:AimTo=Straight,AreaXMax=-768,AreaXMin=-1024,AreaYMax=640,AreaYMin=544,X=-860.2,Y=594.7,Z=0
+8-7:
+9:AimTo=Straight,AreaXMax=-1024,AreaXMin=-1664,AreaYMax=960,AreaYMin=352,X=-1121.6,Y=587.7,Z=0
+9-8:
